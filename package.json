@@ -36,5 +36,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "Portfolio page which displays my up-to-date work, built using React",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/max-marschhauser/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/max-marschhauser/portfolio/issues"
+  },
+  "homepage": "https://github.com/max-marschhauser/portfolio#readme"
 }
