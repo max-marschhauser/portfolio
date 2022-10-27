@@ -1,16 +1,13 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./layout/layout/Layout";
+import Home from "./pages/home/Home";
+import NoPage from "./pages/noPage/NoPage";
 import "./App.scss";
 
 export default function App() {
 	return (
-		<BrowserRouter>
-			<Routes>
-				<Route path="/" element={<Layout />}>
-					<Route index element={<Home />} />
-					<Route path="blogs" element={<Blogs />} />
-					<Route path="contact" element={<Contact />} />
-					<Route path="*" element={<NoPage />} />
-				</Route>
-			</Routes>
-		</BrowserRouter>
+		<>
+			<div>123</div>
+		</>
 	);
 }
