@@ -1,0 +1,41 @@
+// root scss file
+
+@use "../abstracts" as abs;
+
+:root {
+	--color-gray: hsl(0, 0%, 50%);
+
+	font-family: "Montserrat", sans-serif;
+}
+
+*,
+*::before,
+*:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	border: 0;
+
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--color-gray);
+}
+
+::-webkit-scrollbar {
+	width: 0.75rem;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--color-lightgray);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--color-gray);
+
+	&:hover {
+		background: var(--color-black);
+	}
+}
