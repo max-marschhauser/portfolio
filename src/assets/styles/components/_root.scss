@@ -3,7 +3,11 @@
 @use "../abstracts" as abs;
 
 :root {
+	--color-black: hsl(0, 0%, 0%);
+	--color-darkgray: hsl(0, 0%, 25%);
 	--color-gray: hsl(0, 0%, 50%);
+	--color-lightgray: hsl(0, 0%, 75%);
+	--color-white: hsl(0, 0%, 100%);
 
 	font-family: "Montserrat", sans-serif;
 }
@@ -21,7 +25,9 @@
 }
 
 body {
-	background-color: var(--color-gray);
+	min-height: 100vh;
+
+	background-color: var(--color-lightgray);
 }
 
 ::-webkit-scrollbar {
@@ -29,13 +35,13 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-	background: var(--color-lightgray);
+	background: var(--color-white);
 }
 
 ::-webkit-scrollbar-thumb {
 	background: var(--color-gray);
 
 	&:hover {
-		background: var(--color-black);
+		background: var(--color-darkgray);
 	}
 }
