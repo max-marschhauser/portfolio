@@ -1,0 +1,62 @@
+.pageFooter {
+	padding-block: 4rem;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+
+	background-color: var(--color-black);
+
+	color: var(--color-white);
+
+	user-select: none;
+
+	&__item {
+		width: 100vw;
+
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		section {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			gap: 3rem;
+
+			h2 {
+				text-align: left;
+				user-select: text;
+
+				span {
+					font-size: 1rem;
+					font-weight: normal;
+				}
+			}
+
+			.links--social {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				gap: 3rem;
+				list-style: none;
+
+				li {
+					a {
+						text-decoration: none;
+						color: var(--color-lightgray);
+					}
+				}
+			}
+
+			.links--pages {
+				color: white;
+			}
+		}
+	}
+}
