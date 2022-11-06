@@ -1,6 +1,5 @@
 import React from "react";
 import "./footer.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Footer() {
 	return (
@@ -19,12 +18,12 @@ export default function Footer() {
 					<ul className="links--social">
 						<li>
 							<a href="/">
-								<FontAwesomeIcon icon="fa-brands fa-github" />
+								<i>Github</i>
 							</a>
 						</li>
 						<li>
 							<a href="/">
-								<FontAwesomeIcon icon="fa-brands fa-linkedin-in" />
+								<i>Linked In</i>
 							</a>
 						</li>
 					</ul>
