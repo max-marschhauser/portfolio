@@ -5,7 +5,7 @@ import "./layout.scss";
 export default function Layout() {
 	return (
 		<>
-			<nav>
+			<nav id="top">
 				<ul>
 					<li>
 						<Link to="/" end>

@@ -4,7 +4,7 @@ import "./footer.scss";
 export default function Footer() {
 	return (
 		<footer className="pageFooter">
-			<div className="pageFooter__item">
+			<div className="pageFooter__item--upper">
 				<section>
 					<h2>
 						Max Marschhauser
@@ -41,14 +41,14 @@ export default function Footer() {
 						</ul>
 					</nav>
 				</section>
-				<aside>
+				<section>
 					<iframes>google maps</iframes>
-				</aside>
+				</section>
 			</div>
-			<ul>
-				<li>copyright 2022</li>
+			<ul className="pageFooter__item--under">
+				<li>Copyright &copy;{+new Date().getFullYear()}.</li>
 				<li>
-					<a href="/">back to top</a>
+					<a href="#top">Back to Top</a>
 				</li>
 			</ul>
 		</footer>
