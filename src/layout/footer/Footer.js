@@ -18,31 +18,38 @@ export default function Footer() {
 					<ul className="links--social">
 						<li>
 							<a href="/">
-								<i>Github</i>
+								<ion-icon name="logo-github"></ion-icon>
 							</a>
 						</li>
 						<li>
 							<a href="/">
-								<i>Linked In</i>
+								<ion-icon name="logo-linkedin"></ion-icon>
+							</a>
+						</li>
+						<li>
+							<a href="/">
+								<ion-icon name="logo-google"></ion-icon>
 							</a>
 						</li>
 					</ul>
 					<nav className="links--pages">
 						<ul>
 							<li>
-								<a href="/">other page 1</a>
+								<a href="/">Page 1</a>
 							</li>
 							<li>
-								<a href="/">other page 2</a>
+								<a href="/">Page 2</a>
 							</li>
 							<li>
-								<a href="/">other page 3</a>
+								<a href="/">Page 3</a>
 							</li>
 						</ul>
 					</nav>
 				</section>
 				<section>
-					<iframes>google maps</iframes>
+					<iframe
+						title="map"
+						src="https://maps.google.com/maps?q=osijek,%20gunduli%C4%87eva%2080&t=k&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
 				</section>
 			</div>
 			<ul className="pageFooter__item--under">
