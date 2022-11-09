@@ -10,6 +10,7 @@
 	gap: 3rem;
 
 	background-color: var(--color-black);
+	overflow-x: hidden;
 
 	color: var(--color-white);
 
@@ -86,6 +87,7 @@
 
 				iframe {
 					box-shadow: 0rem 0rem 1rem 0rem var(--color-lightgray);
+					border-radius: 1rem;
 
 					width: 15rem;
 					height: 15rem;
