@@ -3,4 +3,71 @@
 
 	display: grid;
 	grid-template-columns: 1fr 8fr;
+
+	.logo__and__navbar {
+		outline: 1px solid black;
+
+		.logo {
+			position: relative;
+			top: 2rem;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 0.5rem;
+
+			width: 100%;
+			padding-block: 2rem;
+
+			text-align: center;
+
+			outline: 1px solid red;
+
+			span {
+				font-size: 1.2rem;
+
+				&:first-child {
+					font-size: 1.8rem;
+					font-weight: bold;
+				}
+			}
+		}
+
+		nav {
+			position: relative;
+			top: 30vh;
+
+			display: grid;
+			place-items: center;
+
+			ul {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				gap: 5rem;
+
+				list-style: none;
+
+				li {
+					.navbar__link {
+						padding: 1rem 2rem;
+						border-radius: 100vmax;
+
+						background-color: var(--color-gray);
+
+						text-decoration: none;
+						color: var(--color-black);
+						font-size: 1.2rem;
+
+						&:hover {
+							opacity: 0.9;
+							box-shadow: 0rem 0rem 0.15rem 0rem var(--color-lightgray);
+						}
+					}
+				}
+			}
+		}
+	}
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./footer.scss";
 
 export default function Footer() {
@@ -35,13 +36,24 @@ export default function Footer() {
 					<nav className="links--pages">
 						<ul>
 							<li>
-								<a href="/">Page 1</a>
+								<Link className="navbar__link" to="/" end>
+									Home
+								</Link>
 							</li>
 							<li>
-								<a href="/">Page 2</a>
+								<Link className="navbar__link" to="/skills">
+									Skills
+								</Link>
 							</li>
 							<li>
-								<a href="/">Page 3</a>
+								<Link className="navbar__link" to="/projects">
+									Projects
+								</Link>
+							</li>
+							<li>
+								<Link className="navbar__link" to="/about">
+									About
+								</Link>
 							</li>
 						</ul>
 					</nav>

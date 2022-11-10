@@ -6,24 +6,36 @@ export default function Layout() {
 	return (
 		<>
 			<div className="pageContainer">
-				<nav id="top">
-					<ul>
-						<li>
-							<Link to="/" end>
-								Home
-							</Link>
-						</li>
-						<li>
-							<Link to="/skills">Skills</Link>
-						</li>
-						<li>
-							<Link to="/projects">Projects</Link>
-						</li>
-						<li>
-							<Link to="/about">About</Link>
-						</li>
-					</ul>
-				</nav>
+				<div className="logo__and__navbar">
+					<div className="logo">
+						<span>MAX</span>
+						<span>React Frontend Developer</span>
+					</div>
+					<nav id="top">
+						<ul>
+							<li>
+								<Link className="navbar__link" to="/" end>
+									Home
+								</Link>
+							</li>
+							<li>
+								<Link className="navbar__link" to="/skills">
+									Skills
+								</Link>
+							</li>
+							<li>
+								<Link className="navbar__link" to="/projects">
+									Projects
+								</Link>
+							</li>
+							<li>
+								<Link className="navbar__link" to="/about">
+									About
+								</Link>
+							</li>
+						</ul>
+					</nav>
+				</div>
 				<Outlet />
 			</div>
 			<Footer />
