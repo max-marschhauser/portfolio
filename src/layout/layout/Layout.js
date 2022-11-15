@@ -6,10 +6,14 @@ export default function Layout() {
 	return (
 		<>
 			<div className="pageContainer">
-				<div className="logo__and__navbar">
+				<aside className="aside">
 					<div className="logo">
 						<span>MAX</span>
-						<span>React Frontend Developer</span>
+						<span> Marschhauser</span>
+						<span>
+							React Frontend <wbr />
+							Developer
+						</span>
 					</div>
 					<nav id="top">
 						<ul>
@@ -35,7 +39,7 @@ export default function Layout() {
 							</li>
 						</ul>
 					</nav>
-				</div>
+				</aside>
 				<Outlet />
 			</div>
 			<Footer />
