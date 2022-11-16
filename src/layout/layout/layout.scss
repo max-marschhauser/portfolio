@@ -14,7 +14,7 @@
 		left: 0;
 		position: sticky;
 
-		outline: 1px solid black;
+		outline: 1px solid var(--color-black);
 		background-color: var(--color-black-transparent);
 
 		.logo {
@@ -68,7 +68,7 @@
 					.navbar__link {
 						padding: 1rem 2rem;
 						border-radius: 100vmax;
-						outline: 0.1rem solid white;
+						outline: 0.1rem solid var(--color-white);
 						outline-offset: 0.2rem;
 						background-color: var(--color-black-transparent);
 
@@ -76,9 +76,24 @@
 						color: var(--color-white);
 						font-size: 1.2rem;
 
+						transition: all 0.35s ease;
+
 						&:hover {
 							background-color: var(--color-gray-transparent);
 							box-shadow: 0rem 0rem 0.5rem 0.75rem var(--color-black-transparent);
+						}
+
+						&:active {
+							background-color: var(--color-gray);
+						}
+					}
+
+					.navbar__link--active {
+						background-color: var(--color-gray);
+
+						&:hover {
+							background-color: var(--color-gray);
+							box-shadow: none;
 						}
 
 						&:active {

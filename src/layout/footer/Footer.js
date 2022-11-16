@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./footer.scss";
 
 export default function Footer() {
@@ -36,24 +36,24 @@ export default function Footer() {
 					<nav className="links--pages">
 						<ul>
 							<li>
-								<Link className="navbar__link" to="/" end>
+								<NavLink className="navbar__link" to="/">
 									Home
-								</Link>
+								</NavLink>
 							</li>
 							<li>
-								<Link className="navbar__link" to="/skills">
+								<NavLink className="navbar__link" to="/skills">
 									Skills
-								</Link>
+								</NavLink>
 							</li>
 							<li>
-								<Link className="navbar__link" to="/projects">
+								<NavLink className="navbar__link" to="/projects">
 									Projects
-								</Link>
+								</NavLink>
 							</li>
 							<li>
-								<Link className="navbar__link" to="/about">
+								<NavLink className="navbar__link" to="/about">
 									About
-								</Link>
+								</NavLink>
 							</li>
 						</ul>
 					</nav>

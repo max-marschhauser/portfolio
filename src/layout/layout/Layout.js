@@ -1,4 +1,4 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 import Footer from "../footer/Footer";
 import "./layout.scss";
 
@@ -18,24 +18,24 @@ export default function Layout() {
 					<nav id="top">
 						<ul>
 							<li>
-								<Link className="navbar__link" to="/" end>
+								<NavLink className="navbar__link" to="/" end>
 									Home
-								</Link>
+								</NavLink>
 							</li>
 							<li>
-								<Link className="navbar__link" to="/skills">
+								<NavLink className="navbar__link" to="/skills">
 									Skills
-								</Link>
+								</NavLink>
 							</li>
 							<li>
-								<Link className="navbar__link" to="/projects">
+								<NavLink className="navbar__link" to="/projects">
 									Projects
-								</Link>
+								</NavLink>
 							</li>
 							<li>
-								<Link className="navbar__link" to="/about">
+								<NavLink className="navbar__link navbar__link--active" to="/about">
 									About
-								</Link>
+								</NavLink>
 							</li>
 						</ul>
 					</nav>
