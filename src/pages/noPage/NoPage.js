@@ -2,7 +2,6 @@
 
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
 import "./noPage.scss";
 
 export default function NoPage() {
@@ -14,5 +13,11 @@ export default function NoPage() {
 		}, 3000);
 	});
 
-	return <p>No such page found, redirecting back to home page!</p>;
+	return (
+		<div className="noPage--container">
+			<span>?</span>
+			No such page found, redirecting back to home page in a few moments
+			<span>?</span>
+		</div>
+	);
 }

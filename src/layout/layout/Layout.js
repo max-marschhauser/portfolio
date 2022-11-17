@@ -1,5 +1,6 @@
 import { Outlet, NavLink } from "react-router-dom";
 import Footer from "../footer/Footer";
+
 import "./layout.scss";
 
 export default function Layout() {
@@ -9,7 +10,7 @@ export default function Layout() {
 				<aside className="aside">
 					<div className="logo">
 						<span>MAX</span>
-						<span> Marschhauser</span>
+						<span>Marschhauser</span>
 						<span>
 							React Frontend <wbr />
 							Developer
@@ -33,7 +34,7 @@ export default function Layout() {
 								</NavLink>
 							</li>
 							<li>
-								<NavLink className="navbar__link navbar__link--active" to="/about">
+								<NavLink className="navbar__link" to="/about">
 									About
 								</NavLink>
 							</li>

@@ -26,6 +26,12 @@
 	scroll-behavior: smooth;
 }
 
+::selection {
+	background-color: var(--color-lightgray);
+
+	color: var(--color-black);
+}
+
 body {
 	min-height: 100vh;
 

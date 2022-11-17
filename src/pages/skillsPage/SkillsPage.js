@@ -4,5 +4,7 @@ import React from "react";
 import "./skillsPage.scss";
 
 export default function SkillsPage() {
-	return <p>Skills</p>;
+	a;
+
+	return <div className="main">Skills</div>;
 }

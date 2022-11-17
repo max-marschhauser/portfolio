@@ -6,10 +6,12 @@ import ProjectsPage from "./pages/projectsPage/ProjectsPage";
 import AboutPage from "./pages/aboutPage/AboutPage";
 import NoPage from "./pages/noPage/NoPage";
 import "./assets/styles/styles.scss";
+import ScrollNavlinkToTop from "./utils/scrollNavlinkToTop";
 
 export default function App() {
 	return (
 		<BrowserRouter>
+			<ScrollNavlinkToTop />
 			<Routes>
 				<Route path="/" element={<Layout />}>
 					<Route index element={<Home />} />
