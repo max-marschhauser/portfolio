@@ -10,14 +10,8 @@ export default function NoPage() {
 	useEffect(() => {
 		setTimeout(() => {
 			navigate("/");
-		}, 3000);
+		}, 5000);
 	});
 
-	return (
-		<div className="noPage--container">
-			<span>?</span>
-			No such page found, redirecting back to home page in a few moments
-			<span>?</span>
-		</div>
-	);
+	return <div className="noPage--container">No such page found, redirecting back to home page in a few moments</div>;
 }
