@@ -1,0 +1,96 @@
+.skillsPage {
+	height: 100vh;
+
+	.skillsPage--container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+
+		.leftPart {
+			.left-grid {
+				width: 80%;
+				margin: 0 auto;
+				display: grid;
+				place-items: center;
+				grid-template-columns: repeat(2, 1fr);
+				row-gap: 5rem;
+
+				img {
+					width: 10rem;
+					height: 10rem;
+
+					padding: 1rem;
+				}
+			}
+		}
+
+		.rightPart {
+			display: grid;
+			grid-template-rows: 3fr 2fr;
+
+			.rightUpperPart {
+				.right-grid {
+					display: grid;
+					place-items: center;
+					grid-template-columns: repeat(3, 1fr);
+					row-gap: 2rem;
+
+					img {
+						width: 8rem;
+						height: 8rem;
+
+						padding: 0.5rem;
+					}
+				}
+			}
+
+			.rightLowerPart {
+				border-radius: 2rem 0rem 0rem 2rem;
+
+				background-color: var(--color-black-transparent);
+
+				color: var(--color-white);
+
+				h4 {
+					padding-block: 0.75rem;
+
+					font-size: 1.75rem;
+					text-align: center;
+				}
+
+				header {
+					text-align: center;
+					font-size: 2rem;
+					font-weight: bold;
+				}
+
+				ul {
+					padding: 2rem;
+
+					list-style: disc;
+
+					li {
+						font-size: 1.5rem;
+						line-height: 2rem;
+					}
+				}
+			}
+		}
+
+		h3 {
+			padding-block: 4rem;
+
+			text-align: center;
+			font-size: 3rem;
+		}
+
+		img {
+			transition: all 0.35s ease;
+
+			&:hover {
+				border-radius: 3rem;
+
+				background-color: var(--color-gray-transparent);
+			}
+		}
+	}
+}

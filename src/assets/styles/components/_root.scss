@@ -4,11 +4,12 @@
 
 :root {
 	--color-black: hsl(0, 0%, 0%);
-	--color-black-transparent: hsl(0, 0%, 0%, 0.35);
+	--color-black-transparent: hsl(0, 0%, 0%, 0.5);
 	--color-darkgray: hsl(0, 0%, 25%);
 	--color-gray: hsl(0, 0%, 50%);
 	--color-gray-transparent: hsl(0, 0%, 50%, 0.6);
 	--color-lightgray: hsl(0, 0%, 75%);
+	--color-lightgray-transparent: hsl(0, 0%, 75%, 0.35);
 	--color-white: hsl(0, 0%, 100%);
 
 	font-family: "Montserrat", sans-serif;

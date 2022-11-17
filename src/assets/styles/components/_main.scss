@@ -1,3 +1,15 @@
 .main {
-	color: white;
+	color: var(--color-white);
+}
+
+.blankSection {
+	height: 15rem;
+}
+
+h2 {
+	padding-top: 2rem;
+
+	text-align: center;
+	font-size: 3rem;
+	color: var(--color-white);
 }
