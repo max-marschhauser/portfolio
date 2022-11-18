@@ -5,3 +5,5 @@ https://www.figma.com/file/sZeqXhxSItI4FYmQez6ijU/Portfolio-Page
 
 add key words to skills:
 accessibility, responsivness, speed, dry, kiss, other cool words, design
+
+dodati freeCodeCamp cetrifikat za JS, možda i neke ostale cetrifikate
