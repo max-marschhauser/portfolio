@@ -1,8 +1,15 @@
-// another page
+// skills page / component, contains list of my skills and my experience with every one of them
 
-import React from "react";
+// importing general items
+import React, { useState } from "react";
+
+// importing data
+import dataObject from "../data/skillsPageExperiences.js";
+
+// importing styles
 import "./skillsPage.scss";
 
+// importing images
 import HTML from "../../assets/images/HTML.png";
 import CSS from "../../assets/images/CSS.png";
 import C from "../../assets/images/C.png";
@@ -16,6 +23,12 @@ import MongoDB from "../../assets/images/MongoDB.png";
 import NodeJS from "../../assets/images/NodeJS.png";
 
 export default function SkillsPage() {
+	let [currentLanguage, setCurrentLanguage] = useState("HTML");
+
+	function handleMouseOver(event) {
+		setCurrentLanguage(event.target.alt);
+	}
+
 	return (
 		<div className="main">
 			<section className="skillsPage">
@@ -24,31 +37,32 @@ export default function SkillsPage() {
 					<div className="leftPart">
 						<h3>Everyday use</h3>
 						<div className="left-grid">
-							<img src={HTML} alt="HTML" />
-							<img src={CSS} alt="CSS" />
-							<img src={Sass} alt="Sass" />
-							<img src={JavaScript} alt="JavaScript" />
-							<img src={TypeScript} alt="TypeScript" />
-							<img src={ReactImage} alt="React" />
+							<img src={HTML} alt="HTML" onMouseEnter={handleMouseOver} />
+							<img src={CSS} alt="CSS" onMouseEnter={handleMouseOver} />
+							<img src={Sass} alt="Sass" onMouseEnter={handleMouseOver} />
+							<img src={JavaScript} alt="JavaScript" onMouseEnter={handleMouseOver} />
+							<img src={TypeScript} alt="TypeScript" onMouseEnter={handleMouseOver} />
+							<img src={ReactImage} alt="React" onMouseEnter={handleMouseOver} />
 						</div>
 					</div>
 					<div className="rightPart">
 						<div className="rightUpperPart">
 							<h3>Familiar with</h3>
 							<div className="right-grid">
-								<img src={PHP} alt="PHP" />
-								<img src={MongoDB} alt="MongoDB" />
-								<img src={MySQL} alt="MySQL" />
-								<img src={NodeJS} alt="NodeJS" />
-								<img src={C} alt="C" />
+								<img src={PHP} alt="PHP" onMouseEnter={handleMouseOver} />
+								<img src={MongoDB} alt="MongoDB" onMouseEnter={handleMouseOver} />
+								<img src={MySQL} alt="MySQL" onMouseEnter={handleMouseOver} />
+								<img src={NodeJS} alt="NodeJS" onMouseEnter={handleMouseOver} />
+								<img src={C} alt="C" onMouseEnter={handleMouseOver} />
 							</div>
 						</div>
 						<div className="rightLowerPart">
-							<h4>My Thoughts About</h4>
-							<header>Sass</header>
+							<h4>My Experience with</h4>
+							<header>{currentLanguage}</header>
 							<ul>
-								<li>Love on the first sight</li>
-								<li>My favorite parts are nesting, mixins and modular CSS</li>
+								{dataObject[currentLanguage].map((listItem) => (
+									<li key={listItem}>{listItem}</li>
+								))}
 							</ul>
 						</div>
 					</div>
