@@ -1,4 +1,4 @@
-// contains data which is shown on Skills page / component
+// document contains data which is shown on the Skills page
 
 let skills = {
 	HTML: [

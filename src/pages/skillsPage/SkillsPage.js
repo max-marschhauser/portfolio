@@ -1,10 +1,10 @@
-// skills page / component, contains list of my skills and my experience with every one of them
+// skills page, contains list of my skills and my experience with every one of them
 
 // importing general items
 import React, { useState } from "react";
 
 // importing data
-import dataObject from "../data/skillsPageExperiences.js";
+import dataObject from "../../data/skillsPageExperiences.js";
 
 // importing styles
 import "./skillsPage.scss";

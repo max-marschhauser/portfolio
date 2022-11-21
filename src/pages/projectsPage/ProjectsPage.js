@@ -1,4 +1,4 @@
-// another page
+// projects page, contains list of my projects and the abillity to filter and sort them
 
 import React from "react";
 import "./projectsPage.scss";

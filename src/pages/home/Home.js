@@ -1,8 +1,17 @@
+// projects page, contains landing page
+
+// importing general items
 import React from "react";
+
+// importing components
 import Skills from "../skillsPage/SkillsPage";
 import Projects from "../projectsPage/ProjectsPage";
 import About from "../aboutPage/AboutPage";
+
+// importing styles
 import "./home.scss";
+
+// importing images
 import ReactImage from "../../assets/images/React.png";
 import bearImage from "../../assets/images/Bear.jpg";
 

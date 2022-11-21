@@ -1,5 +1,10 @@
+// page footer, contains navbar links, external links, google map, copyright information and back to top button
+
+// importing general items
 import React from "react";
 import { NavLink } from "react-router-dom";
+
+// importing styles
 import "./footer.scss";
 
 export default function Footer() {

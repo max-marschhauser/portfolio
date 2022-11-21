@@ -1,6 +1,12 @@
+// page layout, contains aside bar with page logo and navbar links, uses react router
+
+// importing general items
 import { Outlet, NavLink } from "react-router-dom";
+
+// importing components
 import Footer from "../footer/Footer";
 
+// importing styles
 import "./layout.scss";
 
 export default function Layout() {
