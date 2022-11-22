@@ -7,5 +7,11 @@ import React from "react";
 import "./aboutPage.scss";
 
 export default function AboutPage() {
-	return <div className="main">About</div>;
+	return (
+		<div className="main">
+			<section className="skillsPage">
+				<h2 className="pageHeading">About</h2>
+			</section>
+		</div>
+	);
 }
