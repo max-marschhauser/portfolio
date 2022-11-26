@@ -1,0 +1,25 @@
+.projectsList {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 3rem;
+
+	&__item {
+		display: grid;
+		grid-template-columns: 10rem 1fr;
+		gap: 1rem;
+
+		background-color: green;
+
+		img {
+			background-color: red;
+		}
+
+		&--info {
+			background-color: blue;
+
+			ul {
+				list-style: none;
+			}
+		}
+	}
+}
