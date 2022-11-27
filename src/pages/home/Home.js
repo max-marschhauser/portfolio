@@ -12,7 +12,7 @@ import About from "../aboutPage/AboutPage";
 import "./home.scss";
 
 // importing images
-import ReactImage from "../../assets/images/React.png";
+import ReactImage from "../../assets/images/skills/React.png";
 import bearImage from "../../assets/images/Bear.jpg";
 
 export default function Home() {

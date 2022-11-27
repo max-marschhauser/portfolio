@@ -1,24 +1,38 @@
 .projectsList {
+	padding-inline: 1rem;
+
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 3rem;
 
 	&__item {
-		display: grid;
-		grid-template-columns: 10rem 1fr;
+		display: flex;
 		gap: 1rem;
 
-		background-color: green;
+		border-radius: 2rem;
+
+		background-color: var(--color-black-transparent);
 
 		img {
-			background-color: red;
+			padding-left: 1rem;
+
+			flex-basis: 10rem;
+			aspect-ratio: 1 / 1;
 		}
 
 		&--info {
-			background-color: blue;
+			flex-grow: 1;
 
 			ul {
 				list-style: none;
+
+				li {
+					padding: 0.5rem 2rem;
+
+					h3 {
+						font-size: 1.5rem;
+					}
+				}
 			}
 		}
 	}

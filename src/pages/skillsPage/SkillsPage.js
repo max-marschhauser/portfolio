@@ -10,17 +10,17 @@ import dataObject from "../../data/skillsPageExperiences.js";
 import "./skillsPage.scss";
 
 // importing images
-import HTML from "../../assets/images/HTML.png";
-import CSS from "../../assets/images/CSS.png";
-import C from "../../assets/images/C.png";
-import JavaScript from "../../assets/images/JavaScript.png";
-import MySQL from "../../assets/images/MySQL.png";
-import PHP from "../../assets/images/PHP.png";
-import ReactImage from "../../assets/images/React.png";
-import Sass from "../../assets/images/Sass.png";
-import TypeScript from "../../assets/images/TypeScript.png";
-import MongoDB from "../../assets/images/MongoDB.png";
-import NodeJS from "../../assets/images/NodeJS.png";
+import HTML from "../../assets/images/skills/HTML.png";
+import CSS from "../../assets/images/skills/CSS.png";
+import C from "../../assets/images/skills/C.png";
+import JavaScript from "../../assets/images/skills/JavaScript.png";
+import MySQL from "../../assets/images/skills/MySQL.png";
+import PHP from "../../assets/images/skills/PHP.png";
+import ReactImage from "../../assets/images/skills/React.png";
+import Sass from "../../assets/images/skills/Sass.png";
+import TypeScript from "../../assets/images/skills/TypeScript.png";
+import MongoDB from "../../assets/images/skills/MongoDB.png";
+import NodeJS from "../../assets/images/skills/NodeJS.png";
 
 export default function SkillsPage() {
 	let [currentLanguage, setCurrentLanguage] = useState("HTML");

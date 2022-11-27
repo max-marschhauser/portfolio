@@ -13,15 +13,15 @@ export default function ProjectsListItems() {
 			{List.map((item) => {
 				return (
 					<article className="projectsList__item" key={item.id}>
-						<img alt="project1" />
+						<img src={item.img} alt={item.name} />
 						<div className="projectsList__item--info">
 							<ul>
 								<li>
-									<h3>Item Name</h3>
+									<h3>{item.name}</h3>
 								</li>
-								<li>Technology used</li>
-								<li>Description</li>
-								<li>Link</li>
+								<li>{item.technology}</li>
+								<li>{item.description}</li>
+								<li>{item.link}</li>
 							</ul>
 						</div>
 					</article>
