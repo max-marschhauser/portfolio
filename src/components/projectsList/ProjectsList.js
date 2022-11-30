@@ -1,3 +1,5 @@
+// component for Projects page
+
 // importing general items
 import React from "react";
 

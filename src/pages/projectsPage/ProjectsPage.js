@@ -3,6 +3,7 @@
 import React from "react";
 import "./projectsPage.scss";
 import ProjectsList from "../../components/projectsList/ProjectsList.js";
+import Filter from "../../components/filter/Filter.js";
 
 export default function ProjectsPage() {
 	return (
@@ -11,7 +12,7 @@ export default function ProjectsPage() {
 				<h2 className="pageHeading">Projects</h2>
 				<div className="projectsPage__container">
 					<ProjectsList />
-					<div>FILTER</div>
+					<Filter />
 				</div>
 			</section>
 		</div>
