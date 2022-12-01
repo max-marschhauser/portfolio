@@ -9,7 +9,7 @@ import "./filter.scss";
 export default function Filter() {
 	const id = useId();
 
-	let [activeInput, setActiveInput] = useState();
+	let [activeInput, setActiveInput] = useState("");
 
 	function searchChanger(value) {
 		console.log(value);
@@ -48,7 +48,7 @@ export default function Filter() {
 								value="HTML"
 								onClick={(e) => handleSkillChange(e.target.value)}
 							/>
-							<label className={(activeInput = "HTML" ? "activeFilterInput" : "")} htmlFor={`${id}-HTML`}>
+							<label className={activeInput === "HTML" ? "activeFilterInput" : ""} htmlFor={`${id}-HTML`}>
 								HTML
 							</label>
 						</li>
@@ -61,7 +61,7 @@ export default function Filter() {
 								value="CSS"
 								onClick={(e) => handleSkillChange(e.target.value)}
 							/>
-							<label className={(activeInput = "CSS" ? "activeFilterInput" : "")} htmlFor={`${id}-CSS`}>
+							<label className={activeInput === "CSS" ? "activeFilterInput" : ""} htmlFor={`${id}-CSS`}>
 								CSS
 							</label>
 						</li>
@@ -74,7 +74,7 @@ export default function Filter() {
 								value="Sass"
 								onClick={(e) => handleSkillChange(e.target.value)}
 							/>
-							<label className={(activeInput = "Sass" ? "activeFilterInput" : "")} htmlFor={`${id}-Sass`}>
+							<label className={activeInput === "Sass" ? "activeFilterInput" : ""} htmlFor={`${id}-Sass`}>
 								Sass
 							</label>
 						</li>
@@ -88,7 +88,7 @@ export default function Filter() {
 								onClick={(e) => handleSkillChange(e.target.value)}
 							/>
 							<label
-								className={(activeInput = "JavaScript" ? "activeFilterInput" : "")}
+								className={activeInput === "JavaScript" ? "activeFilterInput" : ""}
 								htmlFor={`${id}-JavaScript`}>
 								JavaScript
 							</label>
@@ -103,7 +103,7 @@ export default function Filter() {
 								onClick={(e) => handleSkillChange(e.target.value)}
 							/>
 							<label
-								className={(activeInput = "TypeScript" ? "activeFilterInput" : "")}
+								className={activeInput === "TypeScript" ? "activeFilterInput" : ""}
 								htmlFor={`${id}-TypeScript`}>
 								TypeScript
 							</label>
@@ -118,7 +118,7 @@ export default function Filter() {
 								onClick={(e) => handleSkillChange(e.target.value)}
 							/>
 							<label
-								className={(activeInput = "React" ? "activeFilterInput" : "")}
+								className={activeInput === "React" ? "activeFilterInput" : ""}
 								htmlFor={`${id}-React`}>
 								React
 							</label>

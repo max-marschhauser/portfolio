@@ -44,7 +44,7 @@
 				text-align: center;
 
 				input {
-					//	display: none;
+					display: none;
 				}
 				label {
 					padding: 0.5rem 1rem;
@@ -52,6 +52,9 @@
 
 					opacity: 0.8;
 					background-color: var(--color-darkgray);
+					outline: 0.1rem solid var(--color-darkgray);
+
+					transition: all 0.25s ease;
 
 					&:hover,
 					&:focus-visible {
@@ -68,7 +71,13 @@
 				.activeFilterInput {
 					opacity: 1;
 					outline: 0.1rem solid var(--color-white);
-					font-variant: small-caps;
+
+					transition: all 0.25s ease;
+
+					&:hover,
+					&:focus-visible {
+						opacity: 1;
+					}
 				}
 			}
 		}
