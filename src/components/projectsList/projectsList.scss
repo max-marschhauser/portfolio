@@ -1,9 +1,9 @@
 .projectsList {
-	padding-inline: 1rem;
+	padding: 2rem 1rem;
 
 	display: grid;
 	grid-template-columns: 1fr;
-	gap: 3rem;
+	gap: 2rem;
 
 	&__item {
 		display: flex;
