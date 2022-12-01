@@ -9,14 +9,19 @@ import "./filter.scss";
 export default function Filter() {
 	const id = useId();
 
-	let [activeInput, setActiveInput] = useState("");
+	let [activeSkill, setActiveSkill] = useState("");
+	let [activeKeyword, setActiveKeyword] = useState("");
 
 	function searchChanger(value) {
 		console.log(value);
 	}
 
 	function handleSkillChange(value) {
-		setActiveInput((prev) => (prev = value));
+		setActiveSkill((prev) => (prev = value));
+	}
+
+	function handleKeywordChange(value) {
+		setActiveKeyword((prev) => (prev = value));
 	}
 
 	return (
@@ -48,7 +53,7 @@ export default function Filter() {
 								value="HTML"
 								onClick={(e) => handleSkillChange(e.target.value)}
 							/>
-							<label className={activeInput === "HTML" ? "activeFilterInput" : ""} htmlFor={`${id}-HTML`}>
+							<label className={activeSkill === "HTML" ? "activeFilterInput" : ""} htmlFor={`${id}-HTML`}>
 								HTML
 							</label>
 						</li>
@@ -61,7 +66,7 @@ export default function Filter() {
 								value="CSS"
 								onClick={(e) => handleSkillChange(e.target.value)}
 							/>
-							<label className={activeInput === "CSS" ? "activeFilterInput" : ""} htmlFor={`${id}-CSS`}>
+							<label className={activeSkill === "CSS" ? "activeFilterInput" : ""} htmlFor={`${id}-CSS`}>
 								CSS
 							</label>
 						</li>
@@ -74,7 +79,7 @@ export default function Filter() {
 								value="Sass"
 								onClick={(e) => handleSkillChange(e.target.value)}
 							/>
-							<label className={activeInput === "Sass" ? "activeFilterInput" : ""} htmlFor={`${id}-Sass`}>
+							<label className={activeSkill === "Sass" ? "activeFilterInput" : ""} htmlFor={`${id}-Sass`}>
 								Sass
 							</label>
 						</li>
@@ -88,7 +93,7 @@ export default function Filter() {
 								onClick={(e) => handleSkillChange(e.target.value)}
 							/>
 							<label
-								className={activeInput === "JavaScript" ? "activeFilterInput" : ""}
+								className={activeSkill === "JavaScript" ? "activeFilterInput" : ""}
 								htmlFor={`${id}-JavaScript`}>
 								JavaScript
 							</label>
@@ -103,7 +108,7 @@ export default function Filter() {
 								onClick={(e) => handleSkillChange(e.target.value)}
 							/>
 							<label
-								className={activeInput === "TypeScript" ? "activeFilterInput" : ""}
+								className={activeSkill === "TypeScript" ? "activeFilterInput" : ""}
 								htmlFor={`${id}-TypeScript`}>
 								TypeScript
 							</label>
@@ -118,9 +123,88 @@ export default function Filter() {
 								onClick={(e) => handleSkillChange(e.target.value)}
 							/>
 							<label
-								className={activeInput === "React" ? "activeFilterInput" : ""}
+								className={activeSkill === "React" ? "activeFilterInput" : ""}
 								htmlFor={`${id}-React`}>
 								React
+							</label>
+						</li>
+					</ul>
+				</fieldset>
+
+				<fieldset>
+					<legend>keyword</legend>
+
+					<ul>
+						<li>
+							<input
+								type="radio"
+								id={`${id}-API`}
+								name="keyword"
+								value="API"
+								onClick={(e) => handleKeywordChange(e.target.value)}
+							/>
+							<label className={activeKeyword === "API" ? "activeFilterInput" : ""} htmlFor={`${id}-API`}>
+								API
+							</label>
+						</li>
+
+						<li>
+							<input
+								type="radio"
+								id={`${id}-Big Data`}
+								name="keyword"
+								value="Big Data"
+								onClick={(e) => handleKeywordChange(e.target.value)}
+							/>
+							<label
+								className={activeKeyword === "Big Data" ? "activeFilterInput" : ""}
+								htmlFor={`${id}-Big Data`}>
+								Big Data
+							</label>
+						</li>
+
+						<li>
+							<input
+								type="radio"
+								id={`${id}-Game`}
+								name="keyword"
+								value="Game"
+								onClick={(e) => handleKeywordChange(e.target.value)}
+							/>
+							<label
+								className={activeKeyword === "Game" ? "activeFilterInput" : ""}
+								htmlFor={`${id}-Game`}>
+								Game
+							</label>
+						</li>
+
+						<li>
+							<input
+								type="radio"
+								id={`${id}-Responsive`}
+								name="keyword"
+								value="Responsive"
+								onClick={(e) => handleKeywordChange(e.target.value)}
+							/>
+							<label
+								className={activeKeyword === "Responsive" ? "activeFilterInput" : ""}
+								htmlFor={`${id}-Responsive`}>
+								Responsive
+							</label>
+						</li>
+
+						<li>
+							<input
+								type="radio"
+								id={`${id}-Component`}
+								name="keyword"
+								value="Component"
+								onClick={(e) => handleKeywordChange(e.target.value)}
+							/>
+							<label
+								className={activeKeyword === "Component" ? "activeFilterInput" : ""}
+								htmlFor={`${id}-Component`}>
+								Component
 							</label>
 						</li>
 					</ul>
