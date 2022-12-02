@@ -30,3 +30,7 @@ flex-wrap: itemi u containeru će se wrapati ako ne stanu svi u isti red
 
 filter: blur(2px); --> blura cijeli element, pa čak i tekst u njemu
 backdrop-filter: blur(2px); --> blura samo pozadinu elementa, a tekst ostaje čitljiv
+
+html{
+color-scheme: dark light; --> force the use of dark theme
+}
