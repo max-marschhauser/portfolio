@@ -17,11 +17,23 @@ export default function Filter() {
 	}
 
 	function handleSkillChange(value) {
-		setActiveSkill((prev) => (prev = value));
+		setActiveSkill(() => {
+			if (value === activeSkill) {
+				return "";
+			} else {
+				return value;
+			}
+		});
 	}
 
 	function handleKeywordChange(value) {
-		setActiveKeyword((prev) => (prev = value));
+		setActiveKeyword(() => {
+			if (value === activeKeyword) {
+				return "";
+			} else {
+				return value;
+			}
+		});
 	}
 
 	return (
