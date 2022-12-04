@@ -7,7 +7,8 @@ const projects = [
 		name: "pageName0",
 		technology: "React, HTML",
 		description: "project built using react",
-		link: "www.link.com",
+		githubLink: "www.link.com",
+		codepenLink: "www.link.com",
 	},
 	{
 		id: 1,
@@ -15,7 +16,8 @@ const projects = [
 		name: "pageName1",
 		technology: "React, HTML",
 		description: "project built using react",
-		link: "www.link.com",
+		githubLink: "www.link.com",
+		codepenLink: "www.link.com",
 	},
 	{
 		id: 2,
@@ -23,7 +25,8 @@ const projects = [
 		name: "pageName2",
 		technology: "React, HTML",
 		description: "project built using react",
-		link: "www.link.com",
+		githubLink: "www.link.com",
+		codepenLink: "www.link.com",
 	},
 	{
 		id: 3,
@@ -31,7 +34,8 @@ const projects = [
 		name: "pageName3",
 		technology: "React, HTML",
 		description: "project built using react",
-		link: "www.link.com",
+		githubLink: "www.link.com",
+		codepenLink: "www.link.com",
 	},
 	{
 		id: 4,
@@ -39,7 +43,8 @@ const projects = [
 		name: "pageName4",
 		technology: "React, HTML",
 		description: "project built using react",
-		link: "www.link.com",
+		githubLink: "www.link.com",
+		codepenLink: "www.link.com",
 	},
 	{
 		id: 5,
@@ -47,7 +52,8 @@ const projects = [
 		name: "pageName5",
 		technology: "React, HTML",
 		description: "project built using react",
-		link: "www.link.com",
+		githubLink: "www.link.com",
+		codepenLink: "www.link.com",
 	},
 	{
 		id: 6,
@@ -55,7 +61,8 @@ const projects = [
 		name: "pageName6",
 		technology: "React, HTML",
 		description: "project built using react",
-		link: "www.link.com",
+		githubLink: "www.link.com",
+		codepenLink: "www.link.com",
 	},
 	{
 		id: 7,
@@ -63,7 +70,8 @@ const projects = [
 		name: "pageName7",
 		technology: "React, HTML",
 		description: "project built using react",
-		link: "www.link.com",
+		githubLink: "www.link.com",
+		codepenLink: "www.link.com",
 	},
 ];
 
