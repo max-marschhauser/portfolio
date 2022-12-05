@@ -1,11 +1,10 @@
 .projectsList {
 	padding: 2rem 1rem;
 
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 2rem;
-
+	display: block;
 	&__item {
+		margin-block: 1rem;
+
 		display: flex;
 		gap: 1rem;
 

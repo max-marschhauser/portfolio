@@ -12,26 +12,35 @@ import "./projectsList.scss";
 export default function ProjectsListItems(props) {
 	const { searchWord, activeSkill, activeKeyword } = props;
 
-	console.log(`search word is ${searchWord}, activeSkill is ${activeSkill} and activeKeyword is ${activeKeyword}`);
-
 	return (
 		<div className="projectsList">
 			{List.map((item) => {
-				return (
-					<article className="projectsList__item" key={item.id}>
-						<img src={item.img} alt={item.name} />
-						<div className="projectsList__item--info">
-							<ul>
-								<li>
-									<h3>{item.name}</h3>
-								</li>
-								<li>{item.technology}</li>
-								<li>{item.description}</li>
-								<li>{item.link}</li>
-							</ul>
-						</div>
-					</article>
-				);
+				if (
+					(searchWord === "" && activeSkill === "" && activeKeyword === "") ||
+					(item.technology.toUpperCase().includes(activeSkill.toUpperCase()) &&
+						item.description.toUpperCase().includes(activeKeyword.toUpperCase()) &&
+						(item.name.toUpperCase().includes(searchWord.toUpperCase()) ||
+							item.technology.toUpperCase().includes(searchWord.toUpperCase()) ||
+							item.description.toUpperCase().includes(searchWord.toUpperCase())))
+				) {
+					return (
+						<article className="projectsList__item" key={item.id}>
+							<img src={item.img} alt={item.name} />
+							<div className="projectsList__item--info">
+								<ul>
+									<li>
+										<h3>{item.name}</h3>
+									</li>
+									<li>{item.technology}</li>
+									<li>{item.description}</li>
+									<li>{item.link}</li>
+								</ul>
+							</div>
+						</article>
+					);
+				} else {
+					return null;
+				}
 			})}
 		</div>
 	);
