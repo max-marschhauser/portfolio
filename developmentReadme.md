@@ -34,3 +34,11 @@ backdrop-filter: blur(2px); --> blura samo pozadinu elementa, a tekst ostaje či
 html{
 color-scheme: dark light; --> force the use of dark theme
 }
+
+WINDOWS PROMPT OMOGUĆUJE INTERAKTIVAN ALERT POPUP U KOJI KORISNIK MOŽE UPISATI NEŠTO ŠTO POSTAJE VARIJABLA
+let person = prompt("Please enter your name", "Harry Potter");
+
+if (person != null) {
+document.getElementById("demo").innerHTML =
+"Hello " + person + "! How are you today?";
+}
