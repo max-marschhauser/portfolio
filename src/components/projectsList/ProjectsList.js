@@ -33,7 +33,14 @@ export default function ProjectsListItems(props) {
 									</li>
 									<li>{item.technology}</li>
 									<li>{item.description}</li>
-									<li>{item.link}</li>
+									<li>
+										<a href={item.githubLink}>
+											<ion-icon name="logo-github"></ion-icon>
+										</a>
+										<a href={item.codepenLink}>
+											<ion-icon name="logo-codepen"></ion-icon>
+										</a>
+									</li>
 								</ul>
 							</div>
 						</article>
