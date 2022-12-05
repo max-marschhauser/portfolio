@@ -1,40 +1,15 @@
 // component for Projects page
 
 // importing general items
-import React, { useId, useState } from "react";
+import React, { useId } from "react";
 
 // importing styles
 import "./filter.scss";
 
-export default function Filter() {
+export default function Filter(props) {
+	const { searchChanger, skillChanger, keywordChanger, activeSkill, activeKeyword } = props;
+
 	const id = useId();
-
-	let [activeSkill, setActiveSkill] = useState("");
-	let [activeKeyword, setActiveKeyword] = useState("");
-
-	function searchChanger(value) {
-		console.log(value);
-	}
-
-	function handleSkillChange(value) {
-		setActiveSkill(() => {
-			if (value === activeSkill) {
-				return "";
-			} else {
-				return value;
-			}
-		});
-	}
-
-	function handleKeywordChange(value) {
-		setActiveKeyword(() => {
-			if (value === activeKeyword) {
-				return "";
-			} else {
-				return value;
-			}
-		});
-	}
 
 	return (
 		<section className="filter">
@@ -49,7 +24,7 @@ export default function Filter() {
 						id={`${id}-search`}
 						name="search"
 						placeholder="search"
-						onChange={(e) => searchChanger(e.target)}
+						onChange={(e) => searchChanger(e.target.value)}
 					/>
 				</fieldset>
 
@@ -63,7 +38,7 @@ export default function Filter() {
 								id={`${id}-HTML`}
 								name="skill"
 								value="HTML"
-								onClick={(e) => handleSkillChange(e.target.value)}
+								onClick={(e) => skillChanger(e.target.value)}
 							/>
 							<label className={activeSkill === "HTML" ? "activeFilterInput" : ""} htmlFor={`${id}-HTML`}>
 								HTML
@@ -76,7 +51,7 @@ export default function Filter() {
 								id={`${id}-CSS`}
 								name="skill"
 								value="CSS"
-								onClick={(e) => handleSkillChange(e.target.value)}
+								onClick={(e) => skillChanger(e.target.value)}
 							/>
 							<label className={activeSkill === "CSS" ? "activeFilterInput" : ""} htmlFor={`${id}-CSS`}>
 								CSS
@@ -89,7 +64,7 @@ export default function Filter() {
 								id={`${id}-Sass`}
 								name="skill"
 								value="Sass"
-								onClick={(e) => handleSkillChange(e.target.value)}
+								onClick={(e) => skillChanger(e.target.value)}
 							/>
 							<label className={activeSkill === "Sass" ? "activeFilterInput" : ""} htmlFor={`${id}-Sass`}>
 								Sass
@@ -102,7 +77,7 @@ export default function Filter() {
 								id={`${id}-JavaScript`}
 								name="skill"
 								value="JavaScript"
-								onClick={(e) => handleSkillChange(e.target.value)}
+								onClick={(e) => skillChanger(e.target.value)}
 							/>
 							<label
 								className={activeSkill === "JavaScript" ? "activeFilterInput" : ""}
@@ -117,7 +92,7 @@ export default function Filter() {
 								id={`${id}-TypeScript`}
 								name="skill"
 								value="TypeScript"
-								onClick={(e) => handleSkillChange(e.target.value)}
+								onClick={(e) => skillChanger(e.target.value)}
 							/>
 							<label
 								className={activeSkill === "TypeScript" ? "activeFilterInput" : ""}
@@ -132,7 +107,7 @@ export default function Filter() {
 								id={`${id}-React`}
 								name="skill"
 								value="React"
-								onClick={(e) => handleSkillChange(e.target.value)}
+								onClick={(e) => skillChanger(e.target.value)}
 							/>
 							<label
 								className={activeSkill === "React" ? "activeFilterInput" : ""}
@@ -153,7 +128,7 @@ export default function Filter() {
 								id={`${id}-API`}
 								name="keyword"
 								value="API"
-								onClick={(e) => handleKeywordChange(e.target.value)}
+								onClick={(e) => keywordChanger(e.target.value)}
 							/>
 							<label className={activeKeyword === "API" ? "activeFilterInput" : ""} htmlFor={`${id}-API`}>
 								API
@@ -166,7 +141,7 @@ export default function Filter() {
 								id={`${id}-Big Data`}
 								name="keyword"
 								value="Big Data"
-								onClick={(e) => handleKeywordChange(e.target.value)}
+								onClick={(e) => keywordChanger(e.target.value)}
 							/>
 							<label
 								className={activeKeyword === "Big Data" ? "activeFilterInput" : ""}
@@ -181,7 +156,7 @@ export default function Filter() {
 								id={`${id}-Game`}
 								name="keyword"
 								value="Game"
-								onClick={(e) => handleKeywordChange(e.target.value)}
+								onClick={(e) => keywordChanger(e.target.value)}
 							/>
 							<label
 								className={activeKeyword === "Game" ? "activeFilterInput" : ""}
@@ -196,7 +171,7 @@ export default function Filter() {
 								id={`${id}-Responsive`}
 								name="keyword"
 								value="Responsive"
-								onClick={(e) => handleKeywordChange(e.target.value)}
+								onClick={(e) => keywordChanger(e.target.value)}
 							/>
 							<label
 								className={activeKeyword === "Responsive" ? "activeFilterInput" : ""}
@@ -211,7 +186,7 @@ export default function Filter() {
 								id={`${id}-Component`}
 								name="keyword"
 								value="Component"
-								onClick={(e) => handleKeywordChange(e.target.value)}
+								onClick={(e) => keywordChanger(e.target.value)}
 							/>
 							<label
 								className={activeKeyword === "Component" ? "activeFilterInput" : ""}

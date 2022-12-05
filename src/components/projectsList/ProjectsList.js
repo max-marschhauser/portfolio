@@ -9,7 +9,11 @@ import List from "../../data/projectsPageList.js";
 // importing styles
 import "./projectsList.scss";
 
-export default function ProjectsListItems() {
+export default function ProjectsListItems(props) {
+	const { searchWord, activeSkill, activeKeyword } = props;
+
+	console.log(`search word is ${searchWord}, activeSkill is ${activeSkill} and activeKeyword is ${activeKeyword}`);
+
 	return (
 		<div className="projectsList">
 			{List.map((item) => {
