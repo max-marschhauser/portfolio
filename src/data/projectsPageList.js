@@ -1,16 +1,46 @@
 // document contains data which is shown on the Projects page
 
 // importing images
-import portfolioImage1 from "../assets/images/projects/Portfolio-Page/portfolio1.png";
 
-import caviaImage1 from "../assets/images/projects/CAVIA-Tattoo-Studio/cavia1.png";
-import caviaImage2 from "../assets/images/projects/CAVIA-Tattoo-Studio/cavia2.png";
-import caviaImage3 from "../assets/images/projects/CAVIA-Tattoo-Studio/cavia3.png";
+import caviaTattooStudio1 from "../assets/images/projects/CAVIA-Tattoo-Studio/cavia-tattoo-studio1.png";
+import caviaTattooStudio2 from "../assets/images/projects/CAVIA-Tattoo-Studio/cavia-tattoo-studio2.png";
+import caviaTattooStudio3 from "../assets/images/projects/CAVIA-Tattoo-Studio/cavia-tattoo-studio3.png";
+
+import digitalStore1 from "../assets/images/projects/Digital-Store/digital-store1.png";
+import digitalStore2 from "../assets/images/projects/Digital-Store/digital-store2.png";
+import digitalStore3 from "../assets/images/projects/Digital-Store/digital-store3.png";
+
+import gradientHoverCard1 from "../assets/images/projects/Gradient-Hover-Card/gradient-hover-card1.png";
+import gradientHoverCard2 from "../assets/images/projects/Gradient-Hover-Card/gradient-hover-card2.png";
+
+import guineaPigDoctor1 from "../assets/images/projects/Guinea-Pig-Doctor/guinea-pig-doctor1.png";
+import guineaPigDoctor2 from "../assets/images/projects/Guinea-Pig-Doctor/guinea-pig-doctor2.png";
+
+import loadingSpinner1 from "../assets/images/projects/Loading-Spinner/loading-spinner1.png";
+import loadingSpinner2 from "../assets/images/projects/Loading-Spinner/loading-spinner2.png";
+
+import multistepForm1 from "../assets/images/projects/Multistep-Form/multistep-form1.png";
+import multistepForm2 from "../assets/images/projects/Multistep-Form/multistep-form2.png";
+import multistepForm3 from "../assets/images/projects/Multistep-Form/multistep-form3.png";
+
+import pokemonApp1 from "../assets/images/projects/Pokemon-App/pokemon-app1.png";
+
+import portfolioPage1 from "../assets/images/projects/Portfolio-Page/portfolio-page1.png";
+
+import rockPaperScissors1 from "../assets/images/projects/Rock-Paper-Scissors/rock-paper-scissors1.png";
+import rockPaperScissors2 from "../assets/images/projects/Rock-Paper-Scissors/rock-paper-scissors2.png";
+
+import toDo1 from "../assets/images/projects/To-Do/to-do1.png";
+
+import yuGiOhCardSearch1 from "../assets/images/projects/Yu-Gi-Oh-Card-Search/yu-gi-oh-card-search1.png";
+import yuGiOhCardSearch2 from "../assets/images/projects/Yu-Gi-Oh-Card-Search/yu-gi-oh-card-search2.png";
+import yuGiOhCardSearch3 from "../assets/images/projects/Yu-Gi-Oh-Card-Search/yu-gi-oh-card-search3.png";
+import yuGiOhCardSearch4 from "../assets/images/projects/Yu-Gi-Oh-Card-Search/yu-gi-oh-card-search4.png";
 
 const projects = [
 	{
 		id: 0,
-		img: [caviaImage1, caviaImage2, caviaImage3],
+		img: [caviaTattooStudio1, caviaTattooStudio2, caviaTattooStudio3],
 		name: "CAVIA Tattoo Studio",
 		technology: "HTML, CSS, JavaScript",
 		description:
@@ -20,7 +50,7 @@ const projects = [
 	},
 	{
 		id: 1,
-		img: ["imgurl", "", ""],
+		img: [digitalStore1, digitalStore2, digitalStore3],
 		name: "Digital Store",
 		technology: "HTML, CSS, Sass, JavaScript",
 		description:
@@ -30,7 +60,7 @@ const projects = [
 	},
 	{
 		id: 2,
-		img: ["imgurl", "", ""],
+		img: [gradientHoverCard1, gradientHoverCard2],
 		name: "Loading Spinner",
 		technology: "HTML, CSS",
 		description:
@@ -40,7 +70,7 @@ const projects = [
 	},
 	{
 		id: 3,
-		img: ["imgurl", "", ""],
+		img: [guineaPigDoctor1, guineaPigDoctor2],
 		name: "Guinea Pig Doctor",
 		technology: "HTML, CSS, JavaScript",
 		description:
@@ -50,7 +80,26 @@ const projects = [
 	},
 	{
 		id: 4,
-		img: ["imgurl", "", ""],
+		img: [loadingSpinner1, loadingSpinner2],
+		name: "Loading Spinner",
+		technology: "HTML, CSS",
+		description:
+			"Good looking Loading Spinner built with CSS. This component can be used on various sites that require loading.",
+		githubLink: "https://github.com/max-marschhauser/Loading-Spinner",
+		codepenLink: "www.link.com",
+	},
+	{
+		id: 5,
+		img: [multistepForm1, multistepForm2, multistepForm3],
+		name: "Multistep Form",
+		technology: "HTML, CSS, JavaScript",
+		description: "Sample code for multistep form. Component intended to be used in other projects.",
+		githubLink: "https://github.com/max-marschhauser/Multistep-Form",
+		codepenLink: "www.link.com",
+	},
+	{
+		id: 6,
+		img: [pokemonApp1],
 		name: "Pokemon App",
 		technology: "HTML, CSS, Scss, JavaScript, React",
 		description:
@@ -59,8 +108,8 @@ const projects = [
 		codepenLink: "www.link.com",
 	},
 	{
-		id: 5,
-		img: [portfolioImage1, "", ""],
+		id: 7,
+		img: [portfolioPage1],
 		name: "Portfolio",
 		technology: "HTML, CSS, Sass, JavaScript, React",
 		description:
@@ -69,8 +118,8 @@ const projects = [
 		codepenLink: "www.link.com",
 	},
 	{
-		id: 6,
-		img: ["imgurl", "", ""],
+		id: 8,
+		img: [rockPaperScissors1, rockPaperScissors2],
 		name: "Rock-Paper-Scissors",
 		technology: "HTML, CSS, JavaScript",
 		description: "Rock-Paper-Scissors game built using JavaScript. Fairly simple game built for fun.",
@@ -78,8 +127,8 @@ const projects = [
 		codepenLink: "www.link.com",
 	},
 	{
-		id: 7,
-		img: ["imgurl", "", ""],
+		id: 9,
+		img: [toDo1],
 		name: "To-Do List",
 		technology: "HTML, JavaScript",
 		description: "To-Do list built using JavaScript and HTML. Very simple JS to-do list built for fun.",
@@ -87,8 +136,8 @@ const projects = [
 		codepenLink: "www.link.com",
 	},
 	{
-		id: 8,
-		img: ["imgurl", "", ""],
+		id: 10,
+		img: [yuGiOhCardSearch1, yuGiOhCardSearch2, yuGiOhCardSearch3, yuGiOhCardSearch4],
 		name: "Yu-Gi-Oh Card Search",
 		technology: "HTML, CSS, Sass, JavaScript, React",
 		description:
