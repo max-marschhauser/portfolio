@@ -16,12 +16,11 @@ export default function ProjectsListItems(props) {
 		<div className="projectsList">
 			{List.map((item) => {
 				if (
-					(searchWord === "" && activeSkill === "" && activeKeyword === "") ||
-					(item.technology.toUpperCase().includes(activeSkill.toUpperCase()) &&
-						item.description.toUpperCase().includes(activeKeyword.toUpperCase()) &&
-						(item.name.toUpperCase().includes(searchWord.toUpperCase()) ||
-							item.technology.toUpperCase().includes(searchWord.toUpperCase()) ||
-							item.description.toUpperCase().includes(searchWord.toUpperCase())))
+					item.technology.toUpperCase().includes(activeSkill.toUpperCase()) &&
+					item.description.toUpperCase().includes(activeKeyword.toUpperCase()) &&
+					(item.name.toUpperCase().includes(searchWord.toUpperCase()) ||
+						item.technology.toUpperCase().includes(searchWord.toUpperCase()) ||
+						item.description.toUpperCase().includes(searchWord.toUpperCase()))
 				) {
 					return (
 						<article className="projectsList__item" key={item.id}>
