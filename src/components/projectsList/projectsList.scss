@@ -21,25 +21,59 @@
 		}
 
 		&--info {
+			padding-block: 1rem;
 			flex-grow: 1;
 
 			ul {
 				list-style: none;
 
 				li {
-					padding: 0.5rem 2rem;
+					padding: 0.65rem 2rem;
 
 					h3 {
 						font-size: 1.5rem;
 					}
+
+					p {
+						line-height: 1.5rem;
+					}
+				}
+
+				.projectsList__item--links {
+					a {
+						padding: 0.35rem 1rem;
+						margin-left: 2rem;
+						border-radius: 100vmax;
+
+						opacity: 0.8;
+						background-color: var(--color-darkgray);
+						outline: 0.1rem solid var(--color-darkgray);
+
+						font-size: 1.5rem;
+						text-decoration: none;
+						color: var(--color-white);
+
+						&:hover,
+						&:focus-visible {
+							opacity: 0.9;
+							outline: 0.1rem solid var(--color-white);
+						}
+
+						&:active {
+							opacity: 1;
+							outline: 0.1rem solid var(--color-white);
+						}
+
+						ion-icon {
+							transform: translateY(0.2rem);
+						}
+
+						span {
+							font-size: 1.2rem;
+						}
+					}
 				}
 			}
-		}
-
-		a {
-			padding-inline: 0.5rem;
-
-			font-size: 1.5rem;
 		}
 	}
 }

@@ -31,14 +31,20 @@ export default function ProjectsListItems(props) {
 									<li>
 										<h3>{item.name}</h3>
 									</li>
-									<li>{item.technology}</li>
-									<li>{item.description}</li>
 									<li>
-										<a href={item.githubLink}>
+										<p>{item.technology}</p>
+									</li>
+									<li>
+										<p>{item.description}</p>
+									</li>
+									<li className="projectsList__item--links">
+										<a href={item.githubLink} target="_blank" rel="noreferrer">
 											<ion-icon name="logo-github"></ion-icon>
+											<span> GitHub</span>
 										</a>
-										<a href={item.codepenLink}>
+										<a href={item.codepenLink} target="_blank" rel="noreferrer">
 											<ion-icon name="logo-codepen"></ion-icon>
+											<span> CodePen</span>
 										</a>
 									</li>
 								</ul>
