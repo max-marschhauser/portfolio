@@ -1,12 +1,16 @@
 // document contains data which is shown on the Projects page
 
 // importing images
-import portfolioImage from "../assets/images/projects/portfolio.png";
+import portfolioImage1 from "../assets/images/projects/Portfolio-Page/portfolio1.png";
+
+import caviaImage1 from "../assets/images/projects/CAVIA-Tattoo-Studio/cavia1.png";
+import caviaImage2 from "../assets/images/projects/CAVIA-Tattoo-Studio/cavia2.png";
+import caviaImage3 from "../assets/images/projects/CAVIA-Tattoo-Studio/cavia3.png";
 
 const projects = [
 	{
 		id: 0,
-		img: "imgurl",
+		img: [caviaImage1, caviaImage2, caviaImage3],
 		name: "CAVIA Tattoo Studio",
 		technology: "HTML, CSS, JavaScript",
 		description:
@@ -16,7 +20,7 @@ const projects = [
 	},
 	{
 		id: 1,
-		img: "imgurl",
+		img: ["imgurl", "", ""],
 		name: "Digital Store",
 		technology: "HTML, CSS, Sass, JavaScript",
 		description:
@@ -26,7 +30,7 @@ const projects = [
 	},
 	{
 		id: 2,
-		img: "imgurl",
+		img: ["imgurl", "", ""],
 		name: "Loading Spinner",
 		technology: "HTML, CSS",
 		description: "Good looking Loading Spinner built with CSS. Can be used on various sites that require loading.",
@@ -35,7 +39,7 @@ const projects = [
 	},
 	{
 		id: 3,
-		img: "imgurl",
+		img: ["imgurl", "", ""],
 		name: "Guinea Pig Doctor",
 		technology: "HTML, CSS, JavaScript",
 		description:
@@ -45,7 +49,7 @@ const projects = [
 	},
 	{
 		id: 4,
-		img: "imgurl",
+		img: ["imgurl", "", ""],
 		name: "Pokemon App",
 		technology: "HTML, CSS, Scss, JavaScript, React",
 		description:
@@ -55,7 +59,7 @@ const projects = [
 	},
 	{
 		id: 5,
-		img: portfolioImage,
+		img: [portfolioImage1, "", ""],
 		name: "Portfolio",
 		technology: "HTML, CSS, Sass, JavaScript, React",
 		description:
@@ -65,7 +69,7 @@ const projects = [
 	},
 	{
 		id: 6,
-		img: "imgurl",
+		img: ["imgurl", "", ""],
 		name: "Rock-Paper-Scissors",
 		technology: "HTML, CSS, JavaScript",
 		description: "Rock-Paper-Scissors game built using JavaScript. Fairly simple game built for fun.",
@@ -74,7 +78,7 @@ const projects = [
 	},
 	{
 		id: 7,
-		img: "imgurl",
+		img: ["imgurl", "", ""],
 		name: "To-Do List",
 		technology: "HTML, JavaScript",
 		description: "To-Do list built using JavaScript and HTML. Very simple JS to-do list built for fun.",
@@ -83,7 +87,7 @@ const projects = [
 	},
 	{
 		id: 8,
-		img: "imgurl",
+		img: ["imgurl", "", ""],
 		name: "Yu-Gi-Oh Card Search",
 		technology: "HTML, CSS, Sass, JavaScript, React",
 		description:

@@ -1,7 +1,7 @@
 // component for Projects page
 
 // importing general items
-import React from "react";
+import React, { useState } from "react";
 
 // importing data
 import List from "../../data/projectsPageList.js";
@@ -11,6 +11,12 @@ import "./projectsList.scss";
 
 export default function ProjectsListItems(props) {
 	const { searchWord, activeSkill, activeKeyword } = props;
+
+	let [imageNumber, setImageNumber] = useState(0);
+
+	function handleImageNumberChange(number) {
+		setImageNumber(number.target.innerHTML - 1);
+	}
 
 	return (
 		<div className="projectsList">
@@ -25,7 +31,12 @@ export default function ProjectsListItems(props) {
 					return (
 						<article className="projectsList__item" key={item.id}>
 							<div className="projectsList__item--imageContainer">
-								<img src={item.img} alt={item.name} />
+								<img src={item.img[imageNumber]} alt={item.name} />
+								<div className="projectsList__item--imageContainer--imageButtons">
+									<button onClick={handleImageNumberChange}>1</button>
+									<button onClick={handleImageNumberChange}>2</button>
+									<button onClick={handleImageNumberChange}>3</button>
+								</div>
 							</div>
 
 							<div className="projectsList__item--info">
