@@ -33,7 +33,8 @@ const projects = [
 		img: ["imgurl", "", ""],
 		name: "Loading Spinner",
 		technology: "HTML, CSS",
-		description: "Good looking Loading Spinner built with CSS. Can be used on various sites that require loading.",
+		description:
+			"Good looking Loading Spinner built with CSS. This component can be used on various sites that require loading.",
 		githubLink: "https://github.com/max-marschhauser/Loading-Spinner",
 		codepenLink: "www.link.com",
 	},
