@@ -1,5 +1,8 @@
 // document contains data which is shown on the Projects page
 
+// importing images
+import portfolioImage from "../assets/images/projects/portfolio.png";
+
 const projects = [
 	{
 		id: 0,
@@ -52,7 +55,7 @@ const projects = [
 	},
 	{
 		id: 5,
-		img: "imgurl",
+		img: portfolioImage,
 		name: "Portfolio",
 		technology: "HTML, CSS, Sass, JavaScript, React",
 		description:

@@ -24,7 +24,10 @@ export default function ProjectsListItems(props) {
 				) {
 					return (
 						<article className="projectsList__item" key={item.id}>
-							<img src={item.img} alt={item.name} />
+							<div className="projectsList__item--imageContainer">
+								<img src={item.img} alt={item.name} />
+							</div>
+
 							<div className="projectsList__item--info">
 								<ul>
 									<li>

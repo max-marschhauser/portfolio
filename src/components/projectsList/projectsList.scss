@@ -7,17 +7,21 @@
 		margin-block: 1rem;
 
 		display: grid;
-		grid-template-columns: 1fr 85%;
+		grid-template-columns: 1fr 70%;
 
 		border-radius: 2rem;
 
 		background-color: var(--color-black-transparent);
 
-		img {
-			padding-left: 1rem;
+		&--imageContainer {
+			display: grid;
+			place-items: center;
 
-			flex-basis: 10rem;
-			aspect-ratio: 1 / 1;
+			img {
+				outline: 0.1rem solid var(--color-lightgray);
+
+				width: 90%;
+			}
 		}
 
 		&--info {
