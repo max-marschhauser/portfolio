@@ -14,6 +14,8 @@
 		background-color: var(--color-black-transparent);
 
 		&--imageContainer {
+			padding-left: 1rem;
+
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -21,9 +23,11 @@
 			gap: 1rem;
 
 			img {
-				outline: 0.1rem solid var(--color-lightgray);
+				width: 100%;
 
-				width: 90%;
+				display: block;
+
+				outline: 0.1rem solid var(--color-lightgray);
 			}
 		}
 
