@@ -37,23 +37,23 @@ export default function SkillsPage() {
 					<div className="leftPart">
 						<h3>Everyday use</h3>
 						<div className="left-grid">
-							<img src={HTML} alt="HTML" onMouseEnter={handleMouseOver} />
-							<img src={CSS} alt="CSS" onMouseEnter={handleMouseOver} />
-							<img src={Sass} alt="Sass" onMouseEnter={handleMouseOver} />
-							<img src={JavaScript} alt="JavaScript" onMouseEnter={handleMouseOver} />
-							<img src={TypeScript} alt="TypeScript" onMouseEnter={handleMouseOver} />
-							<img src={ReactImage} alt="React" onMouseEnter={handleMouseOver} />
+							<img loading="lazy" src={HTML} alt="HTML" onMouseEnter={handleMouseOver} />
+							<img loading="lazy" src={CSS} alt="CSS" onMouseEnter={handleMouseOver} />
+							<img loading="lazy" src={Sass} alt="Sass" onMouseEnter={handleMouseOver} />
+							<img loading="lazy" src={JavaScript} alt="JavaScript" onMouseEnter={handleMouseOver} />
+							<img loading="lazy" src={TypeScript} alt="TypeScript" onMouseEnter={handleMouseOver} />
+							<img loading="lazy" src={ReactImage} alt="React" onMouseEnter={handleMouseOver} />
 						</div>
 					</div>
 					<div className="rightPart">
 						<div className="rightUpperPart">
 							<h3>Familiar with</h3>
 							<div className="right-grid">
-								<img src={PHP} alt="PHP" onMouseEnter={handleMouseOver} />
-								<img src={MongoDB} alt="MongoDB" onMouseEnter={handleMouseOver} />
-								<img src={MySQL} alt="MySQL" onMouseEnter={handleMouseOver} />
-								<img src={NodeJS} alt="NodeJS" onMouseEnter={handleMouseOver} />
-								<img src={C} alt="C" onMouseEnter={handleMouseOver} />
+								<img loading="lazy" src={PHP} alt="PHP" onMouseEnter={handleMouseOver} />
+								<img loading="lazy" src={MongoDB} alt="MongoDB" onMouseEnter={handleMouseOver} />
+								<img loading="lazy" src={MySQL} alt="MySQL" onMouseEnter={handleMouseOver} />
+								<img loading="lazy" src={NodeJS} alt="NodeJS" onMouseEnter={handleMouseOver} />
+								<img loading="lazy" src={C} alt="C" onMouseEnter={handleMouseOver} />
 							</div>
 						</div>
 						<div className="rightLowerPart">

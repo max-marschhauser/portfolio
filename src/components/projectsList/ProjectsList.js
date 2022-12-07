@@ -26,7 +26,7 @@ export default function ProjectsListItems(props) {
 						<article className="projectsList__item" key={item.id}>
 							<div className="projectsList__item--imageContainer">
 								<button>
-									<img src={item.img[0]} alt={item.name} />
+									<img src={item.img[0]} alt={item.name} loading="lazy" />
 								</button>
 							</div>
 
