@@ -1,14 +1,21 @@
 .filter {
 	margin: 2rem 0;
-	padding: 1.5rem 2rem;
+	padding: 2rem;
 	border-radius: 2rem;
 
 	background-color: var(--color-black-transparent);
+
+	&--container {
+		position: sticky;
+		top: 5rem;
+	}
 
 	h3 {
 		text-align: center;
 		font-size: 2.25rem;
 		font-weight: bold;
+
+		user-select: none;
 	}
 
 	form {
@@ -22,6 +29,8 @@
 			text-align: center;
 			font-size: 1.75rem;
 			font-weight: bold;
+
+			user-select: none;
 		}
 
 		input[type="search"] {
@@ -55,6 +64,8 @@
 					outline: 0.1rem solid var(--color-darkgray);
 
 					transition: all 0.25s ease;
+
+					cursor: pointer;
 
 					&:hover,
 					&:focus-visible {

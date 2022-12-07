@@ -36,7 +36,7 @@ export default function ProjectsListItems(props) {
 										<h3>{item.name}</h3>
 									</li>
 									<li>
-										<h4>Used:</h4>
+										<h4>Technology:</h4>
 										<p>{item.technology}</p>
 									</li>
 									<li>
