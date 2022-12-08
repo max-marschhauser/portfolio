@@ -16,6 +16,10 @@ import gradientHoverCard2 from "../assets/images/projects/Gradient-Hover-Card/gr
 import guineaPigDoctor1 from "../assets/images/projects/Guinea-Pig-Doctor/guinea-pig-doctor1.png";
 import guineaPigDoctor2 from "../assets/images/projects/Guinea-Pig-Doctor/guinea-pig-doctor2.png";
 
+import lightdarkTheme1 from "../assets/images/projects/Light-Dark-Theme/light-dark-theme1.png";
+import lightdarkTheme2 from "../assets/images/projects/Light-Dark-Theme/light-dark-theme2.png";
+import lightdarkTheme3 from "../assets/images/projects/Light-Dark-Theme/light-dark-theme3.png";
+
 import loadingSpinner1 from "../assets/images/projects/Loading-Spinner/loading-spinner1.png";
 import loadingSpinner2 from "../assets/images/projects/Loading-Spinner/loading-spinner2.png";
 
@@ -44,7 +48,7 @@ const projects = [
 		name: "CAVIA Tattoo Studio",
 		technology: "HTML, CSS, JavaScript",
 		description:
-			"Brochure page for local Tattoo Studio built using HTML, CSS and JavaScript. First real project in a long time, used as warm up for future projects. Page shows information about local Tattoo business, shows authors previous works and other things related to tattooing.",
+			"Responsive brochure page for local Tattoo Studio built using HTML, CSS and JavaScript. First bigger project in a long time, used as warm up for future projects. Page shows information about local Tattoo business, shows authors previous works and other things related to tattooing.",
 		githubLink: "https://github.com/max-marschhauser/CAVIA-Tattoo-Studio",
 		codepenLink: "www.link.com",
 	},
@@ -54,18 +58,18 @@ const projects = [
 		name: "Digital Store",
 		technology: "HTML, CSS, Sass, JavaScript",
 		description:
-			"Digital store built using JavaScript, HTML and SCSS. Data is stored in an object file and imported when needed. User can filter or sort displayed items and add items to the cart.",
+			"Digital store built using JavaScript, HTML and SCSS. Responsive eCommerce Single-page app. Also can be used as a brochure page for business. Data is stored in an object file and imported when needed. User can filter or sort displayed items and add items to the cart.",
 		githubLink: "https://github.com/max-marschhauser/Digital-Store",
 		codepenLink: "www.link.com",
 	},
 	{
 		id: 2,
 		img: [gradientHoverCard1, gradientHoverCard2],
-		name: "Loading Spinner",
-		technology: "HTML, CSS",
+		name: "Gradient Hover Card",
+		technology: "HTML, CSS, JavaScript",
 		description:
-			"Good looking Loading Spinner built with CSS. This component can be used on various sites that require loading.",
-		githubLink: "https://github.com/max-marschhauser/Loading-Spinner",
+			"Cool looking gradient hover card built using plain JS, CSS and HTML. Component intended to be used in other projects.",
+		githubLink: "https://github.com/max-marschhauser/gradient-hover-card",
 		codepenLink: "www.link.com",
 	},
 	{
@@ -74,12 +78,22 @@ const projects = [
 		name: "Guinea Pig Doctor",
 		technology: "HTML, CSS, JavaScript",
 		description:
-			"Brochure page for local veterinarian specialized in guine pig treatment built with HTML, CSS and JS. Fairly simple page built for fun.",
+			"Responsive brochure page for local veterinarian specialized in guinea pig treatment built with HTML, CSS and JS. Fairly simple page built for fun.",
 		githubLink: "https://github.com/max-marschhauser/Guinea-Pig-Doctor",
 		codepenLink: "www.link.com",
 	},
 	{
 		id: 4,
+		img: [lightdarkTheme1, lightdarkTheme2, lightdarkTheme3],
+		name: "Light-dark Theme",
+		technology: "HTML, CSS, React",
+		description:
+			"Sample component for light-dark theme button which can be used on various pages. Built using React and CSS. Component intended to be used in other projects.",
+		githubLink: "https://github.com/max-marschhauser/light-dark-theme",
+		codepenLink: "www.link.com",
+	},
+	{
+		id: 5,
 		img: [loadingSpinner1, loadingSpinner2],
 		name: "Loading Spinner",
 		technology: "HTML, CSS",
@@ -89,7 +103,7 @@ const projects = [
 		codepenLink: "www.link.com",
 	},
 	{
-		id: 5,
+		id: 6,
 		img: [multistepForm1, multistepForm2, multistepForm3],
 		name: "Multistep Form",
 		technology: "HTML, CSS, JavaScript",
@@ -98,36 +112,36 @@ const projects = [
 		codepenLink: "www.link.com",
 	},
 	{
-		id: 6,
+		id: 7,
 		img: [pokemonApp1],
 		name: "Pokemon App",
 		technology: "HTML, CSS, Scss, JavaScript, React",
 		description:
-			"Pokemon game using React and SCSS. Uses object database to display information about items. Game generates random Pokemon name using two data files (one is array of objects which contains names and informations about pokemons, and the another is object which contains links to pokemon images). User gets one randomly generated pokemon name and four randomly generated pokemon images. User has to click on the right pokemon image. Game tracks users score and combo. Added Pokemon theme song. Game currently supports Pokemon from the first generation (first 151 Pokemon)",
+			"Pokemon game built using React and SCSS. Uses data stored in objects to display information about items. Single-page app. Game generates random Pokemon name using two data files (one is array of objects which contains names and informations about pokemons, and the another is object which contains links to pokemon images). User gets one randomly generated pokemon name and four randomly generated pokemon images. User has to click on the right pokemon image. Game tracks users score and combo. Added Pokemon theme song as a background music. Game currently supports Pokemon from the first generation (first 151 Pokemon).",
 		githubLink: "https://github.com/max-marschhauser/pokemon-app",
 		codepenLink: "www.link.com",
 	},
 	{
-		id: 7,
+		id: 8,
 		img: [portfolioPage1],
 		name: "Portfolio",
 		technology: "HTML, CSS, Sass, JavaScript, React",
 		description:
-			"Portfolio page which displays my web development skills, my up-to-date work, and functions as my CV. Built using React.",
+			"Portfolio page which displays my web development skills, my completed projects, and functions as my CV page. Responsive Single-page app. Uses data stored in objects to display information on the page. Built using React and SCSS.",
 		githubLink: "https://github.com/max-marschhauser/portfolio",
 		codepenLink: "www.link.com",
 	},
 	{
-		id: 8,
+		id: 9,
 		img: [rockPaperScissors1, rockPaperScissors2],
 		name: "Rock-Paper-Scissors",
 		technology: "HTML, CSS, JavaScript",
-		description: "Rock-Paper-Scissors game built using JavaScript. Fairly simple game built for fun.",
+		description: "Rock-Paper-Scissors responsive game built using JavaScript. Fairly simple game built for fun.",
 		githubLink: "https://github.com/max-marschhauser/Rock-Paper-Scissors",
 		codepenLink: "www.link.com",
 	},
 	{
-		id: 9,
+		id: 10,
 		img: [toDo1],
 		name: "To-Do List",
 		technology: "HTML, JavaScript",
@@ -136,12 +150,12 @@ const projects = [
 		codepenLink: "www.link.com",
 	},
 	{
-		id: 10,
+		id: 11,
 		img: [yuGiOhCardSearch1, yuGiOhCardSearch2, yuGiOhCardSearch3, yuGiOhCardSearch4],
 		name: "Yu-Gi-Oh Card Search",
 		technology: "HTML, CSS, Sass, JavaScript, React",
 		description:
-			"Single Page App using React and SCSS. Uses external API to display information about items. Uses LocalStorage to store items in the cart. Users can filter and sort through Yu-Gi-Oh cards that are available in Yu-Gi-Oh database API (https://ygoprodeck.com/api-guide/). Currently this page only displays cards released till 1. january 2008., plan is to add later cards in the future. Users can add their favorite cards in cart and purchase them. LocalStorage ensures that cards will remain in the cart when user returns to the page.",
+			"Responsive Single-page App eCommerce page built using React and SCSS. Uses external API to fetch and display data about items. Uses LocalStorage to store items in the cart. Page can be used as a brochure page. Users can filter and sort through Yu-Gi-Oh cards that are available in Yu-Gi-Oh database API (https://ygoprodeck.com/api-guide/). Currently this page only displays cards released till 1. january 2008., plan is to add later cards in the future. Users can add their favorite cards in cart and purchase them. LocalStorage ensures that cards will remain in the cart when user returns to the page.",
 		githubLink: "https://github.com/max-marschhauser/yugioh-card-search",
 		codepenLink: "www.link.com",
 	},

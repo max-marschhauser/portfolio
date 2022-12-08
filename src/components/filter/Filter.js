@@ -66,21 +66,6 @@ export default function Filter(props) {
 							<li>
 								<input
 									type="radio"
-									id={`${id}-Sass`}
-									name="skill"
-									value="Sass"
-									onClick={(e) => skillChanger(e.target.value)}
-								/>
-								<label
-									className={activeSkill === "Sass" ? "activeFilterInput" : ""}
-									htmlFor={`${id}-Sass`}>
-									Sass
-								</label>
-							</li>
-
-							<li>
-								<input
-									type="radio"
 									id={`${id}-JavaScript`}
 									name="skill"
 									value="JavaScript"
@@ -90,6 +75,21 @@ export default function Filter(props) {
 									className={activeSkill === "JavaScript" ? "activeFilterInput" : ""}
 									htmlFor={`${id}-JavaScript`}>
 									JavaScript
+								</label>
+							</li>
+
+							<li>
+								<input
+									type="radio"
+									id={`${id}-Sass`}
+									name="skill"
+									value="Sass"
+									onClick={(e) => skillChanger(e.target.value)}
+								/>
+								<label
+									className={activeSkill === "Sass" ? "activeFilterInput" : ""}
+									htmlFor={`${id}-Sass`}>
+									Sass
 								</label>
 							</li>
 
@@ -132,6 +132,21 @@ export default function Filter(props) {
 							<li>
 								<input
 									type="radio"
+									id={`${id}-Single-page App`}
+									name="keyword"
+									value="Single-page App"
+									onClick={(e) => keywordChanger(e.target.value)}
+								/>
+								<label
+									className={activeKeyword === "Single-page App" ? "activeFilterInput" : ""}
+									htmlFor={`${id}-Single-page App`}>
+									Single-page App
+								</label>
+							</li>
+
+							<li>
+								<input
+									type="radio"
 									id={`${id}-API`}
 									name="keyword"
 									value="API"
@@ -147,15 +162,45 @@ export default function Filter(props) {
 							<li>
 								<input
 									type="radio"
-									id={`${id}-Big Data`}
+									id={`${id}-Data`}
 									name="keyword"
-									value="Big Data"
+									value="Data"
 									onClick={(e) => keywordChanger(e.target.value)}
 								/>
 								<label
-									className={activeKeyword === "Big Data" ? "activeFilterInput" : ""}
-									htmlFor={`${id}-Big Data`}>
-									Big Data
+									className={activeKeyword === "Data" ? "activeFilterInput" : ""}
+									htmlFor={`${id}-Data`}>
+									Data
+								</label>
+							</li>
+
+							<li>
+								<input
+									type="radio"
+									id={`${id}-Brochure`}
+									name="keyword"
+									value="Brochure"
+									onClick={(e) => keywordChanger(e.target.value)}
+								/>
+								<label
+									className={activeKeyword === "Brochure" ? "activeFilterInput" : ""}
+									htmlFor={`${id}-Brochure`}>
+									Brochure
+								</label>
+							</li>
+
+							<li>
+								<input
+									type="radio"
+									id={`${id}-eCommerce`}
+									name="keyword"
+									value="eCommerce"
+									onClick={(e) => keywordChanger(e.target.value)}
+								/>
+								<label
+									className={activeKeyword === "eCommerce" ? "activeFilterInput" : ""}
+									htmlFor={`${id}-eCommerce`}>
+									eCommerce
 								</label>
 							</li>
 

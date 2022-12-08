@@ -1,5 +1,5 @@
 .projectsList {
-	padding: 2rem 1rem;
+	padding: 1rem 0.5rem;
 
 	display: block;
 
@@ -9,7 +9,7 @@
 		display: grid;
 		grid-template-columns: 1fr 70%;
 
-		border-radius: 2rem;
+		border-radius: 1rem;
 
 		background-color: var(--color-black-transparent);
 
@@ -45,6 +45,7 @@
 
 					h3 {
 						font-size: 1.5rem;
+						letter-spacing: 0.075rem;
 					}
 
 					p {
