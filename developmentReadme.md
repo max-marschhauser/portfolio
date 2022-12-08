@@ -8,7 +8,7 @@ accessibility, responsivness, speed, dry, kiss, other cool words, design
 
 dodati freeCodeCamp cetrifikat za JS, možda i neke ostale cetrifikate
 
--   provjeriti pravopis na data za skills stranicu
+-   provjeriti pravopis na data za skills, projects i about stranice
 
 *   Favicon prefers light mode, prefers dark mode
 *   Media querry orientation portrait landscape
