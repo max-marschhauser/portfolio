@@ -42,3 +42,7 @@ if (person != null) {
 document.getElementById("demo").innerHTML =
 "Hello " + person + "! How are you today?";
 }
+
+CSS
+appearance: none;
+pointer-events: none;
