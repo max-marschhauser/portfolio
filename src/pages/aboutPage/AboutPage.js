@@ -18,13 +18,33 @@ export default function AboutPage() {
 				<div className="aboutPage__container">
 					<div className="aboutPage--contents">
 						<h3>Related to programming</h3>
-						<p>
-							My programing experiences Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-							nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-						</p>
+						<p>First started programming age 14 in high school. First programming language was C...</p>
 
 						<div className="aboutPage--contents--figures">
+							<figure>
+								<h4>School - Basics</h4>
+								<a href="link" target="_blank" rel="noreferrer">
+									<img src="" alt="" />
+								</a>
+								<figcaption></figcaption>
+							</figure>
+
+							<figure>
+								<h4>Self Taught - Advanced</h4>
+								<a
+									href="https://www.freecodecamp.org/certification/fcc1fd16a03-be4d-47cc-a798-42c2fbc37651/javascript-algorithms-and-data-structures"
+									target="_blank"
+									rel="noreferrer">
+									<img src={JavaScriptCertificate} alt="JavaScript Certificate" />
+								</a>
+								<figcaption>
+									Althought I learned beginner things in school, some advenced things I learned on my
+									own. For instance, JavaScript was one of my first self tought programming languages.
+									I used array of internet sources, including mdm, w3schools, stackOverflow... Image
+									above shows my javaScript Certificate from freeCodeCamp.
+								</figcaption>
+							</figure>
+
 							<figure>
 								<h4>GitHub Contributions</h4>
 								<a href="https://github.com/max-marschhauser" target="_blank" rel="noreferrer">
@@ -38,18 +58,12 @@ export default function AboutPage() {
 							</figure>
 
 							<figure>
-								<h4>Self Taught</h4>
-								<a
-									href="https://www.freecodecamp.org/certification/fcc1fd16a03-be4d-47cc-a798-42c2fbc37651/javascript-algorithms-and-data-structures"
-									target="_blank"
-									rel="noreferrer">
-									<img src={JavaScriptCertificate} alt="JavaScript Certificate" />
+								<h4>Miscellaneous</h4>
+								<a href="link" target="_blank" rel="noreferrer">
+									<img src="" alt="" />
 								</a>
 								<figcaption>
-									Althought I learned beginner things in school, some advenced things I learned on my
-									own. For instance, JavaScript was one of my first self tought programming languages.
-									I used array of internet sources, including mdm, w3schools, stackOverflow... Image
-									above shows my javaScript Certificate from freeCodeCamp.
+									Faks 2 kolegija o web designu, Informatics teacher for 2 years, projects for friends
 								</figcaption>
 							</figure>
 						</div>
