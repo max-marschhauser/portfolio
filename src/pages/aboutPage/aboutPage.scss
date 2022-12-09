@@ -1,0 +1,46 @@
+.aboutPage {
+	min-height: 100vh;
+
+	&__container {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+	}
+
+	.aboutPage--contents {
+		padding-block: 2rem;
+
+		h3 {
+			text-align: center;
+			font-size: 1.5rem;
+		}
+
+		&--figures {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+
+			figure {
+				padding: 2rem;
+
+				> * {
+					width: 20rem;
+					padding-bottom: 1rem;
+				}
+
+				h4 {
+					text-align: center;
+					font-size: 1.5rem;
+				}
+
+				figcaption {
+					line-height: 1.5rem;
+				}
+
+				a > img {
+					width: 20rem;
+
+					padding-bottom: 1rem;
+				}
+			}
+		}
+	}
+}
