@@ -43,7 +43,7 @@ import yuGiOhCardSearch4 from "../assets/images/projects/Yu-Gi-Oh-Card-Search/yu
 
 const projects = [
 	{
-		id: 0,
+		id: 1,
 		img: [caviaTattooStudio1, caviaTattooStudio2, caviaTattooStudio3],
 		name: "CAVIA Tattoo Studio",
 		technology: "HTML, CSS, JavaScript",
@@ -53,7 +53,7 @@ const projects = [
 		codepenLink: "www.link.com",
 	},
 	{
-		id: 1,
+		id: 2,
 		img: [digitalStore1, digitalStore2, digitalStore3],
 		name: "Digital Store",
 		technology: "HTML, CSS, Sass, JavaScript",
@@ -63,7 +63,7 @@ const projects = [
 		codepenLink: "www.link.com",
 	},
 	{
-		id: 2,
+		id: 3,
 		img: [gradientHoverCard1, gradientHoverCard2],
 		name: "Gradient Hover Card",
 		technology: "HTML, CSS, JavaScript",
@@ -73,7 +73,7 @@ const projects = [
 		codepenLink: "www.link.com",
 	},
 	{
-		id: 3,
+		id: 4,
 		img: [guineaPigDoctor1, guineaPigDoctor2],
 		name: "Guinea Pig Doctor",
 		technology: "HTML, CSS, JavaScript",
@@ -83,7 +83,7 @@ const projects = [
 		codepenLink: "www.link.com",
 	},
 	{
-		id: 4,
+		id: 5,
 		img: [lightdarkTheme1, lightdarkTheme2, lightdarkTheme3],
 		name: "Light-dark Theme",
 		technology: "HTML, CSS, React",
@@ -93,7 +93,7 @@ const projects = [
 		codepenLink: "www.link.com",
 	},
 	{
-		id: 5,
+		id: 6,
 		img: [loadingSpinner1, loadingSpinner2],
 		name: "Loading Spinner",
 		technology: "HTML, CSS",
@@ -103,7 +103,7 @@ const projects = [
 		codepenLink: "www.link.com",
 	},
 	{
-		id: 6,
+		id: 7,
 		img: [multistepForm1, multistepForm2, multistepForm3],
 		name: "Multistep Form",
 		technology: "HTML, CSS, JavaScript",
@@ -112,7 +112,7 @@ const projects = [
 		codepenLink: "www.link.com",
 	},
 	{
-		id: 7,
+		id: 8,
 		img: [pokemonApp1],
 		name: "Pokemon App",
 		technology: "HTML, CSS, Sass, JavaScript, React",
@@ -122,7 +122,7 @@ const projects = [
 		codepenLink: "www.link.com",
 	},
 	{
-		id: 8,
+		id: 9,
 		img: [portfolioPage1],
 		name: "Portfolio",
 		technology: "HTML, CSS, Sass, JavaScript, React",
@@ -132,7 +132,7 @@ const projects = [
 		codepenLink: "www.link.com",
 	},
 	{
-		id: 9,
+		id: 10,
 		img: [rockPaperScissors1, rockPaperScissors2],
 		name: "Rock-Paper-Scissors",
 		technology: "HTML, CSS, JavaScript",
@@ -141,7 +141,7 @@ const projects = [
 		codepenLink: "www.link.com",
 	},
 	{
-		id: 10,
+		id: 11,
 		img: [toDo1],
 		name: "To-Do List",
 		technology: "HTML, JavaScript",
@@ -150,7 +150,7 @@ const projects = [
 		codepenLink: "www.link.com",
 	},
 	{
-		id: 11,
+		id: 12,
 		img: [yuGiOhCardSearch1, yuGiOhCardSearch2, yuGiOhCardSearch3, yuGiOhCardSearch4],
 		name: "Yu-Gi-Oh Card Search",
 		technology: "HTML, CSS, Sass, JavaScript, React",
