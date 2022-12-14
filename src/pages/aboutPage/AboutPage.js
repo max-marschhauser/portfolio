@@ -18,15 +18,26 @@ export default function AboutPage() {
 				<div className="aboutPage__container">
 					<div className="aboutPage--contents">
 						<h3>Related to programming</h3>
-						<p>First started programming age 14 in high school. First programming language was C...</p>
+						<p>
+							First started programming age 14 in high school. First programming language was C... First
+							started programming age 14 in high school. First programming language was C... First started
+							programming age 14 in high school. First programming language was C... First started
+							programming age 14 in high school. First programming language was C... First started
+							programming age 14 in high school. First programming language was C...
+						</p>
 
 						<div className="aboutPage--contents--figures">
 							<figure>
 								<h4>School - Basics</h4>
-								<a href="link" target="_blank" rel="noreferrer">
-									<img src="" alt="" />
-								</a>
-								<figcaption></figcaption>
+
+								<figcaption>
+									<ul>
+										<li>Started learning programming in school in 2009. at the age of 14.</li>
+										<li>My first programming language was C which I used for 4 years.</li>
+										<li>Next year I started learning web desing (HTML and CSS)</li>
+										<li>In 2012. started using PHP and MySql.</li>
+									</ul>
+								</figcaption>
 							</figure>
 
 							<figure>
@@ -46,6 +57,16 @@ export default function AboutPage() {
 							</figure>
 
 							<figure>
+								<h4>Miscellaneous things about me related to programming</h4>
+								<figcaption>
+									<ul>
+										<li>At university I attended 2 courses on modern web design.</li>
+										<li>Was a computer science teacher for 2 years.</li>
+									</ul>
+								</figcaption>
+							</figure>
+
+							<figure>
 								<h4>GitHub Contributions</h4>
 								<a href="https://github.com/max-marschhauser" target="_blank" rel="noreferrer">
 									<img src={github} alt="github activities" />
@@ -56,20 +77,51 @@ export default function AboutPage() {
 									programming. Every day I try to create something new, to implement some new code.
 								</figcaption>
 							</figure>
-
-							<figure>
-								<h4>Miscellaneous</h4>
-								<a href="link" target="_blank" rel="noreferrer">
-									<img src="" alt="" />
-								</a>
-								<figcaption>
-									Faks 2 kolegija o web designu, Informatics teacher for 2 years, projects for friends
-								</figcaption>
-							</figure>
 						</div>
 					</div>
 					<div className="aboutPage--contents">
 						<h3>Unrelated to programming</h3>
+						<div className="aboutPage--contents--figures--right">
+							<figure>
+								<h4>History and Pedagogy</h4>
+								<figcaption>
+									<ul>
+										<li>diplomirao povijest i pedagogiju</li>
+										<li>4 godine radio kao pedagog u osnovnoj školi</li>
+									</ul>
+								</figcaption>
+							</figure>
+
+							<figure>
+								<h4>My Personality</h4>
+								<figcaption>
+									<ul>
+										<li>odgovoran</li>
+										<li>dobro radim u timu i individualno</li>
+									</ul>
+								</figcaption>
+							</figure>
+
+							<figure>
+								<h4>Languages</h4>
+								<figcaption>
+									<ul>
+										<li>engleski C</li>
+										<li>njemački B</li>
+										<li>mađarski B</li>
+									</ul>
+								</figcaption>
+							</figure>
+
+							<figure>
+								<h4>Razno</h4>
+								<figcaption>
+									<ul>
+										<li>vozačka B kategorije</li>
+									</ul>
+								</figcaption>
+							</figure>
+						</div>
 					</div>
 				</div>
 			</section>
