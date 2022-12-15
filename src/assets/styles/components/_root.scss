@@ -41,16 +41,16 @@ body {
 
 ::-webkit-scrollbar {
 	width: 0.75rem;
-}
 
-::-webkit-scrollbar-track {
-	background: var(--color-white);
-}
+	&-track {
+		background: var(--color-white);
+	}
 
-::-webkit-scrollbar-thumb {
-	background: var(--color-gray);
+	&-thumb {
+		background: var(--color-gray);
 
-	&:hover {
-		background: var(--color-darkgray);
+		&:hover {
+			background: var(--color-darkgray);
+		}
 	}
 }

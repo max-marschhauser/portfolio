@@ -71,6 +71,13 @@
 
 						padding-bottom: 1rem;
 					}
+
+					transition: all 0.25s ease;
+
+					&:hover,
+					&:focus-visible {
+						opacity: 0.9;
+					}
 				}
 			}
 		}

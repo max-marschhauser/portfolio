@@ -67,6 +67,8 @@
 						text-decoration: none;
 						color: var(--color-white);
 
+						transition: all 0.25s ease;
+
 						&:hover,
 						&:focus-visible {
 							opacity: 0.9;
