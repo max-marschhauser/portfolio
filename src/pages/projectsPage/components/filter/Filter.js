@@ -11,11 +11,15 @@ export default function Filter(props) {
 
 	const id = useId();
 
+	const handleSubmit = (event) => {
+		event.preventDefault();
+	};
+
 	return (
 		<section className="filter">
 			<div className="filter--container">
 				<h3>Filter projects</h3>
-				<form>
+				<form onSubmit={handleSubmit}>
 					<fieldset>
 						<legend>
 							<label htmlFor={`${id}-search`}>search</label>
