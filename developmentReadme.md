@@ -34,3 +34,5 @@ document.getElementById("demo").innerHTML =
 CSS
 appearance: none;
 pointer-events: none;
+
+.nekaKlasa:empty{display:none}; --> npr. ako neki element nema sadržaj (innerHTML) neće ga se displayati
