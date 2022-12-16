@@ -46,6 +46,7 @@ const projects = [
 		id: 1,
 		img: [caviaTattooStudio1, caviaTattooStudio2, caviaTattooStudio3],
 		name: "CAVIA Tattoo Studio",
+		date: "",
 		technology: "HTML, CSS, JavaScript",
 		description:
 			"Responsive brochure page for local Tattoo Studio built using HTML, CSS and JavaScript. First bigger project in a long time, used as warm up for future projects. Page shows information about local Tattoo business, shows authors previous works and other things related to tattooing.",
@@ -56,6 +57,7 @@ const projects = [
 		id: 2,
 		img: [digitalStore1, digitalStore2, digitalStore3],
 		name: "Digital Store",
+		date: "",
 		technology: "HTML, CSS, Sass, JavaScript",
 		description:
 			"Digital store built using JavaScript, HTML and SCSS. Responsive eCommerce Single-page app. Also can be used as a brochure page for business. Data is stored in an object file and imported when needed. User can filter or sort displayed items and add items to the cart.",
@@ -66,6 +68,7 @@ const projects = [
 		id: 3,
 		img: [gradientHoverCard1, gradientHoverCard2],
 		name: "Gradient Hover Card",
+		date: "",
 		technology: "HTML, CSS, JavaScript",
 		description:
 			"Cool looking gradient hover card built using plain JS, CSS and HTML. Component intended to be used in other projects.",
@@ -76,6 +79,7 @@ const projects = [
 		id: 4,
 		img: [guineaPigDoctor1, guineaPigDoctor2],
 		name: "Guinea Pig Doctor",
+		date: "",
 		technology: "HTML, CSS, JavaScript",
 		description:
 			"Responsive brochure page for local veterinarian specialized in guinea pig treatment built with HTML, CSS and JS. Fairly simple page built for fun.",
@@ -86,6 +90,7 @@ const projects = [
 		id: 5,
 		img: [lightdarkTheme1, lightdarkTheme2, lightdarkTheme3],
 		name: "Light-dark Theme",
+		date: "",
 		technology: "HTML, CSS, React",
 		description:
 			"Sample component for light-dark theme button which can be used on various pages. Built using React and CSS. Component intended to be used in other projects.",
@@ -96,6 +101,7 @@ const projects = [
 		id: 6,
 		img: [loadingSpinner1, loadingSpinner2],
 		name: "Loading Spinner",
+		date: "",
 		technology: "HTML, CSS",
 		description:
 			"Good looking Loading Spinner built with CSS. This component can be used on various sites that require loading.",
@@ -106,6 +112,7 @@ const projects = [
 		id: 7,
 		img: [multistepForm1, multistepForm2, multistepForm3],
 		name: "Multistep Form",
+		date: "",
 		technology: "HTML, CSS, JavaScript",
 		description: "Sample code for multistep form. Component intended to be used in other projects.",
 		githubLink: "https://github.com/max-marschhauser/Multistep-Form",
@@ -115,6 +122,7 @@ const projects = [
 		id: 8,
 		img: [pokemonApp1],
 		name: "Pokemon App",
+		date: "",
 		technology: "HTML, CSS, Sass, JavaScript, React",
 		description:
 			"Pokemon game built using React and SCSS. Uses data stored in objects to display information about items. Single-page app. Game generates random Pokemon name using two data files (one is array of objects which contains names and informations about pokemons, and the another is object which contains links to pokemon images). User gets one randomly generated pokemon name and four randomly generated pokemon images. User has to click on the right pokemon image. Game tracks users score and combo. Added Pokemon theme song as a background music. Game currently supports Pokemon from the first generation (first 151 Pokemon).",
@@ -125,6 +133,7 @@ const projects = [
 		id: 9,
 		img: [portfolioPage1],
 		name: "Portfolio",
+		date: "",
 		technology: "HTML, CSS, Sass, JavaScript, React",
 		description:
 			"Portfolio page which displays my web development skills, my completed projects, and functions as my CV page. Responsive Single-page app. Uses data stored in objects to display information on the page. Built using React and SCSS.",
@@ -135,6 +144,7 @@ const projects = [
 		id: 10,
 		img: [rockPaperScissors1, rockPaperScissors2],
 		name: "Rock-Paper-Scissors",
+		date: "",
 		technology: "HTML, CSS, JavaScript",
 		description: "Rock-Paper-Scissors responsive game built using JavaScript. Fairly simple game built for fun.",
 		githubLink: "https://github.com/max-marschhauser/Rock-Paper-Scissors",
@@ -144,6 +154,7 @@ const projects = [
 		id: 11,
 		img: [toDo1],
 		name: "To-Do List",
+		date: "",
 		technology: "HTML, JavaScript",
 		description: "To-Do list built using JavaScript and HTML. Very simple JS to-do list built for fun.",
 		githubLink: "https://github.com/max-marschhauser/ToDo-List",
@@ -153,6 +164,7 @@ const projects = [
 		id: 12,
 		img: [yuGiOhCardSearch1, yuGiOhCardSearch2, yuGiOhCardSearch3, yuGiOhCardSearch4],
 		name: "Yu-Gi-Oh Card Search",
+		date: "",
 		technology: "HTML, CSS, Sass, JavaScript, React",
 		description:
 			"Responsive Single-page App eCommerce page built using React and SCSS. Uses external API to fetch and display data about items. Uses LocalStorage to store items in the cart. Page can be used as a brochure page. Users can filter and sort through Yu-Gi-Oh cards that are available in Yu-Gi-Oh database API (https://ygoprodeck.com/api-guide/). Currently this page only displays cards released till 1. january 2008., plan is to add later cards in the future. Users can add their favorite cards in cart and purchase them. LocalStorage ensures that cards will remain in the cart when user returns to the page.",
