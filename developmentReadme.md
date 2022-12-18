@@ -1,6 +1,8 @@
 add key words to skills:
 accessibility, speed, dry, kiss, other cool words, design
 
+-   about page napraviti da dijelovi budu jedan ispod drugoga (related to pragramming & unrelated to programming)
+
 -   provjeriti pravopis na data za skills, projects i about stranice
 
 *   Favicon prefers light mode, prefers dark mode
