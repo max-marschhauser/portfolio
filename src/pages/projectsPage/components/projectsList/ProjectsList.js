@@ -40,6 +40,10 @@ export default function ProjectsListItems(props) {
 										<p>{item.technology}</p>
 									</li>
 									<li>
+										<h4>Date:</h4>
+										<p>{item.date}</p>
+									</li>
+									<li>
 										<h4>Description:</h4>
 										<p>{item.description}</p>
 									</li>
