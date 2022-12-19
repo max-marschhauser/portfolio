@@ -4,7 +4,7 @@
 import React from "react";
 
 // importing data
-import List from "../../data/projectsPageList.js";
+import List from "../../../../data/projectsPageList.js";
 
 // importing styles
 import "./projectsList.scss";

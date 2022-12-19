@@ -7,7 +7,7 @@ import React, { useState } from "react";
 import "./projectsPage.scss";
 
 //import components
-import ProjectsList from "../../components/projectsList/ProjectsList.js";
+import ProjectsList from "./components/projectsList/ProjectsList.js";
 import Filter from "./components/filter/Filter.js";
 
 export default function ProjectsPage() {
