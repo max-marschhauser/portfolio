@@ -4,6 +4,9 @@ import React from "react";
 // importing data
 // import aboutData from "../../../../data/aboutPageText.js";
 
+// importing styles
+import "../../aboutPage.scss";
+
 export default function RelatedToProgramming() {
 	return (
 		<article>

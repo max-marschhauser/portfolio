@@ -17,11 +17,11 @@
 			line-height: 1.5rem;
 		}
 
-		&--figures {
+		&--articles {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
 
-			section {
+			article {
 				width: 90%;
 				margin: 1rem auto;
 				padding: 2rem;
