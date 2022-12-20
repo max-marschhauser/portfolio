@@ -10,8 +10,6 @@ import aboutData from "../../data/aboutPageText.js";
 import "./aboutPage.scss";
 
 export default function AboutPage() {
-	console.log(aboutData);
-
 	return (
 		<div className="main">
 			<section className="aboutPage">
