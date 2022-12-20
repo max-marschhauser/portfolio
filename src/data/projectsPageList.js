@@ -41,7 +41,7 @@ import yuGiOhCardSearch2 from "../assets/images/projects/Yu-Gi-Oh-Card-Search/yu
 import yuGiOhCardSearch3 from "../assets/images/projects/Yu-Gi-Oh-Card-Search/yu-gi-oh-card-search3.png";
 import yuGiOhCardSearch4 from "../assets/images/projects/Yu-Gi-Oh-Card-Search/yu-gi-oh-card-search4.png";
 
-const projects = [
+const projectsData = [
 	{
 		id: 1,
 		img: [caviaTattooStudio1, caviaTattooStudio2, caviaTattooStudio3],
@@ -161,4 +161,4 @@ const projects = [
 	},
 ];
 
-export default projects;
+export default projectsData;

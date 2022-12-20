@@ -1,6 +1,6 @@
 // document contains data which is shown on the Skills page
 
-let skills = {
+const skillsData = {
 	HTML: [
 		"Started using it in 2010.",
 		"Feel very comfortable with it.",
@@ -52,4 +52,4 @@ let skills = {
 	],
 };
 
-export default skills;
+export default skillsData;

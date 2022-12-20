@@ -21,7 +21,7 @@
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
 
-			figure {
+			section {
 				width: 90%;
 				margin: 1rem auto;
 				padding: 2rem;
@@ -39,15 +39,13 @@
 					font-size: 1.5rem;
 				}
 
-				figcaption {
+				ul {
+					list-style: circle;
+
 					line-height: 1.5rem;
 
-					ul {
-						list-style: circle;
-
-						li {
-							padding-block: 0.5rem;
-						}
+					li {
+						padding-block: 0.5rem;
 					}
 				}
 

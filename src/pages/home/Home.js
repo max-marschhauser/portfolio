@@ -34,6 +34,7 @@ export default function Home() {
 			<Projects />
 			<section className="blankSection"></section>
 			<About />
+			<section className="blankSection"></section>
 		</div>
 	);
 }
