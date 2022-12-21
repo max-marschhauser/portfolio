@@ -35,6 +35,8 @@
 				}
 
 				h4 {
+					padding-bottom: 2rem;
+
 					text-align: center;
 					font-size: 1.5rem;
 				}
@@ -46,6 +48,7 @@
 
 					li {
 						padding-block: 0.5rem;
+						font-size: 1.2rem;
 					}
 				}
 
@@ -58,8 +61,7 @@
 
 					img {
 						width: 20rem;
-
-						padding-bottom: 1rem;
+						max-height: 15rem;
 					}
 
 					transition: all 0.25s ease;
