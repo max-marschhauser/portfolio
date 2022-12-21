@@ -10,20 +10,30 @@ import aboutData from "../../../data/aboutPageText.js";
 import "../aboutPage.scss";
 
 export default function AboutComponent(props) {
-	const { relatedToProgramming } = props;
+	let { relatedToProgramming } = props;
 
-	console.log(relatedToProgramming, aboutData);
+	return aboutData.map((item) => {
+		if (relatedToProgramming === item.relatedToProgramming) {
+			return (
+				<article key={item.title}>
+					<h4>{item.title}</h4>
+					{item.imgSrc !== undefined ? (
+						<a href={item.link} target="_blank" rel="noreferrer">
+							<img src={item.imgSrc} alt={item.imgSrc} />
+						</a>
+					) : (
+						<></>
+					)}
 
-	return (
-		<article>
-			<h4>School - Basics</h4>
-			<a href="#home" target="_blank" rel="noreferrer">
-				<img src={""} alt="" />
-			</a>
-			<ul>
-				<li></li>
-				<li></li>
-			</ul>
-		</article>
-	);
+					<ul>
+						{item.content.map((contentLine) => {
+							return <li key={contentLine}>{contentLine}</li>;
+						})}
+					</ul>
+				</article>
+			);
+		} else {
+			return null;
+		}
+	});
 }

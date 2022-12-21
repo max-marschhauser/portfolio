@@ -10,6 +10,7 @@ const aboutData = [
 		relatedToProgramming: true,
 		title: "School - Basics",
 		imgSrc: undefined,
+		link: "",
 		content: [
 			"First started programming age 14 in high school. First programming language was C... First started programming age 14 in high school. First programming language",
 			"Started learning programming in school in 2009. at the age of 14.",
@@ -22,6 +23,7 @@ const aboutData = [
 		relatedToProgramming: true,
 		title: "Self Taught - Advanced",
 		imgSrc: javascriptCertificateSrc,
+		link: "",
 		content: [
 			"Althought I learned beginner things in school, some advenced things I learned on my own. For instance, JavaScript was one of my first self tought programming languages. I used array of internet sources, including mdm, w3schools, stackOverflow... Image above shows my javaScript Certificate from freeCodeCamp.",
 		],
@@ -30,6 +32,7 @@ const aboutData = [
 		relatedToProgramming: true,
 		title: "Miscellaneous things about me related to programming",
 		imgSrc: undefined,
+		link: "",
 		content: [
 			"At university I attended 2 courses on modern web design.",
 			"Was a computer science teacher for 2 years.",
@@ -39,6 +42,7 @@ const aboutData = [
 		relatedToProgramming: true,
 		title: "GitHub Contributions",
 		imgSrc: githubSrc,
+		link: "",
 		content: [
 			"Only recently did I start using Git to store my code so it may look like I am new to programming. GitHub contributions from the images above show my motivation for programming. Every day I try to create something new, to implement some new code.",
 		],
@@ -47,6 +51,7 @@ const aboutData = [
 		relatedToProgramming: false,
 		title: "Education",
 		imgSrc: undefined,
+		link: "",
 		content: [
 			"3. gim OS",
 			"diplomirao povijest i pedagogiju",
@@ -57,6 +62,7 @@ const aboutData = [
 		relatedToProgramming: false,
 		title: "My Personality",
 		imgSrc: undefined,
+		link: "",
 		content: [
 			"responsibility",
 			"dobro radim u timu i individualno",
@@ -69,12 +75,14 @@ const aboutData = [
 		relatedToProgramming: false,
 		title: "Languages",
 		imgSrc: undefined,
+		link: "",
 		content: ["engleski C", "njemački B", "mađarski B"],
 	},
 	{
 		relatedToProgramming: false,
 		title: "Razno",
 		imgSrc: undefined,
+		link: "",
 		content: ["vozačka B kategorije"],
 	},
 ];
