@@ -7,8 +7,7 @@ import React from "react";
 import "./aboutPage.scss";
 
 // importing components
-import RelatedToProgramming from "./components/relatedToProgramming/RelatedToProgramming.js";
-import UnrelatedToProgramming from "./components/unrelatedToProgramming/UnrelatedToProgramming.js";
+import AboutComponent from "./components/AboutComponent.js";
 
 export default function AboutPage() {
 	return (
@@ -20,13 +19,13 @@ export default function AboutPage() {
 					<h3>Related to programming</h3>
 
 					<div className="aboutPage--contents--articles">
-						<RelatedToProgramming />
+						<AboutComponent relatedToProgramming={true} />
 					</div>
 				</div>
 				<div className="aboutPage--contents">
 					<h3>Unrelated to programming</h3>
 					<div className="aboutPage--contents--articles">
-						<UnrelatedToProgramming />
+						<AboutComponent relatedToProgramming={false} />
 					</div>
 				</div>
 			</section>

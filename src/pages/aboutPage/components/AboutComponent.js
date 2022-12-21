@@ -1,13 +1,19 @@
+// component for About page
+
 // improting general items
 import React from "react";
 
 // importing data
-// import aboutData from "../../../../data/aboutPageText.js";
+import aboutData from "../../../data/aboutPageText.js";
 
 // importing styles
-import "../../aboutPage.scss";
+import "../aboutPage.scss";
 
-export default function RelatedToProgramming() {
+export default function AboutComponent(props) {
+	const { relatedToProgramming } = props;
+
+	console.log(relatedToProgramming, aboutData);
+
 	return (
 		<article>
 			<h4>School - Basics</h4>
