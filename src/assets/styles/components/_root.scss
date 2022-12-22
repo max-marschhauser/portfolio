@@ -1,5 +1,6 @@
 // root scss file, styles :root, *, body and scrollbar
 
+// importing Sass mixins
 @use "../abstracts" as abs;
 
 :root {

@@ -1,4 +1,11 @@
+// importing Sass mixins
+@use "../../assets/styles/abstracts" as abs;
+
 .skillsPage {
+	display: none;
+	@include abs.mq(500px, 0px) {
+	}
+
 	height: 100vh;
 
 	.skillsPage__container {

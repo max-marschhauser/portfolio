@@ -1,4 +1,11 @@
+// importing Sass mixins
+@use "../../assets/styles/abstracts" as abs;
+
 .noPage--container {
+	display: none;
+	@include abs.mq(500px, 0px) {
+	}
+
 	display: flex;
 	align-items: center;
 	justify-content: center;

@@ -1,4 +1,11 @@
+// importing Sass mixins
+@use "../../assets/styles/abstracts" as abs;
+
 .aboutPage {
+	display: none;
+	@include abs.mq(500px, 0px) {
+	}
+
 	min-height: 100vh;
 
 	&--contents {

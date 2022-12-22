@@ -1,11 +1,18 @@
 // contains main styles which are used in more different files
 
+// importing Sass mixins
+@use "../abstracts" as abs;
+
 .main {
 	color: var(--color-white);
 }
 
 .blankSection {
-	height: 12rem;
+	height: 6rem;
+
+	@include abs.mq(0px, 800px) {
+		height: 12rem;
+	}
 }
 
 .pageHeading {

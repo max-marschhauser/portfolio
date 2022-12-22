@@ -1,3 +1,6 @@
+// importing Sass mixins
+@use "../../../../assets/styles/abstracts" as abs;
+
 .projectsList {
 	padding: 1rem 0.5rem;
 

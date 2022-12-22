@@ -1,5 +1,12 @@
+// importing Sass mixins
+@use "../../assets/styles/abstracts" as abs;
+
 .projectsPage {
 	min-height: 100vh;
+
+	display: none;
+	@include abs.mq(500px, 0px) {
+	}
 
 	&__container {
 		display: grid;
