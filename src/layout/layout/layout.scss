@@ -2,33 +2,35 @@
 @use "../../assets/styles/abstracts" as abs;
 
 .pageContainer {
-	@include abs.mq(700px, 0px) {
+	min-height: auto;
+	display: grid;
+	grid-template-columns: 1fr;
+
+	@include abs.mq(700px, 550px) {
 		min-height: 100vh;
 
-		background-image: url(../../assets/images/space-bg.jpg);
-		background-position: center;
-		background-attachment: fixed;
-		background-repeat: no-repeat;
-		background-size: cover;
-
-		display: grid;
 		grid-template-columns: 1fr 8fr;
 	}
 
+	background-image: url(../../assets/images/space-bg.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+
 	.aside {
-		height: 10vh;
-		width: 100vw;
+		height: auto;
+		width: auto;
 		top: 0;
 		left: 0;
-		position: sticky;
+		position: relative;
 
 		display: flex;
 		flex-direction: row;
 
-		@include abs.mq(700px, 0px) {
+		@include abs.mq(700px, 550px) {
+			position: sticky;
 			height: 100vh;
-			width: auto;
-
 			flex-direction: column;
 		}
 
@@ -37,11 +39,7 @@
 
 		.logo {
 			position: relative;
-			top: 0rem;
-
-			@include abs.mq(0px, 600px) {
-				top: 2rem;
-			}
+			padding-top: 0rem;
 
 			display: flex;
 			flex-direction: column;
@@ -49,22 +47,60 @@
 			align-items: center;
 			gap: 0.25rem;
 
-			width: 100%;
-			padding-block: 2rem;
+			width: auto;
+			padding-block: 0.25rem;
+
+			@include abs.mq(0px, 300px) {
+				padding-block: 0.5rem;
+			}
+
+			@include abs.mq(700px, 550px) {
+				padding-block: 1rem;
+			}
+
+			@include abs.mq(2100px, 550px) {
+				padding-block: 2rem;
+			}
 
 			text-align: center;
 			color: var(--color-white);
 
 			span {
 				&:first-child {
-					font-size: 1.6rem;
+					font-size: 1.2rem;
+
+					@include abs.mq(700px, 550px) {
+						font-size: 1.6rem;
+					}
+
+					@include abs.mq(2100px, 550px) {
+						font-size: 2rem;
+					}
+
 					font-weight: bold;
 				}
 				&:nth-child(2) {
-					font-size: 1.2rem;
+					font-size: 0.9rem;
+
+					@include abs.mq(700px, 550px) {
+						font-size: 1.2rem;
+					}
+
+					@include abs.mq(2100px, 550px) {
+						font-size: 1.5rem;
+					}
 				}
 				&:last-child {
-					font-size: 1rem;
+					font-size: 0.75rem;
+
+					@include abs.mq(700px, 550px) {
+						font-size: 1rem;
+					}
+
+					@include abs.mq(2100px, 550px) {
+						font-size: 1.35rem;
+					}
+
 					font-style: italic;
 				}
 			}
@@ -72,39 +108,60 @@
 
 		nav {
 			position: relative;
-			top: 5vh;
+			padding-block: 0.5rem;
 
-			@include abs.mq(0px, 600px) {
-				top: 10vh;
-			}
-
-			@include abs.mq(0px, 800px) {
-				top: 25vh;
-			}
+			width: 100%;
 
 			display: grid;
 			place-items: center;
 
+			@include abs.mq(700px, 600px) {
+				padding-block: 5rem;
+			}
+
+			@include abs.mq(700px, 800px) {
+				padding-block: 10rem;
+			}
+
 			ul {
-				display: flex;
-				flex-direction: row;
-				justify-content: center;
-				align-items: center;
-				gap: 5rem;
+				width: auto;
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				place-items: center;
+
+				@include abs.mq(500px, 0px) {
+					grid-template-columns: repeat(4, 1fr);
+				}
+
+				gap: 1.5rem;
 
 				@include abs.mq(700px, 550px) {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
 					flex-direction: column;
+					gap: 5rem;
+				}
+
+				@include abs.mq(2100px, 550px) {
+					gap: 10rem;
 				}
 
 				list-style: none;
 
 				li {
 					.navbar__link {
+						padding: 0.25rem 0.5rem;
+
 						@include abs.mq(700px, 0px) {
 							padding: 0.5rem 1rem;
 						}
 						@include abs.mq(1400px, 0px) {
 							padding: 1rem 2rem;
+						}
+						@include abs.mq(2100px, 0px) {
+							padding: 2rem 4rem;
 						}
 
 						border-radius: 100vmax;
@@ -114,7 +171,15 @@
 
 						text-decoration: none;
 						color: var(--color-white);
-						font-size: 1.2rem;
+						font-size: 1rem;
+
+						@include abs.mq(700px, 550px) {
+							font-size: 1.2rem;
+						}
+
+						@include abs.mq(2100px, 550px) {
+							font-size: 1.6rem;
+						}
 
 						transition: all 0.35s ease;
 

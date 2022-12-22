@@ -24,6 +24,7 @@
 
 			@include abs.mq(1000px, 0px) {
 				grid-template-columns: repeat(2, 1fr);
+				gap: 0rem;
 			}
 
 			section {
@@ -39,9 +40,17 @@
 
 					color: var(--color-lightgray);
 
+					@include abs.mq(2100px, 0px) {
+						font-size: 1.75rem;
+					}
+
 					span {
 						font-size: 1rem;
 						font-weight: normal;
+
+						@include abs.mq(2100px, 0px) {
+							font-size: 1.25rem;
+						}
 					}
 				}
 
@@ -61,6 +70,10 @@
 							text-decoration: none;
 							color: var(--color-lightgray);
 							font-size: 1.8rem;
+
+							@include abs.mq(2100px, 0px) {
+								font-size: 2rem;
+							}
 
 							transition: all 0.25s ease;
 
@@ -84,6 +97,10 @@
 							font-size: 1.15rem;
 							text-decoration: none;
 							color: var(--color-lightgray);
+
+							@include abs.mq(2100px, 0px) {
+								font-size: 1.5rem;
+							}
 
 							transition: all 0.25s ease;
 
@@ -128,12 +145,20 @@
 			li {
 				color: var(--color-lightgray);
 
+				@include abs.mq(2100px, 0px) {
+					font-size: 1.5rem;
+				}
+
 				a {
 					color: var(--color-white);
 					text-decoration: none;
 					background-color: var(--color-gray);
 					padding: 1rem;
 					border-radius: 100vmax;
+
+					@include abs.mq(2100px, 0px) {
+						font-size: 1.75rem;
+					}
 
 					transition: all 0.25s ease;
 
