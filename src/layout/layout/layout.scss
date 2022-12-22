@@ -2,8 +2,7 @@
 @use "../../assets/styles/abstracts" as abs;
 
 .pageContainer {
-	display: none;
-	@include abs.mq(--width-small, 0px) {
+	@include abs.mq(700px, 0px) {
 		min-height: 100vh;
 
 		background-image: url(../../assets/images/space-bg.jpg);
@@ -17,17 +16,32 @@
 	}
 
 	.aside {
-		height: 100vh;
+		height: 10vh;
+		width: 100vw;
 		top: 0;
 		left: 0;
 		position: sticky;
+
+		display: flex;
+		flex-direction: row;
+
+		@include abs.mq(700px, 0px) {
+			height: 100vh;
+			width: auto;
+
+			flex-direction: column;
+		}
 
 		outline: 1px solid var(--color-black);
 		background-color: var(--color-black-transparent);
 
 		.logo {
 			position: relative;
-			top: 2rem;
+			top: 0rem;
+
+			@include abs.mq(0px, 600px) {
+				top: 2rem;
+			}
 
 			display: flex;
 			flex-direction: column;
@@ -58,23 +72,41 @@
 
 		nav {
 			position: relative;
-			top: 25vh;
+			top: 5vh;
+
+			@include abs.mq(0px, 600px) {
+				top: 10vh;
+			}
+
+			@include abs.mq(0px, 800px) {
+				top: 25vh;
+			}
 
 			display: grid;
 			place-items: center;
 
 			ul {
 				display: flex;
-				flex-direction: column;
+				flex-direction: row;
 				justify-content: center;
 				align-items: center;
 				gap: 5rem;
+
+				@include abs.mq(700px, 550px) {
+					flex-direction: column;
+				}
 
 				list-style: none;
 
 				li {
 					.navbar__link {
-						padding: 1rem 2rem;
+						@include abs.mq(700px, 0px) {
+							padding: 0.5rem 1rem;
+						}
+						@include abs.mq(1400px, 0px) {
+							padding: 1rem 2rem;
+						}
+
 						border-radius: 100vmax;
 						outline: 0.1rem solid var(--color-white);
 						outline-offset: 0.2rem;
