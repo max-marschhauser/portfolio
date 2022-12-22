@@ -1,3 +1,12 @@
+Media query breakpoints
+smallest mobile - default
+regular mobile - 350px
+tablet - 700px
+regular desktop: 1400px
+large desktop or tv - 2100px
+
+links to social (github, linkedIn and google) from footer do not lead andwhere
+
 add key words to skills:
 accessibility, speed, dry, kiss, other cool words, design
 

@@ -2,19 +2,16 @@
 @use "../../assets/styles/abstracts" as abs;
 
 .pageFooter {
-	display: none;
-	@include abs.mq(300px, 0px) {
-		padding-block: 4rem;
+	padding-block: 4rem;
 
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		gap: 3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
 
-		background-color: var(--color-black);
-		overflow-x: hidden;
-	}
+	background-color: var(--color-black);
+	overflow-x: hidden;
 
 	&__item {
 		&--upper {
@@ -64,6 +61,12 @@
 							text-decoration: none;
 							color: var(--color-lightgray);
 							font-size: 1.8rem;
+
+							transition: all 0.25s ease;
+
+							&:hover {
+								opacity: 0.8;
+							}
 						}
 					}
 				}
@@ -78,8 +81,15 @@
 						list-style: none;
 
 						a {
+							font-size: 1.15rem;
 							text-decoration: none;
 							color: var(--color-lightgray);
+
+							transition: all 0.25s ease;
+
+							&:hover {
+								opacity: 0.8;
+							}
 						}
 					}
 				}
@@ -125,8 +135,10 @@
 					padding: 1rem;
 					border-radius: 100vmax;
 
+					transition: all 0.25s ease;
+
 					&:hover {
-						opacity: 0.9;
+						opacity: 0.8;
 						box-shadow: 0rem 0rem 0.15rem 0rem var(--color-lightgray);
 					}
 				}
