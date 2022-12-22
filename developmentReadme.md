@@ -5,6 +5,8 @@ tablet - 700px
 regular desktop: 1400px
 large desktop or tv - 2100px
 
+MAIN BREAKPOINT - 700px, 550px
+
 links to social (github, linkedIn and google) from footer do not lead andwhere
 
 add key words to skills:
