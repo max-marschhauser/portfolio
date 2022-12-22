@@ -1,14 +1,20 @@
+// importing Sass mixins
+@use "../../assets/styles/abstracts" as abs;
+
 .pageContainer {
-	min-height: 100vh;
+	display: none;
+	@include abs.mq(500px, 0px) {
+		min-height: 100vh;
 
-	background-image: url(../../assets/images/space-bg.jpg);
-	background-position: center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
+		background-image: url(../../assets/images/space-bg.jpg);
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
 
-	display: grid;
-	grid-template-columns: 1fr 8fr;
+		display: grid;
+		grid-template-columns: 1fr 8fr;
+	}
 
 	.aside {
 		height: 100vh;
