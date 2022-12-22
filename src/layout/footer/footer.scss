@@ -3,7 +3,7 @@
 
 .pageFooter {
 	display: none;
-	@include abs.mq(500px, 0px) {
+	@include abs.mq(300px, 0px) {
 		padding-block: 4rem;
 
 		display: flex;

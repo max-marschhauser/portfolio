@@ -3,7 +3,7 @@
 
 .noPage--container {
 	display: none;
-	@include abs.mq(500px, 0px) {
+	@include abs.mq(--width-small, 0px) {
 	}
 
 	display: flex;
