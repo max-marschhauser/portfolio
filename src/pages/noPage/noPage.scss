@@ -2,9 +2,9 @@
 @use "../../assets/styles/abstracts" as abs;
 
 .noPage--container {
+	min-height: 100vh;
+
 	display: none;
-	@include abs.mq(--width-small, 0px) {
-	}
 
 	display: flex;
 	align-items: center;

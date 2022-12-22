@@ -2,10 +2,9 @@
 @use "../../assets/styles/abstracts" as abs;
 
 .homePage {
-	height: 100vh;
+	min-height: 100vh;
 
-	display: none;
-	@include abs.mq(--width-small, 0px) {
+	@include abs.mq(750px, 550px) {
 		display: flex;
 		flex-direction: column;
 		align-items: center;

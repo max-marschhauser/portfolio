@@ -5,8 +5,6 @@
 	min-height: 100vh;
 
 	display: none;
-	@include abs.mq(--width-small, 0px) {
-	}
 
 	&__container {
 		display: grid;

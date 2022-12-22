@@ -13,5 +13,7 @@ export default function NoPage() {
 		}, 5000);
 	});
 
-	return <div className="noPage--container">No such page found, redirecting back to home page in a few moments</div>;
+	return (
+		<div className="noPage--container">No such page found, redirecting back to home page in a few moments...</div>
+	);
 }

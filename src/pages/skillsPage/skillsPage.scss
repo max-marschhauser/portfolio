@@ -2,11 +2,9 @@
 @use "../../assets/styles/abstracts" as abs;
 
 .skillsPage {
-	display: none;
-	@include abs.mq(--width-small, 0px) {
-	}
+	min-height: 100vh;
 
-	height: 100vh;
+	display: none;
 
 	.skillsPage__container {
 		display: grid;
