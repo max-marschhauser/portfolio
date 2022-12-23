@@ -2,15 +2,20 @@
 @use "../../assets/styles/abstracts" as abs;
 
 .homePage {
-	min-height: 100vh;
+	min-height: 80vh;
+
+	@include abs.mq(700px, 550px) {
+		min-height: 100vh;
+	}
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 
 	gap: 2.5rem;
 
 	@include abs.mq(700px, 550px) {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
 		gap: 5rem;
 	}
 
@@ -80,22 +85,39 @@
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		gap: 2rem;
+		gap: 1rem;
 
-		word-spacing: 0.5rem;
-		font-size: 2.5rem;
+		word-spacing: 0.1rem;
+		text-align: center;
+		font-size: 1rem;
+
+		@include abs.mq(700px, 550px) {
+			gap: 2rem;
+
+			word-spacing: 0.5rem;
+			font-size: 2.5rem;
+		}
 
 		span {
 			&:first-child,
 			&:last-child {
-				font-size: 4rem;
+				font-size: 2rem;
+
+				@include abs.mq(700px, 550px) {
+					font-size: 4rem;
+				}
 			}
 		}
 	}
 
 	.reactImage {
-		width: 14rem;
-		height: 12rem;
+		width: 7rem;
+		height: 6rem;
+
+		@include abs.mq(700px, 550px) {
+			width: 14rem;
+			height: 12rem;
+		}
 
 		user-select: none;
 
