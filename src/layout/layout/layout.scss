@@ -7,8 +7,6 @@
 	grid-template-columns: 1fr;
 
 	@include abs.mq(700px, 550px) {
-		min-height: 100vh;
-
 		grid-template-columns: 1fr 8fr;
 	}
 

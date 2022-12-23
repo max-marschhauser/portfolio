@@ -2,11 +2,7 @@
 @use "../../assets/styles/abstracts" as abs;
 
 .homePage {
-	min-height: 80vh;
-
-	@include abs.mq(700px, 550px) {
-		min-height: 100vh;
-	}
+	min-height: 100vh;
 
 	display: flex;
 	flex-direction: column;
