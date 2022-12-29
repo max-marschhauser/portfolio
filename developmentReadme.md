@@ -32,5 +32,3 @@ backdrop-filter: blur(2px); --> blura samo pozadinu elementa, a tekst ostaje či
 CSS
 appearance: none;
 pointer-events: none;
-
-.nekaKlasa:empty{display:none}; --> npr. ako neki element nema sadržaj (innerHTML) neće ga se displayati
