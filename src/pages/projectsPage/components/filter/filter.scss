@@ -2,6 +2,12 @@
 @use "../../../../assets/styles/abstracts" as abs;
 
 .filter {
+	order: -1;
+
+	@include abs.mq(1400px, 550px) {
+		order: 0;
+	}
+
 	margin: 2rem 0;
 	padding: 2rem;
 	border-radius: 1rem;

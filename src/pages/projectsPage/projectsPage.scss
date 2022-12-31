@@ -4,10 +4,12 @@
 .projectsPage {
 	min-height: 100vh;
 
-	display: none;
-
 	&__container {
 		display: grid;
-		grid-template-columns: 2fr 1fr;
+		grid-template-columns: 1fr;
+
+		@include abs.mq(1400px, 550px) {
+			grid-template-columns: 2fr 1fr;
+		}
 	}
 }
