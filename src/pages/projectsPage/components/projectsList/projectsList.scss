@@ -2,9 +2,9 @@
 @use "../../../../assets/styles/abstracts" as abs;
 
 .projectsList {
-	padding: 1rem 0.5rem;
-
 	display: block;
+
+	padding: 1rem 0.5rem;
 
 	&__item {
 		margin-block: 1rem;

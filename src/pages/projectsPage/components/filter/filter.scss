@@ -8,9 +8,14 @@
 		order: 0;
 	}
 
-	margin: 2rem 0;
-	padding: 2rem;
+	margin: 1rem 0;
+	padding: 1rem;
 	border-radius: 1rem;
+
+	@include abs.mq(700px, 550px) {
+		margin: 2rem 0;
+		padding: 2rem;
+	}
 
 	background-color: var(--color-black-transparent);
 
@@ -21,8 +26,12 @@
 
 	h3 {
 		text-align: center;
-		font-size: 2.25rem;
 		font-weight: bold;
+		font-size: 1.25rem;
+
+		@include abs.mq(700px, 550px) {
+			font-size: 2.25rem;
+		}
 
 		user-select: none;
 	}
@@ -32,71 +41,95 @@
 		flex-direction: column;
 		gap: 1rem;
 
-		legend {
-			padding-block: 1rem;
+		//transform: scale(1, 0.1);
+		transform-origin: top;
 
-			text-align: center;
-			font-size: 1.75rem;
-			font-weight: bold;
-
-			user-select: none;
+		@include abs.mq(1400px, 550px) {
+			transform: scale(1, 1);
 		}
 
-		input[type="search"] {
-			width: 100%;
-			padding: 0.25rem;
+		fieldset {
+			display: flex;
+			flex-direction: column;
+			place-items: center;
 
-			font-size: 1.5rem;
-		}
+			legend {
+				padding-block: 0.75rem;
 
-		ul {
-			display: grid;
-			grid-template-columns: repeat(2, 1fr);
-			place-items: left;
-			row-gap: 1.5rem;
-
-			font-size: 1.25rem;
-			list-style: none;
-
-			li {
 				text-align: center;
+				font-weight: bold;
+				font-size: 1.5rem;
 
-				input {
-					display: none;
-				}
-				label {
-					padding: 0.5rem 1rem;
-					border-radius: 0.25rem;
+				@include abs.mq(700px, 550px) {
+					padding-block: 1rem;
 
-					opacity: 0.8;
-					background-color: var(--color-darkgray);
-					outline: 0.1rem solid var(--color-darkgray);
-
-					transition: all 0.25s ease;
-
-					cursor: pointer;
-
-					&:hover,
-					&:focus-visible {
-						opacity: 0.9;
-						outline: 0.1rem solid var(--color-white);
-					}
-
-					&:active {
-						opacity: 1;
-						outline: 0.1rem solid var(--color-white);
-					}
+					font-size: 1.75rem;
 				}
 
-				.activeFilterInput {
-					opacity: 1;
-					outline: 0.1rem solid var(--color-white);
+				user-select: none;
+			}
 
-					transition: all 0.25s ease;
+			input[type="search"] {
+				width: 80%;
+				padding: 0.25rem;
 
-					&:hover,
-					&:focus-visible {
+				text-align: center;
+				font-size: 1.5rem;
+			}
+
+			ul {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				place-items: left;
+				row-gap: 1.5rem;
+
+				font-size: 0.75rem;
+				list-style: none;
+
+				@include abs.mq(700px, 550px) {
+					font-size: 1.25rem;
+				}
+
+				li {
+					text-align: center;
+
+					input {
+						display: none;
+					}
+					label {
+						padding: 0.5rem 1rem;
+						border-radius: 0.25rem;
+
+						opacity: 0.8;
+						background-color: var(--color-darkgray);
+						outline: 0.1rem solid var(--color-darkgray);
+
+						transition: all 0.25s ease;
+
+						cursor: pointer;
+
+						&:hover,
+						&:focus-visible {
+							opacity: 0.9;
+							outline: 0.1rem solid var(--color-white);
+						}
+
+						&:active {
+							opacity: 1;
+							outline: 0.1rem solid var(--color-white);
+						}
+					}
+
+					.activeFilterInput {
 						opacity: 1;
+						outline: 0.1rem solid var(--color-white);
+
+						transition: all 0.25s ease;
+
+						&:hover,
+						&:focus-visible {
+							opacity: 1;
+						}
 					}
 				}
 			}
