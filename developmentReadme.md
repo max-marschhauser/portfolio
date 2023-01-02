@@ -1,3 +1,5 @@
+add css clamp, grid min-max i auto-fit da se poboljša responsivess
+
 need to fix scrollNavlinkToTop.js
 
 Media query breakpoints
