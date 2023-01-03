@@ -1,4 +1,4 @@
-add css clamp, grid min-max i auto-fit da se poboljša responsivess
+add css clamp, grid min-max, container query i auto-fit da se poboljša responsivess
 
 need to fix scrollNavlinkToTop.js
 
