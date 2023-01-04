@@ -30,17 +30,7 @@ const aboutData = [
 			`Also, finished some online courses such as freeCodeCamp.`,
 		],
 	},
-	{
-		relatedToProgramming: true,
-		title: "Git and GitHub Contributions",
-		imgSrc: githubSrc,
-		link: "https://github.com/max-marschhauser",
-		content: [
-			`Only recently did I start using Git and GitHub to store my code.`,
-			`GitHub contributions from the images above show my motivation for programming.`,
-			`Every day I try to create something new, to implement some new code.`,
-		],
-	},
+
 	{
 		relatedToProgramming: true,
 		title: "Miscellaneous Things Related to Programming",
@@ -54,7 +44,17 @@ const aboutData = [
 			`Also tought about other things related to computer science.`,
 		],
 	},
-
+	{
+		relatedToProgramming: true,
+		title: "Git and GitHub Contributions",
+		imgSrc: githubSrc,
+		link: "https://github.com/max-marschhauser",
+		content: [
+			`Only recently did I start using Git and GitHub to store my code.`,
+			`GitHub contributions from the images above show my motivation for programming.`,
+			`Every day I try to create something new, to implement some new code.`,
+		],
+	},
 	{
 		relatedToProgramming: false,
 		title: "Education",
