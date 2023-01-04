@@ -4,29 +4,35 @@
 .projectsList {
 	display: block;
 
-	padding: 1rem 0.5rem;
+	padding: 0rem 0rem;
+
+	@include abs.mq(700px, 550px) {
+		padding: 1rem 0.5rem;
+	}
 
 	&__item {
 		margin-block: 1rem;
 
 		display: grid;
-		grid-template-columns: 1fr 70%;
+
+		@include abs.mq(700px, 550px) {
+			grid-template-columns: 1fr 70%;
+		}
 
 		border-radius: 1rem;
 
 		background-color: var(--color-black-transparent);
 
 		&--imageContainer {
-			padding-left: 1rem;
-
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-			gap: 1rem;
+			display: grid;
+			place-items: center;
 
 			img {
-				width: 100%;
+				width: 90%;
+				max-width: 25rem;
+
+				margin: 0.5rem;
+				border-radius: 1rem;
 
 				display: block;
 
@@ -37,16 +43,20 @@
 		}
 
 		&--info {
-			padding-block: 1rem;
-			flex-grow: 1;
+			padding-bottom: 0.5rem;
 
 			ul {
 				list-style: none;
 
 				li {
-					padding: 0.65rem 2rem;
+					padding: 0.5rem 0.5rem;
+
+					@include abs.mq(700px, 550px) {
+						padding: 0.5rem 2rem;
+					}
 
 					h3 {
+						text-align: center;
 						font-size: 1.5rem;
 						letter-spacing: 0.075rem;
 					}
@@ -58,8 +68,14 @@
 
 				.projectsList__item--links {
 					a {
-						padding: 0.35rem 1rem;
-						margin-left: 2rem;
+						padding: 0.5rem 0.5rem;
+						margin-left: 0.5rem;
+
+						@include abs.mq(700px, 550px) {
+							padding: 0.5rem 1rem;
+							margin-left: 2rem;
+						}
+
 						border-radius: 100vmax;
 
 						opacity: 0.8;
