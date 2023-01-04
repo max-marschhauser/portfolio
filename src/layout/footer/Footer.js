@@ -23,17 +23,17 @@ export default function Footer() {
 					</h2>
 					<ul className="links--social">
 						<li>
-							<a href="/">
+							<a href="www.link.com">
 								<ion-icon name="logo-github"></ion-icon>
 							</a>
 						</li>
 						<li>
-							<a href="/">
+							<a href="www.link.com">
 								<ion-icon name="logo-linkedin"></ion-icon>
 							</a>
 						</li>
 						<li>
-							<a href="/">
+							<a href="www.link.com">
 								<ion-icon name="logo-google"></ion-icon>
 							</a>
 						</li>

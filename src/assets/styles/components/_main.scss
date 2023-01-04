@@ -8,7 +8,7 @@
 }
 
 .blankSection {
-	height: 6rem;
+	height: 3rem;
 
 	@include abs.mq(0px, 800px) {
 		height: 12rem;
