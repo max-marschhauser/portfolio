@@ -87,7 +87,13 @@
 				list-style: none;
 
 				@include abs.mq(700px, 550px) {
+					font-size: 1.15rem;
+					grid-template-columns: repeat(3, 1fr);
+				}
+
+				@include abs.mq(1400px, 550px) {
 					font-size: 1.25rem;
+					grid-template-columns: repeat(2, 1fr);
 				}
 
 				li {

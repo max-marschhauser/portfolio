@@ -36,3 +36,5 @@ backdrop-filter: blur(2px); --> blura samo pozadinu elementa, a tekst ostaje či
 CSS
 appearance: none;
 pointer-events: none;
+
+css selectors vidjeti što točno rade: is, where, has
