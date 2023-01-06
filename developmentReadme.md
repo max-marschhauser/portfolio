@@ -1,6 +1,11 @@
-add css clamp, grid min-max, container query i auto-fit da se poboljša responsivess
+to do:
 
-need to fix scrollNavlinkToTop.js
+-   add css clamp, grid min-max, container query i auto-fit da se poboljša responsivess
+-   need to fix scrollNavlinkToTop.js
+-   links to social (github, linkedIn and google) from footer do not lead andwhere
+-   projects from projects page, need to put good codeLink links
+-   add key words to skills (accessibility, speed, dry, kiss, other cool words, design)
+-   provjeriti pravopis na data fileovima
 
 Media query breakpoints
 smallest mobile - default
@@ -11,15 +16,8 @@ large desktop or tv - 2100px
 
 MAIN BREAKPOINT - 350px 550px, 700px, 550px, 1400px 550px, 2100px 550px
 
-links to social (github, linkedIn and google) from footer do not lead andwhere
-
-add key words to skills:
-accessibility, speed, dry, kiss, other cool words, design
-
--   provjeriti pravopis na data fileovima
-
-*   Favicon prefers light mode, prefers dark mode
-*   Media querry orientation portrait landscape
+-   Favicon prefers light mode, prefers dark mode
+-   Media querry orientation portrait landscape
 
 flex
 align-items:stretch;
