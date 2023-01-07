@@ -6,6 +6,7 @@ to do:
 -   projects from projects page, need to put good codeLink links
 -   add key words to skills (accessibility, speed, dry, kiss, other cool words, design)
 -   provjeriti pravopis na data fileovima
+-   srediti custom property boje, možda ih malo doraditi
 
 Media query breakpoints
 smallest mobile - default
