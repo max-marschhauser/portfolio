@@ -1,0 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	clip-path: polygon(1% 1%, 99% 10%, 95% 100%, 4% 85%);
+
+	padding: 5rem;
+
+	background-color: black;
+
+	color: greenyellow;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+}
