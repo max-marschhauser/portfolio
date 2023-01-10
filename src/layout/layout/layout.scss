@@ -10,11 +10,7 @@
 		grid-template-columns: 1fr 8fr;
 	}
 
-	background-image: url(../../assets/images/space-bg.jpg);
-	background-position: center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-color: var(--color-black);
 
 	.aside {
 		height: auto;
