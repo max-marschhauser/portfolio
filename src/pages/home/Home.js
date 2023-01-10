@@ -17,7 +17,7 @@ import manImage from "../../assets/images/manstanding.jpg";
 
 export default function Home() {
 	return (
-		<div className="main">
+		<>
 			<section className="homePage">
 				<div className="homePage--grid">
 					<img className="mobile-img" src={bearImage} alt="max-marschhauser-profile" />
@@ -37,6 +37,6 @@ export default function Home() {
 			<section className="blankSection"></section>
 			<About />
 			<section className="blankSection"></section>
-		</div>
+		</>
 	);
 }

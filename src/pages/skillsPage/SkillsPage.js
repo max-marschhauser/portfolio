@@ -30,44 +30,42 @@ export default function SkillsPage() {
 	}
 
 	return (
-		<div className="main">
-			<section className="skillsPage">
-				<h2 className="pageHeading">Skills</h2>
-				<div className="skillsPage__container">
-					<div className="leftPart">
-						<h3>Everyday use</h3>
-						<div className="left-grid">
-							<img loading="lazy" src={HTML} alt="HTML" onMouseEnter={handleMouseOver} />
-							<img loading="lazy" src={CSS} alt="CSS" onMouseEnter={handleMouseOver} />
-							<img loading="lazy" src={Sass} alt="Sass" onMouseEnter={handleMouseOver} />
-							<img loading="lazy" src={JavaScript} alt="JavaScript" onMouseEnter={handleMouseOver} />
-							<img loading="lazy" src={TypeScript} alt="TypeScript" onMouseEnter={handleMouseOver} />
-							<img loading="lazy" src={ReactImage} alt="React" onMouseEnter={handleMouseOver} />
-						</div>
-					</div>
-					<div className="rightPart">
-						<div className="rightUpperPart">
-							<h3>Familiar with</h3>
-							<div className="right-grid">
-								<img loading="lazy" src={PHP} alt="PHP" onMouseEnter={handleMouseOver} />
-								<img loading="lazy" src={MongoDB} alt="MongoDB" onMouseEnter={handleMouseOver} />
-								<img loading="lazy" src={MySQL} alt="MySQL" onMouseEnter={handleMouseOver} />
-								<img loading="lazy" src={NodeJS} alt="NodeJS" onMouseEnter={handleMouseOver} />
-								<img loading="lazy" src={C} alt="C" onMouseEnter={handleMouseOver} />
-							</div>
-						</div>
-						<div className="rightLowerPart">
-							<h4>My Experience with</h4>
-							<header>{currentLanguage}</header>
-							<ul>
-								{dataObject[currentLanguage].map((listItem) => (
-									<li key={listItem}>{listItem}</li>
-								))}
-							</ul>
-						</div>
+		<section className="skillsPage">
+			<h2 className="pageHeading">Skills</h2>
+			<div className="skillsPage__container">
+				<div className="leftPart">
+					<h3>Everyday use</h3>
+					<div className="left-grid">
+						<img loading="lazy" src={HTML} alt="HTML" onMouseEnter={handleMouseOver} />
+						<img loading="lazy" src={CSS} alt="CSS" onMouseEnter={handleMouseOver} />
+						<img loading="lazy" src={Sass} alt="Sass" onMouseEnter={handleMouseOver} />
+						<img loading="lazy" src={JavaScript} alt="JavaScript" onMouseEnter={handleMouseOver} />
+						<img loading="lazy" src={TypeScript} alt="TypeScript" onMouseEnter={handleMouseOver} />
+						<img loading="lazy" src={ReactImage} alt="React" onMouseEnter={handleMouseOver} />
 					</div>
 				</div>
-			</section>
-		</div>
+				<div className="rightPart">
+					<div className="rightUpperPart">
+						<h3>Familiar with</h3>
+						<div className="right-grid">
+							<img loading="lazy" src={PHP} alt="PHP" onMouseEnter={handleMouseOver} />
+							<img loading="lazy" src={MongoDB} alt="MongoDB" onMouseEnter={handleMouseOver} />
+							<img loading="lazy" src={MySQL} alt="MySQL" onMouseEnter={handleMouseOver} />
+							<img loading="lazy" src={NodeJS} alt="NodeJS" onMouseEnter={handleMouseOver} />
+							<img loading="lazy" src={C} alt="C" onMouseEnter={handleMouseOver} />
+						</div>
+					</div>
+					<div className="rightLowerPart">
+						<h4>My Experience with</h4>
+						<header>{currentLanguage}</header>
+						<ul>
+							{dataObject[currentLanguage].map((listItem) => (
+								<li key={listItem}>{listItem}</li>
+							))}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
 	);
 }

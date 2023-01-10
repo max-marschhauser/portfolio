@@ -11,24 +11,22 @@ import AboutComponent from "./components/AboutComponent.js";
 
 export default function AboutPage() {
 	return (
-		<div className="main">
-			<section className="aboutPage">
-				<h2 className="pageHeading">About</h2>
+		<section className="aboutPage">
+			<h2 className="pageHeading">About</h2>
 
-				<div className="aboutPage--contents">
-					<h3>Related to programming</h3>
+			<div className="aboutPage--contents">
+				<h3>Related to programming</h3>
 
-					<div className="aboutPage--contents--articles">
-						<AboutComponent relatedToProgramming={true} />
-					</div>
+				<div className="aboutPage--contents--articles">
+					<AboutComponent relatedToProgramming={true} />
 				</div>
-				<div className="aboutPage--contents">
-					<h3>Unrelated to programming</h3>
-					<div className="aboutPage--contents--articles">
-						<AboutComponent relatedToProgramming={false} />
-					</div>
+			</div>
+			<div className="aboutPage--contents">
+				<h3>Unrelated to programming</h3>
+				<div className="aboutPage--contents--articles">
+					<AboutComponent relatedToProgramming={false} />
 				</div>
-			</section>
-		</div>
+			</div>
+		</section>
 	);
 }

@@ -40,20 +40,18 @@ export default function ProjectsPage() {
 	}
 
 	return (
-		<div className="main">
-			<section className="projectsPage">
-				<h2 className="pageHeading">Projects</h2>
-				<div className="projectsPage__container">
-					<ProjectsList searchWord={searchWord} activeSkill={activeSkill} activeKeyword={activeKeyword} />
-					<Filter
-						searchChanger={HandleSearchWord}
-						skillChanger={HandleSkillChange}
-						keywordChanger={HandleKeywordChange}
-						activeSkill={activeSkill}
-						activeKeyword={activeKeyword}
-					/>
-				</div>
-			</section>
-		</div>
+		<section className="projectsPage">
+			<h2 className="pageHeading">Projects</h2>
+			<div className="projectsPage__container">
+				<ProjectsList searchWord={searchWord} activeSkill={activeSkill} activeKeyword={activeKeyword} />
+				<Filter
+					searchChanger={HandleSearchWord}
+					skillChanger={HandleSkillChange}
+					keywordChanger={HandleKeywordChange}
+					activeSkill={activeSkill}
+					activeKeyword={activeKeyword}
+				/>
+			</div>
+		</section>
 	);
 }

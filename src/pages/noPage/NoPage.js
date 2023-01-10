@@ -15,9 +15,9 @@ export default function NoPage() {
 	});
 
 	return (
-		<div className="noPage--container">
+		<section className="noPage--container">
 			<p>No such page found, redirecting back to home page in a few moments...</p>
 			<img className="reactImage" src={ReactImage} alt="react-logo" />
-		</div>
+		</section>
 	);
 }

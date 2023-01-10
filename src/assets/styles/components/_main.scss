@@ -3,10 +3,6 @@
 // importing Sass mixins
 @use "../abstracts" as abs;
 
-.main {
-	color: var(--color-white);
-}
-
 .blankSection {
 	height: 3rem;
 
