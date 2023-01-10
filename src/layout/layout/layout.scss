@@ -1,198 +1,128 @@
 // importing Sass mixins
 @use "../../assets/styles/abstracts" as abs;
 
-.pageContainer {
-	min-height: auto;
-	display: grid;
-	grid-template-columns: 1fr;
-
-	@include abs.mq(700px, 550px) {
-		grid-template-columns: 1fr 8fr;
+.navbar {
+	--item-spacing: 2rem;
+	@include abs.mq(900px, 0px) {
+		--item-spacing: 3rem;
 	}
+	@include abs.mq(1200px, 0px) {
+		--item-spacing: 5rem;
+	}
+
+	position: sticky;
+	top: 0;
+	z-index: 10;
+
+	padding-inline: var(--item-spacing);
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 
 	background-color: var(--color-black);
 
-	.aside {
-		height: auto;
-		width: auto;
-		top: 0;
-		left: 0;
+	.logo {
+		display: flex;
+		flex-direction: column;
+		place-items: center;
+		gap: 0.25rem;
+
+		padding-block: 0.75rem;
+
+		text-align: center;
+		color: var(--color-white);
+
+		span {
+			&:first-child {
+				font-size: 1.5rem;
+
+				font-weight: bold;
+			}
+			&:nth-child(2) {
+				font-size: 1.2rem;
+			}
+			&:last-child {
+				font-size: 1rem;
+				font-style: italic;
+			}
+		}
+	}
+
+	.hamburgerButton {
 		position: relative;
 
-		display: flex;
-		flex-direction: row;
+		border-radius: 0.75rem;
 
-		@include abs.mq(700px, 550px) {
-			position: sticky;
-			height: 100vh;
-			flex-direction: column;
-		}
+		background-color: var(--color-gray);
+		width: 3rem;
+		height: 3rem;
 
-		outline: 1px solid var(--color-black);
-		background-color: var(--color-black-transparent);
+		span {
+			position: absolute;
+			left: 0.5rem;
+			right: 0.5rem;
 
-		.logo {
-			position: relative;
-			padding-top: 0rem;
+			height: 0.25rem;
+			border-radius: 0.75rem;
 
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			gap: 0.25rem;
+			background-color: var(--color-white);
 
-			width: auto;
-			padding-block: 0.25rem;
-
-			@include abs.mq(0px, 300px) {
-				padding-block: 0.5rem;
+			&:nth-child(1) {
+				top: 0.5625rem;
 			}
 
-			@include abs.mq(700px, 550px) {
-				padding-block: 1rem;
+			&:nth-child(2) {
+				top: 1.375rem;
 			}
 
-			@include abs.mq(2100px, 550px) {
-				padding-block: 2rem;
-			}
-
-			text-align: center;
-			color: var(--color-white);
-
-			span {
-				&:first-child {
-					font-size: 1.2rem;
-
-					@include abs.mq(700px, 550px) {
-						font-size: 1.6rem;
-					}
-
-					@include abs.mq(2100px, 550px) {
-						font-size: 2rem;
-					}
-
-					font-weight: bold;
-				}
-				&:nth-child(2) {
-					font-size: 0.9rem;
-
-					@include abs.mq(700px, 550px) {
-						font-size: 1.2rem;
-					}
-
-					@include abs.mq(2100px, 550px) {
-						font-size: 1.5rem;
-					}
-				}
-				&:last-child {
-					font-size: 0.75rem;
-
-					@include abs.mq(700px, 550px) {
-						font-size: 1rem;
-					}
-
-					@include abs.mq(2100px, 550px) {
-						font-size: 1.35rem;
-					}
-
-					font-style: italic;
-				}
+			&:nth-child(3) {
+				top: 2.1875rem;
 			}
 		}
+	}
 
-		nav {
-			position: relative;
-			padding-block: 0.5rem;
+	nav {
+		display: none;
 
-			width: 100%;
-
-			display: grid;
-			place-items: center;
-
-			@include abs.mq(700px, 600px) {
-				padding-block: 5rem;
-			}
-
-			@include abs.mq(700px, 800px) {
-				padding-block: 10rem;
-			}
+		@include abs.mq(700px, 0px) {
+			//display: block;
 
 			ul {
-				width: auto;
-				display: grid;
-				grid-template-columns: repeat(2, 1fr);
+				display: flex;
+				flex-direction: row;
 				place-items: center;
 
-				@include abs.mq(500px, 0px) {
-					grid-template-columns: repeat(4, 1fr);
-				}
-
-				gap: 1.5rem;
-
-				@include abs.mq(700px, 550px) {
-					display: flex;
-					justify-content: center;
-					align-items: center;
-
-					flex-direction: column;
-					gap: 5rem;
-				}
-
-				@include abs.mq(2100px, 550px) {
-					gap: 10rem;
-				}
+				gap: var(--item-spacing);
 
 				list-style: none;
 
 				li {
 					.navbar__link {
+						border-radius: 100vmax;
 						padding: 0.25rem 0.5rem;
-
 						@include abs.mq(700px, 0px) {
 							padding: 0.5rem 1rem;
 						}
 						@include abs.mq(1400px, 0px) {
-							padding: 1rem 2rem;
-						}
-						@include abs.mq(2100px, 0px) {
-							padding: 2rem 4rem;
+							padding: 0.75rem 2rem;
 						}
 
-						border-radius: 100vmax;
-						outline: 0.1rem solid var(--color-white);
-						outline-offset: 0.2rem;
+						outline: 0.15rem solid var(--color-white);
+						outline-offset: 0.25rem;
 						background-color: var(--color-black-transparent);
 
+						font-size: 1.3rem;
 						text-decoration: none;
 						color: var(--color-white);
-						font-size: 1rem;
 
-						@include abs.mq(700px, 550px) {
-							font-size: 1.2rem;
-						}
-
-						@include abs.mq(2100px, 550px) {
-							font-size: 1.6rem;
-						}
+						user-select: none;
 
 						transition: all 0.35s ease;
 
 						&:hover {
 							background-color: var(--color-gray-transparent);
-							box-shadow: 0rem 0rem 0.5rem 0.75rem var(--color-black-transparent);
-						}
-
-						&:active {
-							background-color: var(--color-gray);
-						}
-					}
-
-					.navbar__link--active {
-						background-color: var(--color-gray);
-
-						&:hover {
-							background-color: var(--color-gray);
-							box-shadow: none;
 						}
 
 						&:active {
