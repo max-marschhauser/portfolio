@@ -2,19 +2,11 @@
 @use "../../assets/styles/abstracts" as abs;
 
 .navbar {
-	--item-spacing: 2rem;
-	@include abs.mq(900px, 0px) {
-		--item-spacing: 3rem;
-	}
-	@include abs.mq(1200px, 0px) {
-		--item-spacing: 5rem;
-	}
-
 	position: sticky;
 	top: 0;
 	z-index: 10;
 
-	padding-inline: var(--item-spacing);
+	padding-inline: 0.5rem;
 
 	display: flex;
 	flex-direction: row;
@@ -27,9 +19,9 @@
 		display: flex;
 		flex-direction: column;
 		place-items: center;
-		gap: 0.25rem;
+		gap: 0.1rem;
 
-		padding-block: 0.75rem;
+		padding-block: 0.5rem;
 
 		text-align: center;
 		color: var(--color-white);
@@ -37,7 +29,6 @@
 		span {
 			&:first-child {
 				font-size: 1.5rem;
-
 				font-weight: bold;
 			}
 			&:nth-child(2) {
@@ -82,55 +73,48 @@
 			}
 		}
 	}
+}
 
-	nav {
-		display: none;
+.hidden {
+	display: none;
+}
 
-		@include abs.mq(700px, 0px) {
-			//display: block;
+.mobileNavbar {
+	position: sticky;
+	top: 5rem; // OVDJE SAM STAO, TREBA NAŠTIMATI POSITION STICKY
+	right: 0;
+	z-index: 10;
 
-			ul {
-				display: flex;
-				flex-direction: row;
-				place-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 
-				gap: var(--item-spacing);
+	list-style: none;
+	text-align: center;
 
-				list-style: none;
+	.navbar__link {
+		width: 100%;
+		padding-inline: 1.5rem;
+		padding-block: 0.5rem;
+		border-bottom: 1px solid black;
 
-				li {
-					.navbar__link {
-						border-radius: 100vmax;
-						padding: 0.25rem 0.5rem;
-						@include abs.mq(700px, 0px) {
-							padding: 0.5rem 1rem;
-						}
-						@include abs.mq(1400px, 0px) {
-							padding: 0.75rem 2rem;
-						}
+		background-color: var(--color-black-transparent);
 
-						outline: 0.15rem solid var(--color-white);
-						outline-offset: 0.25rem;
-						background-color: var(--color-black-transparent);
+		font-size: 1.75rem;
+		text-decoration: none;
+		color: var(--color-white);
 
-						font-size: 1.3rem;
-						text-decoration: none;
-						color: var(--color-white);
+		user-select: none;
 
-						user-select: none;
+		transition: all 0.35s ease;
 
-						transition: all 0.35s ease;
+		&:hover {
+			background-color: var(--color-gray-transparent);
+		}
 
-						&:hover {
-							background-color: var(--color-gray-transparent);
-						}
-
-						&:active {
-							background-color: var(--color-gray);
-						}
-					}
-				}
-			}
+		&:active {
+			background-color: var(--color-gray);
 		}
 	}
 }
