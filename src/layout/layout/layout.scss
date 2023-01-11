@@ -79,6 +79,8 @@
 
 			background-color: var(--color-white);
 
+			transition: all 0.5s ease;
+
 			&:nth-child(1) {
 				top: var(--white-space);
 			}
@@ -91,16 +93,19 @@
 				top: calc(var(--white-space) * 3 + var(--line-height) * 2);
 			}
 		}
-		.rotate1 {
-			transform: rotate(-45deg);
+
+		.hamburgerOpen:nth-child(1) {
+			top: calc(var(--white-space) * 2 + var(--line-height));
+			transform: rotate(135deg);
 		}
 
-		.dissapear {
-			transform: scale(0, 0);
+		.hamburgerOpen:nth-child(3) {
+			top: calc(var(--white-space) * 2 + var(--line-height));
+			transform: rotate(-135deg);
 		}
 
-		.rotate2 {
-			transform: rotate(45deg);
+		.hamburgerOpen:nth-child(2) {
+			transform: scale(0);
 		}
 	}
 }

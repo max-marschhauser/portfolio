@@ -29,9 +29,9 @@ export default function Layout() {
 					</span>
 				</div>
 				<button className="hamburgerButton" onClick={openMobileNabar}>
-					<span className={mobileNavbar === true ? "rotate1" : ""}></span>
-					<span className={mobileNavbar === true ? "dissapear" : ""}></span>
-					<span className={mobileNavbar === true ? "rotate2" : ""}></span>
+					<span className={mobileNavbar === true ? "hamburgerOpen" : ""}></span>
+					<span className={mobileNavbar === true ? "hamburgerOpen" : ""}></span>
+					<span className={mobileNavbar === true ? "hamburgerOpen" : ""}></span>
 				</button>
 			</div>
 			<nav id="top" className={mobileNavbar === true ? "mobileNavbar" : "hidden"}>
