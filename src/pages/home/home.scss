@@ -2,8 +2,10 @@
 @use "../../assets/styles/abstracts" as abs;
 
 .homePage {
+	display: none;
+
 	min-height: 100vh;
-	display: grid;
+	//display: grid;
 	place-items: center;
 
 	&--grid {

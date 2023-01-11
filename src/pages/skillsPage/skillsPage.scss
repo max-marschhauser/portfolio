@@ -2,6 +2,8 @@
 @use "../../assets/styles/abstracts" as abs;
 
 .skillsPage {
+	display: none;
+
 	min-height: max-content;
 
 	.skillsPage__container {

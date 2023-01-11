@@ -4,11 +4,7 @@
 @use "../abstracts" as abs;
 
 .blankSection {
-	height: 3rem;
-
-	@include abs.mq(0px, 800px) {
-		height: 12rem;
-	}
+	height: 4rem;
 }
 
 .pageHeading {
