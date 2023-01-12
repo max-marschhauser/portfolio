@@ -5,17 +5,24 @@
 
 :root {
 	// colors
+
+	//	--color-darkgray: hsl(0, 0%, 25%);
+	//	--color-gray: hsl(0, 0%, 50%);
+	//	--color-gray-transparent: hsl(0, 0%, 50%, 0.6);
+	//	--color-lightgray-transparent: hsl(0, 0%, 75%, 0.35);
+
 	--color-black: hsl(0, 0%, 0%);
-	--color-black-transparent: hsl(0, 0%, 0%, 0.5);
-	--color-darkgray: hsl(0, 0%, 25%);
-	--color-gray: hsl(0, 0%, 50%);
-	--color-gray-transparent: hsl(0, 0%, 50%, 0.6);
+	--color-black-transparent: hsl(0, 0%, 0%, 0.75);
 	--color-lightgray: hsl(0, 0%, 75%);
-	--color-lightgray-transparent: hsl(0, 0%, 75%, 0.35);
 	--color-white: hsl(0, 0%, 100%);
 
+	--color-blue: hsl(207, 100%, 20%);
+	--color-orange: hsl(21, 90%, 49%);
+	--color-light: hsl(109, 70%, 88%);
+	--color-green: hsl(127, 60%, 52%);
+
 	// font family
-	font-family: "Montserrat", sans-serif;
+	--font-family: "Montserrat", sans-serif;
 }
 
 *,
@@ -28,6 +35,8 @@
 	outline: none;
 
 	scroll-behavior: smooth;
+
+	font-family: var(--font-family);
 }
 
 ::selection {
