@@ -29,6 +29,11 @@ export default function Footer() {
 						</li>
 						<li>
 							<a href="www.link.com">
+								<ion-icon name="logo-codepen"></ion-icon>
+							</a>
+						</li>
+						<li>
+							<a href="www.link.com">
 								<ion-icon name="logo-linkedin"></ion-icon>
 							</a>
 						</li>

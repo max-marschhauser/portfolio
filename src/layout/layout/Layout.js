@@ -33,23 +33,43 @@ export default function Layout() {
 					<span className={mobileNavbar === true ? "hamburgerOpen" : ""}></span>
 					<span className={mobileNavbar === true ? "hamburgerOpen" : ""}></span>
 				</button>
+				<nav className="desktopNavbar navbarStyle">
+					<NavLink className="navbar__link" to="/" end>
+						Home
+					</NavLink>
+
+					<NavLink className="navbar__link" to="/skills">
+						Skills
+					</NavLink>
+
+					<NavLink className="navbar__link" to="/projects">
+						Projects
+					</NavLink>
+
+					<NavLink className="navbar__link" to="/about">
+						About
+					</NavLink>
+				</nav>
 			</div>
 
-			<nav className={mobileNavbar === true ? "mobileNavbar" : "mobileNavbar mobileNavbarHidden"}>
+			<nav
+				className={
+					mobileNavbar === true ? "mobileNavbar navbarStyle" : "mobileNavbar mobileNavbarHidden navbarStyle"
+				}>
 				<NavLink className="navbar__link" to="/" end>
-					Home
+					<ion-icon name="home-sharp"></ion-icon>Home
 				</NavLink>
 
 				<NavLink className="navbar__link" to="/skills">
-					Skills
+					<ion-icon name="trophy-sharp"></ion-icon>Skills
 				</NavLink>
 
 				<NavLink className="navbar__link" to="/projects">
-					Projects
+					<ion-icon name="hammer-sharp"></ion-icon>Projects
 				</NavLink>
 
 				<NavLink className="navbar__link" to="/about">
-					About
+					<ion-icon name="person-sharp"></ion-icon>About
 				</NavLink>
 			</nav>
 			<Outlet />
