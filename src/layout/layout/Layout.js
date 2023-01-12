@@ -19,7 +19,7 @@ export default function Layout() {
 
 	return (
 		<>
-			<div className="navbar">
+			<div className="navbar" id="top">
 				<div className="logo">
 					<span>MAX</span>
 					<span>Marschhauser</span>
@@ -34,7 +34,8 @@ export default function Layout() {
 					<span className={mobileNavbar === true ? "hamburgerOpen" : ""}></span>
 				</button>
 			</div>
-			<nav id="top" className={mobileNavbar === true ? "mobileNavbar" : "hidden"}>
+
+			<nav className={mobileNavbar === true ? "mobileNavbar" : "mobileNavbar mobileNavbarHidden"}>
 				<NavLink className="navbar__link" to="/" end>
 					Home
 				</NavLink>

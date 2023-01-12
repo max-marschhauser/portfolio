@@ -6,7 +6,11 @@
 	top: 0;
 	z-index: 10;
 
-	padding-inline: 0.5rem;
+	padding-left: 2rem;
+	@include abs.mq(500px, 0px) {
+		padding-left: 6rem;
+	}
+	padding-right: 2rem;
 
 	display: flex;
 	flex-direction: row;
@@ -55,6 +59,8 @@
 		outline-offset: 0.1rem;
 
 		transition: all 0.5s ease;
+
+		cursor: pointer;
 
 		&:hover,
 		&:focus-visible {
@@ -110,8 +116,9 @@
 	}
 }
 
-.hidden {
-	display: none;
+.mobileNavbarHidden {
+	transform: scale(0, 1);
+	transform-origin: right;
 }
 
 .mobileNavbar {
@@ -127,6 +134,8 @@
 
 	list-style: none;
 	text-align: center;
+
+	transition: all 0.25s ease-in-out;
 
 	.navbar__link {
 		width: 100%;
