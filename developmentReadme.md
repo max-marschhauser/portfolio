@@ -39,3 +39,10 @@ pointer-events: none;
 css selectors vidjeti što točno rade: is, where, has
 
 Custom Property Fallback Value (primjenjuje se ako custom property ne postoji) --> color: var(--color-icon, #9eeb34);
+
+JS MAP --> object of arrays
+
+const userMap = new Map([
+[1, {name: "Kyle"}],
+[2, {name: "Sally"}]
+])
