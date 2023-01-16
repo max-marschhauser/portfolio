@@ -55,6 +55,8 @@
 				}
 
 				.links--social {
+					border-radius: 0.75rem;
+
 					display: grid;
 					place-items: center;
 					grid-template-columns: repeat(2, 1fr);
