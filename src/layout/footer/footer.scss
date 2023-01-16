@@ -103,6 +103,8 @@
 						list-style: none;
 
 						ion-icon {
+							pointer-events: none;
+
 							transform: translate(-0.15rem, 0.15rem);
 						}
 
