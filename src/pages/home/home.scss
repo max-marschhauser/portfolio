@@ -2,51 +2,44 @@
 @use "../../assets/styles/abstracts" as abs;
 
 .homePage {
-	display: none;
-
 	min-height: 100vh;
-	//display: grid;
-	place-items: center;
 
 	&--grid {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 2.5rem;
+		grid-template-columns: repeat(1, 1fr);
+		place-items: center;
+		gap: 2rem;
 
-		@include abs.mq(700px, 550px) {
-			gap: 5rem;
-		}
+		padding-block: 2rem;
 
-		padding: 10rem;
-
-		clip-path: polygon(1% 5%, 99% 10%, 95% 100%, 4% 85%);
+		min-height: 75vh;
 
 		background-image: url(../../assets/images/nature1.jpg);
-		background-position: center;
+		background-position: left;
+
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		background-size: cover;
 
-		.mobile-img {
-			display: none;
+		@include abs.mq(900px, 550px) {
+			grid-template-columns: repeat(2, 1fr);
+
+			clip-path: polygon(1% 5%, 99% 10%, 95% 100%, 4% 85%);
+
+			background-position: center;
 		}
 
 		img {
 			width: 10rem;
 			height: 10rem;
 
-			@include abs.mq(1400px, 550px) {
+			@include abs.mq(700px, 550px) {
 				width: 20rem;
 				height: 20rem;
 			}
 
-			@include abs.mq(2100px, 550px) {
-				width: 30rem;
-				height: 30rem;
-			}
-
 			border-radius: 50%;
-			outline: 0.5rem solid var(--color-lightgray);
+			outline: 0.5rem solid var(--color-blue);
 			outline-offset: 0.5rem;
 
 			user-select: none;
@@ -55,28 +48,26 @@
 		.rightSide {
 			display: flex;
 			flex-direction: column;
-			justify-self: center;
-			align-items: center;
-			gap: 5rem;
+			place-items: center;
+			gap: 1rem;
 
-			padding-top: 2rem;
+			padding: 2.5rem;
+
+			background-color: var(--color-blue-transparent);
+
+			color: var(--color-orange);
+
+			@include abs.mq(700px, 550px) {
+				clip-path: polygon(1% 5%, 99% 10%, 95% 100%, 4% 85%);
+			}
 
 			h1 {
-				width: 20vw;
 				max-width: 20rem;
 
 				font-size: 1.5rem;
 
-				transform: translatex(-40vw);
-
-				@include abs.mq(300px, 0px) {
-					transform: translatex(-20vw);
-				}
-
 				@include abs.mq(700px, 550px) {
 					font-size: 2.5rem;
-
-					transform: translatex(0rem);
 				}
 			}
 
@@ -89,19 +80,19 @@
 
 				word-spacing: 0.1rem;
 				text-align: center;
-				font-size: 1rem;
+				font-size: 1.25rem;
 
 				@include abs.mq(700px, 550px) {
 					gap: 2rem;
 
 					word-spacing: 0.5rem;
-					font-size: 2.5rem;
+					font-size: 2.25rem;
 				}
 
 				span {
 					&:first-child,
 					&:last-child {
-						font-size: 2rem;
+						font-size: 3rem;
 
 						@include abs.mq(700px, 550px) {
 							font-size: 4rem;

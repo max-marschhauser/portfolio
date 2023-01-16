@@ -12,7 +12,8 @@
 	--color-white: hsl(0, 0%, 100%);
 
 	--color-blue: hsl(207, 100%, 20%); // general color
-	--color-green: hsl(127, 100%, 60%); // call to action color
+	--color-blue-transparent: hsl(207, 100%, 20%, 0.75); // general color transparent
+	--color-green: hsl(127, 60%, 60%); // call to action color
 	--color-orange: hsl(30, 100%, 60%); // reaction color
 
 	// font family
@@ -41,7 +42,7 @@
 }
 
 body {
-	background-color: var(--color-lightgray);
+	background-color: var(--color-blue);
 }
 
 ::-webkit-scrollbar {

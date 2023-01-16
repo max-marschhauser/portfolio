@@ -12,7 +12,6 @@ import About from "../aboutPage/AboutPage";
 import "./home.scss";
 
 // importing images
-import bearImage from "../../assets/images/Bear.jpg";
 import manImage from "../../assets/images/manstanding.jpg";
 
 export default function Home() {
@@ -20,8 +19,7 @@ export default function Home() {
 		<>
 			<section className="homePage">
 				<div className="homePage--grid">
-					<img className="mobile-img" src={bearImage} alt="max-marschhauser-profile" />
-					<img className="desktop-img" src={manImage} alt="max-marschhauser-profile" />
+					<img src={manImage} alt="max-marschhauser-profile" />
 					<div className="rightSide">
 						<h1>MAX MARSCHHAUSER</h1>
 						<h2>

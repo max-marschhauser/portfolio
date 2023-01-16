@@ -71,6 +71,7 @@ export default function Footer() {
 				<section>
 					<iframe
 						title="map"
+						tabindex="-1"
 						src="https://maps.google.com/maps?q=osijek,%20gunduli%C4%87eva%2080&t=k&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
 				</section>
 			</div>
