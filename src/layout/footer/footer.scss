@@ -172,12 +172,13 @@
 					font-size: 1.5rem;
 				}
 
-				a {
+				button {
 					padding: 0.75rem;
 					border-radius: 1rem;
 
 					opacity: 1;
 					outline: 0.1rem solid var(--color-green);
+					background-color: transparent;
 
 					color: var(--color-green);
 					font-weight: bold;

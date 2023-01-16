@@ -8,6 +8,13 @@ import { NavLink } from "react-router-dom";
 import "./footer.scss";
 
 export default function Footer() {
+	function goToTop() {
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		});
+	}
+
 	return (
 		<footer className="pageFooter">
 			<div className="pageFooter__item--upper">
@@ -78,7 +85,7 @@ export default function Footer() {
 			<ul className="pageFooter__item--under">
 				<li>Copyright &copy;{+new Date().getFullYear()}.</li>
 				<li>
-					<a href="#top">Back to Top</a>
+					<button onClick={goToTop}>Back to Top</button>
 				</li>
 			</ul>
 		</footer>

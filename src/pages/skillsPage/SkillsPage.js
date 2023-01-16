@@ -33,30 +33,94 @@ export default function SkillsPage() {
 		<section className="skillsPage">
 			<h2 className="pageHeading">Skills</h2>
 			<div className="skillsPage__container">
-				<div className="leftPart">
+				<div>
 					<h3>Everyday use</h3>
 					<div className="left-grid">
-						<img loading="lazy" src={HTML} alt="HTML" onMouseEnter={handleMouseOver} />
-						<img loading="lazy" src={CSS} alt="CSS" onMouseEnter={handleMouseOver} />
-						<img loading="lazy" src={Sass} alt="Sass" onMouseEnter={handleMouseOver} />
-						<img loading="lazy" src={JavaScript} alt="JavaScript" onMouseEnter={handleMouseOver} />
-						<img loading="lazy" src={TypeScript} alt="TypeScript" onMouseEnter={handleMouseOver} />
-						<img loading="lazy" src={ReactImage} alt="React" onMouseEnter={handleMouseOver} />
+						<img
+							loading="lazy"
+							className={currentLanguage === "HTML" ? "activeImage" : ""}
+							src={HTML}
+							alt="HTML"
+							onMouseEnter={handleMouseOver}
+						/>
+						<img
+							loading="lazy"
+							className={currentLanguage === "CSS" ? "activeImage" : ""}
+							src={CSS}
+							alt="CSS"
+							onMouseEnter={handleMouseOver}
+						/>
+						<img
+							loading="lazy"
+							className={currentLanguage === "Sass" ? "activeImage" : ""}
+							src={Sass}
+							alt="Sass"
+							onMouseEnter={handleMouseOver}
+						/>
+						<img
+							loading="lazy"
+							className={currentLanguage === "JavaScript" ? "activeImage" : ""}
+							src={JavaScript}
+							alt="JavaScript"
+							onMouseEnter={handleMouseOver}
+						/>
+						<img
+							loading="lazy"
+							className={currentLanguage === "TypeScript" ? "activeImage" : ""}
+							src={TypeScript}
+							alt="TypeScript"
+							onMouseEnter={handleMouseOver}
+						/>
+						<img
+							loading="lazy"
+							className={currentLanguage === "React" ? "activeImage" : ""}
+							src={ReactImage}
+							alt="React"
+							onMouseEnter={handleMouseOver}
+						/>
+					</div>
+					<h3>Familiar with</h3>
+					<div className="left-grid">
+						<img
+							loading="lazy"
+							className={currentLanguage === "PHP" ? "activeImage" : ""}
+							src={PHP}
+							alt="PHP"
+							onMouseEnter={handleMouseOver}
+						/>
+						<img
+							loading="lazy"
+							className={currentLanguage === "MongoDB" ? "activeImage" : ""}
+							src={MongoDB}
+							alt="MongoDB"
+							onMouseEnter={handleMouseOver}
+						/>
+						<img
+							loading="lazy"
+							className={currentLanguage === "MySQL" ? "activeImage" : ""}
+							src={MySQL}
+							alt="MySQL"
+							onMouseEnter={handleMouseOver}
+						/>
+						<img
+							loading="lazy"
+							className={currentLanguage === "NodeJS" ? "activeImage" : ""}
+							src={NodeJS}
+							alt="NodeJS"
+							onMouseEnter={handleMouseOver}
+						/>
+						<img
+							loading="lazy"
+							className={currentLanguage === "C" ? "activeImage" : ""}
+							src={C}
+							alt="C"
+							onMouseEnter={handleMouseOver}
+						/>
 					</div>
 				</div>
 				<div className="rightPart">
-					<div className="rightUpperPart">
-						<h3>Familiar with</h3>
-						<div className="right-grid">
-							<img loading="lazy" src={PHP} alt="PHP" onMouseEnter={handleMouseOver} />
-							<img loading="lazy" src={MongoDB} alt="MongoDB" onMouseEnter={handleMouseOver} />
-							<img loading="lazy" src={MySQL} alt="MySQL" onMouseEnter={handleMouseOver} />
-							<img loading="lazy" src={NodeJS} alt="NodeJS" onMouseEnter={handleMouseOver} />
-							<img loading="lazy" src={C} alt="C" onMouseEnter={handleMouseOver} />
-						</div>
-					</div>
-					<div className="rightLowerPart">
-						<h4>My Experience with</h4>
+					<div className="sticky">
+						<h3>My Experience with</h3>
 						<header>{currentLanguage}</header>
 						<ul>
 							{dataObject[currentLanguage].map((listItem) => (
