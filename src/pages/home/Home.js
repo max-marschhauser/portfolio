@@ -30,11 +30,10 @@ export default function Home() {
 			</section>
 			<section className="blankSection"></section>
 			<Skills />
-			<section className="blankSection"></section>
+
 			<Projects />
-			<section className="blankSection"></section>
+
 			<About />
-			<section className="blankSection"></section>
 		</>
 	);
 }

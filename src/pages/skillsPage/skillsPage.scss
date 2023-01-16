@@ -8,6 +8,10 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 
+		margin-bottom: 1rem;
+
+		background-color: var(--color-black-transparent);
+
 		color: var(--color-white);
 
 		h3 {
@@ -29,56 +33,58 @@
 			}
 		}
 
-		.left-grid {
-			padding-block: 1rem;
+		.leftPart {
+			border-right: 1px solid var(--color-lightgray);
 
-			display: grid;
-			place-items: center;
-			grid-template-columns: repeat(2, 1fr);
-			row-gap: 1rem;
+			.left-grid {
+				padding-block: 1rem;
 
-			@include abs.mq(700px, 0px) {
-				grid-template-columns: repeat(3, 1fr);
-				row-gap: 3rem;
-			}
-
-			img {
-				width: 3rem;
-				height: 3rem;
-
-				padding: 0.125rem;
+				display: grid;
+				place-items: center;
+				grid-template-columns: repeat(2, 1fr);
+				row-gap: 1rem;
 
 				@include abs.mq(700px, 0px) {
-					width: 6rem;
-					height: 6rem;
-
-					padding: 0.5rem;
+					grid-template-columns: repeat(3, 1fr);
+					row-gap: 3rem;
 				}
 
-				user-select: none;
+				img {
+					width: 3rem;
+					height: 3rem;
 
-				transition: all 0.35s ease;
+					padding: 0.125rem;
 
-				&:hover,
-				&:focus-visible,
-				&:active {
+					@include abs.mq(700px, 0px) {
+						width: 6rem;
+						height: 6rem;
+
+						padding: 0.5rem;
+					}
+
+					user-select: none;
+
+					transition: all 0.35s ease;
+
+					&:hover,
+					&:focus-visible,
+					&:active {
+						border-radius: 1rem;
+						background-color: var(--color-green);
+					}
+				}
+
+				.activeImage {
 					border-radius: 1rem;
 					background-color: var(--color-green);
 				}
 			}
-
-			.activeImage {
-				border-radius: 1rem;
-				background-color: var(--color-orange);
-			}
 		}
 
 		.rightPart {
-			background-color: var(--color-black-transparent);
-
 			.sticky {
 				position: sticky;
-				top: 6rem;
+				top: 8rem;
 
 				header {
 					text-align: center;
@@ -95,13 +101,12 @@
 				}
 
 				ul {
-					padding-block: 1rem;
+					padding-block: 3rem;
 					padding-left: 1.5rem;
 					padding-right: 0.5rem;
 
 					@include abs.mq(700px, 0px) {
 						padding-left: 2.5rem;
-						padding-right: 2.5rem;
 					}
 
 					list-style: disc;

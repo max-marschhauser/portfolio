@@ -33,7 +33,7 @@ export default function SkillsPage() {
 		<section className="skillsPage">
 			<h2 className="pageHeading">Skills</h2>
 			<div className="skillsPage__container">
-				<div>
+				<div className="leftPart">
 					<h3>Everyday use</h3>
 					<div className="left-grid">
 						<img

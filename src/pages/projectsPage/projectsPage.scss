@@ -2,9 +2,7 @@
 @use "../../assets/styles/abstracts" as abs;
 
 .projectsPage {
-	display: none;
-
-	min-height: 100vh;
+	min-height: max-content;
 
 	&__container {
 		display: grid;

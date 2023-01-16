@@ -22,7 +22,7 @@ export default function Filter(props) {
 				<form onSubmit={handleSubmit}>
 					<fieldset>
 						<legend>
-							<label htmlFor={`${id}-search`}>search</label>
+							<label htmlFor={`${id}-search`}>Search</label>
 						</legend>
 						<input
 							type="search"
@@ -34,7 +34,7 @@ export default function Filter(props) {
 					</fieldset>
 
 					<fieldset>
-						<legend>skill used</legend>
+						<legend>Skill used</legend>
 
 						<ul>
 							<li>
@@ -130,7 +130,7 @@ export default function Filter(props) {
 					</fieldset>
 
 					<fieldset>
-						<legend>keyword</legend>
+						<legend>Keyword</legend>
 
 						<ul>
 							<li>

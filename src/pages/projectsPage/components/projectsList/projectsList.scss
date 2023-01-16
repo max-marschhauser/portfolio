@@ -7,11 +7,11 @@
 	padding: 0rem 0rem;
 
 	@include abs.mq(700px, 550px) {
-		padding: 1rem 0.5rem;
+		padding: 0rem 0.5rem;
 	}
 
 	&__item {
-		margin-block: 1rem;
+		margin-bottom: 1rem;
 
 		display: grid;
 
@@ -19,9 +19,9 @@
 			grid-template-columns: 1fr 70%;
 		}
 
-		border-radius: 1rem;
-
 		background-color: var(--color-black-transparent);
+
+		color: var(--color-lightgray);
 
 		&--imageContainer {
 			display: grid;
@@ -30,13 +30,11 @@
 			img {
 				width: 90%;
 				max-width: 25rem;
-
 				margin: 0.5rem;
-				border-radius: 1rem;
 
 				display: block;
 
-				outline: 0.1rem solid var(--color-lightgray);
+				outline: 0.1rem solid var(--color-blue);
 
 				user-select: none;
 			}
@@ -56,6 +54,8 @@
 					}
 
 					h3 {
+						margin-top: 0.75rem;
+
 						text-align: center;
 						font-size: 1.5rem;
 						letter-spacing: 0.075rem;
@@ -79,24 +79,27 @@
 						border-radius: 100vmax;
 
 						opacity: 0.8;
-						background-color: var(--color-darkgray);
-						outline: 0.1rem solid var(--color-darkgray);
+						outline: 0.1rem solid var(--color-white);
 
 						font-size: 1.5rem;
 						text-decoration: none;
-						color: var(--color-white);
+						color: var(--color-lightgray);
 
 						transition: all 0.25s ease;
 
 						&:hover,
 						&:focus-visible {
 							opacity: 0.9;
-							outline: 0.1rem solid var(--color-white);
+							outline: 0.1rem solid var(--color-green);
+
+							color: var(--color-white);
 						}
 
 						&:active {
 							opacity: 1;
-							outline: 0.1rem solid var(--color-white);
+							outline: 0.1rem solid var(--color-orange);
+
+							color: var(--color-white);
 						}
 
 						ion-icon {

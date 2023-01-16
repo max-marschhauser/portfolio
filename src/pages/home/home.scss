@@ -2,7 +2,7 @@
 @use "../../assets/styles/abstracts" as abs;
 
 .homePage {
-	min-height: 100vh;
+	min-height: max-content;
 
 	&--grid {
 		display: grid;
@@ -12,7 +12,7 @@
 
 		padding-block: 2rem;
 
-		min-height: 75vh;
+		min-height: 85vh;
 
 		background-image: url(../../assets/images/nature1.jpg);
 		background-position: left;
@@ -24,7 +24,7 @@
 		@include abs.mq(900px, 550px) {
 			grid-template-columns: repeat(2, 1fr);
 
-			clip-path: polygon(1% 5%, 99% 10%, 95% 100%, 4% 85%);
+			clip-path: polygon(1% 2%, 99% 10%, 95% 98%, 4% 85%);
 
 			background-position: center;
 		}
@@ -55,7 +55,7 @@
 
 			background-color: var(--color-blue-transparent);
 
-			color: var(--color-orange);
+			color: var(--color-white);
 
 			@include abs.mq(700px, 550px) {
 				clip-path: polygon(1% 5%, 99% 10%, 95% 100%, 4% 85%);
