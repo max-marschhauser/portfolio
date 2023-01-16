@@ -2,18 +2,10 @@
 @use "../../assets/styles/abstracts" as abs;
 
 .noPage--container {
-	min-height: 100vh;
+	min-height: 80vh;
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-
-	gap: 2.5rem;
-
-	@include abs.mq(700px, 550px) {
-		gap: 5rem;
-	}
+	display: grid;
+	place-items: center;
 
 	p {
 		padding-inline: 1rem;
@@ -21,30 +13,8 @@
 		text-align: center;
 		font-size: 2.25rem;
 		color: var(--color-white);
+		line-height: 3rem;
 
 		user-select: none;
-	}
-
-	.reactImage {
-		width: 7rem;
-		height: 6rem;
-
-		@include abs.mq(700px, 550px) {
-			width: 14rem;
-			height: 12rem;
-		}
-
-		user-select: none;
-
-		animation: reactRotation 8s infinite linear;
-
-		@keyframes reactRotation {
-			0% {
-				transform: rotate(0deg);
-			}
-			100% {
-				transform: rotate(360deg);
-			}
-		}
 	}
 }
