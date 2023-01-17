@@ -79,3 +79,27 @@ axios.get("api-link", {params: {latitude: lat, longitude: lon, timezone,}}); -->
 DODATI CONTACT LINK U NAVBARU, A IZBACITI HOME (ODNOSNO PREBACITI GA NA LOGO, ISTO TAKO I LOGO ULJEPŠATI)
 
 na html tag stavim data atribut <div data-text="nešto">, zatim u CSS-u mogu napraviti before ili after element sa content: attr(data-text); (a da se to prikaže npr. kod hovera nad elementom)
+
+.parent{
+backface-visibility: hidden;}
+
+.child{
+transform: translateY(180deg);
+}
+
+backface-visibility skriva sav tekst koji je na pozadini kartice (odnosno koji je translatean za 180 stupnjeva)
+
+a kod grandparenta treba staviti transform-style: preserve-3d; da bi se očuvao 3d odnosno da bi se kartice izmjenjivale, isto tako u transform se može dodati i perspective(1000px) te rotateY(180deg) da bi se bolje vidio 3d
+
+https://opentdb.com/ --> API s pitanjima za kviz
+savjet --> kopirati link od API-ja u browser da se vidi API response
+
+DECODE TEXT --> KAD API IMA ZNAKOVE POPUT APOSTROFA KOJI SE PRETVORE U ČUDNE ZNAKOVE --> staviti tekst iz apija u neki html element a zatim ga ponovno povući iz tog elementa
+
+function decodeString(str) {
+const textArea = document.createElement("textarea");
+textArea.innerHTML = str;
+return textArea.value;
+}
+
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); --> super za responsiv design
