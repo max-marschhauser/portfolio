@@ -33,9 +33,7 @@
 			grid-template-columns: repeat(1, 1fr);
 
 			article {
-				width: 95%;
-				margin: 1rem auto;
-				padding: 2rem;
+				padding: 1rem 5rem;
 
 				border-radius: 1rem;
 
@@ -44,26 +42,22 @@
 				}
 
 				h4 {
-					padding-bottom: 1rem;
-
 					text-align: center;
 					font-size: 1rem;
 					color: var(--color-white);
 
 					@include abs.mq(700px, 550px) {
-						padding-bottom: 1.5rem;
-
 						font-size: 1.25rem;
 					}
 
 					@include abs.mq(700px, 550px) {
-						padding-bottom: 2rem;
-
 						font-size: 1.5rem;
 					}
 				}
 
 				ul {
+					border-bottom: 1px solid var(--color-white);
+
 					list-style: none;
 
 					line-height: 1.25rem;
