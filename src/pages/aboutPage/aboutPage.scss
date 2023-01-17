@@ -2,16 +2,18 @@
 @use "../../assets/styles/abstracts" as abs;
 
 .aboutPage {
-	display: none;
-
 	min-height: 100vh;
 
 	&--contents {
+		background-color: var(--color-black-transparent);
+		margin-bottom: 1rem;
+
 		h3 {
 			padding-block: 0.5rem;
 
 			text-align: center;
 			font-size: 1rem;
+			color: var(--color-white);
 
 			@include abs.mq(700px, 550px) {
 				padding-block: 1.5rem;
@@ -30,18 +32,12 @@
 			display: grid;
 			grid-template-columns: repeat(1, 1fr);
 
-			@include abs.mq(1400px, 550px) {
-				grid-template-columns: 1fr 1fr;
-			}
-
 			article {
 				width: 95%;
 				margin: 1rem auto;
 				padding: 2rem;
 
 				border-radius: 1rem;
-
-				background-color: var(--color-black-transparent);
 
 				> * {
 					padding-bottom: 1rem;
@@ -52,6 +48,7 @@
 
 					text-align: center;
 					font-size: 1rem;
+					color: var(--color-white);
 
 					@include abs.mq(700px, 550px) {
 						padding-bottom: 1.5rem;
@@ -67,7 +64,7 @@
 				}
 
 				ul {
-					list-style: circle;
+					list-style: none;
 
 					line-height: 1.25rem;
 
@@ -76,11 +73,14 @@
 					}
 
 					li {
-						padding-block: 0.25rem;
+						padding-block: 0.5rem;
+
 						font-size: 1rem;
+						color: var(--color-white);
+						text-align: center;
 
 						@include abs.mq(700px, 550px) {
-							padding-block: 0.5rem;
+							padding-block: 1rem;
 							font-size: 1.2rem;
 						}
 					}
