@@ -73,3 +73,5 @@ import axios from "axios";
 
 a u funkciji onda
 axios.get("api-link", {params: {latitude: lat, longitude: lon, timezone,}}); --> a ostatal linka stavim kako god, axios će srediti da bude sve dobro. u funkciji moram staviti točne parametre koji će se onda prebaciti u link
+
+<div className={`nekaKlasa ${nekiIf ? "true" : "false"}`}></div>
