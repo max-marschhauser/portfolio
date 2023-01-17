@@ -7,6 +7,7 @@ import React from "react";
 import Skills from "../skillsPage/SkillsPage";
 import Projects from "../projectsPage/ProjectsPage";
 import About from "../aboutPage/AboutPage";
+import Contact from "../contactPage/ContactPage";
 
 // importing styles
 import "./home.scss";
@@ -34,6 +35,8 @@ export default function Home() {
 			<Projects />
 
 			<About />
+
+			<Contact />
 		</>
 	);
 }

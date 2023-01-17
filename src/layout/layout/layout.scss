@@ -29,6 +29,18 @@
 
 		text-align: center;
 		color: var(--color-lightgray);
+		text-decoration: none;
+
+		transition: all 0.25s ease;
+
+		&:hover,
+		&:focus-visible {
+			opacity: 0.9;
+		}
+
+		&:active {
+			opacity: 0.8;
+		}
 
 		span {
 			&:first-child {

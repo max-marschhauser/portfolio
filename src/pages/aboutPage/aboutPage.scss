@@ -12,19 +12,19 @@
 			padding-block: 0.5rem;
 
 			text-align: center;
-			font-size: 1rem;
+			font-size: 1.2rem;
 			color: var(--color-white);
 
 			@include abs.mq(700px, 550px) {
 				padding-block: 1.5rem;
 
-				font-size: 2rem;
+				font-size: 1.6rem;
 			}
 
 			@include abs.mq(1400px, 550px) {
 				padding-block: 2.5rem;
 
-				font-size: 3rem;
+				font-size: 2rem;
 			}
 		}
 
@@ -33,15 +33,17 @@
 			grid-template-columns: repeat(1, 1fr);
 
 			article {
-				padding: 1rem 5rem;
+				padding: 1rem 1rem;
+
+				@include abs.mq(700px, 0px) {
+					padding: 1rem 5rem;
+				}
 
 				border-radius: 1rem;
 
-				> * {
-					padding-bottom: 1rem;
-				}
-
 				h4 {
+					padding-bottom: 1rem;
+
 					text-align: center;
 					font-size: 1rem;
 					color: var(--color-white);
@@ -74,8 +76,8 @@
 						text-align: center;
 
 						@include abs.mq(700px, 550px) {
-							padding-block: 1rem;
-							font-size: 1.2rem;
+							padding-block: 0.75rem;
+							font-size: 1.1rem;
 						}
 					}
 				}

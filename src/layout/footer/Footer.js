@@ -53,11 +53,6 @@ export default function Footer() {
 					<nav className="links--pages">
 						<ul>
 							<li>
-								<NavLink className="navbar__link" to="/">
-									<ion-icon name="home-sharp"></ion-icon> Home
-								</NavLink>
-							</li>
-							<li>
 								<NavLink className="navbar__link" to="/skills">
 									<ion-icon name="trophy-sharp"></ion-icon> Skills
 								</NavLink>
@@ -70,6 +65,11 @@ export default function Footer() {
 							<li>
 								<NavLink className="navbar__link" to="/about">
 									<ion-icon name="person-sharp"></ion-icon> About
+								</NavLink>
+							</li>
+							<li>
+								<NavLink className="navbar__link" to="/contact">
+									<ion-icon name="mail-unread-sharp"></ion-icon> Contact
 								</NavLink>
 							</li>
 						</ul>

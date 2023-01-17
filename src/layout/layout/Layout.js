@@ -20,24 +20,21 @@ export default function Layout() {
 	return (
 		<>
 			<div className="navbar" id="top">
-				<div className="logo">
+				<NavLink className="logo" to="/" end>
 					<span>MAX</span>
 					<span>Marschhauser</span>
 					<span>
 						React Frontend <wbr />
 						Developer
 					</span>
-				</div>
+				</NavLink>
+
 				<button className="hamburgerButton" onClick={openMobileNabar}>
 					<span className={mobileNavbar === true ? "hamburgerOpen" : ""}></span>
 					<span className={mobileNavbar === true ? "hamburgerOpen" : ""}></span>
 					<span className={mobileNavbar === true ? "hamburgerOpen" : ""}></span>
 				</button>
 				<nav className="desktopNavbar navbarStyle">
-					<NavLink className="navbar__link" to="/" end>
-						<ion-icon name="home-sharp"></ion-icon>Home
-					</NavLink>
-
 					<NavLink className="navbar__link" to="/skills">
 						<ion-icon name="trophy-sharp"></ion-icon>Skills
 					</NavLink>
@@ -49,6 +46,10 @@ export default function Layout() {
 					<NavLink className="navbar__link" to="/about">
 						<ion-icon name="person-sharp"></ion-icon>About
 					</NavLink>
+
+					<NavLink className="navbar__link" to="/contact">
+						<ion-icon name="mail-unread-sharp"></ion-icon>Contact
+					</NavLink>
 				</nav>
 			</div>
 
@@ -56,10 +57,6 @@ export default function Layout() {
 				className={
 					mobileNavbar === true ? "mobileNavbar navbarStyle" : "mobileNavbar mobileNavbarHidden navbarStyle"
 				}>
-				<NavLink className="navbar__link" to="/" end>
-					<ion-icon name="home-sharp"></ion-icon>Home
-				</NavLink>
-
 				<NavLink className="navbar__link" to="/skills">
 					<ion-icon name="trophy-sharp"></ion-icon>Skills
 				</NavLink>
@@ -70,6 +67,9 @@ export default function Layout() {
 
 				<NavLink className="navbar__link" to="/about">
 					<ion-icon name="person-sharp"></ion-icon>About
+				</NavLink>
+				<NavLink className="navbar__link" to="/contact" end>
+					<ion-icon name="mail-unread-sharp"></ion-icon>Contact
 				</NavLink>
 			</nav>
 			<Outlet />

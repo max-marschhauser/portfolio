@@ -24,7 +24,6 @@ export default function AboutComponent(props) {
 					) : (
 						<></>
 					)}
-
 					<ul>
 						{item.content.map((contentLine) => {
 							return <li key={contentLine}>{contentLine}</li>;

@@ -12,12 +12,10 @@ const aboutData = [
 		imgSrc: undefined,
 		link: "",
 		content: [
-			`Started learning programming in school in 2009. at the age of 14.`,
-			`First programming language was C.`,
-			`Used it for 4 years, learned programming basics with it.`,
+			`2009. started learning programming (age 14). First programming language was C, used it for 4 years.`,
 			`2010. started learning web desing (HTML and CSS).`,
-			`2012. started using PHP and MySql, mainly for connecting web pages with databases.`,
-			`In university attended two courses related to modern web design (2017. and 2018.).`,
+			`2012. started using PHP and MySql.`,
+			`2017. and 2018. in university attended two courses related to modern web design.`,
 		],
 	},
 	{
@@ -26,7 +24,7 @@ const aboutData = [
 		imgSrc: javascriptCertificateSrc,
 		link: "https://www.freecodecamp.org/certification/fcc1fd16a03-be4d-47cc-a798-42c2fbc37651/javascript-algorithms-and-data-structures",
 		content: [
-			`JavaScript, TypeScript, React and other more advenced topics I learned on my own, using array of internet sources souch as MDM, w3schools, stackOverflow, and Youtube tutorials.`,
+			`On my own I learned JavaScript, TypeScript, React and other more advanced languages, mostly using array of internet sources souch as MDM, w3schools, stackOverflow, and Youtube tutorials.`,
 			`Also, finished some online courses such as freeCodeCamp.`,
 		],
 	},
@@ -38,10 +36,8 @@ const aboutData = [
 		link: "",
 		content: [
 			`I was a computer science teacher for 3 years.`,
-			`Introducing students with programming.`,
-			`Mostly taught beginner level programming with languages such as Python for older students and Scratch for younger ones, also introduction to HMTL and CSS.`,
+			`Mostly taught beginner level programming in Python, also introduction to HMTL and CSS.`,
 			`Helped students build their first Applications.`,
-			`Also tought about other things related to computer science.`,
 		],
 	},
 	{
@@ -61,8 +57,8 @@ const aboutData = [
 		imgSrc: undefined,
 		link: "",
 		content: [
-			`Studied at the III. gymnasium (Mathematics and Natural Sciences) in Osijek (2009. - 2013.).`,
-			`Graduated in History and Pedagogy at the Faculty of Philosophy in Osijek (2013. - 2018.).`,
+			`2009. - 2013. III. gymnasium in Osijek (Mathematics and Natural Sciences).`,
+			`2013. - 2018. Graduated in History and Pedagogy at the Faculty of Philosophy in Osijek .`,
 		],
 	},
 	{
@@ -71,8 +67,8 @@ const aboutData = [
 		imgSrc: undefined,
 		link: "",
 		content: [
-			`4 years as a school counselor in elementary school, gained leadership experience and team work related problem solving experience from leading a team of about 50 people.`,
-			`3 years as a computer science teacher in the same school, where I even more improved my computer science knowledge.`,
+			`4 years as a school counselor (gained leadership experience and team work related problem solving experience from leading a team of about 50 people).`,
+			`3 years as a computer science teacher (improved my computer science knowledge).`,
 		],
 	},
 	{
@@ -83,9 +79,9 @@ const aboutData = [
 		content: [
 			`Very responsible.`,
 			`Good workflow both in a team and individualy.`,
-			`Good Soft Skills such as interpersonal skills, time menagement, problem-solving oriented, empathy...`,
-			`Advanced Comunication and Listening skills.`,
-			`Have will to learn and advance for the benefit of both the company and myself.`,
+			`Advanced Soft Skills such as interpersonal skills, time menagement, problem-solving orientation...`,
+			`Enhanced Comunication and Listening skills.`,
+			`Will to learn and to advance for the benefit of both myself and the company.`,
 		],
 	},
 	{
@@ -94,10 +90,11 @@ const aboutData = [
 		imgSrc: undefined,
 		link: "",
 		content: [
-			`Feel very comfortable with using English languange in both the speaking and writing form.`,
-			`Know the basics of German language but didn't use it for a few years, would need some catch-up to be completely comfortable with using it.`,
-			`Worked in a Hungarian school and learned Hungarian language to the B1 level, could use it in a simpler conversation.`,
-			`Driving licence B category (private car).`,
+			`Croatian - mother tongue`,
+			`English - Feel very comfortable with using it in both speaking and writing form.`,
+			`German - Know the basics of language but didn't use it for a few years, would need some catch-up to be completely comfortable with using it.`,
+			`Hungarian - B1 level, could use it in a simpler conversation.`,
+			`Driving licence for a car (B category).`,
 		],
 	},
 ];

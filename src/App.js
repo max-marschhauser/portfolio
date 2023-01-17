@@ -9,6 +9,7 @@ import Home from "./pages/home/Home";
 import SkillsPage from "./pages/skillsPage/SkillsPage";
 import ProjectsPage from "./pages/projectsPage/ProjectsPage";
 import AboutPage from "./pages/aboutPage/AboutPage";
+import ContactPage from "./pages/contactPage/ContactPage";
 import NoPage from "./pages/noPage/NoPage";
 
 // importing styles
@@ -27,6 +28,7 @@ export default function App() {
 					<Route path="skills" element={<SkillsPage />} />
 					<Route path="projects" element={<ProjectsPage />} />
 					<Route path="about" element={<AboutPage />} />
+					<Route path="contact" element={<ContactPage />} />
 					<Route path="*" element={<NoPage />} />
 				</Route>
 			</Routes>
