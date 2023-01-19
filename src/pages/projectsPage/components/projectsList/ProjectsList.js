@@ -33,7 +33,7 @@ export default function ProjectsListItems(props) {
 									<li>
 										<h3>{item.name}</h3>
 									</li>
-									<li>
+									<li className="technology">
 										<h4>Technology:</h4>
 										<p>{item.technology}</p>
 									</li>
