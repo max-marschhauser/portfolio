@@ -7,11 +7,21 @@
 	padding: 0rem 0rem;
 
 	@include abs.mq(700px, 550px) {
-		padding: 0rem 0.5rem;
+		padding-right: 0.5rem;
+	}
+
+	margin-top: 0.5rem;
+
+	@include abs.mq(700px, 550px) {
+		margin-top: 0;
 	}
 
 	&__item {
-		margin-bottom: 1rem;
+		margin-bottom: 0.5rem;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 
 		display: grid;
 
