@@ -29,6 +29,7 @@ export default function Filter(props) {
 							id={`${id}-search`}
 							name="search"
 							placeholder="search"
+							tabIndex="0"
 							onChange={(e) => searchChanger(e.target.value)}
 						/>
 					</fieldset>
@@ -36,7 +37,7 @@ export default function Filter(props) {
 					<fieldset>
 						<legend>Skill used</legend>
 
-						<ul>
+						<ul className="filter--skills">
 							<li>
 								<input
 									type="radio"
@@ -46,6 +47,7 @@ export default function Filter(props) {
 									onClick={(e) => skillChanger(e.target.value)}
 								/>
 								<label
+									tabIndex="0"
 									className={activeSkill === "HTML" ? "activeFilterInput" : ""}
 									htmlFor={`${id}-HTML`}>
 									HTML
@@ -61,6 +63,7 @@ export default function Filter(props) {
 									onClick={(e) => skillChanger(e.target.value)}
 								/>
 								<label
+									tabIndex="0"
 									className={activeSkill === "CSS" ? "activeFilterInput" : ""}
 									htmlFor={`${id}-CSS`}>
 									CSS
@@ -76,6 +79,7 @@ export default function Filter(props) {
 									onClick={(e) => skillChanger(e.target.value)}
 								/>
 								<label
+									tabIndex="0"
 									className={activeSkill === "JavaScript" ? "activeFilterInput" : ""}
 									htmlFor={`${id}-JavaScript`}>
 									JavaScript
@@ -91,6 +95,7 @@ export default function Filter(props) {
 									onClick={(e) => skillChanger(e.target.value)}
 								/>
 								<label
+									tabIndex="0"
 									className={activeSkill === "Sass" ? "activeFilterInput" : ""}
 									htmlFor={`${id}-Sass`}>
 									Sass
@@ -106,6 +111,7 @@ export default function Filter(props) {
 									onClick={(e) => skillChanger(e.target.value)}
 								/>
 								<label
+									tabIndex="0"
 									className={activeSkill === "TypeScript" ? "activeFilterInput" : ""}
 									htmlFor={`${id}-TypeScript`}>
 									TypeScript
@@ -119,8 +125,10 @@ export default function Filter(props) {
 									name="skill"
 									value="React"
 									onClick={(e) => skillChanger(e.target.value)}
+									onKeyDown={(e) => skillChanger(e.target.value)}
 								/>
 								<label
+									tabIndex="0"
 									className={activeSkill === "React" ? "activeFilterInput" : ""}
 									htmlFor={`${id}-React`}>
 									React
@@ -132,7 +140,7 @@ export default function Filter(props) {
 					<fieldset>
 						<legend>Keyword</legend>
 
-						<ul>
+						<ul className="filter--keyword">
 							<li>
 								<input
 									type="radio"
@@ -142,6 +150,7 @@ export default function Filter(props) {
 									onClick={(e) => keywordChanger(e.target.value)}
 								/>
 								<label
+									tabIndex="0"
 									className={activeKeyword === "Single-page App" ? "activeFilterInput" : ""}
 									htmlFor={`${id}-Single-page App`}>
 									Single-page App
@@ -157,6 +166,7 @@ export default function Filter(props) {
 									onClick={(e) => keywordChanger(e.target.value)}
 								/>
 								<label
+									tabIndex="0"
 									className={activeKeyword === "API" ? "activeFilterInput" : ""}
 									htmlFor={`${id}-API`}>
 									API
@@ -172,6 +182,7 @@ export default function Filter(props) {
 									onClick={(e) => keywordChanger(e.target.value)}
 								/>
 								<label
+									tabIndex="0"
 									className={activeKeyword === "Data" ? "activeFilterInput" : ""}
 									htmlFor={`${id}-Data`}>
 									Data
@@ -187,6 +198,7 @@ export default function Filter(props) {
 									onClick={(e) => keywordChanger(e.target.value)}
 								/>
 								<label
+									tabIndex="0"
 									className={activeKeyword === "Brochure" ? "activeFilterInput" : ""}
 									htmlFor={`${id}-Brochure`}>
 									Brochure
@@ -202,6 +214,7 @@ export default function Filter(props) {
 									onClick={(e) => keywordChanger(e.target.value)}
 								/>
 								<label
+									tabIndex="0"
 									className={activeKeyword === "eCommerce" ? "activeFilterInput" : ""}
 									htmlFor={`${id}-eCommerce`}>
 									eCommerce
@@ -217,6 +230,7 @@ export default function Filter(props) {
 									onClick={(e) => keywordChanger(e.target.value)}
 								/>
 								<label
+									tabIndex="0"
 									className={activeKeyword === "Game" ? "activeFilterInput" : ""}
 									htmlFor={`${id}-Game`}>
 									Game
@@ -232,6 +246,7 @@ export default function Filter(props) {
 									onClick={(e) => keywordChanger(e.target.value)}
 								/>
 								<label
+									tabIndex="0"
 									className={activeKeyword === "Responsive" ? "activeFilterInput" : ""}
 									htmlFor={`${id}-Responsive`}>
 									Responsive
@@ -247,6 +262,7 @@ export default function Filter(props) {
 									onClick={(e) => keywordChanger(e.target.value)}
 								/>
 								<label
+									tabIndex="0"
 									className={activeKeyword === "Component" ? "activeFilterInput" : ""}
 									htmlFor={`${id}-Component`}>
 									Component
