@@ -4,144 +4,140 @@
 .filter {
 	order: -1;
 
-	@include abs.mq(1400px, 550px) {
+	@include abs.mq(1400px, 0px) {
 		order: 0;
 	}
 
-	padding: 1rem;
-	margin-bottom: 0rem;
-
-	@include abs.mq(700px, 550px) {
-		padding: 2rem;
-	}
+	padding: clamp(0.75rem, 4vw, 2rem);
 
 	background-color: var(--color-black-transparent);
 
-	color: var(--color-lightgray);
+	color: var(--color-white);
 
 	&--container {
 		position: sticky;
 		top: 8rem;
-	}
 
-	h3 {
-		text-align: center;
-		font-weight: bold;
-		font-size: 1.25rem;
-		color: var(--color-white);
-		@include abs.mq(700px, 550px) {
-			font-size: 2.25rem;
+		h3 {
+			text-align: center;
+			font-weight: bold;
+			font-size: clamp(1.5rem, 4vw, 2rem);
+
+			user-select: none;
 		}
 
-		user-select: none;
-	}
-
-	form {
-		display: flex;
-		flex-direction: column;
-
-		fieldset {
+		form {
 			display: flex;
 			flex-direction: column;
-			place-items: center;
 
-			&:nth-child(1),
-			&:nth-child(2) {
-				padding-bottom: 1rem;
-				border-bottom: 1px solid var(--color-white);
-			}
+			fieldset {
+				display: flex;
+				flex-direction: column;
+				place-items: center;
 
-			legend {
-				padding-block: 0.75rem;
+				&:nth-child(1),
+				&:nth-child(2) {
+					padding-bottom: 1rem;
+					border-bottom: 1px solid var(--color-white);
+				}
 
-				text-align: center;
-				font-weight: bold;
-				font-size: 1.5rem;
-				color: var(--color-white);
-
-				@include abs.mq(700px, 550px) {
+				legend {
 					padding-block: 1rem;
 
-					font-size: 1.75rem;
-				}
-
-				user-select: none;
-			}
-
-			input[type="search"] {
-				width: 80%;
-				padding: 0.25rem;
-
-				background-color: var(--color-white);
-
-				text-align: center;
-				font-size: 1.5rem;
-			}
-
-			ul {
-				display: grid;
-				grid-template-columns: repeat(2, 1fr);
-				place-items: left;
-				row-gap: 1.5rem;
-
-				font-size: 0.9rem;
-				list-style: none;
-
-				@include abs.mq(700px, 550px) {
-					font-size: 1.15rem;
-					grid-template-columns: repeat(3, 1fr);
-				}
-
-				@include abs.mq(1400px, 550px) {
-					font-size: 1.25rem;
-					grid-template-columns: repeat(2, 1fr);
-				}
-
-				li {
 					text-align: center;
+					font-weight: bold;
+					font-size: clamp(1.25rem, 1.5vw, 1.75rem);
 
-					input {
-						display: none;
+					user-select: none;
+				}
+
+				input[type="search"] {
+					width: 80%;
+					padding: 0.25rem;
+
+					background-color: var(--color-lightgray);
+
+					text-align: center;
+					font-size: clamp(1.25rem, 1.5vw, 1.75rem);
+					color: var(--color-blue);
+					caret-color: var(--color-blue);
+
+					transition: all 0.35s ease;
+
+					&:hover,
+					&:focus-visible,
+					&:active {
+						background-color: var(--color-white);
+					}
+				}
+
+				ul {
+					display: grid;
+
+					grid-template-columns: repeat(2, 1fr);
+
+					@include abs.mq(500px, 0px) {
+						grid-template-columns: repeat(3, 1fr);
 					}
 
-					label {
-						padding: 0.5rem 0.5rem;
-						border-radius: 0.25rem;
+					@include abs.mq(1000px, 0px) {
+						grid-template-columns: repeat(8, 1fr);
+					}
 
-						@include abs.mq(700px, 550px) {
-							padding: 0.5rem 1rem;
+					@include abs.mq(1400px, 0px) {
+						grid-template-columns: repeat(3, 1fr);
+					}
+
+					row-gap: 1.5rem;
+					column-gap: 0.25rem;
+
+					font-size: clamp(1rem, 1vw, 1.5rem);
+					list-style: none;
+
+					li {
+						text-align: center;
+
+						input {
+							display: none;
 						}
 
-						opacity: 0.8;
-						outline: 0.1rem solid transparent;
+						label {
+							padding: clamp(0.25rem, 1vw, 0.5rem);
+							border-radius: 0.25rem;
 
-						transition: all 0.25s ease;
+							opacity: 0.8;
+							outline: 0.1rem solid transparent;
 
-						cursor: pointer;
+							color: var(--color-lightgray);
 
-						&:hover,
-						&:focus-visible {
-							opacity: 0.9;
-							outline: 0.1rem solid var(--color-green);
+							transition: all 0.25s ease;
 
-							color: var(--color-white);
+							cursor: pointer;
+
+							&:hover,
+							&:focus-visible {
+								opacity: 0.9;
+								outline: 0.1rem solid var(--color-green);
+
+								color: var(--color-white);
+							}
+
+							&:active {
+								opacity: 1;
+								outline: 0.1rem solid var(--color-green);
+
+								color: var(--color-white);
+							}
 						}
 
-						&:active {
+						.activeFilterInput {
 							opacity: 1;
-							outline: 0.1rem solid var(--color-green);
+							outline: 0.1rem solid var(--color-orange);
 
 							color: var(--color-white);
+
+							transition: all 0.25s ease;
 						}
-					}
-
-					.activeFilterInput {
-						opacity: 1;
-						outline: 0.1rem solid var(--color-orange);
-
-						color: var(--color-white);
-
-						transition: all 0.25s ease;
 					}
 				}
 			}

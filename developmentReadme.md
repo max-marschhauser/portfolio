@@ -6,15 +6,6 @@ to do:
 -   add key words to skills (accessibility, speed, dry, kiss, other cool words, design)
 -   provjeriti pravopis na data fileovima
 
-Media query breakpoints
-smallest mobile - default
-regular mobile - 350px
-tablet - 700px
-regular desktop: 1400px
-large desktop or tv - 2100px
-
-MAIN BREAKPOINT - 350px 550px, 700px, 550px, 1400px 550px, 2100px 550px
-
 -   Favicon prefers light mode, prefers dark mode
 -   Media querry orientation portrait landscape
 

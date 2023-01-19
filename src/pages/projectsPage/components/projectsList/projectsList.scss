@@ -6,13 +6,13 @@
 
 	padding: 0rem 0rem;
 
-	@include abs.mq(700px, 550px) {
+	@include abs.mq(1400px, 0px) {
 		padding-right: 0.5rem;
 	}
 
 	margin-top: 0.5rem;
 
-	@include abs.mq(700px, 550px) {
+	@include abs.mq(1400px, 0px) {
 		margin-top: 0;
 	}
 
