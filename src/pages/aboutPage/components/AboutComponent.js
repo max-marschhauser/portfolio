@@ -16,19 +16,31 @@ export default function AboutComponent(props) {
 		if (relatedToProgramming === item.relatedToProgramming) {
 			return (
 				<article key={item.title}>
-					<h4>{item.title}</h4>
-					{item.imgSrc !== undefined ? (
-						<a href={item.link} target="_blank" rel="noreferrer">
-							<img src={item.imgSrc} alt={item.imgSrc} />
-						</a>
-					) : (
-						<></>
-					)}
-					<ul>
-						{item.content.map((contentLine) => {
-							return <li key={contentLine}>{contentLine}</li>;
-						})}
-					</ul>
+					<div className="upperPart">
+						<h4>{item.title}</h4>
+						{item.imgSrc !== undefined ? (
+							<a href={item.link} target="_blank" rel="noreferrer">
+								<img src={item.imgSrc} alt={item.imgSrc} />
+							</a>
+						) : (
+							<ul>
+								{item.content.map((contentLine) => {
+									return <li key={contentLine}>{contentLine}</li>;
+								})}
+							</ul>
+						)}
+					</div>
+					<>
+						{item.imgSrc === undefined ? (
+							<></>
+						) : (
+							<ul>
+								{item.content.map((contentLine) => {
+									return <li key={contentLine}>{contentLine}</li>;
+								})}
+							</ul>
+						)}
+					</>
 				</article>
 			);
 		} else {
