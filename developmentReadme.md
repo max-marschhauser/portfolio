@@ -84,3 +84,6 @@ return textArea.value;
 }
 
 grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); --> super za responsiv design
+
+https://animista.net/play/text/focus-in/text-focus-in
+na stranici ima dosta css animacija, dosta dobro
