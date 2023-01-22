@@ -87,3 +87,5 @@ grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); --> super za respo
 
 https://animista.net/play/text/focus-in/text-focus-in
 na stranici ima dosta css animacija, dosta dobro
+
+npr. koristiti blur na animacijama teksta jako dobro izgleda
