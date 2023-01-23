@@ -41,7 +41,10 @@ export default function ProjectsPage() {
 
 	return (
 		<section className="projectsPage">
-			<h2 className="pageHeading">Projects</h2>
+			<h2 className="pageHeading">
+				Projects
+				<p>Interested in my projects?</p>
+			</h2>
 			<div className="projectsPage__container">
 				<ProjectsList searchWord={searchWord} activeSkill={activeSkill} activeKeyword={activeKeyword} />
 				<Filter

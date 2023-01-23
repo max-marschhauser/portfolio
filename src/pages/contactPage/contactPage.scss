@@ -1,3 +1,63 @@
+// importing Sass mixins
+@use "../../assets/styles/abstracts" as abs;
+
 .contactPage {
-	min-height: 100vh;
+	min-height: max-content;
+	margin-bottom: 1rem;
+
+	&--contents {
+		padding-block: clamp(1.5rem, 15vh, 4rem);
+
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+
+		@include abs.mq(1400px, 0px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		place-items: center;
+		gap: clamp(1.5rem, 15vh, 4rem);
+
+		background-color: var(--color-black-transparent);
+
+		color: var(--color-white);
+
+		img {
+			width: clamp(15rem, 20vw, 20rem);
+			aspect-ratio: 1 / 1;
+
+			border-radius: 50%;
+			outline: 0.5rem solid var(--color-blue);
+			outline-offset: 0.5rem;
+
+			user-select: none;
+		}
+
+		ul {
+			margin: 0 auto;
+			padding-inline: 1rem;
+
+			list-style: none;
+
+			text-align: center;
+
+			li {
+				padding-block: clamp(1rem, 5vh, 2rem);
+
+				font-size: clamp(1.1rem, 5vw, 1.75rem);
+
+				ion-icon {
+					pointer-events: none;
+
+					transform: translate(-0.5rem, 0.15rem);
+				}
+
+				span {
+					font-weight: bold;
+
+					font-size: clamp(1.25rem, 6.5vw, 2rem);
+				}
+			}
+		}
+	}
 }

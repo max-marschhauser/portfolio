@@ -12,7 +12,10 @@ import AboutComponent from "./components/AboutComponent.js";
 export default function AboutPage() {
 	return (
 		<section className="aboutPage">
-			<h2 className="pageHeading">About</h2>
+			<h2 className="pageHeading">
+				About
+				<p>Want to know more about me?</p>
+			</h2>
 
 			<div className="aboutPage--contents">
 				<h3>Related to programming</h3>

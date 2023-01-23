@@ -18,9 +18,16 @@
 }
 
 .pageHeading {
-	margin-block: 0.5rem;
+	margin-block: clamp(1rem, 5vh, 6rem);
 
 	text-align: center;
-	font-size: clamp(1.5rem, 1rem + 5vw, 3rem);
+	font-size: clamp(2.5rem, 5vw, 3.5rem);
 	color: var(--color-white);
+
+	p {
+		padding-top: clamp(0.25rem, 1.25vh, 1.5rem);
+
+		font-size: clamp(1rem, 2vw, 1.5rem);
+		font-style: italic;
+	}
 }

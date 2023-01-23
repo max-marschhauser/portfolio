@@ -31,7 +31,10 @@ export default function SkillsPage() {
 
 	return (
 		<section className="skillsPage">
-			<h2 className="pageHeading">Skills</h2>
+			<h2 className="pageHeading">
+				Skills
+				<p>Want to know what I know?</p>
+			</h2>
 			<div className="skillsPage__container">
 				<div className="leftPart">
 					<h3>Everyday use</h3>

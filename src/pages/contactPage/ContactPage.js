@@ -6,10 +6,34 @@ import React from "react";
 // importing styles
 import "./contactPage.scss";
 
+// importing images
+import profileImage from "../../assets/images/manstanding.jpg";
+
 export default function ContactPage() {
 	return (
 		<section className="contactPage">
-			<h2 className="pageHeading">Contact</h2>
+			<h2 className="pageHeading">
+				Contact
+				<p>How to contact me?</p>
+			</h2>
+
+			<div className="contactPage--contents">
+				<img src={profileImage} alt="profile" />
+				<ul>
+					<li>
+						<ion-icon name="mail-sharp"></ion-icon>
+						<span>E-mail: </span>
+						<br />
+						max.marschhauser@gmail.com
+					</li>
+					<li>
+						<ion-icon name="call-sharp"></ion-icon>
+						<span>Phone: </span>
+						<br />
+						098 / 921 - 0125
+					</li>
+				</ul>
+			</div>
 		</section>
 	);
 }
