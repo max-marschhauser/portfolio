@@ -17,7 +17,7 @@
 	justify-content: space-between;
 	align-items: center;
 
-	background: var(--color-black);
+	background-color: var(--color-black);
 
 	.logo {
 		display: flex;
@@ -31,7 +31,7 @@
 		color: var(--color-lightgray);
 		text-decoration: none;
 
-		transition: all 0.25s ease;
+		transition: all 0.35s ease;
 
 		&:hover,
 		&:focus-visible {
@@ -75,7 +75,7 @@
 		outline-offset: 0.1rem;
 		outline: 0.1rem solid var(--color-white);
 
-		transition: all 0.5s ease;
+		transition: all 0.35s ease;
 
 		cursor: pointer;
 
@@ -104,7 +104,7 @@
 
 			background-color: var(--color-white);
 
-			transition: all 0.5s ease;
+			transition: all 0.35s ease;
 
 			&:nth-child(1) {
 				top: var(--white-space);
@@ -173,7 +173,7 @@
 	list-style: none;
 	text-align: center;
 
-	transition: all 0.25s ease-in-out;
+	transition: all 0.35s ease;
 
 	.navbar__link {
 		width: 100%;

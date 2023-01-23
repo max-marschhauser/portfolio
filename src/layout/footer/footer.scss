@@ -183,10 +183,10 @@
 					border-radius: 1rem;
 
 					opacity: 1;
-					outline: 0.1rem solid var(--color-green);
+					outline: 0.1rem solid var(--color-white);
 					background-color: transparent;
 
-					color: var(--color-green);
+					color: var(--color-white);
 					font-weight: bold;
 					text-decoration: none;
 
@@ -194,18 +194,23 @@
 						font-size: 1rem;
 					}
 
+					cursor: pointer;
+
 					transition: all 0.25s ease;
 
 					&:hover,
 					&:focus-visible {
 						opacity: 0.9;
-						outline: 0.1rem solid var(--color-orange);
+						outline: 0.1rem solid var(--color-green);
 
-						color: var(--color-orange);
+						color: var(--color-green);
 					}
 
 					&:active {
 						opacity: 0.8;
+						outline: 0.1rem solid var(--color-orange);
+
+						color: var(--color-orange);
 					}
 				}
 			}
