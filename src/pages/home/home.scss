@@ -5,37 +5,29 @@
 	min-height: max-content;
 
 	&--grid {
+		padding-block: 2rem;
+		min-height: 90vh;
+
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
 		place-items: center;
 		gap: 2rem;
 
-		padding-block: 2rem;
-
-		min-height: 85vh;
-
 		background-image: url(../../assets/images/space-bg.jpg);
-		background-position: left;
+		background-position: center;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		background-size: cover;
 
-		@include abs.mq(900px, 550px) {
+		@include abs.mq(1400px, 0px) {
 			grid-template-columns: repeat(2, 1fr);
 
 			clip-path: polygon(1% 2%, 99% 10%, 95% 98%, 4% 85%);
-
-			background-position: center;
 		}
 
 		img {
-			width: 10rem;
-			height: 10rem;
-
-			@include abs.mq(700px, 550px) {
-				width: 20rem;
-				height: 20rem;
-			}
+			width: clamp(15rem, 20vw, 20rem);
+			aspect-ratio: 1 / 1;
 
 			border-radius: 50%;
 			outline: 0.5rem solid var(--color-blue);
@@ -50,24 +42,18 @@
 			place-items: center;
 			gap: 1rem;
 
-			padding: 2.5rem;
+			padding-block: 2.5rem;
+			padding-inline: clamp(0.5rem, 5vw, 5rem);
 
 			background-color: var(--color-blue-transparent);
 
 			color: var(--color-white);
 
-			@include abs.mq(700px, 550px) {
-				clip-path: polygon(1% 5%, 99% 10%, 95% 100%, 4% 85%);
-			}
-
 			h1 {
 				max-width: 20rem;
 
-				font-size: 1.5rem;
-
-				@include abs.mq(700px, 550px) {
-					font-size: 2.5rem;
-				}
+				font-size: clamp(1.5rem, 10vw, 2.5rem);
+				text-align: center;
 			}
 
 			h2 {
@@ -75,27 +61,15 @@
 				flex-direction: row;
 				justify-content: center;
 				align-items: center;
-				gap: 1rem;
+				gap: clamp(1rem, 2vw, 2rem);
 
-				word-spacing: 0.1rem;
 				text-align: center;
-				font-size: 1.25rem;
-
-				@include abs.mq(700px, 550px) {
-					gap: 2rem;
-
-					word-spacing: 0.5rem;
-					font-size: 2.25rem;
-				}
+				font-size: clamp(1.25rem, 10vw, 2.25rem);
 
 				span {
 					&:first-child,
 					&:last-child {
 						font-size: 3rem;
-
-						@include abs.mq(700px, 550px) {
-							font-size: 4rem;
-						}
 					}
 				}
 			}

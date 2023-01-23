@@ -29,7 +29,7 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<section className="blankSection"></section>
+
 			<Skills />
 
 			<Projects />

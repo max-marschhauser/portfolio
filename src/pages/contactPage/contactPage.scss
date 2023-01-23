@@ -20,8 +20,6 @@
 
 		background-color: var(--color-black-transparent);
 
-		color: var(--color-white);
-
 		img {
 			width: clamp(15rem, 20vw, 20rem);
 			aspect-ratio: 1 / 1;
@@ -45,17 +43,20 @@
 				padding-block: clamp(1rem, 5vh, 2rem);
 
 				font-size: clamp(1.1rem, 5vw, 1.75rem);
+				color: var(--color-lightgray);
 
 				ion-icon {
 					pointer-events: none;
+
+					color: var(--color-white);
 
 					transform: translate(-0.5rem, 0.15rem);
 				}
 
 				span {
-					font-weight: bold;
-
 					font-size: clamp(1.25rem, 6.5vw, 2rem);
+					font-weight: bold;
+					color: var(--color-white);
 				}
 			}
 		}

@@ -85,11 +85,14 @@
 							&:hover,
 							&:focus-visible {
 								opacity: 0.9;
-								color: var(--color-orange);
+
+								color: var(--color-green);
 							}
 
 							&:active {
 								opacity: 0.8;
+
+								color: var(--color-orange);
 							}
 						}
 					}
@@ -123,12 +126,15 @@
 
 							&:hover,
 							&:focus-visible {
-								color: var(--color-orange);
 								opacity: 0.9;
+
+								color: var(--color-green);
 							}
 
 							&:active {
 								opacity: 0.8;
+
+								color: var(--color-orange);
 							}
 						}
 					}

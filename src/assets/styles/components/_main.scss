@@ -3,20 +3,6 @@
 // importing Sass mixins
 @use "../abstracts" as abs;
 
-.blankSection {
-	height: 4rem;
-
-	background-color: var(--color-black-transparent);
-
-	@include abs.mq(0px, 550px) {
-		height: 6rem;
-	}
-
-	@include abs.mq(0px, 850px) {
-		height: 16rem;
-	}
-}
-
 .pageHeading {
 	margin-block: clamp(1rem, 5vh, 6rem);
 

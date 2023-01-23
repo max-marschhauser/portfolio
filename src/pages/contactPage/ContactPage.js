@@ -18,7 +18,7 @@ export default function ContactPage() {
 			</h2>
 
 			<div className="contactPage--contents">
-				<img src={profileImage} alt="profile" />
+				<img src={profileImage} alt="max-marschhauser-profile" />
 				<ul>
 					<li>
 						<ion-icon name="mail-sharp"></ion-icon>
