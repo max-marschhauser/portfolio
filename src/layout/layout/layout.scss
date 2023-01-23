@@ -6,10 +6,7 @@
 	top: 0;
 	z-index: 10;
 
-	padding-left: 2rem;
-	@include abs.mq(500px, 0px) {
-		padding-left: 6rem;
-	}
+	padding-left: clamp(2rem, 8vw, 6rem);
 	padding-right: 2rem;
 
 	display: flex;
@@ -23,7 +20,6 @@
 		display: flex;
 		flex-direction: column;
 		place-items: center;
-		gap: 0.1rem;
 
 		padding-block: 0.5rem;
 
@@ -58,7 +54,7 @@
 	}
 
 	.hamburgerButton {
-		@include abs.mq(1200px, 0px) {
+		@include abs.mq(1400px, 0px) {
 			display: none;
 		}
 
@@ -82,10 +78,6 @@
 		&:hover,
 		&:focus-visible {
 			opacity: 0.9;
-
-			> * {
-				background-color: var(--color-white);
-			}
 		}
 
 		&:active {
@@ -141,7 +133,7 @@
 }
 
 .mobileNavbar {
-	@include abs.mq(1200px, 0px) {
+	@include abs.mq(1400px, 0px) {
 		display: none;
 	}
 
@@ -160,7 +152,7 @@
 .desktopNavbar {
 	display: none;
 
-	@include abs.mq(1200px, 0px) {
+	@include abs.mq(1400px, 0px) {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -180,9 +172,8 @@
 		padding-inline: 1.5rem;
 		padding-block: 0.5rem;
 		border-bottom: 1px solid transparent;
-		border-radius: 0rem;
 
-		@include abs.mq(1200px, 0px) {
+		@include abs.mq(1400px, 0px) {
 			border-radius: 0.5rem;
 			width: auto;
 		}
@@ -202,9 +193,10 @@
 		&:hover,
 		&:focus-visible {
 			opacity: 0.9;
+
 			color: var(--color-green);
 
-			@include abs.mq(1200px, 0px) {
+			@include abs.mq(1400px, 0px) {
 				background-color: transparent;
 
 				border-bottom: 1px solid var(--color-green);
@@ -214,9 +206,13 @@
 		&:active {
 			opacity: 0.8;
 
-			border-bottom: 1px solid var(--color-orange);
-
 			color: var(--color-orange);
+
+			@include abs.mq(1400px, 0px) {
+				background-color: transparent;
+
+				border-bottom: 1px solid var(--color-orange);
+			}
 		}
 
 		ion-icon {
