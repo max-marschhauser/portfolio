@@ -1,8 +1,5 @@
 // root scss file, styles :root, *, body and scrollbar
 
-// importing Sass mixins
-@use "../abstracts" as abs;
-
 :root {
 	// colors
 
@@ -18,6 +15,8 @@
 
 	// font family
 	--font-family: "Montserrat", sans-serif;
+
+	--desktopSize: 1400px;
 }
 
 *,

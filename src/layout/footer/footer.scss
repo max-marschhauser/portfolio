@@ -22,7 +22,7 @@
 			place-items: center;
 			gap: 3rem;
 
-			@include abs.mq(1000px, 0px) {
+			@include abs.mq(1400px, 0px) {
 				grid-template-columns: repeat(2, 1fr);
 				gap: 0rem;
 			}

@@ -1,8 +1,5 @@
 // contains main styles which are used in more different files
 
-// importing Sass mixins
-@use "../abstracts" as abs;
-
 .pageHeading {
 	margin-block: clamp(1rem, 5vh, 6rem);
 
