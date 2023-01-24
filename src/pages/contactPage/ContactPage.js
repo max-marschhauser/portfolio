@@ -24,7 +24,9 @@ export default function ContactPage() {
 						<ion-icon name="mail-sharp"></ion-icon>
 						<span>E-mail: </span>
 						<br />
-						max.marschhauser@gmail.com
+						max.marschhauser
+						<wbr />
+						@gmail.com
 					</li>
 					<li>
 						<ion-icon name="call-sharp"></ion-icon>

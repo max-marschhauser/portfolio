@@ -42,7 +42,7 @@
 			li {
 				padding-block: clamp(1rem, 5vh, 2rem);
 
-				font-size: clamp(1.1rem, 5vw, 1.75rem);
+				font-size: clamp(1.1rem, 4vw, 1.5rem);
 				color: var(--color-lightgray);
 
 				ion-icon {
@@ -54,7 +54,7 @@
 				}
 
 				span {
-					font-size: clamp(1.25rem, 6.5vw, 2rem);
+					font-size: clamp(1.3rem, 5vw, 1.75rem);
 					font-weight: bold;
 					color: var(--color-white);
 				}
