@@ -4,3 +4,4 @@ to do:
 -   projects from projects page, need to put good codeLink links
 -   provjeriti pravopis na data fileovima
 -   staviti profilnu sliku u header i footer
+-   dodati intersection observer da se sadržaji kasnije učitavaju
