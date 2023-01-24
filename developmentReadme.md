@@ -5,3 +5,5 @@ to do:
 -   provjeriti pravopis na data fileovima
 -   staviti profilnu sliku u header i footer
 -   dodati intersection observer da se sadržaji kasnije učitavaju
+
+-   na home slici uz pomoć margin: -1rem; (koji već broj i smjer) izbaciti moju sliku dolje do pola izvan okvira
