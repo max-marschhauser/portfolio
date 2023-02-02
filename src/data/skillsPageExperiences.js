@@ -42,9 +42,7 @@ const skillsData = {
 		"Used it mainly to connect web pages with SQL Databases.",
 		"Used it to create interactive web pages.",
 	],
-	MongoDB: ["Used it a couple of times.", "Still not very comfortable with it, would need a little bit of learning."],
 	MySQL: ["Learned it in 2012.", "Not the thing I use every day, would need a little bit of reminding."],
-	NodeJS: ["Still something foreigh to me but I'm getting there."],
 	C: [
 		"My first programming language.",
 		"Used it in school from 2009. to 2013.",

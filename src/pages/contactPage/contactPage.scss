@@ -14,15 +14,13 @@
 	place-items: center;
 	gap: clamp(1.5rem, 15vh, 4rem);
 
-	background-color: var(--color-black-transparent);
+	background-color: var(--color-primary-1-transparent);
 
 	img {
 		width: clamp(15rem, 20vw, 20rem);
 		aspect-ratio: 1 / 1;
 
-		border-radius: 50%;
-		outline: 0.5rem solid var(--color-blue);
-		outline-offset: 0.5rem;
+		border-radius: 4rem 1rem;
 
 		user-select: none;
 	}
@@ -39,12 +37,10 @@
 			padding-block: clamp(1rem, 5vh, 2rem);
 
 			font-size: clamp(1.1rem, 4vw, 1.5rem);
-			color: var(--color-lightgray);
+			color: var(--color-light);
 
 			ion-icon {
 				pointer-events: none;
-
-				color: var(--color-white);
 
 				transform: translate(-0.5rem, 0.15rem);
 			}
@@ -52,7 +48,6 @@
 			span {
 				font-size: clamp(1.3rem, 5vw, 1.75rem);
 				font-weight: bold;
-				color: var(--color-white);
 			}
 		}
 	}

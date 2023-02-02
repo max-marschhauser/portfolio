@@ -1,16 +1,23 @@
 // contains main styles which are used in more different files
 
 .pageHeading {
-	margin-block: clamp(1rem, 5vh, 6rem);
+	padding-block: clamp(1rem, 5vh, 6rem);
 
 	text-align: center;
 	font-size: clamp(2.5rem, 5vw, 3.5rem);
-	color: var(--color-light);
+	color: var(--color-dark);
+	letter-spacing: 0.05rem;
 
 	p {
 		padding-top: clamp(0.25rem, 1.25vh, 1.5rem);
 
-		font-size: clamp(1rem, 2vw, 1.5rem);
+		font-size: clamp(1.1rem, 2vw, 1.75rem);
 		font-style: italic;
 	}
+
+	background-image: url("../../images/nature3.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 }

@@ -14,7 +14,7 @@
 		grid-template-columns: repeat(2, 1fr);
 	}
 
-	background-image: url(../../assets/images/nature3.jpg);
+	background-image: url("../../assets/images/nature3.jpg");
 	background-position: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -38,8 +38,8 @@
 
 		color: var(--color-light);
 		text-align: center;
-		text-shadow: 0.1rem 0.1rem var(--color-dark), -0.1rem -0.1rem var(--color-dark),
-			-0.1rem 0.1rem var(--color-dark), 0.1rem -0.1rem var(--color-dark);
+		text-shadow: 0.2rem 0.2rem var(--color-dark), -0.2rem -0.2rem var(--color-dark),
+			-0.2rem 0.2rem var(--color-dark), 0.2rem -0.2rem var(--color-dark);
 
 		h1 {
 			max-width: 20rem;
