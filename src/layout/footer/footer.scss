@@ -10,7 +10,7 @@
 	align-items: center;
 	gap: 3rem;
 
-	background-color: var(--color-black);
+	background-color: var(--color-dark);
 	overflow-x: hidden;
 
 	&__item {
@@ -37,20 +37,12 @@
 
 				h2 {
 					text-align: center;
-
-					color: var(--color-lightgray);
-
-					@include abs.mq(2100px, 0px) {
-						font-size: 1.75rem;
-					}
+					letter-spacing: 0.05rem;
+					color: var(--color-light);
 
 					span {
 						font-size: 1rem;
 						font-weight: normal;
-
-						@include abs.mq(2100px, 0px) {
-							font-size: 1.25rem;
-						}
 					}
 				}
 
@@ -68,31 +60,23 @@
 					list-style: none;
 
 					padding: 3rem;
-					border-block: 0.1rem solid var(--color-green);
+					border-block: 0.1rem solid var(--color-action);
 
 					li {
 						a {
 							text-decoration: none;
-							color: var(--color-lightgray);
+							color: var(--color-light);
 							font-size: 1.8rem;
 
-							@include abs.mq(2100px, 0px) {
-								font-size: 2rem;
-							}
-
-							transition: all 0.25s ease;
+							transition: all 0.35s ease;
 
 							&:hover,
 							&:focus-visible {
-								opacity: 0.9;
-
-								color: var(--color-green);
+								color: var(--color-action);
 							}
 
 							&:active {
 								opacity: 0.8;
-
-								color: var(--color-orange);
 							}
 						}
 					}
@@ -107,57 +91,44 @@
 
 						list-style: none;
 
-						ion-icon {
-							pointer-events: none;
-
-							transform: translate(-0.15rem, 0.15rem);
-						}
-
 						a {
 							font-size: 1.15rem;
 							text-decoration: none;
-							color: var(--color-lightgray);
+							color: var(--color-light);
+							letter-spacing: 0.05rem;
 
-							@include abs.mq(2100px, 0px) {
-								font-size: 1.5rem;
-							}
-
-							transition: all 0.25s ease;
+							transition: all 0.35s ease;
 
 							&:hover,
 							&:focus-visible {
-								opacity: 0.9;
-
-								color: var(--color-green);
+								& > ion-icon {
+									color: var(--color-action);
+								}
 							}
 
 							&:active {
-								opacity: 0.8;
+								opacity: 0.5;
+							}
 
-								color: var(--color-orange);
+							ion-icon {
+								pointer-events: none;
+
+								transform: translate(-0.15rem, 0.15rem);
+
+								transition: all 0.35s ease;
 							}
 						}
 					}
 				}
 
 				iframe {
-					box-shadow: 0rem 0rem 0rem 0.1rem var(--color-blue);
+					box-shadow: 0rem 0rem 0rem 0.1rem var(--color-light);
 					border-radius: 0.5rem;
 
-					width: 15rem;
-					height: 15rem;
+					width: clamp(15rem, 20vw, 25rem);
+					aspect-ratio: 1 / 1;
 
 					user-select: none;
-
-					@include abs.mq(400px, 0px) {
-						width: 20rem;
-						height: 20rem;
-					}
-
-					@include abs.mq(600px, 0px) {
-						width: 25rem;
-						height: 25rem;
-					}
 				}
 			}
 		}
@@ -172,45 +143,33 @@
 			list-style: none;
 
 			li {
-				color: var(--color-lightgray);
-
-				@include abs.mq(2100px, 0px) {
-					font-size: 1.5rem;
-				}
+				color: var(--color-light);
 
 				button {
 					padding: 0.75rem;
 					border-radius: 1rem;
 
 					opacity: 1;
-					outline: 0.1rem solid var(--color-white);
+					border-block: 0.1rem solid var(--color-light);
 					background-color: transparent;
 
-					color: var(--color-white);
+					color: var(--color-light);
 					font-weight: bold;
 					text-decoration: none;
 
-					@include abs.mq(1400px, 0px) {
-						font-size: 1rem;
-					}
+					font-size: clamp(0.8rem, 3vw, 1rem);
 
 					cursor: pointer;
 
-					transition: all 0.25s ease;
+					transition: all 0.35s ease;
 
 					&:hover,
 					&:focus-visible {
-						opacity: 0.9;
-						outline: 0.1rem solid var(--color-green);
-
-						color: var(--color-green);
+						border-block: 0.1rem solid var(--color-action);
 					}
 
 					&:active {
 						opacity: 0.8;
-						outline: 0.1rem solid var(--color-orange);
-
-						color: var(--color-orange);
 					}
 				}
 			}

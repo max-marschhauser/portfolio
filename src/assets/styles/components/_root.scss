@@ -2,21 +2,19 @@
 
 :root {
 	// colors
+	--color-dark: hsl(125, 20%, 10%);
+	--color-light: hsl(10, 10%, 90%);
 
-	--color-black: hsl(0, 0%, 0%);
-	--color-black-transparent: hsl(0, 0%, 0%, 0.75);
-	--color-lightgray: hsl(0, 0%, 80%);
-	--color-white: hsl(0, 0%, 100%);
+	--color-primary-1: hsl(129, 34%, 30%);
+	--color-primary-1-transparent: hsla(129, 34%, 30%, 0.75);
 
-	--color-blue: hsl(207, 100%, 20%); // general color
-	--color-blue-transparent: hsl(207, 100%, 20%, 0.75); // general color transparent
-	--color-green: hsl(127, 60%, 60%); // call to action color
-	--color-orange: hsl(30, 100%, 60%); // reaction color
+	--color-primary-2: hsl(32, 47%, 41%);
+	--color-primary-2-transparent: hsla(32, 47%, 41%, 0.75);
+
+	--color-action: hsl(16, 90%, 60%);
 
 	// font family
 	--font-family: "Montserrat", sans-serif;
-
-	--desktopSize: 1400px;
 }
 
 *,
@@ -35,27 +33,27 @@
 }
 
 ::selection {
-	background-color: var(--color-lightgray);
+	background-color: var(--color-dark);
 
-	color: var(--color-black);
+	color: var(--color-light);
 }
 
 body {
-	background-color: var(--color-blue);
+	background-color: var(--color-primary-1);
 }
 
 ::-webkit-scrollbar {
 	width: 0.75rem;
 
 	&-track {
-		background: var(--color-lightgray);
+		background-color: var(--color-light);
 	}
 
 	&-thumb {
-		background: var(--color-gray);
+		background: var(--color-dark);
 
 		&:hover {
-			background: var(--color-darkgray);
+			background: var(--color-action);
 		}
 	}
 }

@@ -14,7 +14,7 @@
 	justify-content: space-between;
 	align-items: center;
 
-	background-color: var(--color-black);
+	background-color: var(--color-dark);
 
 	.logo {
 		display: flex;
@@ -24,8 +24,9 @@
 		padding-block: 0.5rem;
 
 		text-align: center;
-		color: var(--color-lightgray);
+		color: var(--color-light);
 		text-decoration: none;
+		letter-spacing: 0.05rem;
 
 		transition: all 0.35s ease;
 
@@ -69,7 +70,7 @@
 
 		background-color: transparent;
 		outline-offset: 0.1rem;
-		outline: 0.1rem solid var(--color-white);
+		outline: 0.1rem solid var(--color-light);
 
 		transition: all 0.35s ease;
 
@@ -94,7 +95,7 @@
 			height: var(--line-height);
 			border-radius: 0.75rem;
 
-			background-color: var(--color-white);
+			background-color: var(--color-light);
 
 			transition: all 0.35s ease;
 
@@ -178,13 +179,14 @@
 			width: auto;
 		}
 
-		background-color: var(--color-black-transparent);
-		outline: 0.1rem solid var(--color-black);
+		background-color: var(--color-dark);
+		border-block: 0.1rem solid transparent;
 
 		font-size: 1.5rem;
 		text-decoration: none;
 		font-weight: bold;
-		color: var(--color-lightgray);
+		letter-spacing: 0.05rem;
+		color: var(--color-light);
 
 		user-select: none;
 
@@ -192,26 +194,26 @@
 
 		&:hover,
 		&:focus-visible {
-			opacity: 0.9;
-
-			color: var(--color-green);
+			border-block: 1px solid var(--color-action);
 
 			@include abs.mq(1400px, 0px) {
 				background-color: transparent;
 
-				border-bottom: 1px solid var(--color-green);
+				transition: all 0.35s ease;
+			}
+
+			& > ion-icon {
+				color: var(--color-action);
 			}
 		}
 
 		&:active {
-			opacity: 0.8;
-
-			color: var(--color-orange);
+			opacity: 0.85;
 
 			@include abs.mq(1400px, 0px) {
 				background-color: transparent;
 
-				border-bottom: 1px solid var(--color-orange);
+				opacity: 0.5;
 			}
 		}
 
@@ -219,6 +221,8 @@
 			pointer-events: none;
 
 			transform: translate(-0.5rem, 0.15rem);
+
+			transition: all 0.35s ease;
 		}
 	}
 }

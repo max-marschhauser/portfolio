@@ -13,7 +13,7 @@
 		place-items: center;
 		gap: 2rem;
 
-		background-image: url(../../assets/images/space-bg.jpg);
+		background-image: url(../../assets/images/nature3.jpg);
 		background-position: center;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
@@ -29,9 +29,9 @@
 			width: clamp(15rem, 20vw, 20rem);
 			aspect-ratio: 1 / 1;
 
-			border-radius: 50%;
-			outline: 0.5rem solid var(--color-blue);
-			outline-offset: 0.5rem;
+			border-radius: 4rem 1rem;
+			//outline: 0.5rem solid var(--color-blue);
+			//outline-offset: 0.5rem;
 
 			user-select: none;
 		}
