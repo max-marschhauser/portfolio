@@ -8,7 +8,7 @@ import { NavLink } from "react-router-dom";
 import "./navbar.scss";
 
 export default function Navbar(props) {
-	let { activePage } = props;
+	let { activePage, handleLinkClick } = props;
 
 	let [mobileNavbar, setMobileNavbar] = useState(false);
 
@@ -36,25 +36,29 @@ export default function Navbar(props) {
 				<nav className="desktopNavbar navbarStyle">
 					<NavLink
 						className={activePage === "/skills" ? "navbar__link activeLink" : "navbar__link"}
-						to="/skills">
+						to="/skills"
+						onClick={handleLinkClick}>
 						<ion-icon name="trophy-sharp"></ion-icon>Skills
 					</NavLink>
 
 					<NavLink
 						className={activePage === "/projects" ? "navbar__link activeLink" : "navbar__link"}
-						to="/projects">
+						to="/projects"
+						onClick={handleLinkClick}>
 						<ion-icon name="hammer-sharp"></ion-icon>Projects
 					</NavLink>
 
 					<NavLink
 						className={activePage === "/about" ? "navbar__link activeLink" : "navbar__link"}
-						to="/about">
+						to="/about"
+						onClick={handleLinkClick}>
 						<ion-icon name="person-sharp"></ion-icon>About
 					</NavLink>
 
 					<NavLink
 						className={activePage === "/contact" ? "navbar__link activeLink" : "navbar__link"}
-						to="/contact">
+						to="/contact"
+						onClick={handleLinkClick}>
 						<ion-icon name="mail-unread-sharp"></ion-icon>Contact
 					</NavLink>
 				</nav>
@@ -64,23 +68,29 @@ export default function Navbar(props) {
 				className={
 					mobileNavbar === true ? "mobileNavbar navbarStyle" : "mobileNavbar mobileNavbarHidden navbarStyle"
 				}>
-				<NavLink className={activePage === "/skills" ? "navbar__link activeLink" : "navbar__link"} to="/skills">
+				<NavLink
+					className={activePage === "/skills" ? "navbar__link activeLink" : "navbar__link"}
+					to="/skills"
+					onClick={handleLinkClick}>
 					<ion-icon name="trophy-sharp"></ion-icon>Skills
 				</NavLink>
-
 				<NavLink
 					className={activePage === "/projects" ? "navbar__link activeLink" : "navbar__link"}
-					to="/projects">
+					to="/projects"
+					onClick={handleLinkClick}>
 					<ion-icon name="hammer-sharp"></ion-icon>Projects
 				</NavLink>
-
-				<NavLink className={activePage === "/about" ? "navbar__link activeLink" : "navbar__link"} to="/about">
+				<NavLink
+					className={activePage === "/about" ? "navbar__link activeLink" : "navbar__link"}
+					to="/about"
+					onClick={handleLinkClick}>
 					<ion-icon name="person-sharp"></ion-icon>About
 				</NavLink>
 				<NavLink
 					className={activePage === "/contact" ? "navbar__link activeLink" : "navbar__link"}
 					to="/contact"
-					end>
+					end
+					onClick={handleLinkClick}>
 					<ion-icon name="mail-unread-sharp"></ion-icon>Contact
 				</NavLink>
 			</nav>

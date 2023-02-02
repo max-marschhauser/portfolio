@@ -11,17 +11,19 @@ import Footer from "../footer/Footer.js";
 export default function Layout() {
 	let [activePage, setActivePage] = useState("");
 
-	const url = window.location.pathname;
-
 	useEffect(() => {
-		setActivePage(url);
-	}, [url]);
+		setActivePage(window.location.pathname);
+	}, []);
+
+	function handleLinkClick(e) {
+		console.log(e.target);
+	}
 
 	return (
 		<>
-			<Navbar activePage={activePage} />
+			<Navbar activePage={activePage} handleLinkClick={handleLinkClick} />
 			<Outlet />
-			<Footer activePage={activePage} />
+			<Footer activePage={activePage} handleLinkClick={handleLinkClick} />
 		</>
 	);
 }

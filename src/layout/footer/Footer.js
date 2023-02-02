@@ -8,7 +8,7 @@ import { NavLink } from "react-router-dom";
 import "./footer.scss";
 
 export default function Footer(props) {
-	let { activePage } = props;
+	let { activePage, handleLinkClick } = props;
 
 	function goToTop() {
 		window.scrollTo({
@@ -55,22 +55,34 @@ export default function Footer(props) {
 					<nav className="links--pages">
 						<ul>
 							<li>
-								<NavLink className={activePage === "/skills" ? "activeLink" : ""} to="/skills">
+								<NavLink
+									className={activePage === "/skills" ? "activeLink" : ""}
+									to="/skills"
+									onClick={handleLinkClick}>
 									<ion-icon name="trophy-sharp"></ion-icon> Skills
 								</NavLink>
 							</li>
 							<li>
-								<NavLink className={activePage === "/projects" ? "activeLink" : ""} to="/projects">
+								<NavLink
+									className={activePage === "/projects" ? "activeLink" : ""}
+									to="/projects"
+									onClick={handleLinkClick}>
 									<ion-icon name="hammer-sharp"></ion-icon> Projects
 								</NavLink>
 							</li>
 							<li>
-								<NavLink className={activePage === "/about" ? "activeLink" : ""} to="/about">
+								<NavLink
+									className={activePage === "/about" ? "activeLink" : ""}
+									to="/about"
+									onClick={handleLinkClick}>
 									<ion-icon name="person-sharp"></ion-icon> About
 								</NavLink>
 							</li>
 							<li>
-								<NavLink className={activePage === "/contact" ? "activeLink" : ""} to="/contact">
+								<NavLink
+									className={activePage === "/contact" ? "activeLink" : ""}
+									to="/contact"
+									onClick={handleLinkClick}>
 									<ion-icon name="mail-unread-sharp"></ion-icon> Contact
 								</NavLink>
 							</li>
