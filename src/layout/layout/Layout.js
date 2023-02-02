@@ -15,8 +15,8 @@ export default function Layout() {
 		setActivePage(window.location.pathname);
 	}, []);
 
-	function handleLinkClick(e) {
-		console.log(e.target);
+	function handleLinkClick() {
+		setActivePage(window.location.pathname);
 	}
 
 	return (
