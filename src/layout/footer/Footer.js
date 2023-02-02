@@ -7,7 +7,9 @@ import { NavLink } from "react-router-dom";
 // importing styles
 import "./footer.scss";
 
-export default function Footer() {
+export default function Footer(props) {
+	let { activePage } = props;
+
 	function goToTop() {
 		window.scrollTo({
 			top: 0,
@@ -53,22 +55,22 @@ export default function Footer() {
 					<nav className="links--pages">
 						<ul>
 							<li>
-								<NavLink className="navbar__link" to="/skills">
+								<NavLink className={activePage === "/skills" ? "activeLink" : ""} to="/skills">
 									<ion-icon name="trophy-sharp"></ion-icon> Skills
 								</NavLink>
 							</li>
 							<li>
-								<NavLink className="navbar__link" to="/projects">
+								<NavLink className={activePage === "/projects" ? "activeLink" : ""} to="/projects">
 									<ion-icon name="hammer-sharp"></ion-icon> Projects
 								</NavLink>
 							</li>
 							<li>
-								<NavLink className="navbar__link" to="/about">
+								<NavLink className={activePage === "/about" ? "activeLink" : ""} to="/about">
 									<ion-icon name="person-sharp"></ion-icon> About
 								</NavLink>
 							</li>
 							<li>
-								<NavLink className="navbar__link" to="/contact">
+								<NavLink className={activePage === "/contact" ? "activeLink" : ""} to="/contact">
 									<ion-icon name="mail-unread-sharp"></ion-icon> Contact
 								</NavLink>
 							</li>

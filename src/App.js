@@ -2,6 +2,7 @@
 
 // importing general items
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React from "react";
 
 // importing pages
 import Layout from "./layout/layout/Layout";
