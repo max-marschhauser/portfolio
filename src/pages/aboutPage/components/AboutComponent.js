@@ -16,7 +16,7 @@ export default function AboutComponent(props) {
 		if (relatedToProgramming === item.relatedToProgramming) {
 			return (
 				<article key={item.title}>
-					<div className="upperPart">
+					<header>
 						<h4>{item.title}</h4>
 						{item.imgSrc !== undefined ? (
 							<a href={item.link} target="_blank" rel="noreferrer">
@@ -29,7 +29,7 @@ export default function AboutComponent(props) {
 								})}
 							</ul>
 						)}
-					</div>
+					</header>
 					<>
 						{item.imgSrc === undefined ? (
 							<></>
