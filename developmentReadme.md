@@ -12,3 +12,4 @@ to do:
 
 -   simple page layout with grid
 -   stavim cijelu stranicu (header, main, footer) u wrapper koji je min-height:100dvh i display:grid; zatim stavim grid-template-rows: auto 1fr auto;
+-   napraviti da se linkovi u navbaru i u footeru obojaju u odnosu na kojoj se stranici nalazim (napraviti state u layout fileu)

@@ -2,75 +2,61 @@
 @use "../../assets/styles/abstracts" as abs;
 
 .homePage {
-	min-height: max-content;
+	padding-block: 2rem;
+	min-height: 90vh;
 
-	&--grid {
-		padding-block: 2rem;
-		min-height: 90vh;
+	display: grid;
+	place-items: center;
+	gap: 2rem;
+	grid-template-columns: repeat(1, 1fr);
 
-		display: grid;
-		grid-template-columns: repeat(1, 1fr);
-		place-items: center;
-		gap: 2rem;
+	@include abs.mq(1400px, 0px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
 
-		background-image: url(../../assets/images/nature3.jpg);
-		background-position: center;
-		background-attachment: fixed;
-		background-repeat: no-repeat;
-		background-size: cover;
+	background-image: url(../../assets/images/nature3.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 
-		@include abs.mq(1400px, 0px) {
-			grid-template-columns: repeat(2, 1fr);
+	img {
+		width: clamp(15rem, 20vw, 20rem);
+		aspect-ratio: 1 / 1;
 
-			clip-path: polygon(1% 2%, 99% 10%, 95% 98%, 4% 85%);
+		border-radius: 4rem 1rem;
+
+		user-select: none;
+	}
+
+	.text {
+		padding-block: 2.5rem;
+		padding-inline: clamp(0.5rem, 5vw, 5rem);
+
+		//background-color: var(--color-blue-transparent);
+
+		color: var(--color-light);
+		text-align: center;
+
+		h1 {
+			max-width: 20rem;
+
+			font-size: clamp(1.5rem, 10vw, 2.5rem);
 		}
 
-		img {
-			width: clamp(15rem, 20vw, 20rem);
-			aspect-ratio: 1 / 1;
-
-			border-radius: 4rem 1rem;
-			//outline: 0.5rem solid var(--color-blue);
-			//outline-offset: 0.5rem;
-
-			user-select: none;
-		}
-
-		.rightSide {
+		h2 {
 			display: flex;
-			flex-direction: column;
-			place-items: center;
-			gap: 1rem;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			gap: clamp(1rem, 2vw, 2rem);
 
-			padding-block: 2.5rem;
-			padding-inline: clamp(0.5rem, 5vw, 5rem);
+			font-size: clamp(1.25rem, 10vw, 2.25rem);
 
-			background-color: var(--color-blue-transparent);
-
-			color: var(--color-white);
-
-			h1 {
-				max-width: 20rem;
-
-				font-size: clamp(1.5rem, 10vw, 2.5rem);
-				text-align: center;
-			}
-
-			h2 {
-				display: flex;
-				flex-direction: row;
-				justify-content: center;
-				align-items: center;
-				gap: clamp(1rem, 2vw, 2rem);
-
-				text-align: center;
-				font-size: clamp(1.25rem, 10vw, 2.25rem);
-
-				span {
-					&:first-child,
-					&:last-child {
-						font-size: 3rem;
-					}
+			span {
+				&:first-child,
+				&:last-child {
+					font-size: 3rem;
 				}
 			}
 		}
