@@ -17,7 +17,7 @@ export default function Filter(props) {
 
 	return (
 		<section className="filter">
-			<div className="filter--container">
+			<div className="filter--sticky">
 				<h3>Filter projects</h3>
 				<form onSubmit={handleSubmit}>
 					<fieldset>

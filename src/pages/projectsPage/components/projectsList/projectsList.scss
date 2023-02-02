@@ -2,8 +2,6 @@
 @use "../../../../assets/styles/abstracts" as abs;
 
 .projectsList {
-	display: block;
-
 	padding: 0rem 0rem;
 
 	@include abs.mq(1400px, 0px) {
@@ -29,7 +27,7 @@
 			grid-template-columns: 1fr 70%;
 		}
 
-		background-color: var(--color-black-transparent);
+		background-color: var(--color-primary-1-transparent);
 
 		&--imageContainer {
 			display: grid;
@@ -42,7 +40,7 @@
 
 				display: block;
 
-				outline: 0.1rem solid var(--color-blue);
+				outline: 0.1rem solid var(--color-dark);
 
 				user-select: none;
 			}
@@ -57,7 +55,7 @@
 				li {
 					padding-block: 0.5rem;
 					padding-inline: clamp(0.5rem, 3vw, 2rem);
-					color: var(--color-lightgray);
+					color: var(--color-light);
 
 					&.technology {
 						@include abs.mq(1400px, 0px) {
@@ -69,15 +67,10 @@
 						text-align: center;
 						font-size: 1.5rem;
 						letter-spacing: 0.075rem;
-						color: var(--color-white);
 
 						@include abs.mq(1400px, 0px) {
 							margin-top: 1rem;
 						}
-					}
-
-					h4 {
-						color: var(--color-white);
 					}
 
 					p {
@@ -87,38 +80,38 @@
 
 				.projectsList__item--links {
 					a {
-						padding-block: 0.5rem;
+						padding-block: 0.25rem;
 						padding-inline: clamp(0.5rem, 2vw, 1rem);
 						margin-left: clamp(0.5rem, 2vw, 2rem);
 
 						border-radius: 100vmax;
 
 						opacity: 1;
-						outline: 0.1rem solid var(--color-white);
+						outline: 0.25rem solid var(--color-light);
 
 						font-size: 1.5rem;
 						text-decoration: none;
-						color: var(--color-lightgray);
+						color: var(--color-light);
 
 						transition: all 0.35s ease;
 
 						&:hover,
 						&:focus-visible {
-							opacity: 0.9;
-							outline: 0.1rem solid var(--color-green);
+							outline: 0.25rem solid var(--color-action);
 
-							color: var(--color-white);
+							& > ion-icon {
+								color: var(--color-action);
+							}
 						}
 
 						&:active {
 							opacity: 0.8;
-							outline: 0.1rem solid var(--color-orange);
-
-							color: var(--color-white);
 						}
 
 						ion-icon {
 							transform: translateY(0.2rem);
+
+							transition: all 0.35s ease;
 						}
 
 						span {

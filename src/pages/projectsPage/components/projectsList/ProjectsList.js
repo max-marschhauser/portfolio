@@ -13,7 +13,7 @@ export default function ProjectsListItems(props) {
 	const { searchWord, activeSkill, activeKeyword } = props;
 
 	return (
-		<div className="projectsList">
+		<section className="projectsList">
 			{List.map((item) => {
 				if (
 					item.technology.toUpperCase().includes(activeSkill.toUpperCase()) &&
@@ -59,6 +59,6 @@ export default function ProjectsListItems(props) {
 					return null;
 				}
 			})}
-		</div>
+		</section>
 	);
 }
