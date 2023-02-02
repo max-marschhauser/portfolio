@@ -2,91 +2,85 @@
 @use "../../assets/styles/abstracts" as abs;
 
 .skillsPage {
-	min-height: max-content;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
 
-	.skillsPage__container {
+	margin-bottom: 1rem;
+
+	background-color: var(--color-black-transparent);
+
+	color: var(--color-white);
+
+	h3 {
+		padding-top: clamp(0.5rem, 2vh, 2.5rem);
+
+		font-size: clamp(1.15rem, 3vw, 2.5rem);
+		text-align: center;
+	}
+
+	.images {
+		border-right: 1px dashed var(--color-lightgray);
+
+		padding-block: 1rem;
+
 		display: grid;
-		grid-template-columns: 1fr 2fr;
-
-		margin-bottom: 1rem;
-
-		background-color: var(--color-black-transparent);
-
-		color: var(--color-white);
-
-		h3 {
-			padding-top: clamp(0.5rem, 2vh, 2.5rem);
-
-			font-size: clamp(1.15rem, 3vw, 2.5rem);
-			text-align: center;
+		place-items: center;
+		grid-template-columns: 1fr;
+		@include abs.mq(1400px, 0px) {
+			grid-template-columns: repeat(2, 1fr);
 		}
+		row-gap: clamp(1rem, 3vh, 4rem);
 
-		.leftPart {
-			border-right: 1px dashed var(--color-lightgray);
+		img {
+			width: clamp(4rem, 10vw, 8rem);
+			height: clamp(4rem, 10vw, 8rem);
 
-			.left-grid {
-				padding-block: 1rem;
+			padding: clamp(0.125rem, 1vw, 0.5rem);
 
-				display: grid;
-				place-items: center;
-				grid-template-columns: 1fr;
-				@include abs.mq(1400px, 0px) {
-					grid-template-columns: repeat(2, 1fr);
-				}
-				row-gap: clamp(1rem, 3vh, 4rem);
+			outline: 0.1rem solid transparent;
 
-				img {
-					width: clamp(4rem, 10vw, 8rem);
-					height: clamp(4rem, 10vw, 8rem);
+			user-select: none;
 
-					padding: clamp(0.125rem, 1vw, 0.5rem);
+			transition: all 0.35s ease;
 
-					outline: 0.1rem solid transparent;
-
-					user-select: none;
-
-					transition: all 0.35s ease;
-
-					&:hover,
-					&:focus-visible,
-					&:active {
-						border-radius: 1rem;
-						outline: 0.1rem solid var(--color-green);
-					}
-				}
-
-				.activeImage {
-					outline: 0.1rem solid var(--color-green);
-				}
+			&:hover,
+			&:focus-visible,
+			&:active {
+				border-radius: 1rem;
+				outline: 0.1rem solid var(--color-green);
 			}
 		}
 
-		.rightPart {
-			.sticky {
-				position: sticky;
-				top: 6rem;
+		.activeImage {
+			outline: 0.1rem solid var(--color-green);
+		}
+	}
 
-				header {
-					padding-top: clamp(0.5rem, 3vh, 2.5rem);
-					font-size: clamp(1.15rem, 3vw, 2rem);
-					text-align: center;
-					font-weight: bold;
-				}
+	.description {
+		.sticky {
+			position: sticky;
+			top: 6rem;
 
-				ul {
-					padding-block: clamp(0.5rem, 4vh, 4rem);
-					padding-left: clamp(1.5rem, 4vw, 2.5rem);
-					padding-right: clamp(0.5rem, 2vw, 1.5rem);
+			header {
+				padding-top: clamp(0.5rem, 3vh, 2.5rem);
+				font-size: clamp(1.15rem, 3vw, 2rem);
+				text-align: center;
+				font-weight: bold;
+			}
 
-					list-style: disc;
+			ul {
+				padding-block: clamp(0.5rem, 4vh, 4rem);
+				padding-left: clamp(1.5rem, 4vw, 2.5rem);
+				padding-right: clamp(0.5rem, 2vw, 1.5rem);
 
-					li {
-						padding-top: clamp(0.25rem, 2vh, 1.5rem);
+				list-style: disc;
 
-						font-size: clamp(1rem, 2vw, 1.5rem);
-						color: var(--color-lightgray);
-						line-height: 1.2rem;
-					}
+				li {
+					padding-top: clamp(0.25rem, 2vh, 1.5rem);
+
+					font-size: clamp(1rem, 2vw, 1.5rem);
+					color: var(--color-lightgray);
+					line-height: 1.2rem;
 				}
 			}
 		}

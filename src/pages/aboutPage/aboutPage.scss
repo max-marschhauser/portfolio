@@ -2,88 +2,84 @@
 @use "../../assets/styles/abstracts" as abs;
 
 .aboutPage {
-	min-height: 100vh;
+	margin-bottom: 1rem;
 
-	&--contents {
-		margin-bottom: 1rem;
+	background-color: var(--color-black-transparent);
 
-		background-color: var(--color-black-transparent);
+	color: var(--color-lightgray);
 
-		color: var(--color-lightgray);
+	h3 {
+		padding-block: clamp(1.5rem, 4vh, 3.5rem);
 
-		h3 {
-			padding-block: clamp(1.5rem, 4vh, 3.5rem);
+		font-size: clamp(1.2rem, 9vw, 2.75rem);
+		text-align: center;
+		color: var(--color-white);
+	}
 
-			font-size: clamp(1.2rem, 9vw, 2.75rem);
-			text-align: center;
-			color: var(--color-white);
-		}
+	&--articles {
+		article {
+			padding-block: clamp(2rem, 20vh, 10rem);
+			padding-inline: clamp(1rem, 5vw, 5rem);
+			border-block: 1px solid var(--color-white);
 
-		&--articles {
-			article {
-				padding-block: clamp(2rem, 20vh, 10rem);
-				padding-inline: clamp(1rem, 5vw, 5rem);
-				border-block: 1px solid var(--color-white);
+			&:last-child {
+				border-bottom: none;
+			}
 
-				&:last-child {
-					border-bottom: none;
-				}
-
-				.upperPart {
-					@include abs.mq(1400px, 0px) {
-						display: grid;
-						grid-template-columns: repeat(2, 1fr);
-						place-items: center;
-					}
-				}
-
-				h4 {
-					padding-block: clamp(0.5rem, 1vh, 1rem);
-
-					text-align: center;
-					font-size: clamp(1.1rem, 8vw, 2.5rem);
-					color: var(--color-white);
-				}
-
-				ul {
-					padding-block: 2rem;
-
-					list-style: none;
-
-					li {
-						margin: 0 auto;
-						padding-block: clamp(0.5rem, 2.5vh, 1.5rem);
-						max-width: 50rem;
-
-						font-size: clamp(1rem, 5vw, 1.35rem);
-						line-height: clamp(1.25rem, 4vh, 2rem);
-						text-align: center;
-					}
-				}
-
-				a {
+			.upperPart {
+				@include abs.mq(1400px, 0px) {
 					display: grid;
+					grid-template-columns: repeat(2, 1fr);
 					place-items: center;
+				}
+			}
 
-					width: fit-content;
+			h4 {
+				padding-block: clamp(0.5rem, 1vh, 1rem);
+
+				text-align: center;
+				font-size: clamp(1.1rem, 8vw, 2.5rem);
+				color: var(--color-white);
+			}
+
+			ul {
+				padding-block: 2rem;
+
+				list-style: none;
+
+				li {
 					margin: 0 auto;
+					padding-block: clamp(0.5rem, 2.5vh, 1.5rem);
+					max-width: 50rem;
 
-					img {
-						width: clamp(15rem, 30vw, 25rem);
-						aspect-ratio: 16/9;
-						margin-top: clamp(0.5rem, 1vh, 1rem);
+					font-size: clamp(1rem, 5vw, 1.35rem);
+					line-height: clamp(1.25rem, 4vh, 2rem);
+					text-align: center;
+				}
+			}
 
-						outline: 1px solid var(--color-lightgray);
-						outline-offset: 0.5rem;
-					}
+			a {
+				display: grid;
+				place-items: center;
 
-					transition: all 0.35s ease;
+				width: fit-content;
+				margin: 0 auto;
 
-					&:hover,
-					&:focus-visible,
-					&:active {
-						opacity: 0.8;
-					}
+				img {
+					width: clamp(15rem, 30vw, 25rem);
+					aspect-ratio: 16/9;
+					margin-top: clamp(0.5rem, 1vh, 1rem);
+
+					outline: 1px solid var(--color-lightgray);
+					outline-offset: 0.5rem;
+				}
+
+				transition: all 0.35s ease;
+
+				&:hover,
+				&:focus-visible,
+				&:active {
+					opacity: 0.8;
 				}
 			}
 		}

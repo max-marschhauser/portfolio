@@ -11,13 +11,13 @@ import profileImage from "../../assets/images/manstanding.jpg";
 
 export default function ContactPage() {
 	return (
-		<section className="contactPage">
+		<>
 			<h2 className="pageHeading">
 				Contact
 				<p>How to contact me?</p>
 			</h2>
 
-			<div className="contactPage--contents">
+			<main className="contactPage">
 				<img src={profileImage} alt="max-marschhauser-profile" />
 				<ul>
 					<li>
@@ -35,7 +35,7 @@ export default function ContactPage() {
 						098 / 921 - 0125
 					</li>
 				</ul>
-			</div>
-		</section>
+			</main>
+		</>
 	);
 }

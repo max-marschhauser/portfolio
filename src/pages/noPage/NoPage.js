@@ -14,8 +14,8 @@ export default function NoPage() {
 	});
 
 	return (
-		<section className="noPage--container">
+		<main className="noPage">
 			<p>No such page found, redirecting back to home page in a few moments...</p>
-		</section>
+		</main>
 	);
 }

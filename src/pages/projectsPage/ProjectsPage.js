@@ -40,12 +40,13 @@ export default function ProjectsPage() {
 	}
 
 	return (
-		<section className="projectsPage">
+		<>
 			<h2 className="pageHeading">
 				Projects
 				<p>Interested in my projects?</p>
 			</h2>
-			<div className="projectsPage__container">
+
+			<main className="projectsPage">
 				<ProjectsList searchWord={searchWord} activeSkill={activeSkill} activeKeyword={activeKeyword} />
 				<Filter
 					searchChanger={HandleSearchWord}
@@ -54,7 +55,7 @@ export default function ProjectsPage() {
 					activeSkill={activeSkill}
 					activeKeyword={activeKeyword}
 				/>
-			</div>
-		</section>
+			</main>
+		</>
 	);
 }
