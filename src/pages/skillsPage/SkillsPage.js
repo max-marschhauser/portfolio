@@ -12,7 +12,10 @@ import "./skillsPage.scss";
 //importing components
 import SkillItems from "./components/SkillItems.js";
 
-export default function SkillsPage() {
+export default function SkillsPage(props) {
+	let { setActivePage } = props;
+	setActivePage("skills");
+
 	let [currentLanguage, setCurrentLanguage] = useState("HTML");
 
 	function handleMouseOver(event) {

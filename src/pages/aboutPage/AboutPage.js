@@ -9,7 +9,10 @@ import "./aboutPage.scss";
 // importing components
 import AboutComponent from "./components/AboutComponent.js";
 
-export default function AboutPage() {
+export default function AboutPage(props) {
+	let { setActivePage } = props;
+	setActivePage("about");
+
 	return (
 		<>
 			<h2 className="pageHeading">

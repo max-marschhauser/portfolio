@@ -4,7 +4,10 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./noPage.scss";
 
-export default function NoPage() {
+export default function NoPage(props) {
+	let { setActivePage } = props;
+	setActivePage("noPage");
+
 	const navigate = useNavigate();
 
 	useEffect(() => {

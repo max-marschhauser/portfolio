@@ -9,7 +9,10 @@ import "./contactPage.scss";
 // importing images
 import profileImage from "../../assets/images/manstanding.jpg";
 
-export default function ContactPage() {
+export default function ContactPage(props) {
+	let { setActivePage } = props;
+	setActivePage("contact");
+
 	return (
 		<>
 			<h2 className="pageHeading">

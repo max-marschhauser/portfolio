@@ -2,7 +2,7 @@
 
 // importing general items
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React from "react";
+import React, { useState } from "react";
 
 // importing pages
 import Layout from "./layout/layout/Layout";
@@ -20,17 +20,19 @@ import "./assets/styles/styles.scss";
 import ScrollNavlinkToTop from "./utils/scrollNavlinkToTop";
 
 export default function App() {
+	let [activePage, setActivePage] = useState("home");
+
 	return (
 		<BrowserRouter>
 			<ScrollNavlinkToTop />
 			<Routes>
-				<Route path="/" element={<Layout />}>
-					<Route index element={<Home />} />
-					<Route path="skills" element={<SkillsPage />} />
-					<Route path="projects" element={<ProjectsPage />} />
-					<Route path="about" element={<AboutPage />} />
-					<Route path="contact" element={<ContactPage />} />
-					<Route path="*" element={<NoPage />} />
+				<Route path="/" element={<Layout activePage={activePage} />}>
+					<Route index element={<Home setActivePage={setActivePage} />} />
+					<Route path="skills" element={<SkillsPage setActivePage={setActivePage} />} />
+					<Route path="projects" element={<ProjectsPage setActivePage={setActivePage} />} />
+					<Route path="about" element={<AboutPage setActivePage={setActivePage} />} />
+					<Route path="contact" element={<ContactPage setActivePage={setActivePage} />} />
+					<Route path="*" element={<NoPage setActivePage={setActivePage} />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

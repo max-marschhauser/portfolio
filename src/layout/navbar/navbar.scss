@@ -227,6 +227,16 @@
 	}
 
 	.activeLink {
-		color: yellow;
+		border-block: 1px solid var(--color-action);
+
+		opacity: 0.9;
+
+		color: var(--color-action);
+
+		@include abs.mq(1400px, 0px) {
+			background-color: transparent;
+
+			transition: all 0.35s ease;
+		}
 	}
 }

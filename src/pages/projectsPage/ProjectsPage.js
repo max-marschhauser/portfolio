@@ -10,7 +10,10 @@ import "./projectsPage.scss";
 import ProjectsList from "./components/projectsList/ProjectsList.js";
 import Filter from "./components/filter/Filter.js";
 
-export default function ProjectsPage() {
+export default function ProjectsPage(props) {
+	let { setActivePage } = props;
+	setActivePage("projects");
+
 	const [searchWord, setSearchWord] = useState("");
 	const [activeSkill, setActiveSkill] = useState("");
 	const [activeKeyword, setActiveKeyword] = useState("");

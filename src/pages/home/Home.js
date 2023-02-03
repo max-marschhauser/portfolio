@@ -9,7 +9,10 @@ import "./home.scss";
 // importing images
 import manImage from "../../assets/images/manstanding.jpg";
 
-export default function Home() {
+export default function Home(props) {
+	let { setActivePage } = props;
+	setActivePage("home");
+
 	return (
 		<>
 			<section className="homePage">
