@@ -32,23 +32,21 @@ export default function Footer(props) {
 					</h2>
 					<ul className="links--social">
 						<li>
-							<a href="www.link.com">
+							<a href="https://github.com/max-marschhauser" target="_blank" rel="noreferrer">
 								<ion-icon name="logo-github"></ion-icon>
 							</a>
 						</li>
 						<li>
-							<a href="www.link.com">
+							<a href="https://codepen.io/max-marschhauser" target="_blank" rel="noreferrer">
 								<ion-icon name="logo-codepen"></ion-icon>
 							</a>
 						</li>
 						<li>
-							<a href="www.link.com">
+							<a
+								href="https://www.linkedin.com/in/max-marschhauser-a8b9791a6/"
+								target="_blank"
+								rel="noreferrer">
 								<ion-icon name="logo-linkedin"></ion-icon>
-							</a>
-						</li>
-						<li>
-							<a href="www.link.com">
-								<ion-icon name="logo-google"></ion-icon>
 							</a>
 						</li>
 					</ul>

@@ -16,7 +16,7 @@ export default function SkillsPage(props) {
 	let { setActivePage } = props;
 	setActivePage("skills");
 
-	let [currentLanguage, setCurrentLanguage] = useState("HTML");
+	let [currentLanguage, setCurrentLanguage] = useState("React");
 
 	function handleMouseOver(event) {
 		setCurrentLanguage(event.target.alt);
