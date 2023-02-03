@@ -1,7 +1,7 @@
 // about page, contains basic informations about myself
 
 // importing general items
-import React from "react";
+import React, { useEffect } from "react";
 
 // importing styles
 import "./contactPage.scss";
@@ -10,8 +10,10 @@ import "./contactPage.scss";
 import profileImage from "../../assets/images/manstanding.jpg";
 
 export default function ContactPage(props) {
-	let { setActivePage } = props;
-	setActivePage("contact");
+	let { handlePageChange } = props;
+	useEffect(() => {
+		handlePageChange("contact");
+	}, [handlePageChange]);
 
 	return (
 		<>

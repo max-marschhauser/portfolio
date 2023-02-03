@@ -1,7 +1,7 @@
 // about page, contains basic informations about myself
 
 // importing general items
-import React from "react";
+import React, { useEffect } from "react";
 
 // importing styles
 import "./aboutPage.scss";
@@ -10,8 +10,11 @@ import "./aboutPage.scss";
 import AboutComponent from "./components/AboutComponent.js";
 
 export default function AboutPage(props) {
-	let { setActivePage } = props;
-	setActivePage("about");
+	let { handlePageChange } = props;
+
+	useEffect(() => {
+		handlePageChange("about");
+	}, [handlePageChange]);
 
 	return (
 		<>

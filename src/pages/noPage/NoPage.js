@@ -5,8 +5,10 @@ import { useNavigate } from "react-router-dom";
 import "./noPage.scss";
 
 export default function NoPage(props) {
-	let { setActivePage } = props;
-	setActivePage("noPage");
+	let { handlePageChange } = props;
+	useEffect(() => {
+		handlePageChange("noPage");
+	}, [handlePageChange]);
 
 	const navigate = useNavigate();
 

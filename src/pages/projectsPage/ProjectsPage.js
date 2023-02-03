@@ -1,7 +1,7 @@
 // projects page, contains list of my projects and the abillity to filter and sort them
 
 // importing general items
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 // importing styles
 import "./projectsPage.scss";
@@ -11,8 +11,10 @@ import ProjectsList from "./components/projectsList/ProjectsList.js";
 import Filter from "./components/filter/Filter.js";
 
 export default function ProjectsPage(props) {
-	let { setActivePage } = props;
-	setActivePage("projects");
+	let { handlePageChange } = props;
+	useEffect(() => {
+		handlePageChange("projects");
+	}, [handlePageChange]);
 
 	const [searchWord, setSearchWord] = useState("");
 	const [activeSkill, setActiveSkill] = useState("");

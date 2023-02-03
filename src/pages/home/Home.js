@@ -1,7 +1,7 @@
 // projects page, contains landing page
 
 // importing general items
-import React from "react";
+import React, { useEffect } from "react";
 
 // importing styles
 import "./home.scss";
@@ -10,8 +10,10 @@ import "./home.scss";
 import manImage from "../../assets/images/manstanding.jpg";
 
 export default function Home(props) {
-	let { setActivePage } = props;
-	setActivePage("home");
+	let { handlePageChange } = props;
+	useEffect(() => {
+		handlePageChange("home");
+	}, [handlePageChange]);
 
 	return (
 		<>

@@ -1,7 +1,7 @@
 // skills page, contains list of my skills and my experience with every one of them
 
 // importing general items
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 // importing data
 import dataObject from "../../data/skillsPageExperiences.js";
@@ -13,8 +13,10 @@ import "./skillsPage.scss";
 import SkillItems from "./components/SkillItems.js";
 
 export default function SkillsPage(props) {
-	let { setActivePage } = props;
-	setActivePage("skills");
+	let { handlePageChange } = props;
+	useEffect(() => {
+		handlePageChange("skills");
+	}, [handlePageChange]);
 
 	let [currentLanguage, setCurrentLanguage] = useState("React");
 

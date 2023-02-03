@@ -22,17 +22,21 @@ import ScrollNavlinkToTop from "./utils/scrollNavlinkToTop";
 export default function App() {
 	let [activePage, setActivePage] = useState("home");
 
+	function handlePageChange(page) {
+		setActivePage(page);
+	}
+
 	return (
 		<BrowserRouter>
 			<ScrollNavlinkToTop />
 			<Routes>
 				<Route path="/" element={<Layout activePage={activePage} />}>
-					<Route index element={<Home setActivePage={setActivePage} />} />
-					<Route path="skills" element={<SkillsPage setActivePage={setActivePage} />} />
-					<Route path="projects" element={<ProjectsPage setActivePage={setActivePage} />} />
-					<Route path="about" element={<AboutPage setActivePage={setActivePage} />} />
-					<Route path="contact" element={<ContactPage setActivePage={setActivePage} />} />
-					<Route path="*" element={<NoPage setActivePage={setActivePage} />} />
+					<Route index element={<Home handlePageChange={handlePageChange} />} />
+					<Route path="skills" element={<SkillsPage handlePageChange={handlePageChange} />} />
+					<Route path="projects" element={<ProjectsPage handlePageChange={handlePageChange} />} />
+					<Route path="about" element={<AboutPage handlePageChange={handlePageChange} />} />
+					<Route path="contact" element={<ContactPage handlePageChange={handlePageChange} />} />
+					<Route path="*" element={<NoPage handlePageChange={handlePageChange} />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>
