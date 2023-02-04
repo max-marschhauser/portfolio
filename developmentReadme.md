@@ -21,3 +21,6 @@ const [myElementIsVissible, setMyElementIsVissible] = useState();
 stavim ref u html tag s myRef oznakom
 
 zatim dolje kod u htmlu mogu staviti {myElementIsVissible ? className="neka animacija uz pomoć tranzicija ili keyframesa" : className="" }
+
+Create React App article
+https://github.com/reactjs/reactjs.org/pull/5487#issuecomment-1409720741
