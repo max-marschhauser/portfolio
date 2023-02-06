@@ -31,11 +31,34 @@
 		list-style: none;
 
 		img {
-			width: 15rem;
 			display: block;
+
+			width: clamp(15rem, 20vw, 25rem);
 			aspect-ratio: 16 / 9;
 
+			outline: 0.1rem solid var(--color-primary);
+			outline-offset: 0.25rem;
+
 			cursor: pointer;
+
+			transition: all 0.35s ease;
+
+			&:hover,
+			&:focus-visible {
+				outline: 0.1rem solid var(--color-action);
+			}
+
+			&:active {
+				opacity: 0.8;
+			}
+		}
+
+		&.languages {
+			grid-template-columns: repeat(2, 1fr);
+
+			img {
+				width: clamp(7.5rem, 10vw, 12.5rem);
+			}
 		}
 	}
 }

@@ -72,6 +72,11 @@ export default function Footer(props) {
 									<ion-icon name="mail-unread-sharp"></ion-icon> Contact
 								</NavLink>
 							</li>
+							<li>
+								<NavLink className={activePage === "options" ? "activeLink" : ""} to="/options">
+									<ion-icon name="options-sharp"></ion-icon> Options
+								</NavLink>
+							</li>
 						</ul>
 					</nav>
 				</section>

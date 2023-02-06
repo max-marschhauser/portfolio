@@ -57,6 +57,12 @@ export default function Navbar(props) {
 						to="/contact">
 						<ion-icon name="mail-unread-sharp"></ion-icon>Contact
 					</NavLink>
+
+					<NavLink
+						className={activePage === "options" ? "navbar__link activeLink" : "navbar__link"}
+						to="/options">
+						<ion-icon name="options-sharp"></ion-icon>Options
+					</NavLink>
 				</nav>
 			</div>
 
@@ -76,10 +82,10 @@ export default function Navbar(props) {
 					<ion-icon name="person-sharp"></ion-icon>About
 				</NavLink>
 				<NavLink
-					className={activePage === "contact" ? "navbar__link activeLink" : "navbar__link"}
-					to="/contact"
+					className={activePage === "qoptions" ? "navbar__link activeLink" : "navbar__link"}
+					to="/options"
 					end>
-					<ion-icon name="mail-unread-sharp"></ion-icon>Contact
+					<ion-icon name="options-sharp"></ion-icon>Options
 				</NavLink>
 			</nav>
 		</>
