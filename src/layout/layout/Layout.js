@@ -10,6 +10,7 @@ import Footer from "../footer/Footer.js";
 
 export default function Layout(props) {
 	let { activePage } = props;
+
 	return (
 		<>
 			<Navbar activePage={activePage} />
