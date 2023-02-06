@@ -1,0 +1,41 @@
+// importing Sass mixins
+@use "../../assets/styles/abstracts" as abs;
+
+.optionsPage {
+	padding-block: clamp(1.5rem, 15vh, 4rem);
+
+	display: flex;
+	flex-direction: column;
+	gap: clamp(1.5rem, 15vh, 4rem);
+
+	background-color: var(--color-primary-transparent);
+
+	color: var(--color-light);
+
+	h3 {
+		text-align: center;
+		font-size: clamp(1.3rem, 5vw, 1.75rem);
+	}
+
+	ul {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+
+		@include abs.mq(1400px, 0px) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+
+		place-items: center;
+		gap: clamp(1.5rem, 15vh, 4rem);
+
+		list-style: none;
+
+		img {
+			width: 15rem;
+			display: block;
+			aspect-ratio: 16 / 9;
+
+			cursor: pointer;
+		}
+	}
+}

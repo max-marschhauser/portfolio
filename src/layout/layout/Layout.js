@@ -10,6 +10,8 @@ import Footer from "../footer/Footer.js";
 
 export default function Layout(props) {
 	let { activePage } = props;
+	//const [theme, setTheme] = useState(""); //light, dark, nature, space
+	//const [language, setLanguage] = useState("eng"); //eng, hr
 
 	return (
 		<>

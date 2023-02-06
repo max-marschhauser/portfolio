@@ -1,7 +1,10 @@
 // page is displayed if there is no valid url link
 
+// importing general items
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+
+// importing styles
 import "./noPage.scss";
 
 export default function NoPage(props) {

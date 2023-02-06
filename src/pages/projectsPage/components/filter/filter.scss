@@ -10,7 +10,7 @@
 
 	padding: clamp(0.75rem, 4vw, 2rem);
 
-	background-color: var(--color-primary-1-transparent);
+	background-color: var(--color-primary-transparent);
 
 	color: var(--color-light);
 
@@ -59,8 +59,8 @@
 
 					text-align: center;
 					font-size: clamp(1.25rem, 1.5vw, 1.75rem);
-					color: var(--color-primary-1);
-					caret-color: var(--color-primary-1);
+					color: var(--color-primary);
+					caret-color: var(--color-primary);
 
 					transition: all 0.35s ease;
 
