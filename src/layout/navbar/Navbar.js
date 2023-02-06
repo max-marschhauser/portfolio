@@ -37,31 +37,35 @@ export default function Navbar(props) {
 					<NavLink
 						className={activePage === "skills" ? "navbar__link activeLink" : "navbar__link"}
 						to="/skills">
-						<ion-icon name="trophy-sharp"></ion-icon>Skills
+						<ion-icon name="trophy-sharp"></ion-icon>
+						<span>Skills</span>
 					</NavLink>
 
 					<NavLink
 						className={activePage === "projects" ? "navbar__link activeLink" : "navbar__link"}
 						to="/projects">
-						<ion-icon name="hammer-sharp"></ion-icon>Projects
+						<ion-icon name="hammer-sharp"></ion-icon>
+						<span>Projects</span>
 					</NavLink>
 
 					<NavLink
 						className={activePage === "about" ? "navbar__link activeLink" : "navbar__link"}
 						to="/about">
-						<ion-icon name="person-sharp"></ion-icon>About
+						<ion-icon name="person-sharp"></ion-icon>
+						<span>About</span>
 					</NavLink>
 
 					<NavLink
 						className={activePage === "contact" ? "navbar__link activeLink" : "navbar__link"}
 						to="/contact">
-						<ion-icon name="mail-unread-sharp"></ion-icon>Contact
+						<ion-icon name="mail-unread-sharp"></ion-icon>
+						<span>Contact</span>
 					</NavLink>
 
 					<NavLink
 						className={activePage === "options" ? "navbar__link activeLink" : "navbar__link"}
 						to="/options">
-						<ion-icon name="options-sharp"></ion-icon>Options
+						<ion-icon name="options-sharp"></ion-icon>
 					</NavLink>
 				</nav>
 			</div>
@@ -71,21 +75,25 @@ export default function Navbar(props) {
 					mobileNavbar === true ? "mobileNavbar navbarStyle" : "mobileNavbar mobileNavbarHidden navbarStyle"
 				}>
 				<NavLink className={activePage === "skills" ? "navbar__link activeLink" : "navbar__link"} to="/skills">
-					<ion-icon name="trophy-sharp"></ion-icon>Skills
+					<ion-icon name="trophy-sharp"></ion-icon>
+					<span>Skills</span>
 				</NavLink>
 				<NavLink
 					className={activePage === "projects" ? "navbar__link activeLink" : "navbar__link"}
 					to="/projects">
-					<ion-icon name="hammer-sharp"></ion-icon>Projects
+					<ion-icon name="hammer-sharp"></ion-icon>
+					<span>Projects</span>
 				</NavLink>
 				<NavLink className={activePage === "about" ? "navbar__link activeLink" : "navbar__link"} to="/about">
-					<ion-icon name="person-sharp"></ion-icon>About
+					<ion-icon name="person-sharp"></ion-icon>
+					<span>About</span>
 				</NavLink>
 				<NavLink
 					className={activePage === "qoptions" ? "navbar__link activeLink" : "navbar__link"}
 					to="/options"
 					end>
-					<ion-icon name="options-sharp"></ion-icon>Options
+					<ion-icon name="options-sharp"></ion-icon>
+					<span>Options</span>
 				</NavLink>
 			</nav>
 		</>

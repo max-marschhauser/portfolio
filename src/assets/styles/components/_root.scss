@@ -1,18 +1,6 @@
 // root scss file, styles :root, *, body and scrollbar
 
 :root {
-	// colors
-	--color-dark: hsl(125, 20%, 10%);
-	--color-light: hsl(10, 10%, 90%);
-
-	--color-primary: hsl(129, 34%, 30%);
-	--color-primary-transparent: hsla(129, 34%, 30%, 0.6);
-
-	//--color-primary-2: hsl(32, 47%, 41%);
-	//--color-primary-2-transparent: hsla(32, 47%, 41%, 0.6);
-
-	--color-action: hsl(16, 90%, 60%);
-
 	// font family
 	--font-family: "Montserrat", sans-serif;
 }

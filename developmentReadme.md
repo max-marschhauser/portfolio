@@ -6,7 +6,9 @@ to do:
 -   dodati intersection observer da se sadržaji kasnije učitavaju
 -   dodati paralax scroll na hero image, a možda staviti poseban hero image na svaku stranicu s paralax scrollom
 -   napraviti language switcher (eng, hr)
--   napraviti theme switcher (light, dark, space, nature...)
+-   staviti boje za različite teme
+-   staviti pozadinske slike za različite teme
+-   spremiti temu i jezik u localStorage
 -   na home page ispod hero image staviti grid s linkovima na 4 stranice
 -   napraviti jednu stranicu koja će se prva prikazati čak i prije home pagea, a na kojoj će se birati jezik i tema stranice, ali da se to može i kasnije pokrenuti
 -   na svim slikama maknuti loading=lazy da bi se učitale zajedno sa stranicom, stranica će se malo sporije učitati ali će prijelaz sa stranica biti smooth, a stranica je premala da bi to stvaralo problem

@@ -16,7 +16,7 @@ import english from "../../assets/images/options/english.png";
 import croatian from "../../assets/images/options/croatian.png";
 
 export default function OptionsPage(props) {
-	let { handlePageChange } = props;
+	let { handlePageChange, handleThemeChange } = props;
 	useEffect(() => {
 		handlePageChange("options");
 	}, [handlePageChange]);
@@ -32,22 +32,50 @@ export default function OptionsPage(props) {
 				<ul>
 					<li>
 						<button>
-							<img src={themeLight} alt="Light theme" title="Light theme" />
+							<img
+								src={themeLight}
+								alt="Light theme"
+								title="Light theme"
+								onClick={() => {
+									handleThemeChange("lightTheme");
+								}}
+							/>
 						</button>
 					</li>
 					<li>
 						<button>
-							<img src={themeDark} alt="Dark theme" title="Dark theme" />
+							<img
+								src={themeDark}
+								alt="Dark theme"
+								title="Dark theme"
+								onClick={() => {
+									handleThemeChange("darkTheme");
+								}}
+							/>
 						</button>
 					</li>
 					<li>
 						<button>
-							<img src={themeNature} alt="Nature theme" title="Nature theme" />
+							<img
+								src={themeNature}
+								alt="Nature theme"
+								title="Nature theme"
+								onClick={() => {
+									handleThemeChange("natureTheme");
+								}}
+							/>
 						</button>
 					</li>
 					<li>
 						<button>
-							<img src={themeSpace} alt="Space theme" title="Space theme" />
+							<img
+								src={themeSpace}
+								alt="Space theme"
+								title="Space theme"
+								onClick={() => {
+									handleThemeChange("spaceTheme");
+								}}
+							/>
 						</button>
 					</li>
 				</ul>
