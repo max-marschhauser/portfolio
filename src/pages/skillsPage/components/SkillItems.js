@@ -15,48 +15,48 @@ import Sass from "../../../assets/images/skills/Sass.png";
 import TypeScript from "../../../assets/images/skills/TypeScript.png";
 
 export default function SkillItems(props) {
-	let { currentLanguage, handleMouseOver } = props;
+	let { currentSkill, handleMouseOver } = props;
 
 	return (
 		<>
 			<img
 				loading="lazy"
-				className={currentLanguage === "HTML" ? "activeImage" : ""}
+				className={currentSkill === "HTML" ? "activeImage" : ""}
 				src={HTML}
 				alt="HTML"
 				onMouseEnter={handleMouseOver}
 			/>
 			<img
 				loading="lazy"
-				className={currentLanguage === "CSS" ? "activeImage" : ""}
+				className={currentSkill === "CSS" ? "activeImage" : ""}
 				src={CSS}
 				alt="CSS"
 				onMouseEnter={handleMouseOver}
 			/>
 			<img
 				loading="lazy"
-				className={currentLanguage === "Sass" ? "activeImage" : ""}
+				className={currentSkill === "Sass" ? "activeImage" : ""}
 				src={Sass}
 				alt="Sass"
 				onMouseEnter={handleMouseOver}
 			/>
 			<img
 				loading="lazy"
-				className={currentLanguage === "JavaScript" ? "activeImage" : ""}
+				className={currentSkill === "JavaScript" ? "activeImage" : ""}
 				src={JavaScript}
 				alt="JavaScript"
 				onMouseEnter={handleMouseOver}
 			/>
 			<img
 				loading="lazy"
-				className={currentLanguage === "TypeScript" ? "activeImage" : ""}
+				className={currentSkill === "TypeScript" ? "activeImage" : ""}
 				src={TypeScript}
 				alt="TypeScript"
 				onMouseEnter={handleMouseOver}
 			/>
 			<img
 				loading="lazy"
-				className={currentLanguage === "React" ? "activeImage" : ""}
+				className={currentSkill === "React" ? "activeImage" : ""}
 				src={ReactImage}
 				alt="React"
 				onMouseEnter={handleMouseOver}
@@ -64,21 +64,21 @@ export default function SkillItems(props) {
 
 			<img
 				loading="lazy"
-				className={currentLanguage === "PHP" ? "activeImage" : ""}
+				className={currentSkill === "PHP" ? "activeImage" : ""}
 				src={PHP}
 				alt="PHP"
 				onMouseEnter={handleMouseOver}
 			/>
 			<img
 				loading="lazy"
-				className={currentLanguage === "MySQL" ? "activeImage" : ""}
+				className={currentSkill === "MySQL" ? "activeImage" : ""}
 				src={MySQL}
 				alt="MySQL"
 				onMouseEnter={handleMouseOver}
 			/>
 			<img
 				loading="lazy"
-				className={currentLanguage === "C" ? "activeImage" : ""}
+				className={currentSkill === "C" ? "activeImage" : ""}
 				src={C}
 				alt="C"
 				onMouseEnter={handleMouseOver}

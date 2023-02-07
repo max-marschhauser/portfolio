@@ -18,10 +18,10 @@ export default function SkillsPage(props) {
 		handlePageChange("skills");
 	}, [handlePageChange]);
 
-	let [currentLanguage, setCurrentLanguage] = useState("React");
+	let [currentSkill, setCurrentSkill] = useState("React");
 
 	function handleMouseOver(event) {
-		setCurrentLanguage(event.target.alt);
+		setCurrentSkill(event.target.alt);
 	}
 
 	return (
@@ -33,14 +33,14 @@ export default function SkillsPage(props) {
 
 			<main className="skillsPage">
 				<section className="images">
-					<SkillItems currentLanguage={currentLanguage} handleMouseOver={handleMouseOver} />
+					<SkillItems currentSkill={currentSkill} handleMouseOver={handleMouseOver} />
 				</section>
 				<section className="description">
 					<div className="sticky">
 						<h3>My Experience with</h3>
-						<header>{currentLanguage}</header>
+						<header>{currentSkill}</header>
 						<ul>
-							{dataObject[currentLanguage].map((listItem) => (
+							{dataObject[currentSkill].map((listItem) => (
 								<li key={listItem}>{listItem}</li>
 							))}
 						</ul>
