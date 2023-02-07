@@ -36,6 +36,8 @@
 
 			transition: all 0.35s ease;
 
+			transform: translateX(10vw);
+
 			&:hover,
 			&:focus-visible,
 			&:active {
@@ -49,7 +51,8 @@
 		}
 
 		.vissible {
-			outline: 0.25rem solid blue;
+			transition: all 0.35s ease;
+			transform: translateX(0);
 		}
 	}
 
