@@ -6,6 +6,9 @@ import React, { useEffect } from "react";
 // importing styles
 import "./home.scss";
 
+// importing components
+import NavigationGrid from "./components/NavigationGrid.js";
+
 // importing images
 import manImage from "../../assets/images/manstanding.jpg";
 
@@ -26,6 +29,7 @@ export default function Home(props) {
 					</h2>
 				</div>
 			</section>
+			<NavigationGrid />
 		</>
 	);
 }
