@@ -26,6 +26,7 @@ export default function SkillItems(props) {
 				alt="HTML"
 				onMouseEnter={handleMouseOver}
 			/>
+
 			<img
 				loading="lazy"
 				className={currentSkill === "CSS" ? "activeImage" : ""}
@@ -33,6 +34,7 @@ export default function SkillItems(props) {
 				alt="CSS"
 				onMouseEnter={handleMouseOver}
 			/>
+
 			<img
 				loading="lazy"
 				className={currentSkill === "Sass" ? "activeImage" : ""}
@@ -40,6 +42,7 @@ export default function SkillItems(props) {
 				alt="Sass"
 				onMouseEnter={handleMouseOver}
 			/>
+
 			<img
 				loading="lazy"
 				className={currentSkill === "JavaScript" ? "activeImage" : ""}
@@ -47,20 +50,23 @@ export default function SkillItems(props) {
 				alt="JavaScript"
 				onMouseEnter={handleMouseOver}
 			/>
+
 			<img
+				p
 				loading="lazy"
 				className={currentSkill === "TypeScript" ? "activeImage" : ""}
 				src={TypeScript}
 				alt="TypeScript"
 				onMouseEnter={handleMouseOver}
 			/>
+
 			<img
-				loading="lazy"
 				className={currentSkill === "React" ? "activeImage" : ""}
 				src={ReactImage}
 				alt="React"
 				onMouseEnter={handleMouseOver}
 			/>
+
 			<img
 				loading="lazy"
 				className={currentSkill === "PHP" ? "activeImage" : ""}
@@ -68,6 +74,7 @@ export default function SkillItems(props) {
 				alt="PHP"
 				onMouseEnter={handleMouseOver}
 			/>
+
 			<img
 				loading="lazy"
 				className={currentSkill === "MySQL" ? "activeImage" : ""}
@@ -75,6 +82,7 @@ export default function SkillItems(props) {
 				alt="MySQL"
 				onMouseEnter={handleMouseOver}
 			/>
+
 			<img
 				loading="lazy"
 				className={currentSkill === "C" ? "activeImage" : ""}

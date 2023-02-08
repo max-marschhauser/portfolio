@@ -1,4 +1,4 @@
-// options page, contains options for selecting theme and language of page
+// options page, contains options for selecting theme of page
 
 // importing general items
 import React, { useEffect } from "react";
@@ -11,9 +11,6 @@ import themeLight from "../../assets/images/options/themeLight.jpg";
 import themeDark from "../../assets/images/options/themeDark.jpg";
 import themeNature from "../../assets/images/options/themeNature.jpg";
 import themeSpace from "../../assets/images/options/themeSpace.jpg";
-
-import english from "../../assets/images/options/english.png";
-import croatian from "../../assets/images/options/croatian.png";
 
 export default function OptionsPage(props) {
 	let { handlePageChange, handleThemeChange } = props;
@@ -78,15 +75,6 @@ export default function OptionsPage(props) {
 							/>
 						</button>
 					</li>
-				</ul>
-				<h3>Select language</h3>
-				<ul className="languages">
-					<button>
-						<img src={english} alt="english" />
-					</button>
-					<button>
-						<img src={croatian} alt="croatian" />
-					</button>
 				</ul>
 			</main>
 			;
