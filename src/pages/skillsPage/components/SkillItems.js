@@ -61,7 +61,6 @@ export default function SkillItems(props) {
 				alt="React"
 				onMouseEnter={handleMouseOver}
 			/>
-
 			<img
 				loading="lazy"
 				className={currentSkill === "PHP" ? "activeImage" : ""}
