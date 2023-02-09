@@ -37,43 +37,38 @@ export default function App() {
 	useEffect(() => {
 		switch (theme) {
 			case "iceTheme":
-				root.style.setProperty("--color-dark", "hsl(125, 100%, 0%)");
-				root.style.setProperty("--color-light", "hsl(220, 5%, 90%)");
-				root.style.setProperty("--color-primary", "hsl(186, 100%, 65%)");
-				root.style.setProperty("--color-primary-transparent", "hsla(186, 100%, 65%, 0.6)");
-				root.style.setProperty("--color-action", "hsl(338, 95%, 55%)");
+				root.style.setProperty("--color-dark", "hsl(220, 100%, 10%)");
+				root.style.setProperty("--color-light", "hsl(220, 100%, 95%)");
+				root.style.setProperty("--color-primary", "hsl(220, 25%, 40%)");
+				root.style.setProperty("--color-primary-transparent", "hsla(220, 25%, 40%, 0.6)");
+				root.style.setProperty("--color-action", "hsl(185, 100%, 50%)");
 				break;
 
 			case "twilightTheme":
-				root.style.setProperty("--color-dark", "hsl(287, 100%, 12%)");
-				root.style.setProperty("--color-light", "hsl(10, 10%, 90%)");
-				root.style.setProperty("--color-primary", "hsl(287, 25%, 40%)");
-				root.style.setProperty("--color-primary-transparent", "hsla(287, 25%, 40%, 0.6)");
-				root.style.setProperty("--color-action", "305, 100%, 70%)");
+				root.style.setProperty("--color-dark", "hsl(285, 100%, 10%)");
+				root.style.setProperty("--color-light", "hsl(285, 100%, 95%)");
+				root.style.setProperty("--color-primary", "hsl(285, 25%, 40%)");
+				root.style.setProperty("--color-primary-transparent", "hsla(285, 25%, 40%, 0.6)");
+				root.style.setProperty("--color-action", "hsl(305, 100%, 50%)");
 				break;
 
 			case "natureTheme":
-				root.style.setProperty("--color-dark", "hsl(125, 20%, 10%)");
-				root.style.setProperty("--color-light", "hsl(10, 10%, 90%)");
-				root.style.setProperty("--color-primary", "hsl(129, 34%, 30%)");
-				root.style.setProperty("--color-primary-transparent", "hsla(129, 34%, 30%, 0.6)");
-				root.style.setProperty("--color-action", "hsl(16, 90%, 60%)");
+				root.style.setProperty("--color-dark", "hsl(125, 100%, 10%)");
+				root.style.setProperty("--color-light", "hsl(125, 100%, 95%)");
+				root.style.setProperty("--color-primary", "hsl(125, 25%, 40%)");
+				root.style.setProperty("--color-primary-transparent", "hsla(125, 25%, 40%, 0.6)");
+				root.style.setProperty("--color-action", "hsl(16, 100%, 50%)");
 				break;
 
 			case "spaceTheme":
-				root.style.setProperty("--color-dark", "hsl(125, 20%, 10%)");
-				root.style.setProperty("--color-light", "hsl(10, 10%, 90%)");
-				root.style.setProperty("--color-primary", "hsl(129, 34%, 30%)");
-				root.style.setProperty("--color-primary-transparent", "hsla(129, 34%, 30%, 0.6)");
-				root.style.setProperty("--color-action", "hsl(16, 90%, 60%)");
+				root.style.setProperty("--color-dark", "hsl(245, 100%, 10%)");
+				root.style.setProperty("--color-light", "hsl(245, 100%, 95%)");
+				root.style.setProperty("--color-primary", "hsl(245, 25%, 40%)");
+				root.style.setProperty("--color-primary-transparent", "hsla(245, 25%, 40%, 0.6)");
+				root.style.setProperty("--color-action", "hsl(290, 100%, 50%)");
 				break;
 
 			default:
-				root.style.setProperty("--color-dark", "");
-				root.style.setProperty("--color-light", "");
-				root.style.setProperty("--color-primary", "");
-				root.style.setProperty("--color-primary-transparent", "");
-				root.style.setProperty("--color-action", "");
 		}
 	}, [theme, root.style]);
 

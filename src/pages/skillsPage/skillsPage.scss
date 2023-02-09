@@ -18,18 +18,11 @@
 
 		display: grid;
 		place-items: center;
-		grid-template-columns: 1fr;
+		grid-template-columns: repeat(2, 1fr);
 		row-gap: clamp(1rem, 8vh, 6rem);
 
-		img {
-			width: clamp(4rem, 10vw, 8rem);
-			aspect-ratio: 1 / 1;
-
-			padding: clamp(0.125rem, 1vw, 0.5rem);
-
+		button {
 			outline: 0.25rem solid transparent;
-
-			user-select: none;
 
 			transition: all 0.35s ease;
 
@@ -39,10 +32,23 @@
 				border-radius: 1rem;
 				outline: 0.25rem solid var(--color-action);
 			}
-		}
 
-		.activeImage {
-			outline: 0.25rem solid var(--color-action);
+			img {
+				display: block;
+
+				width: clamp(4rem, 10vw, 8rem);
+				aspect-ratio: 1 / 1;
+
+				padding: clamp(0.125rem, 3vw, 1rem);
+
+				background-color: var(--color-dark);
+
+				user-select: none;
+			}
+
+			.activeImage {
+				outline: 0.25rem solid var(--color-action);
+			}
 		}
 	}
 

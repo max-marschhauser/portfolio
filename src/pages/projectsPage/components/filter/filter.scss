@@ -57,6 +57,8 @@
 
 					background-color: var(--color-light);
 
+					outline: 0.5rem solid var(--color-primary);
+
 					text-align: center;
 					font-size: clamp(1.25rem, 1.5vw, 1.75rem);
 					color: var(--color-primary);
@@ -67,7 +69,7 @@
 					&:hover,
 					&:focus-visible,
 					&:active {
-						background-color: var(--color-light);
+						outline: 0.5rem solid var(--color-action);
 					}
 				}
 

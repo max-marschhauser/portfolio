@@ -19,76 +19,86 @@ export default function SkillItems(props) {
 
 	return (
 		<>
-			<img
-				loading="lazy"
-				className={currentSkill === "HTML" ? "activeImage" : ""}
-				src={HTML}
-				alt="HTML"
-				onMouseEnter={handleMouseOver}
-			/>
-
-			<img
-				loading="lazy"
-				className={currentSkill === "CSS" ? "activeImage" : ""}
-				src={CSS}
-				alt="CSS"
-				onMouseEnter={handleMouseOver}
-			/>
-
-			<img
-				loading="lazy"
-				className={currentSkill === "Sass" ? "activeImage" : ""}
-				src={Sass}
-				alt="Sass"
-				onMouseEnter={handleMouseOver}
-			/>
-
-			<img
-				loading="lazy"
-				className={currentSkill === "JavaScript" ? "activeImage" : ""}
-				src={JavaScript}
-				alt="JavaScript"
-				onMouseEnter={handleMouseOver}
-			/>
-
-			<img
-				loading="lazy"
-				className={currentSkill === "TypeScript" ? "activeImage" : ""}
-				src={TypeScript}
-				alt="TypeScript"
-				onMouseEnter={handleMouseOver}
-			/>
-
-			<img
-				className={currentSkill === "React" ? "activeImage" : ""}
-				src={ReactImage}
-				alt="React"
-				onMouseEnter={handleMouseOver}
-			/>
-
-			<img
-				loading="lazy"
-				className={currentSkill === "PHP" ? "activeImage" : ""}
-				src={PHP}
-				alt="PHP"
-				onMouseEnter={handleMouseOver}
-			/>
-
-			<img
-				loading="lazy"
-				className={currentSkill === "MySQL" ? "activeImage" : ""}
-				src={MySQL}
-				alt="MySQL"
-				onMouseEnter={handleMouseOver}
-			/>
-
-			<img
-				loading="lazy"
-				className={currentSkill === "C" ? "activeImage" : ""}
-				src={C}
-				alt="C"
-				onMouseEnter={handleMouseOver}
-			/>
+			<button>
+				<img
+					loading="lazy"
+					className={currentSkill === "HTML" ? "activeImage" : ""}
+					src={HTML}
+					alt="HTML"
+					onMouseEnter={handleMouseOver}
+				/>
+			</button>
+			<button>
+				<img
+					loading="lazy"
+					className={currentSkill === "CSS" ? "activeImage" : ""}
+					src={CSS}
+					alt="CSS"
+					onMouseEnter={handleMouseOver}
+				/>
+			</button>
+			<button>
+				<img
+					loading="lazy"
+					className={currentSkill === "Sass" ? "activeImage" : ""}
+					src={Sass}
+					alt="Sass"
+					onMouseEnter={handleMouseOver}
+				/>
+			</button>
+			<button>
+				<img
+					loading="lazy"
+					className={currentSkill === "JavaScript" ? "activeImage" : ""}
+					src={JavaScript}
+					alt="JavaScript"
+					onMouseEnter={handleMouseOver}
+				/>
+			</button>
+			<button>
+				<img
+					loading="lazy"
+					className={currentSkill === "TypeScript" ? "activeImage" : ""}
+					src={TypeScript}
+					alt="TypeScript"
+					onMouseEnter={handleMouseOver}
+				/>
+			</button>
+			<button>
+				<img
+					className={currentSkill === "React" ? "activeImage" : ""}
+					src={ReactImage}
+					alt="React"
+					onMouseEnter={handleMouseOver}
+				/>
+			</button>
+			<button>
+				<img
+					loading="lazy"
+					className={currentSkill === "PHP" ? "activeImage" : ""}
+					src={PHP}
+					alt="PHP"
+					onMouseEnter={handleMouseOver}
+				/>
+			</button>
+			<button>
+				<img
+					loading="lazy"
+					className={currentSkill === "MySQL" ? "activeImage" : ""}
+					src={MySQL}
+					alt="MySQL"
+					onMouseEnter={handleMouseOver}
+				/>
+			</button>
+			<button>
+				<img
+					loading="lazy"
+					className={currentSkill === "C" ? "activeImage" : ""}
+					src={C}
+					alt="C"
+					onMouseEnter={handleMouseOver}
+				/>
+			</button>
 		</>
 	);
 }

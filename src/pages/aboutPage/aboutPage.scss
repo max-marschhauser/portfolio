@@ -58,23 +58,22 @@
 				display: grid;
 				place-items: center;
 
-				width: fit-content;
-				margin: 0 auto;
+				margin-inline: auto;
+				margin-top: 1rem;
 
-				img {
-					width: clamp(15rem, 30vw, 25rem);
-					aspect-ratio: 16/9;
-					margin-top: clamp(0.5rem, 1vh, 1rem);
-
-					outline: 1px solid var(--color-light);
-				}
+				outline: 0.2rem solid var(--color-primary);
 
 				transition: all 0.35s ease;
 
 				&:hover,
 				&:focus-visible,
 				&:active {
-					opacity: 0.75;
+					outline: 0.2rem solid var(--color-action);
+				}
+
+				img {
+					width: clamp(15rem, 30vw, 25rem);
+					aspect-ratio: 16/9;
 				}
 			}
 		}

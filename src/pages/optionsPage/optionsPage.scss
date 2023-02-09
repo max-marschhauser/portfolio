@@ -30,12 +30,7 @@
 
 		list-style: none;
 
-		img {
-			display: block;
-
-			width: clamp(15rem, 20vw, 25rem);
-			aspect-ratio: 16 / 9;
-
+		button {
 			outline: 0.1rem solid var(--color-primary);
 			outline-offset: 0.25rem;
 
@@ -49,7 +44,16 @@
 			}
 
 			&:active {
+				outline: 0.1rem solid var(--color-action);
+
 				opacity: 0.8;
+			}
+
+			img {
+				display: block;
+
+				width: clamp(15rem, 20vw, 25rem);
+				aspect-ratio: 16 / 9;
 			}
 		}
 	}
