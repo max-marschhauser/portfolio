@@ -49,7 +49,12 @@ export default function Filter(props) {
 								<label
 									tabIndex="0"
 									className={activeSkill === "HTML" ? "activeFilterInput" : ""}
-									htmlFor={`${id}-HTML`}>
+									htmlFor={`${id}-HTML`}
+									onKeyDown={(e) => {
+										if (e.key === "Enter") {
+											skillChanger(e.target.innerHTML);
+										}
+									}}>
 									HTML
 								</label>
 							</li>
@@ -65,7 +70,12 @@ export default function Filter(props) {
 								<label
 									tabIndex="0"
 									className={activeSkill === "CSS" ? "activeFilterInput" : ""}
-									htmlFor={`${id}-CSS`}>
+									htmlFor={`${id}-CSS`}
+									onKeyDown={(e) => {
+										if (e.key === "Enter") {
+											skillChanger(e.target.innerHTML);
+										}
+									}}>
 									CSS
 								</label>
 							</li>
@@ -81,7 +91,12 @@ export default function Filter(props) {
 								<label
 									tabIndex="0"
 									className={activeSkill === "JavaScript" ? "activeFilterInput" : ""}
-									htmlFor={`${id}-JavaScript`}>
+									htmlFor={`${id}-JavaScript`}
+									onKeyDown={(e) => {
+										if (e.key === "Enter") {
+											skillChanger(e.target.innerHTML);
+										}
+									}}>
 									JavaScript
 								</label>
 							</li>
@@ -97,7 +112,12 @@ export default function Filter(props) {
 								<label
 									tabIndex="0"
 									className={activeSkill === "Sass" ? "activeFilterInput" : ""}
-									htmlFor={`${id}-Sass`}>
+									htmlFor={`${id}-Sass`}
+									onKeyDown={(e) => {
+										if (e.key === "Enter") {
+											skillChanger(e.target.innerHTML);
+										}
+									}}>
 									Sass
 								</label>
 							</li>
@@ -113,7 +133,12 @@ export default function Filter(props) {
 								<label
 									tabIndex="0"
 									className={activeSkill === "TypeScript" ? "activeFilterInput" : ""}
-									htmlFor={`${id}-TypeScript`}>
+									htmlFor={`${id}-TypeScript`}
+									onKeyDown={(e) => {
+										if (e.key === "Enter") {
+											skillChanger(e.target.innerHTML);
+										}
+									}}>
 									TypeScript
 								</label>
 							</li>
@@ -130,7 +155,12 @@ export default function Filter(props) {
 								<label
 									tabIndex="0"
 									className={activeSkill === "React" ? "activeFilterInput" : ""}
-									htmlFor={`${id}-React`}>
+									htmlFor={`${id}-React`}
+									onKeyDown={(e) => {
+										if (e.key === "Enter") {
+											skillChanger(e.target.innerHTML);
+										}
+									}}>
 									React
 								</label>
 							</li>
@@ -152,7 +182,12 @@ export default function Filter(props) {
 								<label
 									tabIndex="0"
 									className={activeKeyword === "Single-page App" ? "activeFilterInput" : ""}
-									htmlFor={`${id}-Single-page App`}>
+									htmlFor={`${id}-Single-page App`}
+									onKeyDown={(e) => {
+										if (e.key === "Enter") {
+											keywordChanger(e.target.innerHTML);
+										}
+									}}>
 									Single-page App
 								</label>
 							</li>
@@ -168,7 +203,12 @@ export default function Filter(props) {
 								<label
 									tabIndex="0"
 									className={activeKeyword === "API" ? "activeFilterInput" : ""}
-									htmlFor={`${id}-API`}>
+									htmlFor={`${id}-API`}
+									onKeyDown={(e) => {
+										if (e.key === "Enter") {
+											keywordChanger(e.target.innerHTML);
+										}
+									}}>
 									API
 								</label>
 							</li>
@@ -184,7 +224,12 @@ export default function Filter(props) {
 								<label
 									tabIndex="0"
 									className={activeKeyword === "Data" ? "activeFilterInput" : ""}
-									htmlFor={`${id}-Data`}>
+									htmlFor={`${id}-Data`}
+									onKeyDown={(e) => {
+										if (e.key === "Enter") {
+											keywordChanger(e.target.innerHTML);
+										}
+									}}>
 									Data
 								</label>
 							</li>
@@ -200,7 +245,12 @@ export default function Filter(props) {
 								<label
 									tabIndex="0"
 									className={activeKeyword === "Brochure" ? "activeFilterInput" : ""}
-									htmlFor={`${id}-Brochure`}>
+									htmlFor={`${id}-Brochure`}
+									onKeyDown={(e) => {
+										if (e.key === "Enter") {
+											keywordChanger(e.target.innerHTML);
+										}
+									}}>
 									Brochure
 								</label>
 							</li>
@@ -216,7 +266,12 @@ export default function Filter(props) {
 								<label
 									tabIndex="0"
 									className={activeKeyword === "eCommerce" ? "activeFilterInput" : ""}
-									htmlFor={`${id}-eCommerce`}>
+									htmlFor={`${id}-eCommerce`}
+									onKeyDown={(e) => {
+										if (e.key === "Enter") {
+											keywordChanger(e.target.innerHTML);
+										}
+									}}>
 									eCommerce
 								</label>
 							</li>
@@ -232,7 +287,12 @@ export default function Filter(props) {
 								<label
 									tabIndex="0"
 									className={activeKeyword === "Game" ? "activeFilterInput" : ""}
-									htmlFor={`${id}-Game`}>
+									htmlFor={`${id}-Game`}
+									onKeyDown={(e) => {
+										if (e.key === "Enter") {
+											keywordChanger(e.target.innerHTML);
+										}
+									}}>
 									Game
 								</label>
 							</li>
@@ -248,7 +308,12 @@ export default function Filter(props) {
 								<label
 									tabIndex="0"
 									className={activeKeyword === "Responsive" ? "activeFilterInput" : ""}
-									htmlFor={`${id}-Responsive`}>
+									htmlFor={`${id}-Responsive`}
+									onKeyDown={(e) => {
+										if (e.key === "Enter") {
+											keywordChanger(e.target.innerHTML);
+										}
+									}}>
 									Responsive
 								</label>
 							</li>
@@ -264,7 +329,12 @@ export default function Filter(props) {
 								<label
 									tabIndex="0"
 									className={activeKeyword === "Component" ? "activeFilterInput" : ""}
-									htmlFor={`${id}-Component`}>
+									htmlFor={`${id}-Component`}
+									onKeyDown={(e) => {
+										if (e.key === "Enter") {
+											keywordChanger(e.target.innerHTML);
+										}
+									}}>
 									Component
 								</label>
 							</li>

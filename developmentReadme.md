@@ -10,4 +10,3 @@
 
 -   na skills page da se može kod tab navigiranja po slikama mijenjati sadržaj, a ne samo onMouseOver
 -   na option page da se teme mogu izabrati i kod tab navigiranja, a ne samo na onClick
--   na projects page kod fileta da se opcije mogu izabrati i kod tab navigiranja
