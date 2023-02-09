@@ -33,12 +33,12 @@ export default function Footer(props) {
 					<ul className="links--social">
 						<li>
 							<a href="https://github.com/max-marschhauser" target="_blank" rel="noreferrer">
-								<ion-icon name="logo-github"></ion-icon>
+								<ion-icon name="logo-github" />
 							</a>
 						</li>
 						<li>
 							<a href="https://codepen.io/max-marschhauser" target="_blank" rel="noreferrer">
-								<ion-icon name="logo-codepen"></ion-icon>
+								<ion-icon name="logo-codepen" />
 							</a>
 						</li>
 						<li>
@@ -46,7 +46,7 @@ export default function Footer(props) {
 								href="https://www.linkedin.com/in/max-marschhauser-a8b9791a6/"
 								target="_blank"
 								rel="noreferrer">
-								<ion-icon name="logo-linkedin"></ion-icon>
+								<ion-icon name="logo-linkedin" />
 							</a>
 						</li>
 					</ul>
@@ -54,27 +54,27 @@ export default function Footer(props) {
 						<ul>
 							<li>
 								<NavLink className={activePage === "skills" ? "activeLink" : ""} to="/skills">
-									<ion-icon name="trophy-sharp"></ion-icon> Skills
+									<ion-icon name="trophy-sharp" /> Skills
 								</NavLink>
 							</li>
 							<li>
 								<NavLink className={activePage === "projects" ? "activeLink" : ""} to="/projects">
-									<ion-icon name="hammer-sharp"></ion-icon> Projects
+									<ion-icon name="hammer-sharp" /> Projects
 								</NavLink>
 							</li>
 							<li>
 								<NavLink className={activePage === "about" ? "activeLink" : ""} to="/about">
-									<ion-icon name="person-sharp"></ion-icon> About
+									<ion-icon name="person-sharp" /> About
 								</NavLink>
 							</li>
 							<li>
 								<NavLink className={activePage === "contact" ? "activeLink" : ""} to="/contact">
-									<ion-icon name="mail-unread-sharp"></ion-icon> Contact
+									<ion-icon name="mail-unread-sharp" /> Contact
 								</NavLink>
 							</li>
 							<li>
 								<NavLink className={activePage === "options" ? "activeLink" : ""} to="/options">
-									<ion-icon name="options-sharp"></ion-icon> Options
+									<ion-icon name="options-sharp" /> Options
 								</NavLink>
 							</li>
 						</ul>

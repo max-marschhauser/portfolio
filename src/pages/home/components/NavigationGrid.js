@@ -3,13 +3,9 @@
 // importing general items
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { useInView } from "react-intersection-observer";
 
 // importing styles
 import "./navigationGrid.scss";
-
-// importing svg
-import skillsImage from "../../../assets/images/svg/trophy-sharp.svg";
 
 export default function NavigationGrid() {
 	let [selectedItem, setSelectedItem] = useState("");
@@ -18,24 +14,15 @@ export default function NavigationGrid() {
 		setSelectedItem(() => e.target.getAttribute("data"));
 	}
 
-	const SkillsButton = () => {
-		const { ref /*, inView*/ } = useInView({
-			threshold: 0.5,
-		});
-		return (
-			<NavLink ref={ref} to="/skills" onMouseOver={handleMouseOver} data="skills">
-				<img src={skillsImage} alt="Skills" />
-				<span>Skills</span>
-			</NavLink>
-		);
-	};
-
 	return (
 		<section className="homeNavigationGrid">
 			<div>
-				<SkillsButton />
+				<NavLink to="/skills" onMouseOver={handleMouseOver} data="skills">
+					<ion-icon name="trophy-sharp" />
+					<span>Skills</span>
+				</NavLink>
 				<NavLink to="/projects" onMouseOver={handleMouseOver} data="projects">
-					<ion-icon name="hammer-sharp"></ion-icon>
+					<ion-icon name="hammer-sharp" />
 					<span>Projects</span>
 				</NavLink>
 			</div>
@@ -54,12 +41,11 @@ export default function NavigationGrid() {
 			</div>
 			<div>
 				<NavLink to="/about" onMouseOver={handleMouseOver} data="about">
-					<ion-icon name="person-sharp"></ion-icon>
+					<ion-icon name="person-sharp" />
 					<span>About</span>
 				</NavLink>
-
 				<NavLink to="/contact" onMouseOver={handleMouseOver} data="contact">
-					<ion-icon name="mail-unread-sharp"></ion-icon>
+					<ion-icon name="mail-unread-sharp" />
 					<span>Contact</span>
 				</NavLink>
 			</div>
