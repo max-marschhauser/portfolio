@@ -10,7 +10,7 @@ import "./aboutPage.scss";
 import AboutComponent from "./components/AboutComponent.js";
 
 export default function AboutPage(props) {
-	let { handlePageChange } = props;
+	let { handlePageChange, theme } = props;
 
 	useEffect(() => {
 		handlePageChange("about");
@@ -18,7 +18,18 @@ export default function AboutPage(props) {
 
 	return (
 		<>
-			<h2 className="pageHeading">
+			<h2
+				className={
+					theme === "lightTheme"
+						? "pageHeading lightThemeImage"
+						: theme === "darkTheme"
+						? "pageHeading darkThemeImage"
+						: theme === "natureTheme"
+						? "pageHeading natureThemeImage"
+						: theme === "spaceTheme"
+						? "pageHeading spaceThemeImage"
+						: "pageHeading"
+				}>
 				About
 				<p>Want to know more about me?</p>
 			</h2>

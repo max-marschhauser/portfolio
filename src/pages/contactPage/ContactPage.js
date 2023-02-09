@@ -10,14 +10,25 @@ import "./contactPage.scss";
 import profileImage from "../../assets/images/manstanding.jpg";
 
 export default function ContactPage(props) {
-	let { handlePageChange } = props;
+	let { handlePageChange, theme } = props;
 	useEffect(() => {
 		handlePageChange("contact");
 	}, [handlePageChange]);
 
 	return (
 		<>
-			<h2 className="pageHeading">
+			<h2
+				className={
+					theme === "lightTheme"
+						? "pageHeading lightThemeImage"
+						: theme === "darkTheme"
+						? "pageHeading darkThemeImage"
+						: theme === "natureTheme"
+						? "pageHeading natureThemeImage"
+						: theme === "spaceTheme"
+						? "pageHeading spaceThemeImage"
+						: "pageHeading"
+				}>
 				Contact
 				<p>How to contact me?</p>
 			</h2>

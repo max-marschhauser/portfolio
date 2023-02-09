@@ -13,14 +13,25 @@ import NavigationGrid from "./components/NavigationGrid.js";
 import manImage from "../../assets/images/manstanding.jpg";
 
 export default function Home(props) {
-	let { handlePageChange } = props;
+	let { handlePageChange, theme } = props;
 	useEffect(() => {
 		handlePageChange("home");
 	}, [handlePageChange]);
 
 	return (
 		<>
-			<section className="homePage">
+			<section
+				className={
+					theme === "lightTheme"
+						? "homePage lightThemeImage"
+						: theme === "darkTheme"
+						? "homePage darkThemeImage"
+						: theme === "natureTheme"
+						? "homePage natureThemeImage"
+						: theme === "spaceTheme"
+						? "homePage spaceThemeImage"
+						: "homePage"
+				}>
 				<img src={manImage} alt="max-marschhauser-profile" />
 				<div className="text">
 					<h1>MAX MARSCHHAUSER</h1>

@@ -13,7 +13,7 @@ import "./skillsPage.scss";
 import SkillItems from "./components/SkillItems.js";
 
 export default function SkillsPage(props) {
-	let { handlePageChange } = props;
+	let { handlePageChange, theme } = props;
 	useEffect(() => {
 		handlePageChange("skills");
 	}, [handlePageChange]);
@@ -26,7 +26,18 @@ export default function SkillsPage(props) {
 
 	return (
 		<>
-			<h2 className="pageHeading">
+			<h2
+				className={
+					theme === "lightTheme"
+						? "pageHeading lightThemeImage"
+						: theme === "darkTheme"
+						? "pageHeading darkThemeImage"
+						: theme === "natureTheme"
+						? "pageHeading natureThemeImage"
+						: theme === "spaceTheme"
+						? "pageHeading spaceThemeImage"
+						: "pageHeading"
+				}>
 				Skills
 				<p>Want to know what I know?</p>
 			</h2>

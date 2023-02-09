@@ -15,9 +15,24 @@
 		font-style: italic;
 	}
 
-	background-image: url("../../images/options/themeNature.jpg");
 	background-position: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.lightThemeImage {
+	background-image: url("../../images/options/themeLight.jpg");
+}
+
+.darkThemeImage {
+	background-image: url("../..//images/options/themeDark.jpg");
+}
+
+.natureThemeImage {
+	background-image: url("../..//images/options/themeNature.jpg");
+}
+
+.spaceThemeImage {
+	background-image: url("../..//images/options/themeSpace.jpg");
 }

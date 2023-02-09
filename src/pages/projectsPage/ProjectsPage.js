@@ -11,7 +11,7 @@ import ProjectsList from "./components/projectsList/ProjectsList.js";
 import Filter from "./components/filter/Filter.js";
 
 export default function ProjectsPage(props) {
-	let { handlePageChange } = props;
+	let { handlePageChange, theme } = props;
 	useEffect(() => {
 		handlePageChange("projects");
 	}, [handlePageChange]);
@@ -46,7 +46,18 @@ export default function ProjectsPage(props) {
 
 	return (
 		<>
-			<h2 className="pageHeading">
+			<h2
+				className={
+					theme === "lightTheme"
+						? "pageHeading lightThemeImage"
+						: theme === "darkTheme"
+						? "pageHeading darkThemeImage"
+						: theme === "natureTheme"
+						? "pageHeading natureThemeImage"
+						: theme === "spaceTheme"
+						? "pageHeading spaceThemeImage"
+						: "pageHeading"
+				}>
 				Projects
 				<p>Interested in my projects?</p>
 			</h2>

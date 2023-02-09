@@ -13,14 +13,25 @@ import themeNature from "../../assets/images/options/themeNature.jpg";
 import themeSpace from "../../assets/images/options/themeSpace.jpg";
 
 export default function OptionsPage(props) {
-	let { handlePageChange, handleThemeChange } = props;
+	let { handlePageChange, handleThemeChange, theme } = props;
 	useEffect(() => {
 		handlePageChange("options");
 	}, [handlePageChange]);
 
 	return (
 		<>
-			<h2 className="pageHeading">
+			<h2
+				className={
+					theme === "lightTheme"
+						? "pageHeading lightThemeImage"
+						: theme === "darkTheme"
+						? "pageHeading darkThemeImage"
+						: theme === "natureTheme"
+						? "pageHeading natureThemeImage"
+						: theme === "spaceTheme"
+						? "pageHeading spaceThemeImage"
+						: "pageHeading"
+				}>
 				Options
 				<p>Change theme and language of this page</p>
 			</h2>
