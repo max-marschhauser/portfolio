@@ -39,7 +39,12 @@ export default function OptionsPage(props) {
 				<h3>Select theme</h3>
 				<ul>
 					<li>
-						<button>
+						<button
+							onKeyDown={(e) => {
+								if (e.key === "Enter") {
+									handleThemeChange("iceTheme");
+								}
+							}}>
 							<img
 								src={themeIce}
 								alt="Ice theme"
@@ -49,9 +54,15 @@ export default function OptionsPage(props) {
 								}}
 							/>
 						</button>
+						<p>Ice</p>
 					</li>
 					<li>
-						<button>
+						<button
+							onKeyDown={(e) => {
+								if (e.key === "Enter") {
+									handleThemeChange("twilightTheme");
+								}
+							}}>
 							<img
 								src={themeTwilight}
 								alt="Twilight theme"
@@ -61,9 +72,15 @@ export default function OptionsPage(props) {
 								}}
 							/>
 						</button>
+						<p>Twilight</p>
 					</li>
 					<li>
-						<button>
+						<button
+							onKeyDown={(e) => {
+								if (e.key === "Enter") {
+									handleThemeChange("natureTheme");
+								}
+							}}>
 							<img
 								src={themeNature}
 								alt="Nature theme"
@@ -73,9 +90,15 @@ export default function OptionsPage(props) {
 								}}
 							/>
 						</button>
+						<p>Nature</p>
 					</li>
 					<li>
-						<button>
+						<button
+							onKeyDown={(e) => {
+								if (e.key === "Enter") {
+									handleThemeChange("spaceTheme");
+								}
+							}}>
 							<img
 								src={themeSpace}
 								alt="Space theme"
@@ -85,6 +108,7 @@ export default function OptionsPage(props) {
 								}}
 							/>
 						</button>
+						<p>Space</p>
 					</li>
 				</ul>
 			</main>

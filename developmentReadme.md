@@ -8,5 +8,4 @@
 
 -   u pokemonAPI readme dodati riječ API !!!! (i na githubu i ovdje)
 
--   na skills page da se može kod tab navigiranja po slikama mijenjati sadržaj, a ne samo onMouseOver
--   na option page da se teme mogu izabrati i kod tab navigiranja, a ne samo na onClick
+-   na skills page da se može kod tab navigiranja po slikama mijenjati sadržaj, a ne samo onMouseOver --> treba srediti handleFocus funckiju na targeta child.alt ili na neki drugi način uzme pravi string (HTML, CSS...). možda staviti direktno u <button> tag neki vrijednost pa to uzeti, npr. custom data value

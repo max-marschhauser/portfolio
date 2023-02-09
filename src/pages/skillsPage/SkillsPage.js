@@ -24,6 +24,11 @@ export default function SkillsPage(props) {
 		setCurrentSkill(event.target.alt);
 	}
 
+	function handleFocus(event) {
+		//setCurrentSkill(event.target.alt);
+		console.log(event.target);
+	}
+
 	return (
 		<>
 			<h2
@@ -44,7 +49,11 @@ export default function SkillsPage(props) {
 
 			<main className="skillsPage">
 				<section className="images">
-					<SkillItems currentSkill={currentSkill} handleMouseOver={handleMouseOver} />
+					<SkillItems
+						currentSkill={currentSkill}
+						handleMouseOver={handleMouseOver}
+						handleFocus={handleFocus}
+					/>
 				</section>
 				<section className="description">
 					<div className="sticky">

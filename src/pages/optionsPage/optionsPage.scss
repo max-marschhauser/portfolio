@@ -56,5 +56,15 @@
 				aspect-ratio: 16 / 9;
 			}
 		}
+
+		p {
+			padding-block: 1rem;
+
+			text-align: center;
+			color: var(--color-light);
+			font-size: clamp(1rem, 3vw, 1.2rem);
+			font-weight: bold;
+			letter-spacing: 0.05rem;
+		}
 	}
 }

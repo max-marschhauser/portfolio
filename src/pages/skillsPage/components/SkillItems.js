@@ -15,11 +15,11 @@ import Sass from "../../../assets/images/skills/Sass.png";
 import TypeScript from "../../../assets/images/skills/TypeScript.png";
 
 export default function SkillItems(props) {
-	let { currentSkill, handleMouseOver } = props;
+	let { currentSkill, handleMouseOver, handleFocus } = props;
 
 	return (
 		<>
-			<button>
+			<button onFocus={handleFocus}>
 				<img
 					loading="lazy"
 					className={currentSkill === "HTML" ? "activeImage" : ""}
@@ -28,7 +28,7 @@ export default function SkillItems(props) {
 					onMouseEnter={handleMouseOver}
 				/>
 			</button>
-			<button>
+			<button onFocus={handleFocus}>
 				<img
 					loading="lazy"
 					className={currentSkill === "CSS" ? "activeImage" : ""}
@@ -37,7 +37,7 @@ export default function SkillItems(props) {
 					onMouseEnter={handleMouseOver}
 				/>
 			</button>
-			<button>
+			<button onFocus={handleFocus}>
 				<img
 					loading="lazy"
 					className={currentSkill === "Sass" ? "activeImage" : ""}
@@ -46,7 +46,7 @@ export default function SkillItems(props) {
 					onMouseEnter={handleMouseOver}
 				/>
 			</button>
-			<button>
+			<button onFocus={handleFocus}>
 				<img
 					loading="lazy"
 					className={currentSkill === "JavaScript" ? "activeImage" : ""}
@@ -55,7 +55,7 @@ export default function SkillItems(props) {
 					onMouseEnter={handleMouseOver}
 				/>
 			</button>
-			<button>
+			<button onFocus={handleFocus}>
 				<img
 					loading="lazy"
 					className={currentSkill === "TypeScript" ? "activeImage" : ""}
@@ -64,7 +64,7 @@ export default function SkillItems(props) {
 					onMouseEnter={handleMouseOver}
 				/>
 			</button>
-			<button>
+			<button onFocus={handleFocus}>
 				<img
 					className={currentSkill === "React" ? "activeImage" : ""}
 					src={ReactImage}
@@ -72,7 +72,7 @@ export default function SkillItems(props) {
 					onMouseEnter={handleMouseOver}
 				/>
 			</button>
-			<button>
+			<button onFocus={handleFocus}>
 				<img
 					loading="lazy"
 					className={currentSkill === "PHP" ? "activeImage" : ""}
@@ -81,7 +81,7 @@ export default function SkillItems(props) {
 					onMouseEnter={handleMouseOver}
 				/>
 			</button>
-			<button>
+			<button onFocus={handleFocus}>
 				<img
 					loading="lazy"
 					className={currentSkill === "MySQL" ? "activeImage" : ""}
@@ -90,7 +90,7 @@ export default function SkillItems(props) {
 					onMouseEnter={handleMouseOver}
 				/>
 			</button>
-			<button>
+			<button onFocus={handleFocus}>
 				<img
 					loading="lazy"
 					className={currentSkill === "C" ? "activeImage" : ""}
