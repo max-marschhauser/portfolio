@@ -29,27 +29,27 @@ export default function App() {
 	}
 
 	//theme selector
-	const [theme, setTheme] = useState("natureTheme");
+	const [theme, setTheme] = useState("twilightTheme");
 	function handleThemeChange(selectedTheme) {
 		setTheme(selectedTheme);
 	}
 	const root = document.querySelector(":root");
 	useEffect(() => {
 		switch (theme) {
-			case "lightTheme":
-				root.style.setProperty("--color-dark", "hsl(125, 20%, 10%)");
-				root.style.setProperty("--color-light", "hsl(10, 10%, 90%)");
-				root.style.setProperty("--color-primary", "hsl(129, 34%, 30%)");
-				root.style.setProperty("--color-primary-transparent", "hsla(129, 34%, 30%, 0.6)");
-				root.style.setProperty("--color-action", "hsl(16, 90%, 60%)");
+			case "iceTheme":
+				root.style.setProperty("--color-dark", "hsl(125, 100%, 0%)");
+				root.style.setProperty("--color-light", "hsl(220, 5%, 90%)");
+				root.style.setProperty("--color-primary", "hsl(186, 100%, 65%)");
+				root.style.setProperty("--color-primary-transparent", "hsla(186, 100%, 65%, 0.6)");
+				root.style.setProperty("--color-action", "hsl(338, 95%, 55%)");
 				break;
 
-			case "darkTheme":
-				root.style.setProperty("--color-dark", "hsl(125, 20%, 10%)");
+			case "twilightTheme":
+				root.style.setProperty("--color-dark", "hsl(287, 100%, 12%)");
 				root.style.setProperty("--color-light", "hsl(10, 10%, 90%)");
-				root.style.setProperty("--color-primary", "hsl(129, 34%, 30%)");
-				root.style.setProperty("--color-primary-transparent", "hsla(129, 34%, 30%, 0.6)");
-				root.style.setProperty("--color-action", "hsl(16, 90%, 60%)");
+				root.style.setProperty("--color-primary", "hsl(287, 25%, 40%)");
+				root.style.setProperty("--color-primary-transparent", "hsla(287, 25%, 40%, 0.6)");
+				root.style.setProperty("--color-action", "305, 100%, 70%)");
 				break;
 
 			case "natureTheme":
@@ -76,8 +76,6 @@ export default function App() {
 				root.style.setProperty("--color-action", "");
 		}
 	}, [theme, root.style]);
-
-	//const [language, setLanguage] = useState("eng"); //eng, hr
 
 	return (
 		<div className="root">

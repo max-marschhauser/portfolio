@@ -8,3 +8,5 @@
 
 -   staviti boje i pozadinske slike za različite teme
 -   spremiti temu u localStorage
+
+u pokemonAPI readme dodati riječ API !!!! (i na githubu i ovdje)

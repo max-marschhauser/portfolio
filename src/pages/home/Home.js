@@ -22,10 +22,10 @@ export default function Home(props) {
 		<>
 			<section
 				className={
-					theme === "lightTheme"
-						? "homePage lightThemeImage"
-						: theme === "darkTheme"
-						? "homePage darkThemeImage"
+					theme === "iceTheme"
+						? "homePage iceThemeImage"
+						: theme === "twilightTheme"
+						? "homePage twilightThemeImage"
 						: theme === "natureTheme"
 						? "homePage natureThemeImage"
 						: theme === "spaceTheme"

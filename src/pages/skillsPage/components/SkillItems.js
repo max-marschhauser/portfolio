@@ -52,7 +52,6 @@ export default function SkillItems(props) {
 			/>
 
 			<img
-				p
 				loading="lazy"
 				className={currentSkill === "TypeScript" ? "activeImage" : ""}
 				src={TypeScript}

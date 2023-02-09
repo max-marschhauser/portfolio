@@ -7,8 +7,8 @@ import React, { useEffect } from "react";
 import "./optionsPage.scss";
 
 // importing images
-import themeLight from "../../assets/images/options/themeLight.jpg";
-import themeDark from "../../assets/images/options/themeDark.jpg";
+import themeIce from "../../assets/images/options/themeIce.jpg";
+import themeTwilight from "../../assets/images/options/themeTwilight.jpg";
 import themeNature from "../../assets/images/options/themeNature.jpg";
 import themeSpace from "../../assets/images/options/themeSpace.jpg";
 
@@ -22,10 +22,10 @@ export default function OptionsPage(props) {
 		<>
 			<h2
 				className={
-					theme === "lightTheme"
-						? "pageHeading lightThemeImage"
-						: theme === "darkTheme"
-						? "pageHeading darkThemeImage"
+					theme === "iceTheme"
+						? "pageHeading iceThemeImage"
+						: theme === "twilightTheme"
+						? "pageHeading twilightThemeImage"
 						: theme === "natureTheme"
 						? "pageHeading natureThemeImage"
 						: theme === "spaceTheme"
@@ -41,11 +41,11 @@ export default function OptionsPage(props) {
 					<li>
 						<button>
 							<img
-								src={themeLight}
-								alt="Light theme"
-								title="Light theme"
+								src={themeIce}
+								alt="Ice theme"
+								title="Ice theme"
 								onClick={() => {
-									handleThemeChange("lightTheme");
+									handleThemeChange("iceTheme");
 								}}
 							/>
 						</button>
@@ -53,11 +53,11 @@ export default function OptionsPage(props) {
 					<li>
 						<button>
 							<img
-								src={themeDark}
-								alt="Dark theme"
-								title="Dark theme"
+								src={themeTwilight}
+								alt="Twilight theme"
+								title="Twilight theme"
 								onClick={() => {
-									handleThemeChange("darkTheme");
+									handleThemeChange("twilightTheme");
 								}}
 							/>
 						</button>
