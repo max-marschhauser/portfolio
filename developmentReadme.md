@@ -6,7 +6,10 @@
 
 -   dodati paralax scroll na hero image, a možda staviti poseban hero image na svaku stranicu s paralax scrollom
 
--   staviti boje i pozadinske slike za različite teme
--   spremiti temu u localStorage
+-   u pokemonAPI readme dodati riječ API !!!! (i na githubu i ovdje)
 
-u pokemonAPI readme dodati riječ API !!!! (i na githubu i ovdje)
+-   na skills page da se može kod tab navigiranja po slikama mijenjati sadržaj, a ne samo onMouseOver
+-   na option page da se teme mogu izabrati i kod tab navigiranja, a ne samo na onClick
+-   na projects page kod fileta da se opcije mogu izabrati i kod tab navigiranja
+
+-   napraviti bolje hover, focus i active na page logo

@@ -29,11 +29,24 @@ export default function App() {
 	}
 
 	//theme selector
-	const [theme, setTheme] = useState("twilightTheme");
+	let localTheme = localStorage.getItem("theme");
+
+	if (localTheme === null) {
+		localStorage.setItem("theme", "twilightTheme");
+		localTheme = "twilightTheme";
+	}
+
+	const [theme, setTheme] = useState(localTheme);
 	function handleThemeChange(selectedTheme) {
 		setTheme(selectedTheme);
 	}
+
+	useEffect(() => {
+		localStorage.setItem("theme", theme);
+	}, [theme]);
+
 	const root = document.querySelector(":root");
+
 	useEffect(() => {
 		switch (theme) {
 			case "iceTheme":
