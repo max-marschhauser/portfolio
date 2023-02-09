@@ -23,6 +23,8 @@
 
 		padding-block: 0.5rem;
 
+		opacity: 1;
+
 		text-align: center;
 		color: var(--color-light);
 		text-decoration: none;
@@ -32,14 +34,18 @@
 
 		&:hover,
 		&:focus-visible {
-			opacity: 0.9;
+			span:nth-child(1) {
+				color: var(--color-action);
+			}
 		}
 
 		&:active {
-			opacity: 0.8;
+			opacity: 0.85;
 		}
 
 		span {
+			transition: all 0.35s ease;
+
 			&:first-child {
 				font-size: 1.5rem;
 				font-weight: bold;
