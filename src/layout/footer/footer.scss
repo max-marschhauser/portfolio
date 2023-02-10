@@ -104,7 +104,7 @@
 							}
 
 							&:active {
-								opacity: 0.5;
+								color: var(--color-action);
 							}
 
 							ion-icon {
@@ -170,7 +170,7 @@
 					}
 
 					&:active {
-						opacity: 0.8;
+						color: var(--color-action);
 					}
 				}
 			}

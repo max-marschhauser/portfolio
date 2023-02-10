@@ -4,8 +4,4 @@
 
 -   staviti profilnu sliku u header i footer i contact page
 
--   dodati paralax scroll na hero image, a možda staviti poseban hero image na svaku stranicu s paralax scrollom
-
 -   u pokemonAPI readme dodati riječ API !!!! (i na githubu i ovdje)
-
--   na skills page da se može kod tab navigiranja po slikama mijenjati sadržaj, a ne samo onMouseOver --> treba srediti handleFocus funckiju na targeta child.alt ili na neki drugi način uzme pravi string (HTML, CSS...). možda staviti direktno u <button> tag neki vrijednost pa to uzeti, npr. custom data value

@@ -32,7 +32,10 @@
 			&:hover,
 			&:focus-visible,
 			&:active {
-				border-radius: 1rem;
+				outline: 0.25rem solid var(--color-action);
+			}
+
+			&.activeImage {
 				outline: 0.25rem solid var(--color-action);
 			}
 
@@ -47,10 +50,6 @@
 				background-color: var(--color-dark);
 
 				user-select: none;
-			}
-
-			.activeImage {
-				outline: 0.25rem solid var(--color-action);
 			}
 		}
 	}

@@ -20,13 +20,8 @@ export default function SkillsPage(props) {
 
 	let [currentSkill, setCurrentSkill] = useState("React");
 
-	function handleMouseOver(event) {
-		setCurrentSkill(event.target.alt);
-	}
-
 	function handleFocus(event) {
-		//setCurrentSkill(event.target.alt);
-		console.log(event.target);
+		setCurrentSkill(event.target.dataset.image);
 	}
 
 	return (
@@ -49,11 +44,7 @@ export default function SkillsPage(props) {
 
 			<main className="skillsPage">
 				<section className="images">
-					<SkillItems
-						currentSkill={currentSkill}
-						handleMouseOver={handleMouseOver}
-						handleFocus={handleFocus}
-					/>
+					<SkillItems currentSkill={currentSkill} handleFocus={handleFocus} />
 				</section>
 				<section className="description">
 					<div className="sticky">

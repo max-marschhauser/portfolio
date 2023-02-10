@@ -214,14 +214,12 @@
 		}
 
 		&:active {
-			opacity: 0.85;
-
 			color: var(--color-action);
 
 			@include abs.mq(1400px, 0px) {
 				background-color: transparent;
 
-				opacity: 0.5;
+				color: var(--color-action);
 			}
 		}
 

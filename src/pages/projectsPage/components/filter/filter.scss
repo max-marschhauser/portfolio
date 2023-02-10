@@ -98,7 +98,7 @@
 							padding: clamp(0.25rem, 1vw, 0.5rem);
 							border-radius: 0.25rem;
 
-							opacity: 0.8;
+							opacity: 0.7;
 							outline: 0.25rem solid transparent;
 
 							color: var(--color-light);
@@ -110,7 +110,6 @@
 							&:hover,
 							&:focus-visible,
 							&:active {
-								opacity: 0.9;
 								outline: 0.25rem solid var(--color-action);
 
 								color: var(--color-light);
@@ -120,8 +119,6 @@
 						.activeFilterInput {
 							opacity: 1;
 							outline: 0.25rem solid var(--color-action);
-
-							color: var(--color-light);
 
 							transition: all 0.35s ease;
 						}
