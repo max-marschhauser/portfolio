@@ -46,10 +46,14 @@ export default function ProjectsListItems(props) {
 											<ion-icon name="logo-github"></ion-icon>
 											<span> GitHub</span>
 										</a>
-										<a href={item.codepenLink} target="_blank" rel="noreferrer">
-											<ion-icon name="logo-codepen"></ion-icon>
-											<span> CodePen</span>
-										</a>
+										{item.codepenLink !== "" ? (
+											<a href={item.codepenLink} target="_blank" rel="noreferrer">
+												<ion-icon name="logo-codepen"></ion-icon>
+												<span> CodePen</span>
+											</a>
+										) : (
+											""
+										)}
 									</li>
 								</ul>
 							</div>
