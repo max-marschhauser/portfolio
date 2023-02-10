@@ -50,6 +50,8 @@ export default function Footer(props) {
 							</a>
 						</li>
 					</ul>
+				</section>
+				<section>
 					<nav className="links--pages">
 						<ul>
 							<li>
@@ -72,6 +74,8 @@ export default function Footer(props) {
 									<ion-icon name="mail-unread-sharp" /> Contact
 								</NavLink>
 							</li>
+						</ul>
+						<ul>
 							<li>
 								<NavLink className={activePage === "options" ? "activeLink" : ""} to="/options">
 									<ion-icon name="options-sharp" /> Options
@@ -89,6 +93,7 @@ export default function Footer(props) {
 			</div>
 			<ul className="pageFooter__item--under">
 				<li>Copyright &copy;{+new Date().getFullYear()}.</li>
+				<li>maxdev.com.hr</li>
 				<li>
 					<button onClick={goToTop}>Back to Top</button>
 				</li>
