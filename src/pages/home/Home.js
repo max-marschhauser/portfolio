@@ -10,7 +10,7 @@ import "./home.scss";
 import NavigationGrid from "./components/NavigationGrid.js";
 
 // importing images
-import manImage from "../../assets/images/manstanding.jpg";
+import manImage from "../../assets/images/profil.png";
 
 export default function Home(props) {
 	let { handlePageChange, theme } = props;

@@ -7,7 +7,7 @@ import React, { useEffect } from "react";
 import "./contactPage.scss";
 
 // importing images
-import profileImage from "../../assets/images/manstanding.jpg";
+import profileImage from "../../assets/images/profil.png";
 
 export default function ContactPage(props) {
 	let { handlePageChange, theme } = props;
