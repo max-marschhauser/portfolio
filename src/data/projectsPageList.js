@@ -70,7 +70,7 @@ const projectsData = [
 		description:
 			"Cool looking gradient hover card built using plain JS, CSS and HTML. Component intended to be used in other projects.",
 		githubLink: "https://github.com/max-marschhauser/gradient-hover-card",
-		codepenLink: "",
+		codepenLink: "https://codepen.io/max-marschhauser/pen/WNgNrVO",
 	},
 	{
 		id: 4,
@@ -100,7 +100,7 @@ const projectsData = [
 		description:
 			"Good looking Loading Spinner built with CSS. This component can be used on various sites that require loading.",
 		githubLink: "https://github.com/max-marschhauser/Loading-Spinner",
-		codepenLink: "",
+		codepenLink: "https://codepen.io/max-marschhauser/pen/oNPNxbv",
 	},
 	{
 		id: 7,
@@ -109,7 +109,7 @@ const projectsData = [
 		technology: "HTML, CSS, JavaScript",
 		description: "Sample code for multistep form. Component intended to be used in other projects.",
 		githubLink: "https://github.com/max-marschhauser/Multistep-Form",
-		codepenLink: "",
+		codepenLink: "https://codepen.io/max-marschhauser/pen/LYJYNVK",
 	},
 	{
 		id: 8,
@@ -147,7 +147,7 @@ const projectsData = [
 		technology: "HTML, JavaScript",
 		description: "To-Do list built using JavaScript and HTML. Very simple JS to-do list built for fun.",
 		githubLink: "https://github.com/max-marschhauser/ToDo-List",
-		codepenLink: "",
+		codepenLink: "https://codepen.io/max-marschhauser/pen/ababNzX",
 	},
 	{
 		id: 12,
