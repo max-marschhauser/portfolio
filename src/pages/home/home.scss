@@ -19,32 +19,16 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 
-	.profileImageContainer {
-		position: relative;
-		display: grid;
-		place-items: center;
+	img {
+		width: clamp(15rem, 20vw, 20rem);
+		aspect-ratio: 9 / 12;
 
-		border-radius: 50%;
-		width: clamp(20rem, 25vw, 25rem);
-		height: clamp(20rem, 25vw, 25rem);
+		user-select: none;
 
-		overflow: hidden;
+		transition: all 0.35s ease;
 
-		background-image: url("../../assets/images/profileBackground.jpg");
-
-		img {
-			position: absolute;
-
-			width: clamp(15rem, 20vw, 20rem);
-			aspect-ratio: 9 / 12;
-
-			user-select: none;
-
-			transition: all 0.35s ease;
-
-			&:hover {
-				transform: scale(1.1);
-			}
+		&:hover {
+			transform: scale(1.1);
 		}
 	}
 
