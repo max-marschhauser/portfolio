@@ -31,13 +31,17 @@ import multistepForm2 from "../assets/images/projects/Multistep-Form/multistep-f
 import multistepForm3 from "../assets/images/projects/Multistep-Form/multistep-form3.png";
 
 import pokemonApp1 from "../assets/images/projects/Pokemon-App/pokemon-app1.png";
+import pokemonApp2 from "../assets/images/projects/Pokemon-App/pokemon-app2.png";
 
 import portfolioPage1 from "../assets/images/projects/Portfolio-Page/portfolio-page1.png";
+import portfolioPage2 from "../assets/images/projects/Portfolio-Page/portfolio-page2.png";
+import portfolioPage3 from "../assets/images/projects/Portfolio-Page/portfolio-page3.png";
 
 import rockPaperScissors1 from "../assets/images/projects/Rock-Paper-Scissors/rock-paper-scissors1.png";
 import rockPaperScissors2 from "../assets/images/projects/Rock-Paper-Scissors/rock-paper-scissors2.png";
 
 import toDo1 from "../assets/images/projects/To-Do/to-do1.png";
+import toDo2 from "../assets/images/projects/To-Do/to-do2.png";
 
 import yuGiOhCardSearch1 from "../assets/images/projects/Yu-Gi-Oh-Card-Search/yu-gi-oh-card-search1.png";
 import yuGiOhCardSearch2 from "../assets/images/projects/Yu-Gi-Oh-Card-Search/yu-gi-oh-card-search2.png";
@@ -126,7 +130,7 @@ const projectsData = [
 	},
 	{
 		id: 9,
-		img: [pokemonApp1],
+		img: [pokemonApp1, pokemonApp2],
 		name: "Pokemon App",
 		technology: "HTML, CSS, Sass, JavaScript, React",
 		description:
@@ -136,7 +140,7 @@ const projectsData = [
 	},
 	{
 		id: 10,
-		img: [portfolioPage1],
+		img: [portfolioPage1, portfolioPage2, portfolioPage3],
 		name: "Portfolio",
 		technology: "HTML, CSS, Sass, JavaScript, React",
 		description:
@@ -155,7 +159,7 @@ const projectsData = [
 	},
 	{
 		id: 12,
-		img: [toDo1],
+		img: [toDo1, toDo2],
 		name: "To-Do List",
 		technology: "HTML, JavaScript",
 		description: "To-Do list built using JavaScript and HTML. Very simple JS to-do list built for fun.",
