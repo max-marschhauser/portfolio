@@ -23,6 +23,9 @@ import lightdarkTheme3 from "../assets/images/projects/Light-Dark-Theme/light-da
 import loadingSpinner1 from "../assets/images/projects/Loading-Spinner/loading-spinner1.png";
 import loadingSpinner2 from "../assets/images/projects/Loading-Spinner/loading-spinner2.png";
 
+import hamburgerExample1 from "../assets/images/projects/Hamburger-Example/hamburger-example1.png";
+import hamburgerExample2 from "../assets/images/projects/Hamburger-Example/hamburger-example2.png";
+
 import multistepForm1 from "../assets/images/projects/Multistep-Form/multistep-form1.png";
 import multistepForm2 from "../assets/images/projects/Multistep-Form/multistep-form2.png";
 import multistepForm3 from "../assets/images/projects/Multistep-Form/multistep-form3.png";
@@ -104,6 +107,16 @@ const projectsData = [
 	},
 	{
 		id: 7,
+		img: [hamburgerExample1, hamburgerExample2],
+		name: "Hamburger Examples",
+		technology: "HTML, CSS, JavaScript, SVG",
+		description:
+			"Examples of Hamburger buttons used for opening navbars on small screen devices. Responsive component which can be used in future projects. Built using HTML, CSS, JavaScript and SVG.",
+		githubLink: "https://github.com/max-marschhauser/hamburger-examples",
+		codepenLink: "https://codepen.io/max-marschhauser/pen/MWqWybB",
+	},
+	{
+		id: 8,
 		img: [multistepForm1, multistepForm2, multistepForm3],
 		name: "Multistep Form",
 		technology: "HTML, CSS, JavaScript",
@@ -112,7 +125,7 @@ const projectsData = [
 		codepenLink: "https://codepen.io/max-marschhauser/pen/LYJYNVK",
 	},
 	{
-		id: 8,
+		id: 9,
 		img: [pokemonApp1],
 		name: "Pokemon App",
 		technology: "HTML, CSS, Sass, JavaScript, React",
@@ -122,7 +135,7 @@ const projectsData = [
 		codepenLink: "",
 	},
 	{
-		id: 9,
+		id: 10,
 		img: [portfolioPage1],
 		name: "Portfolio",
 		technology: "HTML, CSS, Sass, JavaScript, React",
@@ -132,7 +145,7 @@ const projectsData = [
 		codepenLink: "",
 	},
 	{
-		id: 10,
+		id: 11,
 		img: [rockPaperScissors1, rockPaperScissors2],
 		name: "Rock-Paper-Scissors",
 		technology: "HTML, CSS, JavaScript",
@@ -141,7 +154,7 @@ const projectsData = [
 		codepenLink: "https://codepen.io/max-marschhauser/pen/rNrEbjZ",
 	},
 	{
-		id: 11,
+		id: 12,
 		img: [toDo1],
 		name: "To-Do List",
 		technology: "HTML, JavaScript",
@@ -150,7 +163,7 @@ const projectsData = [
 		codepenLink: "https://codepen.io/max-marschhauser/pen/ababNzX",
 	},
 	{
-		id: 12,
+		id: 13,
 		img: [yuGiOhCardSearch1, yuGiOhCardSearch2, yuGiOhCardSearch3, yuGiOhCardSearch4],
 		name: "Yu-Gi-Oh Card Search",
 		technology: "HTML, CSS, Sass, JavaScript, React",
