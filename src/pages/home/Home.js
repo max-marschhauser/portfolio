@@ -10,7 +10,7 @@ import "./home.scss";
 import NavigationGrid from "./components/NavigationGrid.js";
 
 // importing images
-import manImage from "../../assets/images/profil.png";
+import profileImage from "../../assets/images/profile.png";
 
 export default function Home(props) {
 	let { handlePageChange, theme } = props;
@@ -32,7 +32,9 @@ export default function Home(props) {
 						? "homePage spaceThemeImage"
 						: "homePage"
 				}>
-				<img src={manImage} alt="max-marschhauser-profile" />
+				<div className="profileImageContainer">
+					<img src={profileImage} alt="max-marschhauser-profile" />
+				</div>
 				<div className="text">
 					<h1>MAX MARSCHHAUSER</h1>
 					<h2>

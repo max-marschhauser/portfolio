@@ -7,7 +7,7 @@ import React, { useEffect } from "react";
 import "./contactPage.scss";
 
 // importing images
-import profileImage from "../../assets/images/profil.png";
+import profileImage from "../../assets/images/profile.png";
 
 export default function ContactPage(props) {
 	let { handlePageChange, theme } = props;
@@ -34,7 +34,9 @@ export default function ContactPage(props) {
 			</h2>
 
 			<main className="contactPage">
-				<img src={profileImage} alt="max-marschhauser-profile" />
+				<div className="contactsImageContainer">
+					<img src={profileImage} alt="max-marschhauser-profile" />
+				</div>
 				<ul>
 					<li>
 						<ion-icon name="mail-sharp"></ion-icon>
