@@ -10,7 +10,7 @@ import List from "../../../../data/projectsPageList.js";
 import "./projectsList.scss";
 
 export default function ProjectsListItems(props) {
-	const { searchWord, activeSkill, activeKeyword } = props;
+	const { searchWord, activeSkill, activeKeyword, handleProjectClick } = props;
 
 	return (
 		<section className="projectsList">
@@ -24,9 +24,9 @@ export default function ProjectsListItems(props) {
 				) {
 					return (
 						<article className="projectsList__item" key={item.id}>
-							<div className="projectsList__item--imageContainer">
-								<img src={item.img[0]} alt={item.name} loading="lazy" />
-							</div>
+							<button type="button" className="projectsList__item--imageContainer">
+								<img src={item.img[0]} alt={item.name} loading="lazy" onClick={handleProjectClick} />
+							</button>
 
 							<div className="projectsList__item--info">
 								<ul>

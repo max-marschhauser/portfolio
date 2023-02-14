@@ -9,6 +9,7 @@ import "./projectsPage.scss";
 //import components
 import ProjectsList from "./components/projectsList/ProjectsList.js";
 import Filter from "./components/filter/Filter.js";
+import OpenedProject from "./components/openedProject/OpenedProject.js";
 
 export default function ProjectsPage(props) {
 	let { handlePageChange, theme } = props;
@@ -44,6 +45,14 @@ export default function ProjectsPage(props) {
 		});
 	}
 
+	const [openedProject, setOpenedProject] = useState("");
+
+	function handleProjectClick(project) {
+		setOpenedProject(project.target.alt);
+	}
+
+	console.log(openedProject);
+
 	return (
 		<>
 			<h2
@@ -63,7 +72,17 @@ export default function ProjectsPage(props) {
 			</h2>
 
 			<main className="projectsPage">
-				<ProjectsList searchWord={searchWord} activeSkill={activeSkill} activeKeyword={activeKeyword} />
+				{openedProject ? (
+					<OpenedProject openedProject={openedProject} handleProjectClick={handleProjectClick} />
+				) : (
+					<></>
+				)}
+				<ProjectsList
+					searchWord={searchWord}
+					activeSkill={activeSkill}
+					activeKeyword={activeKeyword}
+					handleProjectClick={handleProjectClick}
+				/>
 				<Filter
 					searchChanger={HandleSearchWord}
 					skillChanger={HandleSkillChange}
