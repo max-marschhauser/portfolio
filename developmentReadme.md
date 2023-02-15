@@ -9,3 +9,5 @@
 -   popraviti kartu u footeru
 
 -   na projects page napraviti da se dialog može otvoriti i uz pomoć tipkovnice (entera)
+
+-   u mobile navbaru kad je otvoren options page ne oboja se link

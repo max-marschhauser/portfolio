@@ -8,7 +8,7 @@ import { NavLink } from "react-router-dom";
 import "./navigationGrid.scss";
 
 export default function NavigationGrid() {
-	let [selectedItem, setSelectedItem] = useState("");
+	const [selectedItem, setSelectedItem] = useState("");
 
 	function handleMouseOver(e) {
 		setSelectedItem(() => e.target.getAttribute("data-link"));
@@ -87,7 +87,18 @@ export default function NavigationGrid() {
 				</NavLink>
 			</div>
 			<div>
-				<p>
+				<p
+					className={
+						selectedItem === "skills"
+							? "rotateText-plus arrow-left"
+							: selectedItem === "projects"
+							? "rotateText-minus arrow-left"
+							: selectedItem === "about"
+							? "rotateText-minus arrow-right"
+							: selectedItem === "contact"
+							? "rotateText-plus arrow-right"
+							: ""
+					}>
 					{selectedItem === "skills"
 						? "Want to know what I know?"
 						: selectedItem === "projects"

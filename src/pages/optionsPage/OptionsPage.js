@@ -1,7 +1,7 @@
 // options page, contains options for selecting theme of page
 
 // importing general items
-import React, { useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 // importing styles
 import "./optionsPage.scss";
@@ -17,6 +17,50 @@ export default function OptionsPage(props) {
 	useEffect(() => {
 		handlePageChange("options");
 	}, [handlePageChange]);
+
+	const iceRef = useRef();
+	const twilightRef = useRef();
+	const natureRef = useRef();
+	const spaceRef = useRef();
+
+	const [iceIsVissible, setIceIsVissible] = useState(false);
+	const [twilightIsVissible, setTwilightIsVissible] = useState(false);
+	const [natureIsVissible, setNatureIsVissible] = useState(false);
+	const [spaceIsVissible, setSpaceIsVissible] = useState(false);
+
+	useEffect(() => {
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((item) => {
+				let target = item.target.dataset.link;
+
+				switch (target) {
+					case "ice": {
+						setIceIsVissible(item.isIntersecting);
+						break;
+					}
+					case "twilight": {
+						setTwilightIsVissible(item.isIntersecting);
+						break;
+					}
+					case "nature": {
+						setNatureIsVissible(item.isIntersecting);
+						break;
+					}
+					case "space": {
+						setSpaceIsVissible(item.isIntersecting);
+						break;
+					}
+					default: {
+						break;
+					}
+				}
+			});
+		});
+		observer.observe(iceRef.current);
+		observer.observe(twilightRef.current);
+		observer.observe(natureRef.current);
+		observer.observe(spaceRef.current);
+	}, []);
 
 	return (
 		<>
@@ -38,7 +82,7 @@ export default function OptionsPage(props) {
 			<main className="optionsPage">
 				<h3>Select theme</h3>
 				<ul>
-					<li>
+					<li className={iceIsVissible ? "themeVissible" : ""} data-link="ice" ref={iceRef}>
 						<button
 							onKeyDown={(e) => {
 								if (e.key === "Enter") {
@@ -56,7 +100,7 @@ export default function OptionsPage(props) {
 						</button>
 						<p>Ice</p>
 					</li>
-					<li>
+					<li className={twilightIsVissible ? "themeVissible" : ""} data-link="twilight" ref={twilightRef}>
 						<button
 							onKeyDown={(e) => {
 								if (e.key === "Enter") {
@@ -74,7 +118,7 @@ export default function OptionsPage(props) {
 						</button>
 						<p>Twilight</p>
 					</li>
-					<li>
+					<li className={natureIsVissible ? "themeVissible" : ""} data-link="nature" ref={natureRef}>
 						<button
 							onKeyDown={(e) => {
 								if (e.key === "Enter") {
@@ -92,7 +136,7 @@ export default function OptionsPage(props) {
 						</button>
 						<p>Nature</p>
 					</li>
-					<li>
+					<li className={spaceIsVissible ? "themeVissible" : ""} data-link="space" ref={spaceRef}>
 						<button
 							onKeyDown={(e) => {
 								if (e.key === "Enter") {
