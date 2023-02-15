@@ -37,7 +37,7 @@
 				outline: 0.25rem solid var(--color-action);
 			}
 
-			&.activeImage {
+			&:has(.activeImage) {
 				outline: 0.25rem solid var(--color-action);
 			}
 
@@ -52,6 +52,8 @@
 				background-color: var(--color-dark);
 
 				user-select: none;
+
+				transition: all 0.35s ease;
 			}
 		}
 

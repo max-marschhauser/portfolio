@@ -1,7 +1,7 @@
 // home page component, contains navigation with links to other pages
 
 // importing general items
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 
 // importing styles
@@ -11,17 +11,77 @@ export default function NavigationGrid() {
 	let [selectedItem, setSelectedItem] = useState("");
 
 	function handleMouseOver(e) {
-		setSelectedItem(() => e.target.getAttribute("data"));
+		setSelectedItem(() => e.target.getAttribute("data-link"));
 	}
+
+	const SkillsRef = useRef();
+	const ProjectsRef = useRef();
+	const AboutRef = useRef();
+	const ContactRef = useRef();
+
+	const [SkillsIsVissible, setSkillsIsVissible] = useState(false);
+	const [ProjectsIsVissible, setProjectsIsVissible] = useState(false);
+	const [AboutIsVissible, setAboutIsVissible] = useState(false);
+	const [ContactIsVissible, setContactIsVissible] = useState(false);
+
+	useEffect(() => {
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((item) => {
+				let target = item.target.dataset.link;
+
+				switch (target) {
+					case "skills": {
+						setSkillsIsVissible(item.isIntersecting);
+						break;
+					}
+					case "projects": {
+						setProjectsIsVissible(item.isIntersecting);
+						break;
+					}
+					case "about": {
+						setAboutIsVissible(item.isIntersecting);
+						break;
+					}
+					case "contact": {
+						setContactIsVissible(item.isIntersecting);
+						break;
+					}
+					default: {
+						break;
+					}
+				}
+			});
+		});
+		observer.observe(SkillsRef.current);
+		observer.observe(ProjectsRef.current);
+		observer.observe(AboutRef.current);
+		observer.observe(ContactRef.current);
+	}, []);
 
 	return (
 		<section className="homeNavigationGrid">
 			<div>
-				<NavLink to="/skills" onMouseOver={handleMouseOver} data="skills">
+				<NavLink
+					className={
+						SkillsIsVissible === true ? "vissibleNavigationButton" : "navigationButtonBeforeAnimation-left"
+					}
+					to="/skills"
+					onMouseOver={handleMouseOver}
+					data-link="skills"
+					ref={SkillsRef}>
 					<ion-icon name="trophy-sharp" />
 					<span>Skills</span>
 				</NavLink>
-				<NavLink to="/projects" onMouseOver={handleMouseOver} data="projects">
+				<NavLink
+					className={
+						ProjectsIsVissible === true
+							? "vissibleNavigationButton"
+							: "navigationButtonBeforeAnimation-left"
+					}
+					to="/projects"
+					onMouseOver={handleMouseOver}
+					data-link="projects"
+					ref={ProjectsRef}>
 					<ion-icon name="hammer-sharp" />
 					<span>Projects</span>
 				</NavLink>
@@ -40,11 +100,27 @@ export default function NavigationGrid() {
 				</p>
 			</div>
 			<div>
-				<NavLink to="/about" onMouseOver={handleMouseOver} data="about">
+				<NavLink
+					className={
+						AboutIsVissible === true ? "vissibleNavigationButton" : "navigationButtonBeforeAnimation-right"
+					}
+					to="/about"
+					onMouseOver={handleMouseOver}
+					data-link="about"
+					ref={AboutRef}>
 					<ion-icon name="person-sharp" />
 					<span>About</span>
 				</NavLink>
-				<NavLink to="/contact" onMouseOver={handleMouseOver} data="contact">
+				<NavLink
+					className={
+						ContactIsVissible === true
+							? "vissibleNavigationButton"
+							: "navigationButtonBeforeAnimation-right"
+					}
+					to="/contact"
+					onMouseOver={handleMouseOver}
+					data-link="contact"
+					ref={ContactRef}>
 					<ion-icon name="mail-unread-sharp" />
 					<span>Contact</span>
 				</NavLink>

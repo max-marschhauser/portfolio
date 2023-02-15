@@ -13,6 +13,7 @@
 	place-items: center;
 
 	background-color: var(--color-primary-transparent);
+	overflow-x: hidden;
 
 	div {
 		display: grid;
@@ -46,10 +47,12 @@
 			outline: 0.2rem solid transparent;
 			border-radius: 100vmax;
 
+			opacity: 0;
+
 			text-decoration: none;
 			color: var(--color-light);
 
-			transition: all 0.35s ease;
+			transition: all 0.35s ease, opacity 1s ease;
 
 			&:hover,
 			&:focus-visible {
@@ -77,6 +80,20 @@
 
 				pointer-events: none;
 			}
+		}
+
+		.navigationButtonBeforeAnimation-left {
+			transform: translateX(-20vw);
+		}
+
+		.navigationButtonBeforeAnimation-right {
+			transform: translateX(20vw);
+		}
+
+		.vissibleNavigationButton {
+			opacity: 1;
+
+			transform: translateX(0vw);
 		}
 	}
 }

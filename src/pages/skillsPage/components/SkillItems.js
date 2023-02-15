@@ -53,15 +53,15 @@ export default function SkillItems(props) {
 		}
 	}
 
-	let HTMLRef = useRef();
-	let CSSRef = useRef();
-	let SassRef = useRef();
-	let JavaScriptRef = useRef();
-	let TypeScriptRef = useRef();
-	let ReactRef = useRef();
-	let PHPRef = useRef();
-	let MySQLRef = useRef();
-	let CRef = useRef();
+	const HTMLRef = useRef();
+	const CSSRef = useRef();
+	const SassRef = useRef();
+	const JavaScriptRef = useRef();
+	const TypeScriptRef = useRef();
+	const ReactRef = useRef();
+	const PHPRef = useRef();
+	const MySQLRef = useRef();
+	const CRef = useRef();
 
 	const [HTMLIsVissible, setHTMLIsVissible] = useState(false);
 	const [CSSIsVissible, setCSSIsVissible] = useState(false);
@@ -136,94 +136,99 @@ export default function SkillItems(props) {
 	return (
 		<>
 			<button
-				className={
-					(currentSkill === "HTML" ? "activeImage" : "", HTMLIsVissible === true ? "vissibleButton" : "")
-				}
+				className={HTMLIsVissible === true ? "vissibleButton" : ""}
 				onFocus={handleFocus}
 				data-image="HTML"
 				ref={HTMLRef}
 				onMouseEnter={focusItem}>
-				<img loading="lazy" src={HTML} alt="HTML" />
+				<img className={currentSkill === "HTML" ? "activeImage" : ""} loading="lazy" src={HTML} alt="HTML" />
 			</button>
+
 			<button
-				className={
-					(currentSkill === "CSS" ? "activeImage" : "", CSSIsVissible === true ? "vissibleButton" : "")
-				}
+				className={CSSIsVissible === true ? "vissibleButton" : ""}
 				onFocus={handleFocus}
 				data-image="CSS"
 				ref={CSSRef}
 				onMouseEnter={focusItem}>
-				<img loading="lazy" src={CSS} alt="CSS" />
+				<img className={currentSkill === "CSS" ? "activeImage" : ""} loading="lazy" src={CSS} alt="CSS" />
 			</button>
+
 			<button
-				className={
-					(currentSkill === "Sass" ? "activeImage" : "", SassIsVissible === true ? "vissibleButton" : "")
-				}
+				className={SassIsVissible === true ? "vissibleButton" : ""}
 				onFocus={handleFocus}
 				data-image="Sass"
 				ref={SassRef}
 				onMouseEnter={focusItem}>
-				<img loading="lazy" src={Sass} alt="Sass" />
+				<img className={currentSkill === "Sass" ? "activeImage" : ""} loading="lazy" src={Sass} alt="Sass" />
 			</button>
+
 			<button
-				className={
-					(currentSkill === "JavaScript" ? "activeImage" : "",
-					JavaScriptIsVissible === true ? "vissibleButton" : "")
-				}
+				className={JavaScriptIsVissible === true ? "vissibleButton" : ""}
 				onFocus={handleFocus}
 				data-image="JavaScript"
 				ref={JavaScriptRef}
 				onMouseEnter={focusItem}>
-				<img loading="lazy" src={JavaScript} alt="JavaScript" />
+				<img
+					className={currentSkill === "JavaScript" ? "activeImage" : ""}
+					loading="lazy"
+					src={JavaScript}
+					alt="JavaScript"
+				/>
 			</button>
+
 			<button
-				className={
-					(currentSkill === "TypeScript" ? "activeImage" : "",
-					TypeScriptIsVissible === true ? "vissibleButton" : "")
-				}
+				className={TypeScriptIsVissible === true ? "vissibleButton" : ""}
 				onFocus={handleFocus}
 				data-image="TypeScript"
 				ref={TypeScriptRef}
 				onMouseEnter={focusItem}>
-				<img loading="lazy" src={TypeScript} alt="TypeScript" />
+				<img
+					className={currentSkill === "TypeScript" ? "activeImage" : ""}
+					loading="lazy"
+					src={TypeScript}
+					alt="TypeScript"
+				/>
 			</button>
+
 			<button
-				className={
-					(currentSkill === "React" ? "activeImage" : "", ReactIsVissible === true ? "vissibleButton" : "")
-				}
+				className={ReactIsVissible === true ? "vissibleButton" : ""}
 				onFocus={handleFocus}
 				data-image="React"
 				ref={ReactRef}
 				onMouseEnter={focusItem}>
-				<img loading="lazy" src={ReactImage} alt="React" />
+				<img
+					className={currentSkill === "React" ? "activeImage" : ""}
+					loading="lazy"
+					src={ReactImage}
+					alt="React"
+				/>
 			</button>
+
 			<button
-				className={
-					(currentSkill === "PHP" ? "activeImage" : "", PHPIsVissible === true ? "vissibleButton" : "")
-				}
+				className={PHPIsVissible === true ? "vissibleButton" : ""}
 				onFocus={handleFocus}
 				data-image="PHP"
 				ref={PHPRef}
 				onMouseEnter={focusItem}>
-				<img loading="lazy" src={PHP} alt="PHP" />
+				<img className={currentSkill === "PHP" ? "activeImage" : ""} loading="lazy" src={PHP} alt="PHP" />
 			</button>
+
 			<button
-				className={
-					(currentSkill === "MySQL" ? "activeImage" : "", MySQLIsVissible === true ? "vissibleButton" : "")
-				}
+				className={MySQLIsVissible === true ? "vissibleButton" : ""}
 				onFocus={handleFocus}
 				data-image="MySQL"
 				ref={MySQLRef}
 				onMouseEnter={focusItem}>
-				<img loading="lazy" src={MySQL} alt="MySQL" />
+				<img className={currentSkill === "MySQL" ? "activeImage" : ""} loading="lazy" src={MySQL} alt="MySQL" />
 			</button>
+
 			<button
-				className={(currentSkill === "C" ? "activeImage" : "", CIsVissible === true ? "vissibleButton" : "")}
+				className={CIsVissible === true ? "vissibleButton" : ""}
 				onFocus={handleFocus}
 				data-image="C"
 				ref={CRef}
 				onMouseEnter={focusItem}>
-				<img loading="lazy" src={C} alt="C" />
+				<img className={currentSkill === "C" ? "activeImage" : ""} loading="lazy" src={C} alt="C" />
 			</button>
 		</>
 	);
