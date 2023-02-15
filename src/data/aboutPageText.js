@@ -47,8 +47,7 @@ const aboutData = [
 		link: "https://github.com/max-marschhauser",
 		content: [
 			`Only recently did I start using Git and GitHub to store my code.`,
-			`GitHub contributions from the images above show my motivation for programming.`,
-			`Every day I try to create something new, to implement some new code.`,
+			`GitHub contributions from the images above show my motivation for programming. Every day I try to create something new, to implement some new code.`,
 		],
 	},
 	{
@@ -58,7 +57,7 @@ const aboutData = [
 		link: "",
 		content: [
 			`2009. - 2013. III. gymnasium in Osijek (Mathematics and Natural Sciences).`,
-			`2013. - 2018. Graduated in History and Pedagogy at the Faculty of Philosophy in Osijek .`,
+			`2013. - 2018. Graduated in History and Pedagogy at the Faculty of Philosophy in Osijek.`,
 		],
 	},
 	{
