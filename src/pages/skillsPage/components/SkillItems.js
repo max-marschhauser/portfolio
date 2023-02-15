@@ -1,7 +1,7 @@
 // component for skills page, contains list of images to be displayed
 
 // importing general items
-import React, { useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 // importing images
 import HTML from "../../../assets/images/skills/HTML.png";
@@ -63,10 +63,82 @@ export default function SkillItems(props) {
 	let MySQLRef = useRef();
 	let CRef = useRef();
 
+	const [HTMLIsVissible, setHTMLIsVissible] = useState(false);
+	const [CSSIsVissible, setCSSIsVissible] = useState(false);
+	const [SassIsVissible, setSassIsVissible] = useState(false);
+	const [JavaScriptIsVissible, setJavaScriptIsVissible] = useState(false);
+	const [TypeScriptIsVissible, setTypeScriptIsVissible] = useState(false);
+	const [ReactIsVissible, setReactIsVissible] = useState(false);
+	const [PHPIsVissible, setPHPIsVissible] = useState(false);
+	const [MySQLIsVissible, setMySQLIsVissible] = useState(false);
+	const [CIsVissible, setCIsVissible] = useState(false);
+
+	useEffect(() => {
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((item) => {
+				let target = item.target.dataset.image;
+
+				switch (target) {
+					case "HTML": {
+						setHTMLIsVissible(item.isIntersecting);
+						break;
+					}
+					case "CSS": {
+						setCSSIsVissible(item.isIntersecting);
+						break;
+					}
+					case "Sass": {
+						setSassIsVissible(item.isIntersecting);
+						break;
+					}
+					case "JavaScript": {
+						setJavaScriptIsVissible(item.isIntersecting);
+						break;
+					}
+					case "TypeScript": {
+						setTypeScriptIsVissible(item.isIntersecting);
+						break;
+					}
+					case "React": {
+						setReactIsVissible(item.isIntersecting);
+						break;
+					}
+					case "PHP": {
+						setPHPIsVissible(item.isIntersecting);
+						break;
+					}
+					case "MySQL": {
+						setMySQLIsVissible(item.isIntersecting);
+						break;
+					}
+					case "C": {
+						setCIsVissible(item.isIntersecting);
+						break;
+					}
+
+					default: {
+						break;
+					}
+				}
+			});
+		});
+		observer.observe(HTMLRef.current);
+		observer.observe(CSSRef.current);
+		observer.observe(SassRef.current);
+		observer.observe(JavaScriptRef.current);
+		observer.observe(TypeScriptRef.current);
+		observer.observe(ReactRef.current);
+		observer.observe(PHPRef.current);
+		observer.observe(MySQLRef.current);
+		observer.observe(CRef.current);
+	}, []);
+
 	return (
 		<>
 			<button
-				className={currentSkill === "HTML" ? "activeImage" : ""}
+				className={
+					(currentSkill === "HTML" ? "activeImage" : "", HTMLIsVissible === true ? "vissibleButton" : "")
+				}
 				onFocus={handleFocus}
 				data-image="HTML"
 				ref={HTMLRef}
@@ -74,7 +146,9 @@ export default function SkillItems(props) {
 				<img loading="lazy" src={HTML} alt="HTML" />
 			</button>
 			<button
-				className={currentSkill === "CSS" ? "activeImage" : ""}
+				className={
+					(currentSkill === "CSS" ? "activeImage" : "", CSSIsVissible === true ? "vissibleButton" : "")
+				}
 				onFocus={handleFocus}
 				data-image="CSS"
 				ref={CSSRef}
@@ -82,7 +156,9 @@ export default function SkillItems(props) {
 				<img loading="lazy" src={CSS} alt="CSS" />
 			</button>
 			<button
-				className={currentSkill === "Sass" ? "activeImage" : ""}
+				className={
+					(currentSkill === "Sass" ? "activeImage" : "", SassIsVissible === true ? "vissibleButton" : "")
+				}
 				onFocus={handleFocus}
 				data-image="Sass"
 				ref={SassRef}
@@ -90,7 +166,10 @@ export default function SkillItems(props) {
 				<img loading="lazy" src={Sass} alt="Sass" />
 			</button>
 			<button
-				className={currentSkill === "JavaScript" ? "activeImage" : ""}
+				className={
+					(currentSkill === "JavaScript" ? "activeImage" : "",
+					JavaScriptIsVissible === true ? "vissibleButton" : "")
+				}
 				onFocus={handleFocus}
 				data-image="JavaScript"
 				ref={JavaScriptRef}
@@ -98,7 +177,10 @@ export default function SkillItems(props) {
 				<img loading="lazy" src={JavaScript} alt="JavaScript" />
 			</button>
 			<button
-				className={currentSkill === "TypeScript" ? "activeImage" : ""}
+				className={
+					(currentSkill === "TypeScript" ? "activeImage" : "",
+					TypeScriptIsVissible === true ? "vissibleButton" : "")
+				}
 				onFocus={handleFocus}
 				data-image="TypeScript"
 				ref={TypeScriptRef}
@@ -106,7 +188,9 @@ export default function SkillItems(props) {
 				<img loading="lazy" src={TypeScript} alt="TypeScript" />
 			</button>
 			<button
-				className={currentSkill === "React" ? "activeImage" : ""}
+				className={
+					(currentSkill === "React" ? "activeImage" : "", ReactIsVissible === true ? "vissibleButton" : "")
+				}
 				onFocus={handleFocus}
 				data-image="React"
 				ref={ReactRef}
@@ -114,7 +198,9 @@ export default function SkillItems(props) {
 				<img loading="lazy" src={ReactImage} alt="React" />
 			</button>
 			<button
-				className={currentSkill === "PHP" ? "activeImage" : ""}
+				className={
+					(currentSkill === "PHP" ? "activeImage" : "", PHPIsVissible === true ? "vissibleButton" : "")
+				}
 				onFocus={handleFocus}
 				data-image="PHP"
 				ref={PHPRef}
@@ -122,7 +208,9 @@ export default function SkillItems(props) {
 				<img loading="lazy" src={PHP} alt="PHP" />
 			</button>
 			<button
-				className={currentSkill === "MySQL" ? "activeImage" : ""}
+				className={
+					(currentSkill === "MySQL" ? "activeImage" : "", MySQLIsVissible === true ? "vissibleButton" : "")
+				}
 				onFocus={handleFocus}
 				data-image="MySQL"
 				ref={MySQLRef}
@@ -130,7 +218,7 @@ export default function SkillItems(props) {
 				<img loading="lazy" src={MySQL} alt="MySQL" />
 			</button>
 			<button
-				className={currentSkill === "C" ? "activeImage" : ""}
+				className={(currentSkill === "C" ? "activeImage" : "", CIsVissible === true ? "vissibleButton" : "")}
 				onFocus={handleFocus}
 				data-image="C"
 				ref={CRef}
