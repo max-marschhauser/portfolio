@@ -14,6 +14,8 @@
 	}
 
 	&--articles {
+		overflow-x: hidden;
+
 		article {
 			margin-block: clamp(0.1rem, 2vh, 1rem);
 			padding-block: clamp(1rem, 7.5vh, 5rem);
@@ -23,6 +25,14 @@
 			opacity: 0;
 
 			transition: all 0.35s ease;
+
+			&:nth-child(2n + 1) {
+				transform: translateX(20vw);
+			}
+
+			&:nth-child(2n) {
+				transform: translateX(-20vw);
+			}
 
 			header {
 				@include abs.mq(1400px, 0px) {
@@ -40,7 +50,7 @@
 			}
 
 			ul {
-				padding-block: clamp(1rem, 4vh, 2rem);
+				padding-block: clamp(0.25rem, 1vh, 2rem);
 
 				list-style: none;
 
@@ -49,9 +59,14 @@
 					padding-block: clamp(0.5rem, 2.5vh, 1.25rem);
 					max-width: 50rem;
 
+					opacity: 0;
+
 					font-size: clamp(1rem, 5vw, 1.35rem);
 					line-height: clamp(1rem, 4vh, 2rem);
 					text-align: center;
+					color: var(--color-light);
+
+					transform: translateY(5vh);
 				}
 			}
 
@@ -83,6 +98,38 @@
 
 		.aboutItemVissible {
 			opacity: 1;
+
+			&:nth-child(n) {
+				transform: translateX(0vw);
+			}
+
+			li {
+				opacity: 1;
+
+				transform: translateY(0vh);
+
+				transition: all 0.35s ease;
+
+				&:nth-child(1) {
+					transition-delay: 1s;
+				}
+
+				&:nth-child(2) {
+					transition-delay: 1.5s;
+				}
+
+				&:nth-child(3) {
+					transition-delay: 2s;
+				}
+
+				&:nth-child(4) {
+					transition-delay: 2.5s;
+				}
+
+				&:nth-child(5) {
+					transition-delay: 3s;
+				}
+			}
 		}
 	}
 }

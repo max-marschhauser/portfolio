@@ -35,12 +35,12 @@ export default function AboutPage(props) {
 			</h2>
 
 			<main className="aboutPage">
-				<h3>Related to programming</h3>
+				<h3>RELATED TO PROGRAMMING</h3>
 				<section className="aboutPage--articles">
 					<AboutComponent relatedToProgramming={true} />
 				</section>
 
-				<h3>Unrelated to programming</h3>
+				<h3>UNRELATED TO PROGRAMMING</h3>
 				<section className="aboutPage--articles">
 					<AboutComponent relatedToProgramming={false} />
 				</section>
