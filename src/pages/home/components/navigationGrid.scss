@@ -72,7 +72,7 @@
 			text-decoration: none;
 			color: var(--color-light);
 
-			transition: all 0.35s ease, opacity 1s ease;
+			transition: all 0.35s ease-in-out, opacity 1s ease;
 
 			&:hover,
 			&:focus-visible {

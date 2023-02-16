@@ -10,8 +10,32 @@ import "./navigationGrid.scss";
 export default function NavigationGrid() {
 	const [selectedItem, setSelectedItem] = useState("");
 
-	function handleMouseOver(e) {
-		setSelectedItem(() => e.target.getAttribute("data-link"));
+	function handleFocus(e) {
+		setSelectedItem(() => e.target.dataset.link);
+	}
+
+	function focusItem(e) {
+		let itemToFocus = e.target.dataset.link;
+		switch (itemToFocus) {
+			case "skills":
+				SkillsRef.current.focus();
+				setSelectedItem(() => e.target.dataset.link);
+				break;
+			case "projects":
+				ProjectsRef.current.focus();
+				setSelectedItem(() => e.target.dataset.link);
+				break;
+			case "about":
+				AboutRef.current.focus();
+				setSelectedItem(() => e.target.dataset.link);
+				break;
+			case "contact":
+				ContactRef.current.focus();
+				setSelectedItem(() => e.target.dataset.link);
+				break;
+			default:
+				break;
+		}
 	}
 
 	const SkillsRef = useRef();
@@ -66,7 +90,8 @@ export default function NavigationGrid() {
 						SkillsIsVissible === true ? "vissibleNavigationButton" : "navigationButtonBeforeAnimation-left"
 					}
 					to="/skills"
-					onMouseOver={handleMouseOver}
+					onMouseOver={focusItem}
+					onFocus={handleFocus}
 					data-link="skills"
 					ref={SkillsRef}>
 					<ion-icon name="trophy-sharp" />
@@ -79,7 +104,8 @@ export default function NavigationGrid() {
 							: "navigationButtonBeforeAnimation-left"
 					}
 					to="/projects"
-					onMouseOver={handleMouseOver}
+					onMouseOver={focusItem}
+					onFocus={handleFocus}
 					data-link="projects"
 					ref={ProjectsRef}>
 					<ion-icon name="hammer-sharp" />
@@ -116,7 +142,8 @@ export default function NavigationGrid() {
 						AboutIsVissible === true ? "vissibleNavigationButton" : "navigationButtonBeforeAnimation-right"
 					}
 					to="/about"
-					onMouseOver={handleMouseOver}
+					onMouseOver={focusItem}
+					onFocus={handleFocus}
 					data-link="about"
 					ref={AboutRef}>
 					<ion-icon name="person-sharp" />
@@ -129,7 +156,8 @@ export default function NavigationGrid() {
 							: "navigationButtonBeforeAnimation-right"
 					}
 					to="/contact"
-					onMouseOver={handleMouseOver}
+					onMouseOver={focusItem}
+					onFocus={handleFocus}
 					data-link="contact"
 					ref={ContactRef}>
 					<ion-icon name="mail-unread-sharp" />

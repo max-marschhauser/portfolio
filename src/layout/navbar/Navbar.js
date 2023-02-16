@@ -89,7 +89,7 @@ export default function Navbar(props) {
 					<span>About</span>
 				</NavLink>
 				<NavLink
-					className={activePage === "qoptions" ? "navbar__link activeLink" : "navbar__link"}
+					className={activePage === "options" ? "navbar__link activeLink" : "navbar__link"}
 					to="/options"
 					end>
 					<ion-icon name="options-sharp" />
