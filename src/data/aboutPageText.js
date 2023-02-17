@@ -9,7 +9,6 @@ const aboutData = [
 		relatedToProgramming: true,
 		id: 0,
 		title: "School - Programming Basics",
-		smallTitle: "school",
 		imgSrc: undefined,
 		link: "",
 		content: [
@@ -23,7 +22,6 @@ const aboutData = [
 		relatedToProgramming: true,
 		id: 1,
 		title: "Self Taught - Advanced Programming",
-		smallTitle: "selfTaught",
 		imgSrc: javascriptCertificateSrc,
 		link: "https://www.freecodecamp.org/certification/fcc1fd16a03-be4d-47cc-a798-42c2fbc37651/javascript-algorithms-and-data-structures",
 		content: [
@@ -36,7 +34,6 @@ const aboutData = [
 		relatedToProgramming: true,
 		id: 2,
 		title: "Miscellaneous Things Related to Programming",
-		smallTitle: "misc",
 		imgSrc: undefined,
 		link: "",
 		content: [
@@ -49,7 +46,6 @@ const aboutData = [
 		relatedToProgramming: true,
 		id: 3,
 		title: "Git and GitHub Contributions",
-		smallTitle: "git",
 		imgSrc: githubSrc,
 		link: "https://github.com/max-marschhauser",
 		content: [
@@ -61,7 +57,6 @@ const aboutData = [
 		relatedToProgramming: false,
 		id: 4,
 		title: "Education",
-		smallTitle: "education",
 		imgSrc: undefined,
 		link: "",
 		content: [
@@ -73,7 +68,6 @@ const aboutData = [
 		relatedToProgramming: false,
 		id: 5,
 		title: "Work Experience",
-		smallTitle: "work",
 		imgSrc: undefined,
 		link: "",
 		content: [
@@ -85,7 +79,6 @@ const aboutData = [
 		relatedToProgramming: false,
 		id: 6,
 		title: "My Personality",
-		smallTitle: "personality",
 		imgSrc: undefined,
 		link: "",
 		content: [
@@ -100,7 +93,6 @@ const aboutData = [
 		relatedToProgramming: false,
 		id: 7,
 		title: "Languages and Other Skills",
-		smallTitle: "other",
 		imgSrc: undefined,
 		link: "",
 		content: [

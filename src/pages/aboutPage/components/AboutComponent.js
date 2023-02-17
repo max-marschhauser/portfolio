@@ -12,53 +12,53 @@ import "../aboutPage.scss";
 export default function AboutComponent(props) {
 	const { relatedToProgramming } = props;
 
-	let aboutitems = document.querySelectorAll("[data-aboutitem]");
+	let aboutItems = document.querySelectorAll("[data-aboutitemid]");
 
-	let [item0IsVissible, setItem0IsVissible] = useState(false);
-	let [item1IsVissible, setItem1IsVissible] = useState(false);
-	let [item2IsVissible, setItem2IsVissible] = useState(false);
-	let [item3IsVissible, setItem3IsVissible] = useState(false);
-	let [item4IsVissible, setItem4IsVissible] = useState(false);
-	let [item5IsVissible, setItem5IsVissible] = useState(false);
-	let [item6IsVissible, setItem6IsVissible] = useState(false);
-	let [item7IsVissible, setItem7IsVissible] = useState(false);
+	let [aboutItem0IsVissible, setAboutItem0IsVissible] = useState(false);
+	let [aboutItem1IsVissible, setAboutItem1IsVissible] = useState(false);
+	let [aboutItem2IsVissible, setAboutItem2IsVissible] = useState(false);
+	let [aboutItem3IsVissible, setAboutItem3IsVissible] = useState(false);
+	let [aboutItem4IsVissible, setAboutItem4IsVissible] = useState(false);
+	let [aboutItem5IsVissible, setAboutItem5IsVissible] = useState(false);
+	let [aboutItem6IsVissible, setAboutItem6IsVissible] = useState(false);
+	let [aboutItem7IsVissible, setAboutItem7IsVissible] = useState(false);
 
 	useEffect(() => {
 		const observer = new IntersectionObserver((entries) => {
 			entries.forEach((item) => {
-				let target = item.target.dataset.aboutitem;
+				let target = Number(item.target.dataset.aboutitemid);
 
 				switch (target) {
-					case "school": {
-						setItem0IsVissible(item.isIntersecting);
+					case 0: {
+						setAboutItem0IsVissible(item.isIntersecting);
 						break;
 					}
-					case "selfTaught": {
-						setItem1IsVissible(item.isIntersecting);
+					case 1: {
+						setAboutItem1IsVissible(item.isIntersecting);
 						break;
 					}
-					case "misc": {
-						setItem2IsVissible(item.isIntersecting);
+					case 2: {
+						setAboutItem2IsVissible(item.isIntersecting);
 						break;
 					}
-					case "git": {
-						setItem3IsVissible(item.isIntersecting);
+					case 3: {
+						setAboutItem3IsVissible(item.isIntersecting);
 						break;
 					}
-					case "education": {
-						setItem4IsVissible(item.isIntersecting);
+					case 4: {
+						setAboutItem4IsVissible(item.isIntersecting);
 						break;
 					}
-					case "work": {
-						setItem5IsVissible(item.isIntersecting);
+					case 5: {
+						setAboutItem5IsVissible(item.isIntersecting);
 						break;
 					}
-					case "personality": {
-						setItem6IsVissible(item.isIntersecting);
+					case 6: {
+						setAboutItem6IsVissible(item.isIntersecting);
 						break;
 					}
-					case "other": {
-						setItem7IsVissible(item.isIntersecting);
+					case 7: {
+						setAboutItem7IsVissible(item.isIntersecting);
 						break;
 					}
 
@@ -68,35 +68,35 @@ export default function AboutComponent(props) {
 				}
 			});
 		});
-		if (aboutitems) {
-			aboutitems.forEach((item) => {
+		if (aboutItems) {
+			aboutItems.forEach((item) => {
 				observer.observe(item);
 			});
 		}
-	}, [aboutitems]);
+	}, [aboutItems]);
 
 	return aboutData.map((item) => {
 		if (relatedToProgramming === item.relatedToProgramming) {
 			return (
 				<article
 					key={item.title}
-					data-aboutitem={item.smallTitle}
+					data-aboutitemid={item.id}
 					className={
-						item.id === 0 && item0IsVissible
+						item.id === 0 && aboutItem0IsVissible
 							? "aboutItemVissible"
-							: item.id === 1 && item1IsVissible
+							: item.id === 1 && aboutItem1IsVissible
 							? "aboutItemVissible"
-							: item.id === 2 && item2IsVissible
+							: item.id === 2 && aboutItem2IsVissible
 							? "aboutItemVissible"
-							: item.id === 3 && item3IsVissible
+							: item.id === 3 && aboutItem3IsVissible
 							? "aboutItemVissible"
-							: item.id === 4 && item4IsVissible
+							: item.id === 4 && aboutItem4IsVissible
 							? "aboutItemVissible"
-							: item.id === 5 && item5IsVissible
+							: item.id === 5 && aboutItem5IsVissible
 							? "aboutItemVissible"
-							: item.id === 6 && item6IsVissible
+							: item.id === 6 && aboutItem6IsVissible
 							? "aboutItemVissible"
-							: item.id === 7 && item7IsVissible
+							: item.id === 7 && aboutItem7IsVissible
 							? "aboutItemVissible"
 							: ""
 					}>
