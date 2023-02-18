@@ -7,5 +7,3 @@
 -   projects page filter nešto zeza s intersecton observerom, ne prikazuju se uvijek pravilni itemi
 
 -   da se mobile navbar zatvori kad se klikne link
-
--   u footer umjesto google mapsa staviti opet profile image, google maps stalno nešto zeza s lokacijom

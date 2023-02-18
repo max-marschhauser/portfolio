@@ -7,6 +7,9 @@ import { NavLink } from "react-router-dom";
 // importing styles
 import "./footer.scss";
 
+// importing images
+import profile from "../../assets/images/profile.png";
+
 export default function Footer(props) {
 	let { activePage } = props;
 
@@ -84,6 +87,9 @@ export default function Footer(props) {
 						</ul>
 					</nav>
 				</section>
+				<section>
+					<img src={profile} alt="profile" />
+				</section>
 			</div>
 			<ul className="pageFooter__item--under">
 				<li>Copyright &copy;{+new Date().getFullYear()}.</li>
@@ -95,10 +101,3 @@ export default function Footer(props) {
 		</footer>
 	);
 }
-
-<section>
-	<iframe
-		title="map"
-		tabIndex="-1"
-		src="https://maps.google.com/maps?q=osijek,%20gunduli%C4%87eva%2080&t=k&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-</section>;
