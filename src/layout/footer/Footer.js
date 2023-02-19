@@ -11,7 +11,7 @@ import "./footer.scss";
 import profile from "../../assets/images/profile.png";
 
 export default function Footer(props) {
-	let { activePage } = props;
+	let { activePage, closeMobileNavbar } = props;
 
 	function goToTop() {
 		window.scrollTo({
@@ -58,29 +58,44 @@ export default function Footer(props) {
 					<nav className="links--pages">
 						<ul>
 							<li>
-								<NavLink className={activePage === "skills" ? "activeLink" : ""} to="/skills">
+								<NavLink
+									className={activePage === "skills" ? "activeLink" : ""}
+									to="/skills"
+									onClick={closeMobileNavbar}>
 									<ion-icon name="trophy-sharp" /> Skills
 								</NavLink>
 							</li>
 							<li>
-								<NavLink className={activePage === "projects" ? "activeLink" : ""} to="/projects">
+								<NavLink
+									className={activePage === "projects" ? "activeLink" : ""}
+									to="/projects"
+									onClick={closeMobileNavbar}>
 									<ion-icon name="hammer-sharp" /> Projects
 								</NavLink>
 							</li>
 							<li>
-								<NavLink className={activePage === "about" ? "activeLink" : ""} to="/about">
+								<NavLink
+									className={activePage === "about" ? "activeLink" : ""}
+									to="/about"
+									onClick={closeMobileNavbar}>
 									<ion-icon name="person-sharp" /> About
 								</NavLink>
 							</li>
 							<li>
-								<NavLink className={activePage === "contact" ? "activeLink" : ""} to="/contact">
+								<NavLink
+									className={activePage === "contact" ? "activeLink" : ""}
+									to="/contact"
+									onClick={closeMobileNavbar}>
 									<ion-icon name="mail-unread-sharp" /> Contact
 								</NavLink>
 							</li>
 						</ul>
 						<ul>
 							<li>
-								<NavLink className={activePage === "options" ? "activeLink" : ""} to="/options">
+								<NavLink
+									className={activePage === "options" ? "activeLink" : ""}
+									to="/options"
+									onClick={closeMobileNavbar}>
 									<ion-icon name="options-sharp" /> Options
 								</NavLink>
 							</li>

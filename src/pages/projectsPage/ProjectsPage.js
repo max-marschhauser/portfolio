@@ -51,8 +51,6 @@ export default function ProjectsPage(props) {
 		setOpenedProject(project.target.alt);
 	}
 
-	console.log(openedProject);
-
 	return (
 		<>
 			<h2

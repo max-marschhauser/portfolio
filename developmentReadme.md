@@ -6,4 +6,4 @@
 -   na projects page napraviti da se dialog može otvoriti i uz pomoć tipkovnice (entera)
 -   projects page filter nešto zeza s intersecton observerom, ne prikazuju se uvijek pravilni itemi
 
--   da se mobile navbar zatvori kad se klikne link
+-   kada se kliknu linkovi (logo, navbar i footer navbar) uz pomoć entera (mobile navigation), da se zatvori mobile navbar ako je otvoren
