@@ -1,4 +1,4 @@
--   provjeriti pravopis na data fileovima
+-   provjeriti pravopis na data fileovima da sve štima (gymnazium)
 
 -   dodati intersection observer na home page (hero section), contact page
 
