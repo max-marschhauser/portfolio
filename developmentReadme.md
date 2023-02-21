@@ -9,3 +9,5 @@
 -   projects page github i codepen linkovi kad se hoveraju ne treba biti delay na animaciji
 
 -   dodati useMemo na projects --> open project --> useEffect
+
+-   umjesto brojeva neka se projects modal slike mijenjaju uz pomoć strelica lijevo i desno
