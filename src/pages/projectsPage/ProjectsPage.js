@@ -45,10 +45,14 @@ export default function ProjectsPage(props) {
 		});
 	}
 
-	const [openedProject, setOpenedProject] = useState("");
+	const [toggleModal, setToggleModal] = useState(false);
 
-	function handleProjectClick(project) {
-		setOpenedProject(project.target.alt);
+	function handleToggleModal(item) {
+		if (item.target.dataset.name === "closeModal") {
+			setToggleModal(false);
+		} else {
+			setToggleModal(item.target.dataset.name);
+		}
 	}
 
 	return (
@@ -70,24 +74,23 @@ export default function ProjectsPage(props) {
 			</h2>
 
 			<main className="projectsPage">
-				{openedProject ? (
-					<OpenedProject openedProject={openedProject} handleProjectClick={handleProjectClick} />
-				) : (
-					<></>
-				)}
 				<ProjectsList
 					searchWord={searchWord}
 					activeSkill={activeSkill}
 					activeKeyword={activeKeyword}
-					handleProjectClick={handleProjectClick}
+					handleToggleModal={handleToggleModal}
 				/>
-				<Filter
-					searchChanger={HandleSearchWord}
-					skillChanger={HandleSkillChange}
-					keywordChanger={HandleKeywordChange}
-					activeSkill={activeSkill}
-					activeKeyword={activeKeyword}
-				/>
+				{toggleModal ? (
+					<OpenedProject toggleModal={toggleModal} handleToggleModal={handleToggleModal} />
+				) : (
+					<Filter
+						searchChanger={HandleSearchWord}
+						skillChanger={HandleSkillChange}
+						keywordChanger={HandleKeywordChange}
+						activeSkill={activeSkill}
+						activeKeyword={activeKeyword}
+					/>
+				)}
 			</main>
 		</>
 	);

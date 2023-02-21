@@ -10,7 +10,7 @@ import List from "../../../../data/projectsPageList.js";
 import "./projectsList.scss";
 
 export default function ProjectsListItems(props) {
-	const { searchWord, activeSkill, activeKeyword, handleProjectClick } = props;
+	const { searchWord, activeSkill, activeKeyword, handleToggleModal } = props;
 
 	let projectsItems = document.querySelectorAll("[data-projectsitemid]");
 
@@ -144,7 +144,13 @@ export default function ProjectsListItems(props) {
 									: ""
 							}>
 							<button type="button" className="imageContainer">
-								<img src={item.img[0]} alt={item.name} loading="lazy" onClick={handleProjectClick} />
+								<img
+									src={item.img[0]}
+									alt={item.name}
+									loading="lazy"
+									onClick={handleToggleModal}
+									data-name={item.name}
+								/>
 							</button>
 
 							<div className="info">

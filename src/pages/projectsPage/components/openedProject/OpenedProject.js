@@ -10,12 +10,12 @@ import List from "../../../../data/projectsPageList.js";
 import "./openedProject.scss";
 
 export default function OpenedProject(props) {
-	const { openedProject, handleProjectClick } = props;
+	const { toggleModal, handleToggleModal } = props;
 
 	let selectedItem = {};
 
 	List.map((item) => {
-		if (item.name === openedProject) {
+		if (item.name === toggleModal) {
 			selectedItem = item;
 			return null;
 		} else return null;
@@ -29,7 +29,7 @@ export default function OpenedProject(props) {
 			<div>{selectedItem.description}</div>
 			<div>{selectedItem.githubLink}</div>
 			<div>{selectedItem.codepenLink}</div>
-			<div className="modal" onClick={handleProjectClick}>
+			<div className="modal" onClick={handleToggleModal} data-name="closeModal">
 				X
 			</div>
 		</>
