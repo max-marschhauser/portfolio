@@ -5,3 +5,7 @@
 -   na projects page srediti dialog box kad se klikne slika
 -   na projects page napraviti da se dialog može otvoriti i uz pomoć tipkovnice (entera)
 -   projects page filter nešto zeza s intersecton observerom, ne prikazuju se uvijek pravilni itemi
+
+-   projects page github i codepen linkovi kad se hoveraju ne treba biti delay na animaciji
+
+-   dodati useMemo na projects --> open project --> useEffect
