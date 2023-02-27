@@ -9,7 +9,7 @@ import "./projectsPage.scss";
 //import components
 import ProjectsList from "./components/projectsList/ProjectsList.js";
 import Filter from "./components/filter/Filter.js";
-//import OpenedProject from "./components/openedProject/OpenedProject.js";
+import OpenedProject from "./components/openedProject/OpenedProject.js";
 
 export default function ProjectsPage(props) {
 	let { handlePageChange, theme } = props;
@@ -45,6 +45,21 @@ export default function ProjectsPage(props) {
 		});
 	}
 
+	let [toggleModal, setToggleModal] = useState(false);
+	let [modalContent, setModalContent] = useState("");
+
+	function handleToggleModal(e) {
+		let name = e.target.dataset.name;
+
+		if (name === "closeModal") {
+			setToggleModal(false);
+			setModalContent("");
+		} else {
+			setToggleModal(true);
+			setModalContent(name);
+		}
+	}
+
 	return (
 		<>
 			<h2
@@ -63,8 +78,19 @@ export default function ProjectsPage(props) {
 				<p>Interested in my projects?</p>
 			</h2>
 
+			<OpenedProject
+				handleToggleModal={handleToggleModal}
+				modalContent={modalContent}
+				toggleModal={toggleModal}
+			/>
+
 			<main className="projectsPage">
-				<ProjectsList searchWord={searchWord} activeSkill={activeSkill} activeKeyword={activeKeyword} />
+				<ProjectsList
+					searchWord={searchWord}
+					activeSkill={activeSkill}
+					activeKeyword={activeKeyword}
+					handleToggleModal={handleToggleModal}
+				/>
 				<Filter
 					searchChanger={HandleSearchWord}
 					skillChanger={HandleSkillChange}

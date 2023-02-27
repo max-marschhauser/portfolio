@@ -2,55 +2,45 @@
 @use "../../../../assets/styles/abstracts" as abs;
 
 .openedProject {
-	order: -1;
+	position: fixed;
+	top: 20vh;
+	left: 5vh;
+	z-index: 100;
 
-	@include abs.mq(1400px, 0px) {
-		order: 0;
-	}
+	width: 90vw;
 
-	padding: clamp(0.75rem, 4vw, 2rem);
+	dialog {
+		position: relative;
 
-	background-color: var(--color-primary-transparent);
+		display: block;
+		width: auto;
 
-	color: var(--color-light);
+		.closeButton {
+			position: absolute;
+			top: 0.2rem;
+			right: 0.2rem;
 
-	&--sticky {
-		position: sticky;
-		top: 8rem;
+			font-size: 2rem;
+			background-color: transparent;
 
-		h3 {
-			text-align: left;
-			font-weight: bold;
-			font-size: clamp(1.5rem, 4vw, 2rem);
+			transition: all 0.35s ease;
 
-			user-select: none;
+			&:is(:hover, :focus-visible) {
+				color: var(--color-action);
+			}
+
+			& > ion-icon {
+				pointer-events: none;
+			}
 		}
 
-		.modal {
-			position: absolute;
-			top: 0rem;
-			right: 0rem;
-
-			padding: 0.75rem 1.5rem;
-			border-radius: 100vmax;
-
-			cursor: pointer;
+		h3 {
+			font-size: 2rem;
+			text-align: left;
 		}
 
 		img {
-			width: 100%;
-			margin-block: 1rem;
-		}
-
-		.imageNumbers {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-around;
-			align-items: center;
-
-			& > * {
-				padding: 1rem;
-			}
+			width: auto;
 		}
 	}
 }

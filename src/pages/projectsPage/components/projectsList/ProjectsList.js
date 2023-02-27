@@ -10,7 +10,7 @@ import List from "../../../../data/projectsPageList.js";
 import "./projectsList.scss";
 
 export default function ProjectsListItems(props) {
-	const { searchWord, activeSkill, activeKeyword } = props;
+	const { searchWord, activeSkill, activeKeyword, handleToggleModal } = props;
 
 	let projectsItems = document.querySelectorAll("[data-projectsitemid]");
 
@@ -143,7 +143,11 @@ export default function ProjectsListItems(props) {
 									? "projectsItemVissible"
 									: ""
 							}>
-							<button type="button" className="imageContainer">
+							<button
+								type="button"
+								className="imageContainer"
+								onClick={handleToggleModal}
+								data-name={item.name}>
 								<img src={item.img[0]} alt={item.name} loading="lazy" data-name={item.name} />
 							</button>
 
