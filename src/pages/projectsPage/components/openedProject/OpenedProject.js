@@ -1,7 +1,7 @@
 // component for Projects page
 
 // importing general items
-import React from "react";
+import React, { useState } from "react";
 
 // importing data
 import List from "../../../../data/projectsPageList.js";
@@ -13,13 +13,36 @@ export default function OpenedProject(props) {
 	const { toggleModal, handleToggleModal, modalContent } = props;
 
 	let selectedItemObject = {};
+	let [imageNumber, setImageNumber] = useState(0);
+
+	let numberOfImages = 0;
 
 	if (toggleModal === true) {
 		List.forEach((item) => {
 			if (item.name === modalContent) {
 				selectedItemObject = item;
+
+				numberOfImages = item.img.length;
 			}
 		});
+	}
+
+	function changeImage(e) {
+		let operation = e.target.dataset.operation;
+		if (operation === "add") {
+			if (imageNumber === numberOfImages - 1) {
+				setImageNumber(0);
+			} else {
+				setImageNumber(imageNumber + 1);
+			}
+		}
+		if (operation === "subtract") {
+			if (imageNumber === 0) {
+				setImageNumber(numberOfImages - 1);
+			} else {
+				setImageNumber(imageNumber - 1);
+			}
+		}
 	}
 
 	return (
@@ -33,11 +56,15 @@ export default function OpenedProject(props) {
 
 						<h3>{selectedItemObject.name}</h3>
 
-						{selectedItemObject.img.length > 0 ? (
-							<img src={selectedItemObject.img[0]} alt="neki tekst" />
-						) : (
-							<></>
-						)}
+						<div className="imageContainer">
+							<button onClick={changeImage} data-operation="subtract">
+								-
+							</button>
+							<img src={selectedItemObject.img[imageNumber]} alt="Selected Project Images" />
+							<button onClick={changeImage} data-operation="add">
+								+
+							</button>
+						</div>
 					</dialog>
 				</section>
 			) : (

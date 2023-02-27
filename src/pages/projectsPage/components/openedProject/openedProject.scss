@@ -3,7 +3,7 @@
 
 .openedProject {
 	position: fixed;
-	top: 20vh;
+	top: 10vh;
 	left: 5vh;
 	z-index: 100;
 
@@ -17,13 +17,17 @@
 
 		.closeButton {
 			position: absolute;
-			top: 0.2rem;
-			right: 0.2rem;
+			top: 0rem;
+			right: 0rem;
 
-			font-size: 2rem;
+			font-size: 3rem;
 			background-color: transparent;
 
+			transform: translate(1rem, -1rem);
+
 			transition: all 0.35s ease;
+
+			cursor: pointer;
 
 			&:is(:hover, :focus-visible) {
 				color: var(--color-action);
@@ -35,12 +39,36 @@
 		}
 
 		h3 {
+			padding-block: 1rem;
+
 			font-size: 2rem;
-			text-align: left;
+			text-align: center;
 		}
 
-		img {
-			width: auto;
+		.imageContainer {
+			display: grid;
+			grid-template-columns: 3rem 1fr 3rem;
+
+			button {
+				background-color: transparent;
+
+				font-size: 3rem;
+
+				transition: all 0.35s ease;
+
+				cursor: pointer;
+
+				&:is(:hover, :focus-visible) {
+					background-color: var(--color-action);
+
+					color: var(--color-light);
+				}
+			}
+
+			img {
+				display: block;
+				width: 100%;
+			}
 		}
 	}
 }
