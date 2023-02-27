@@ -3,25 +3,32 @@
 
 .openedProject {
 	position: fixed;
-	top: 10vh;
-	left: 5vh;
+	inset: 0;
 	z-index: 100;
 
-	width: 90vw;
+	display: grid;
+	place-items: center;
+
+	background-color: var(--color-primary-transparent);
 
 	dialog {
 		position: relative;
 
 		display: block;
-		width: auto;
+		width: 85%;
 
 		.closeButton {
 			position: absolute;
 			top: 0rem;
 			right: 0rem;
 
-			font-size: 3rem;
+			display: grid;
+			place-items: center;
+
 			background-color: transparent;
+
+			font-size: 3rem;
+			color: var(--color-light);
 
 			transform: translate(1rem, -1rem);
 
@@ -33,7 +40,7 @@
 				color: var(--color-action);
 			}
 
-			& > ion-icon {
+			ion-icon {
 				pointer-events: none;
 			}
 		}
@@ -41,8 +48,11 @@
 		h3 {
 			padding-block: 1rem;
 
+			background-color: var(--color-dark);
+
 			font-size: 2rem;
 			text-align: center;
+			color: var(--color-light);
 		}
 
 		.imageContainer {
@@ -53,6 +63,7 @@
 				background-color: transparent;
 
 				font-size: 3rem;
+				color: var(--color-action);
 
 				transition: all 0.35s ease;
 
@@ -68,6 +79,10 @@
 			img {
 				display: block;
 				width: 100%;
+
+				aspect-ratio: 16 / 8;
+
+				border: 0.5rem solid var(--color-dark);
 			}
 		}
 	}
