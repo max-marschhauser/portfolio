@@ -77,7 +77,7 @@ export default function OptionsPage(props) {
 						: "pageHeading"
 				}>
 				Options
-				<p>Change theme and language of this page</p>
+				<p>Change theme of this page</p>
 			</h2>
 			<main className="optionsPage">
 				<h3>Select theme</h3>
