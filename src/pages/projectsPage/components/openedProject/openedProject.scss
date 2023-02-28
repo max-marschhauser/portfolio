@@ -22,6 +22,17 @@
 
 		border: 0.2rem solid var(--color-primary);
 
+		animation: fade-in 0.35s ease;
+
+		@keyframes fade-in {
+			0% {
+				transform: translateY(10vh);
+			}
+			100% {
+				transform: translateY(0vh);
+			}
+		}
+
 		.closeButton {
 			position: absolute;
 			top: 0rem;
@@ -55,7 +66,7 @@
 		}
 
 		h3 {
-			padding-block: 1rem;
+			padding-block: clamp(0.1rem, 2vh, 1rem);
 
 			background-color: var(--color-dark);
 

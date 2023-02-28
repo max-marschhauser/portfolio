@@ -118,8 +118,6 @@
 
 							& > ion-icon {
 								color: var(--color-action);
-
-								transition: all 0.35s ease;
 							}
 						}
 
@@ -130,7 +128,7 @@
 						ion-icon {
 							transform: translateY(0.2rem);
 
-							transition: all 0.35s ease;
+							transition: all 0.35s ease 0s;
 						}
 
 						span {
@@ -155,7 +153,7 @@
 						opacity: 1;
 
 						transform: translateY(0vh);
-						transition: all 0.35s ease 0.7s;
+						transition: transform 0.35s ease 0.7s, opacity 0.35s ease 0.7s, outline 0.35s ease 0s;
 					}
 				}
 			}
