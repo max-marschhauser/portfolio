@@ -175,7 +175,7 @@ export default function ProjectsListItems(props) {
 												<span> CodePen</span>
 											</a>
 										) : (
-											""
+											<></>
 										)}
 									</li>
 								</ul>

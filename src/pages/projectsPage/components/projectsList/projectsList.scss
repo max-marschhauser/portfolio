@@ -126,13 +126,17 @@
 						}
 
 						ion-icon {
+							color: var(--color-light);
+
 							transform: translateY(0.2rem);
 
-							transition: all 0.35s ease 0s;
+							transition: all 0.35s ease;
 						}
 
 						span {
 							font-size: 1.2rem;
+
+							transition: all 0.35s ease;
 						}
 					}
 				}

@@ -26,8 +26,10 @@
 		height: clamp(20rem, 25vw, 25rem);
 
 		overflow: hidden;
-
+		opacity: 0;
 		background-image: url("../../assets/images/profileBackground.jpg");
+
+		transform: translateX(-10vw);
 
 		img {
 			position: absolute;
@@ -45,6 +47,14 @@
 		}
 	}
 
+	.imageVissible {
+		opacity: 1;
+
+		transform: translateX(0);
+
+		transition: all 0.35s ease;
+	}
+
 	ul {
 		margin: 0 auto;
 		padding-inline: 1rem;
@@ -56,8 +66,22 @@
 		li {
 			padding-block: clamp(1rem, 5vh, 2rem);
 
+			opacity: 0;
+
 			font-size: clamp(1.1rem, 4vw, 1.5rem);
 			color: var(--color-light);
+
+			transform: translateX(10vw);
+
+			transition: all 0.35s ease;
+
+			&:nth-child(1) {
+				transition-delay: 0.5s;
+			}
+
+			&:nth-child(2) {
+				transition-delay: 1s;
+			}
 
 			ion-icon {
 				pointer-events: none;
@@ -69,6 +93,12 @@
 				font-size: clamp(1.3rem, 5vw, 1.75rem);
 				font-weight: bold;
 			}
+		}
+
+		.itemVissible {
+			opacity: 1;
+
+			transform: translateX(0vw);
 		}
 	}
 }

@@ -1,7 +1,7 @@
 // about page, contains basic informations about myself
 
 // importing general items
-import React, { useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 // importing styles
 import "./contactPage.scss";
@@ -14,6 +14,43 @@ export default function ContactPage(props) {
 	useEffect(() => {
 		handlePageChange("contact");
 	}, [handlePageChange]);
+
+	const ProfileImageRef = useRef();
+	const EmailRef = useRef();
+	const PhoneNumberRef = useRef();
+
+	const [profileImageIsVissible, setProfileImageIsVissible] = useState(false);
+	const [emailIsVissible, setEmailIsVissible] = useState(false);
+	const [phoneNumberIsVissible, setPhoneNumberIsVissible] = useState(false);
+
+	useEffect(() => {
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((item) => {
+				let target = item.target.dataset.name;
+
+				switch (target) {
+					case "profileImage": {
+						setProfileImageIsVissible(item.isIntersecting);
+						break;
+					}
+					case "email": {
+						setEmailIsVissible(item.isIntersecting);
+						break;
+					}
+					case "phoneNumber": {
+						setPhoneNumberIsVissible(item.isIntersecting);
+						break;
+					}
+					default: {
+						break;
+					}
+				}
+			});
+		});
+		observer.observe(ProfileImageRef.current);
+		observer.observe(EmailRef.current);
+		observer.observe(PhoneNumberRef.current);
+	}, []);
 
 	return (
 		<>
@@ -34,11 +71,18 @@ export default function ContactPage(props) {
 			</h2>
 
 			<main className="contactPage">
-				<div className="contactsImageContainer">
+				<div
+					ref={ProfileImageRef}
+					data-name="profileImage"
+					className={
+						profileImageIsVissible === true
+							? "imageVissible contactsImageContainer"
+							: "contactsImageContainer"
+					}>
 					<img src={profileImage} alt="max-marschhauser-profile" />
 				</div>
 				<ul>
-					<li>
+					<li ref={EmailRef} data-name="email" className={emailIsVissible === true ? "itemVissible" : ""}>
 						<ion-icon name="mail-sharp"></ion-icon>
 						<span>E-mail: </span>
 						<br />
@@ -46,11 +90,14 @@ export default function ContactPage(props) {
 						<wbr />
 						@gmail.com
 					</li>
-					<li>
+					<li
+						ref={PhoneNumberRef}
+						data-name="phoneNumber"
+						className={phoneNumberIsVissible === true ? "itemVissible" : ""}>
 						<ion-icon name="call-sharp"></ion-icon>
 						<span>Phone: </span>
 						<br />
-						098 / 921 - 0125
+						+385 (98) 921 0125
 					</li>
 				</ul>
 			</main>
