@@ -60,7 +60,7 @@ const aboutData = [
 		imgSrc: undefined,
 		link: "",
 		content: [
-			`2009. - 2013. Education at Grammar school in Osijek with focus on mathematics and natural sciences (III. Gimnazija).`,
+			`2009. - 2013. Education at Grammar school in Osijek with focus on mathematics and natural sciences (Matematičko prirodoslovna gimnazija).`,
 			`2013. - 2018. Major in Pedagogy and History. Graduated from the Faculty of Humanities and social sciences in Osijek.`,
 		],
 	},
