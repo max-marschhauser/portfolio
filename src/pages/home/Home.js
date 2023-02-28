@@ -1,7 +1,7 @@
 // projects page, contains landing page
 
 // importing general items
-import React, { useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 // importing styles
 import "./home.scss";
@@ -18,6 +18,43 @@ export default function Home(props) {
 		handlePageChange("home");
 	}, [handlePageChange]);
 
+	const ProfileImageRef = useRef();
+	const TitleRef = useRef();
+	const SubtitleRef = useRef();
+
+	const [profileImageIsVissible, setProfileImageIsVissible] = useState(false);
+	const [titleIsVissible, setTitleIsVissible] = useState(false);
+	const [subtitleIsVissible, setSubtitleIsVissible] = useState(false);
+
+	useEffect(() => {
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((item) => {
+				let target = item.target.dataset.name;
+
+				switch (target) {
+					case "profileImage": {
+						setProfileImageIsVissible(item.isIntersecting);
+						break;
+					}
+					case "title": {
+						setTitleIsVissible(item.isIntersecting);
+						break;
+					}
+					case "subtitle": {
+						setSubtitleIsVissible(item.isIntersecting);
+						break;
+					}
+					default: {
+						break;
+					}
+				}
+			});
+		});
+		observer.observe(ProfileImageRef.current);
+		observer.observe(TitleRef.current);
+		observer.observe(SubtitleRef.current);
+	}, []);
+
 	return (
 		<>
 			<section
@@ -32,12 +69,24 @@ export default function Home(props) {
 						? "homePage spaceThemeImage"
 						: "homePage"
 				}>
-				<div className="profileImageContainer">
+				<div
+					className={
+						profileImageIsVissible === true
+							? "imageVissible profileImageContainer"
+							: "profileImageContainer"
+					}
+					ref={ProfileImageRef}
+					data-name="profileImage">
 					<img src={profileImage} alt="max-marschhauser-profile" />
 				</div>
 				<div className="text">
-					<h1>MAX MARSCHHAUSER</h1>
-					<h2>
+					<h1 ref={TitleRef} data-name="title" className={titleIsVissible === true ? "itemVissible " : ""}>
+						MAX MARSCHHAUSER
+					</h1>
+					<h2
+						ref={SubtitleRef}
+						data-name="subtitle"
+						className={subtitleIsVissible === true ? "itemVissible " : ""}>
 						<span>&lt;</span> <span>React Frontend Developer</span> <span>&gt;</span>
 					</h2>
 				</div>

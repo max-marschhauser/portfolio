@@ -14,22 +14,37 @@
 		grid-template-columns: repeat(2, 1fr);
 	}
 
+	overflow-x: hidden;
+
 	background-position: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
 
+	.profileImageContainer {
+		user-select: none;
+		opacity: 0;
+
+		transform: translateX(-20vw);
+
+		transition: all 0.35s ease;
+	}
+
 	img {
 		width: clamp(15rem, 20vw, 20rem);
 		aspect-ratio: 9 / 12;
-
-		user-select: none;
 
 		transition: all 0.35s ease;
 
 		&:hover {
 			transform: scale(1.1);
 		}
+	}
+
+	.imageVissible {
+		opacity: 1;
+
+		transform: translateX(0vw);
 	}
 
 	.text {
@@ -47,7 +62,13 @@
 		h1 {
 			max-width: 20rem;
 
+			opacity: 0;
+
 			font-size: clamp(1.5rem, 10vw, 2.5rem);
+
+			transform: translateX(20vw);
+
+			transition: all 0.35s ease 0.5s;
 		}
 
 		h2 {
@@ -57,7 +78,13 @@
 			align-items: center;
 			gap: clamp(1rem, 2vw, 2rem);
 
+			opacity: 0;
+
 			font-size: clamp(1.25rem, 10vw, 2.25rem);
+
+			transform: translateX(20vw);
+
+			transition: all 0.35s ease 0.85s;
 
 			span {
 				&:first-child,
@@ -65,6 +92,12 @@
 					font-size: 3rem;
 				}
 			}
+		}
+
+		.itemVissible {
+			opacity: 1;
+
+			transform: translateX(0vw);
 		}
 	}
 }

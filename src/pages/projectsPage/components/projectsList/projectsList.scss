@@ -104,7 +104,7 @@
 						border-radius: 100vmax;
 
 						opacity: 0;
-						outline: 0.25rem solid var(--color-light);
+						outline: 0.1rem solid var(--color-light);
 
 						font-size: 1.5rem;
 						text-decoration: none;
@@ -114,7 +114,7 @@
 
 						&:hover,
 						&:focus-visible {
-							outline: 0.25rem solid var(--color-action);
+							outline: 0.1rem solid var(--color-action);
 
 							& > ion-icon {
 								color: var(--color-action);
