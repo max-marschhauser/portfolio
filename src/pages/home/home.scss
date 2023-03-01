@@ -2,6 +2,8 @@
 @use "../../assets/styles/abstracts" as abs;
 
 .homePage {
+	position: relative;
+
 	padding-block: 2rem;
 	min-height: 95vh;
 
@@ -27,7 +29,7 @@
 
 		transform: translateX(-20vw);
 
-		transition: all 0.35s ease;
+		transition: all 0.35s ease 0.25s;
 	}
 
 	img {
@@ -41,7 +43,7 @@
 		}
 	}
 
-	.imageVissible {
+	.itemVissible {
 		opacity: 1;
 
 		transform: translateX(0vw);
@@ -68,7 +70,7 @@
 
 			transform: translateX(20vw);
 
-			transition: all 0.35s ease 0.5s;
+			transition: all 0.35s ease 0.75s;
 		}
 
 		h2 {
@@ -84,7 +86,7 @@
 
 			transform: translateX(20vw);
 
-			transition: all 0.35s ease 0.85s;
+			transition: all 0.35s ease 1s;
 
 			span {
 				&:first-child,

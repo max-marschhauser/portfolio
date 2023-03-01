@@ -71,9 +71,7 @@ export default function Home(props) {
 				}>
 				<div
 					className={
-						profileImageIsVissible === true
-							? "imageVissible profileImageContainer"
-							: "profileImageContainer"
+						profileImageIsVissible === true ? "itemVissible profileImageContainer" : "profileImageContainer"
 					}
 					ref={ProfileImageRef}
 					data-name="profileImage">
