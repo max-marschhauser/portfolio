@@ -90,6 +90,13 @@ export default function Navbar(props) {
 					<span>About</span>
 				</NavLink>
 				<NavLink
+					className={activePage === "contact" ? "navbar__link activeLink" : "navbar__link"}
+					to="/contact"
+					onClick={closeMobileNavbar}>
+					<ion-icon name="mail-unread-sharp" />
+					<span>Contact</span>
+				</NavLink>
+				<NavLink
 					className={activePage === "options" ? "navbar__link activeLink" : "navbar__link"}
 					to="/options"
 					onClick={closeMobileNavbar}>

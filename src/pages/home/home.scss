@@ -36,7 +36,9 @@
 
 		transform: rotateY(180deg);
 
-		animation: movingImage 4s linear infinite;
+		@include abs.mq(1400px, 0px) {
+			animation: movingImage 4s linear infinite;
+		}
 	}
 
 	.itemVissible {
@@ -51,7 +53,7 @@
 		display: grid;
 		place-items: center;
 
-		gap: 0.5rem;
+		gap: clamp(1rem, 5vh, 3rem);
 
 		padding-block: 2rem;
 		padding-inline: clamp(0.5rem, 5vw, 5rem);
@@ -160,7 +162,9 @@
 		h1::before,
 		h2:after,
 		h2::before {
-			content: "";
+			@include abs.mq(1400px, 0px) {
+				content: "";
+			}
 			display: block;
 			position: absolute;
 

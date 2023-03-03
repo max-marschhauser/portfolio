@@ -2,7 +2,9 @@
 @use "../../assets/styles/abstracts" as abs;
 
 .pageFooter {
-	padding-block: 4rem;
+	position: relative;
+	padding-top: 4rem;
+	padding-bottom: 2rem;
 
 	display: flex;
 	flex-direction: column;
@@ -13,8 +15,49 @@
 	background-color: var(--color-dark);
 	overflow-x: hidden;
 
+	&::before,
+	&:after {
+		content: "";
+		position: absolute;
+
+		z-index: 1;
+		height: 20vh;
+		width: 70vw;
+
+		@include abs.mq(1400px, 0px) {
+			height: 50vh;
+			width: 50vw;
+		}
+
+		background-color: var(--color-primary-transparent);
+	}
+
+	&::before {
+		top: 0;
+		left: 30vw;
+
+		@include abs.mq(1400px, 0px) {
+			left: 50vw;
+		}
+
+		clip-path: polygon(0 0, 25% 0, 100% 75%, 100% 100%);
+	}
+
+	&::after {
+		bottom: 0;
+		right: 30vw;
+
+		@include abs.mq(1400px, 0px) {
+			right: 50vw;
+		}
+
+		clip-path: polygon(0 25%, 0 0, 100% 100%, 75% 100%);
+	}
+
 	&__item {
 		&--upper {
+			z-index: 10;
+
 			width: 80vw;
 
 			display: grid;
@@ -48,22 +91,21 @@
 
 				.links--social {
 					border-radius: 0.75rem;
+					padding: clamp(1.5rem, 5vh, 3rem) clamp(1rem, 4vw, 3rem);
+					border-block: 0.1rem solid var(--color-action);
 
 					display: grid;
 					place-items: center;
 					grid-template-columns: repeat(3, 1fr);
-					gap: 3rem;
+					gap: clamp(2rem, 20vw, 3rem);
 
 					list-style: none;
-
-					padding: 3rem;
-					border-block: 0.1rem solid var(--color-action);
 
 					li {
 						a {
 							text-decoration: none;
 							color: var(--color-light);
-							font-size: 2.2rem;
+							font-size: clamp(2rem, 5vw, 2.2rem);
 
 							transition: all 0.35s ease;
 
@@ -87,8 +129,6 @@
 					display: flex;
 					flex-direction: column;
 					gap: 2rem;
-
-					z-index: 1;
 
 					a {
 						color: var(--color-light);
@@ -123,7 +163,7 @@
 
 				.links--pages {
 					ul {
-						padding-block: 1rem;
+						padding-bottom: 2rem;
 
 						display: grid;
 						place-items: center;
@@ -134,10 +174,11 @@
 
 						&:last-child {
 							grid-template-columns: repeat(1, 1fr);
+							padding-bottom: 0rem;
 						}
 
 						a {
-							font-size: 1.15rem;
+							font-size: clamp(1rem, 6vw, 1.15rem);
 							text-decoration: none;
 							color: var(--color-light);
 							letter-spacing: 0.05rem;
@@ -171,6 +212,7 @@
 				}
 
 				img {
+					max-width: 80vw;
 					width: clamp(15rem, 20vw, 20rem);
 					aspect-ratio: 9 / 12;
 
@@ -190,7 +232,7 @@
 				font-size: clamp(1rem, 4vw, 1.25rem);
 
 				&:last-child {
-					padding-top: 2rem;
+					padding-top: 1rem;
 					padding-bottom: 0rem;
 				}
 

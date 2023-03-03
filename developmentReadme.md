@@ -1,12 +1,9 @@
 -   provjeriti pravopis na data fileovima - još treba projects page list file
 
--   provjeriti sve stranice da su dobre na svim uređajima (i malim i velikima, i vertikalnim i horizontalnim)
-
 -   CV na hrvatskom i na engleskom
+
+-   dodati pozadinske ukoso šare (ispunjenja pojedinih rubova) ili krugove na obične stranice (npr. pozadina filtera, svakog projects page itema, about page elementa) --> dati će raznolikost i zanimljivost, napraviti pomoću before i after elementa
 
 -   popraviti filter na projects page
 
--   na mobiteima ne valja:
-    home page gornji dio
-    projects page modal
-    footer
+-   provjetiti na mobitelu kako izgleda projects page modal
