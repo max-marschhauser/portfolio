@@ -32,8 +32,8 @@ export default function App() {
 	let localTheme = localStorage.getItem("theme");
 
 	if (localTheme === null) {
-		localStorage.setItem("theme", "twilightTheme");
-		localTheme = "twilightTheme";
+		localStorage.setItem("theme", "iceTheme");
+		localTheme = "iceTheme";
 	}
 
 	const [theme, setTheme] = useState(localTheme);

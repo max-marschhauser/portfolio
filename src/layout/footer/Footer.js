@@ -65,7 +65,7 @@ export default function Footer(props) {
 							download="Max Marschhauser CV - eng"
 							target="_blank"
 							rel="noreferrer"
-							tabindex="-1">
+							tabIndex="-1">
 							<button>Download CV (eng)</button>
 						</a>
 						<a
@@ -73,7 +73,7 @@ export default function Footer(props) {
 							download="Max Marschhauser CV - hrv"
 							target="_blank"
 							rel="noreferrer"
-							tabindex="-1">
+							tabIndex="-1">
 							<button>Download CV (hrv)</button>
 						</a>
 					</div>

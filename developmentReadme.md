@@ -2,7 +2,11 @@
 
 -   provjeriti sve stranice da su dobre na svim uređajima (i malim i velikima, i vertikalnim i horizontalnim)
 
--   download CV button
 -   CV na hrvatskom i na engleskom
 
 -   popraviti filter na projects page
+
+-   na mobiteima ne valja:
+    home page gornji dio
+    projects page modal
+    footer

@@ -114,6 +114,10 @@
 
 						color: var(--color-action);
 					}
+
+					&:active {
+						opacity: 0.8;
+					}
 				}
 			}
 		}

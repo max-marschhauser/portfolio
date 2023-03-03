@@ -57,13 +57,17 @@ export default function OpenedProject(props) {
 						<h3>{selectedItemObject.name}</h3>
 
 						<div className="imageContainer">
-							<button id="subtract" onClick={changeImage} data-operation="subtract">
-								-
-							</button>
+							<div className="operationContainer" id="subtract">
+								<button onClick={changeImage} data-operation="subtract">
+									-
+								</button>
+							</div>
 							<img id="image" src={selectedItemObject.img[imageNumber]} alt="Selected Project Images" />
-							<button id="add" onClick={changeImage} data-operation="add">
-								+
-							</button>
+							<div className="operationContainer" id="add">
+								<button onClick={changeImage} data-operation="add">
+									+
+								</button>
+							</div>
 						</div>
 					</dialog>
 				</section>
