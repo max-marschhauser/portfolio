@@ -12,6 +12,10 @@ import NavigationGrid from "./components/NavigationGrid.js";
 // importing images
 import profileImage from "../../assets/images/profile.png";
 
+// importing documents
+import MyCVEng from "../../assets/documents/MaxMarschhauserCVeng.pdf";
+import MyCVHrv from "../../assets/documents/MaxMarschhauserCVhrv.pdf";
+
 export default function Home(props) {
 	let { handlePageChange, theme } = props;
 	useEffect(() => {
@@ -21,10 +25,12 @@ export default function Home(props) {
 	const ProfileImageRef = useRef();
 	const TitleRef = useRef();
 	const SubtitleRef = useRef();
+	const CVRef = useRef();
 
 	const [profileImageIsVissible, setProfileImageIsVissible] = useState(false);
 	const [titleIsVissible, setTitleIsVissible] = useState(false);
 	const [subtitleIsVissible, setSubtitleIsVissible] = useState(false);
+	const [CVIsVissible, setCVIsVissible] = useState(false);
 
 	useEffect(() => {
 		const observer = new IntersectionObserver((entries) => {
@@ -44,6 +50,10 @@ export default function Home(props) {
 						setSubtitleIsVissible(item.isIntersecting);
 						break;
 					}
+					case "CV": {
+						setCVIsVissible(item.isIntersecting);
+						break;
+					}
 					default: {
 						break;
 					}
@@ -53,6 +63,7 @@ export default function Home(props) {
 		observer.observe(ProfileImageRef.current);
 		observer.observe(TitleRef.current);
 		observer.observe(SubtitleRef.current);
+		observer.observe(CVRef.current);
 	}, []);
 
 	return (
@@ -94,6 +105,24 @@ export default function Home(props) {
 						className={subtitleIsVissible === true ? "itemVissible " : ""}>
 						<span>&lt;</span> <span>React Frontend Developer</span> <span>&gt;</span>
 					</h2>
+					<div ref={CVRef} data-name="CV" className={CVIsVissible === true ? "itemVissible CVs" : "CVs"}>
+						<a
+							href={MyCVEng}
+							download="Max Marschhauser CV - eng"
+							target="_blank"
+							rel="noreferrer"
+							tabindex="-1">
+							<button>Download CV (eng)</button>
+						</a>
+						<a
+							href={MyCVHrv}
+							download="Max Marschhauser CV - hrv"
+							target="_blank"
+							rel="noreferrer"
+							tabindex="-1">
+							<button>Download CV (hrv)</button>
+						</a>
+					</div>
 				</div>
 			</section>
 			<NavigationGrid />

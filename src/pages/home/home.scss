@@ -28,8 +28,6 @@
 		opacity: 0;
 
 		transform: translateX(-20vw);
-
-		transition: all 0.35s ease 0.25s;
 	}
 
 	.profileImage {
@@ -38,8 +36,6 @@
 
 		transform: rotateY(180deg);
 
-		transition: all 0.35s ease;
-
 		animation: movingImage 4s linear infinite;
 	}
 
@@ -47,11 +43,15 @@
 		opacity: 1;
 
 		transform: translateX(0vw);
+
+		transition: all 0.35s ease 0.25s;
 	}
 
 	.text {
 		display: grid;
 		place-items: center;
+
+		gap: 0.5rem;
 
 		padding-block: 2rem;
 		padding-inline: clamp(0.5rem, 5vw, 5rem);
@@ -71,8 +71,6 @@
 			font-size: clamp(1.5rem, 10vw, 2.5rem);
 
 			transform: translateX(20vw);
-
-			transition: all 0.35s ease 0.75s;
 		}
 
 		h2 {
@@ -90,8 +88,6 @@
 
 			transform: translateX(20vw);
 
-			transition: all 0.35s ease 1s;
-
 			span {
 				&:first-child,
 				&:last-child {
@@ -100,10 +96,60 @@
 			}
 		}
 
+		.CVs {
+			display: flex;
+			gap: 2rem;
+
+			z-index: 1;
+			opacity: 0;
+
+			transform: translateX(20vw);
+
+			a {
+				color: var(--color-light);
+
+				button {
+					padding: 1rem;
+
+					background-color: var(--color-primary);
+					outline: 0.05rem solid var(--color-light);
+
+					font-size: clamp(1rem, 1vw, 1.25rem);
+					color: var(--color-light);
+
+					transition: all 0.35s ease;
+
+					cursor: pointer;
+
+					&:hover,
+					&:focus-visible {
+						background-color: var(--color-dark);
+						outline: 0.05rem solid var(--color-action);
+
+						color: var(--color-action);
+					}
+				}
+			}
+		}
+
 		.itemVissible {
 			opacity: 1;
 
 			transform: translateX(0vw);
+
+			transition: all 0.35s ease;
+
+			&:nth-child(1) {
+				transition-delay: 0.5s;
+			}
+
+			&:nth-child(2) {
+				transition-delay: 0.75s;
+			}
+
+			&:nth-child(3) {
+				transition-delay: 1s;
+			}
 		}
 
 		h1::after,

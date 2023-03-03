@@ -103,6 +103,7 @@ export default function Footer(props) {
 					</nav>
 				</section>
 				<section>
+					<button>Download CV</button>
 					<img src={profile} alt="profile" />
 				</section>
 			</div>

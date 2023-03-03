@@ -9,6 +9,10 @@ import "./contactPage.scss";
 // importing images
 import profileImage from "../../assets/images/profile.png";
 
+// importing documents
+import MyCVEng from "../../assets/documents/MaxMarschhauserCVeng.pdf";
+import MyCVHrv from "../../assets/documents/MaxMarschhauserCVhrv.pdf";
+
 export default function ContactPage(props) {
 	let { handlePageChange, theme } = props;
 	useEffect(() => {
@@ -18,10 +22,12 @@ export default function ContactPage(props) {
 	const ProfileImageRef = useRef();
 	const EmailRef = useRef();
 	const PhoneNumberRef = useRef();
+	const CVRef = useRef();
 
 	const [profileImageIsVissible, setProfileImageIsVissible] = useState(false);
 	const [emailIsVissible, setEmailIsVissible] = useState(false);
 	const [phoneNumberIsVissible, setPhoneNumberIsVissible] = useState(false);
+	const [CVIsVissible, setCVIsVissible] = useState(false);
 
 	useEffect(() => {
 		const observer = new IntersectionObserver((entries) => {
@@ -41,6 +47,10 @@ export default function ContactPage(props) {
 						setPhoneNumberIsVissible(item.isIntersecting);
 						break;
 					}
+					case "CV": {
+						setCVIsVissible(item.isIntersecting);
+						break;
+					}
 					default: {
 						break;
 					}
@@ -50,6 +60,7 @@ export default function ContactPage(props) {
 		observer.observe(ProfileImageRef.current);
 		observer.observe(EmailRef.current);
 		observer.observe(PhoneNumberRef.current);
+		observer.observe(CVRef.current);
 	}, []);
 
 	return (
@@ -98,6 +109,24 @@ export default function ContactPage(props) {
 						<span>Phone: </span>
 						<br />
 						+385 (98) 921 0125
+					</li>
+					<li ref={CVRef} data-name="CV" className={CVIsVissible === true ? "itemVissible CVs" : "CVs"}>
+						<a
+							href={MyCVEng}
+							download="Max Marschhauser CV - eng"
+							target="_blank"
+							rel="noreferrer"
+							tabindex="-1">
+							<button>Download CV (eng)</button>
+						</a>
+						<a
+							href={MyCVHrv}
+							download="Max Marschhauser CV - hrv"
+							target="_blank"
+							rel="noreferrer"
+							tabindex="-1">
+							<button>Download CV (hrv)</button>
+						</a>
 					</li>
 				</ul>
 			</main>

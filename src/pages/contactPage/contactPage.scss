@@ -40,8 +40,6 @@
 			user-select: none;
 
 			transform: rotateY(180deg);
-
-			transition: all 0.35s ease;
 		}
 	}
 
@@ -50,7 +48,7 @@
 
 		transform: translateX(0);
 
-		transition: all 0.35s ease;
+		transition: all 0.35s ease 0.25s;
 	}
 
 	ul {
@@ -71,16 +69,6 @@
 
 			transform: translateX(10vw);
 
-			transition: all 0.35s ease;
-
-			&:nth-child(1) {
-				transition-delay: 0.5s;
-			}
-
-			&:nth-child(2) {
-				transition-delay: 1s;
-			}
-
 			ion-icon {
 				pointer-events: none;
 
@@ -93,10 +81,60 @@
 			}
 		}
 
+		.CVs {
+			display: flex;
+			gap: 2rem;
+
+			z-index: 1;
+			opacity: 0;
+
+			transform: translateX(20vw);
+
+			a {
+				color: var(--color-light);
+
+				button {
+					padding: 1rem;
+
+					background-color: var(--color-primary);
+					outline: 0.05rem solid var(--color-light);
+
+					font-size: clamp(1rem, 1vw, 1.25rem);
+					color: var(--color-light);
+
+					transition: all 0.35s ease;
+
+					cursor: pointer;
+
+					&:hover,
+					&:focus-visible {
+						background-color: var(--color-dark);
+						outline: 0.05rem solid var(--color-action);
+
+						color: var(--color-action);
+					}
+				}
+			}
+		}
+
 		.itemVissible {
 			opacity: 1;
 
 			transform: translateX(0vw);
+
+			transition: all 0.35s ease;
+
+			&:nth-child(1) {
+				transition-delay: 0.5s;
+			}
+
+			&:nth-child(2) {
+				transition-delay: 0.75s;
+			}
+
+			&:nth-child(3) {
+				transition-delay: 1s;
+			}
 		}
 	}
 }
