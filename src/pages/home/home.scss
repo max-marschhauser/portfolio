@@ -32,15 +32,15 @@
 		transition: all 0.35s ease 0.25s;
 	}
 
-	img {
+	.profileImage {
 		width: clamp(15rem, 20vw, 20rem);
 		aspect-ratio: 9 / 12;
 
+		transform: rotateY(180deg);
+
 		transition: all 0.35s ease;
 
-		&:hover {
-			transform: scale(1.1);
-		}
+		animation: movingImage 4s linear infinite;
 	}
 
 	.itemVissible {
@@ -62,6 +62,8 @@
 			-0.2rem 0.2rem var(--color-dark), 0.2rem -0.2rem var(--color-dark);
 
 		h1 {
+			position: relative;
+
 			max-width: 20rem;
 
 			opacity: 0;
@@ -74,6 +76,8 @@
 		}
 
 		h2 {
+			position: relative;
+
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
@@ -100,6 +104,93 @@
 			opacity: 1;
 
 			transform: translateX(0vw);
+		}
+
+		h1::after,
+		h1::before,
+		h2:after,
+		h2::before {
+			content: "";
+			display: block;
+			position: absolute;
+
+			border-radius: 100%;
+		}
+
+		h1::before,
+		h1::after {
+			width: 7.5rem;
+			height: 7.5rem;
+
+			animation: movingShape1 4s linear infinite;
+		}
+
+		h1::before {
+			top: 10rem;
+			left: 0rem;
+		}
+
+		h1::after {
+			top: -20rem;
+			left: -20rem;
+
+			animation-delay: 0.5s;
+		}
+
+		h2::before,
+		h2::after {
+			width: 5rem;
+			height: 5rem;
+
+			animation: movingShape2 5s linear infinite;
+		}
+
+		h2::before {
+			top: 15rem;
+			left: 30rem;
+
+			animation-delay: 0.5s;
+		}
+
+		h2::after {
+			top: -15rem;
+			left: 0rem;
+		}
+	}
+
+	.primaryMovingShapes {
+		h1::after,
+		h1::before,
+		h2:after,
+		h2::before {
+			background-color: var(--color-primary);
+		}
+	}
+
+	.darkMovingShapes {
+		h1::after,
+		h1::before,
+		h2:after,
+		h2::before {
+			background-color: var(--color-dark);
+		}
+	}
+
+	@keyframes movingImage {
+		50% {
+			transform: translate(1rem, -1rem) rotateY(180deg);
+		}
+	}
+
+	@keyframes movingShape1 {
+		50% {
+			transform: translate(1rem, 1rem);
+		}
+	}
+
+	@keyframes movingShape2 {
+		50% {
+			transform: translate(1rem, -1rem);
 		}
 	}
 }

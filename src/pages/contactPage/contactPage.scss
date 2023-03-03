@@ -39,11 +39,9 @@
 
 			user-select: none;
 
-			transition: all 0.35s ease;
+			transform: rotateY(180deg);
 
-			&:hover {
-				transform: scale(1.1);
-			}
+			transition: all 0.35s ease;
 		}
 	}
 

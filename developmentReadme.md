@@ -4,3 +4,5 @@
 
 -   dodati pozadinske animacije, pogotovo na home page (nekakvi krugovi ili šare, možda da se slika miče lijevo desno)
 -   download CV button
+
+-   popraviti filter na projects page

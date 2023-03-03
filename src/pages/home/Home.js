@@ -75,9 +75,16 @@ export default function Home(props) {
 					}
 					ref={ProfileImageRef}
 					data-name="profileImage">
-					<img src={profileImage} alt="max-marschhauser-profile" />
+					<img className="profileImage" src={profileImage} alt="max-marschhauser-profile" />
 				</div>
-				<div className="text">
+				<div
+					className={
+						theme === "iceTheme" || theme === "spaceTheme"
+							? "text primaryMovingShapes"
+							: theme === "twilightTheme" || theme === "natureTheme"
+							? "text darkMovingShapes"
+							: "text"
+					}>
 					<h1 ref={TitleRef} data-name="title" className={titleIsVissible === true ? "itemVissible " : ""}>
 						MAX MARSCHHAUSER
 					</h1>
