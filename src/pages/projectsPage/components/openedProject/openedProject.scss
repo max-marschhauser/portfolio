@@ -123,7 +123,7 @@
 			}
 
 			#subtract {
-				order: 1;
+				order: 2;
 
 				@include abs.mq(1400px, 0px) {
 					order: 1;
@@ -139,7 +139,7 @@
 			}
 
 			#image {
-				order: 3;
+				order: 1;
 
 				grid-column: 1 / 3;
 

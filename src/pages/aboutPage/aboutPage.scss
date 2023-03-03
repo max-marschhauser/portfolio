@@ -5,11 +5,11 @@
 	color: var(--color-light);
 
 	h3 {
-		padding-block: clamp(1.5rem, 4vh, 3.5rem);
+		padding-block: clamp(1.25rem, 3vh, 3rem);
 
 		background-color: var(--color-primary-transparent);
 
-		font-size: clamp(1.2rem, 9vw, 2.75rem);
+		font-size: clamp(1rem, 7vw, 2.5rem);
 		text-align: center;
 		letter-spacing: 0.05rem;
 		word-spacing: 0.5rem;
@@ -48,7 +48,7 @@
 				padding-block: clamp(0.5rem, 1vh, 1rem);
 
 				text-align: center;
-				font-size: clamp(1.1rem, 8vw, 2.5rem);
+				font-size: clamp(1.1rem, 7vw, 2.5rem);
 			}
 
 			ul {
@@ -63,7 +63,7 @@
 
 					opacity: 0;
 
-					font-size: clamp(1rem, 5vw, 1.35rem);
+					font-size: clamp(0.9rem, 5vw, 1.35rem);
 					line-height: clamp(1rem, 4vh, 2rem);
 					text-align: center;
 					color: var(--color-light);

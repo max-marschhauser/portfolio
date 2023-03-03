@@ -30,12 +30,12 @@
 
 		a,
 		p {
-			padding: clamp(1rem, 5vh, 3rem) clamp(2rem, 5vw, 5rem);
+			padding: clamp(1rem, 4vh, 3rem) clamp(2rem, 4vw, 5rem);
 
 			background-color: var(--color-dark);
 
 			color: var(--color-light);
-			font-size: clamp(1rem, 8vw, 2rem);
+			font-size: clamp(1rem, 7vw, 2rem);
 			text-align: center;
 		}
 

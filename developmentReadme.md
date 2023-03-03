@@ -6,4 +6,4 @@
 
 -   popraviti filter na projects page
 
--   provjetiti na mobitelu kako izgleda projects page modal
+-   modal ne prikazuje dobre slike, nekada pokaže da ih nema, a nekada od drugih projekata

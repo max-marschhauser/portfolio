@@ -70,7 +70,7 @@
 
 			opacity: 0;
 
-			font-size: clamp(1.5rem, 10vw, 2.5rem);
+			font-size: clamp(1.5rem, 9vw, 2.5rem);
 
 			transform: translateX(20vw);
 		}
@@ -86,14 +86,14 @@
 
 			opacity: 0;
 
-			font-size: clamp(1.25rem, 10vw, 2.25rem);
+			font-size: clamp(1.25rem, 8vw, 2.25rem);
 
 			transform: translateX(20vw);
 
 			span {
 				&:first-child,
 				&:last-child {
-					font-size: 3rem;
+					font-size: clamp(2rem, 7vw, 3rem);
 				}
 			}
 		}
