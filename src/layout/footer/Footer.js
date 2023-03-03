@@ -10,6 +10,10 @@ import "./footer.scss";
 // importing images
 import profile from "../../assets/images/profile.png";
 
+// importing documents
+import MyCVEng from "../../assets/documents/MaxMarschhauserCVeng.pdf";
+import MyCVHrv from "../../assets/documents/MaxMarschhauserCVhrv.pdf";
+
 export default function Footer(props) {
 	let { activePage, closeMobileNavbar } = props;
 
@@ -53,6 +57,26 @@ export default function Footer(props) {
 							</a>
 						</li>
 					</ul>
+				</section>
+				<section>
+					<div className="CVs">
+						<a
+							href={MyCVEng}
+							download="Max Marschhauser CV - eng"
+							target="_blank"
+							rel="noreferrer"
+							tabindex="-1">
+							<button>Download CV (eng)</button>
+						</a>
+						<a
+							href={MyCVHrv}
+							download="Max Marschhauser CV - hrv"
+							target="_blank"
+							rel="noreferrer"
+							tabindex="-1">
+							<button>Download CV (hrv)</button>
+						</a>
+					</div>
 				</section>
 				<section>
 					<nav className="links--pages">
@@ -103,7 +127,6 @@ export default function Footer(props) {
 					</nav>
 				</section>
 				<section>
-					<button>Download CV</button>
 					<img src={profile} alt="profile" />
 				</section>
 			</div>

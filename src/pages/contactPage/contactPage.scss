@@ -15,6 +15,7 @@
 	gap: clamp(1.5rem, 15vh, 4rem);
 
 	background-color: var(--color-primary-transparent);
+	overflow-x: hidden;
 
 	.contactsImageContainer {
 		position: relative;

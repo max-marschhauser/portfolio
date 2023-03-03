@@ -15,7 +15,7 @@
 
 	&__item {
 		&--upper {
-			width: 100vw;
+			width: 80vw;
 
 			display: grid;
 			grid-template-columns: repeat(1, 1fr);
@@ -23,7 +23,7 @@
 			gap: 3rem;
 
 			@include abs.mq(1400px, 0px) {
-				grid-template-columns: repeat(3, 1fr);
+				grid-template-columns: repeat(2, 1fr);
 				gap: 0rem;
 			}
 
@@ -74,6 +74,40 @@
 
 							&:active {
 								opacity: 0.8;
+							}
+						}
+					}
+				}
+
+				.CVs {
+					display: flex;
+					flex-direction: column;
+					gap: 2rem;
+
+					z-index: 1;
+
+					a {
+						color: var(--color-light);
+
+						button {
+							padding: 1rem;
+
+							background-color: var(--color-primary);
+							outline: 0.05rem solid var(--color-light);
+
+							font-size: clamp(0.85rem, 1vw, 1.15rem);
+							color: var(--color-light);
+
+							transition: all 0.35s ease;
+
+							cursor: pointer;
+
+							&:hover,
+							&:focus-visible {
+								background-color: var(--color-dark);
+								outline: 0.05rem solid var(--color-action);
+
+								color: var(--color-action);
 							}
 						}
 					}
