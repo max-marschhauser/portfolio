@@ -55,7 +55,7 @@ const projectsData = [
 		name: "CAVIA Tattoo Studio",
 		technology: "HTML, CSS, JavaScript",
 		description:
-			"Responsive brochure page for local Tattoo Studio built using HTML, CSS and JavaScript. First bigger project in a long time, used as warm up for future projects. Page shows information about local Tattoo business, shows authors previous works and other things related to tattooing.",
+			"A responsive brochure page for a local Tattoo Studio. Built using HTML, CSS and JavaScript. First bigger project in a long time, used as warm up for future projects. Page shows information about local Tattoo business, shows artist's previous works and other things related to tattooing.",
 		githubLink: "https://github.com/max-marschhauser/CAVIA-Tattoo-Studio",
 		codepenLink: "",
 	},
@@ -65,7 +65,7 @@ const projectsData = [
 		name: "Digital Store",
 		technology: "HTML, CSS, Sass, JavaScript",
 		description:
-			"Digital store built using JavaScript, HTML and SCSS. Responsive eCommerce Single-page app. Also can be used as a brochure page for business. Data is stored in an object file and imported when needed. User can filter or sort displayed items and add items to the cart.",
+			"A digital store built using JavaScript, HTML and SCSS. Responsive eCommerce Single-page app. It can also be used as a brochure page for business. Data is stored in an object file and imported when needed. User can filter or sort displayed items and add items to the cart.",
 		githubLink: "https://github.com/max-marschhauser/Digital-Store",
 		codepenLink: "",
 	},
@@ -75,7 +75,7 @@ const projectsData = [
 		name: "Gradient Hover Card",
 		technology: "HTML, CSS, JavaScript",
 		description:
-			"Cool looking gradient hover card built using plain JS, CSS and HTML. Component intended to be used in other projects.",
+			"A cool looking gradient hover card built using plain JS, CSS and HTML. Component intended to be used in other projects.",
 		githubLink: "https://github.com/max-marschhauser/gradient-hover-card",
 		codepenLink: "https://codepen.io/max-marschhauser/pen/WNgNrVO",
 	},
@@ -85,7 +85,7 @@ const projectsData = [
 		name: "Guinea Pig Doctor",
 		technology: "HTML, CSS, JavaScript",
 		description:
-			"Responsive brochure page for local veterinarian specialized in guinea pig treatment built with HTML, CSS and JS. Fairly simple page built for fun.",
+			"A responsive brochure page for local veterinarian specialized in guinea pig treatment. Built with HTML, CSS and JS. Fairly simple page built for fun.",
 		githubLink: "https://github.com/max-marschhauser/Guinea-Pig-Doctor",
 		codepenLink: "",
 	},
@@ -95,7 +95,7 @@ const projectsData = [
 		name: "Light-dark Theme",
 		technology: "HTML, CSS, React",
 		description:
-			"Sample component for light-dark theme button which can be used on various pages. Built using React and CSS. Component intended to be used in other projects.",
+			"Sample component for light-dark theme button which can be used on a variety of pages. Built using React and CSS. Component intended to be used in other projects.",
 		githubLink: "https://github.com/max-marschhauser/light-dark-theme",
 		codepenLink: "",
 	},
@@ -105,7 +105,7 @@ const projectsData = [
 		name: "Loading Spinner",
 		technology: "HTML, CSS",
 		description:
-			"Good looking Loading Spinner built with CSS. This component can be used on various sites that require loading.",
+			"A good looking Loading Spinner built with CSS. This component can be used on various sites that require loading.",
 		githubLink: "https://github.com/max-marschhauser/Loading-Spinner",
 		codepenLink: "https://codepen.io/max-marschhauser/pen/oNPNxbv",
 	},
@@ -134,7 +134,7 @@ const projectsData = [
 		name: "Pokemon App",
 		technology: "HTML, CSS, Sass, JavaScript, React",
 		description:
-			"Pokemon game built using React and SCSS. Uses API data stored in objects to display information about items. Single-page app. Game generates random Pokemon name using two data files (one is array of objects which contains names and informations about pokemons, and the another is object which contains links to pokemon images). User gets one randomly generated pokemon name and four randomly generated pokemon images. User has to click on the right pokemon image. Game tracks users score and combo. Added Pokemon theme song as a background music. Game currently supports Pokemon from the first generation (first 151 Pokemon).",
+			"A Pokemon game built using React and SCSS. Uses API data stored in objects to display information about items. Single-page app. Game generates random Pokemon name using two data files (one is an array of objects which contains names and informations about pokemons, and the another is an object which contains links to pokemon images). User gets one randomly generated pokemon name and four randomly generated pokemon images. User has to click on the correct pokemon image. Game tracks users' score and combo. Added Pokemon theme song as background music. Game currently supports Pokemon from the first generation (the first 151 Pokemon).",
 		githubLink: "https://github.com/max-marschhauser/pokemon-app",
 		codepenLink: "",
 	},
@@ -144,7 +144,7 @@ const projectsData = [
 		name: "Portfolio",
 		technology: "HTML, CSS, Sass, JavaScript, React",
 		description:
-			"Portfolio page which displays my web development skills, my completed projects, and functions as my CV page. Responsive Single-page app. Uses data stored in objects to display information on the page. Built using React and SCSS.",
+			"A portfolio page which displays my web development skills, my completed projects, and functions as my CV page. Responsive Single-page app. Uses data stored in the objects to display information on the page. Built using React and SCSS.",
 		githubLink: "https://github.com/max-marschhauser/portfolio",
 		codepenLink: "",
 	},
@@ -153,7 +153,7 @@ const projectsData = [
 		img: [rockPaperScissors1, rockPaperScissors2],
 		name: "Rock-Paper-Scissors",
 		technology: "HTML, CSS, JavaScript",
-		description: "Rock-Paper-Scissors responsive game built using JavaScript. Fairly simple game built for fun.",
+		description: "A Rock-Paper-Scissors responsive game built using JavaScript. Fairly simple game built for fun.",
 		githubLink: "https://github.com/max-marschhauser/Rock-Paper-Scissors",
 		codepenLink: "https://codepen.io/max-marschhauser/pen/rNrEbjZ",
 	},
@@ -162,7 +162,7 @@ const projectsData = [
 		img: [toDo1, toDo2],
 		name: "To-Do List",
 		technology: "HTML, JavaScript",
-		description: "To-Do list built using JavaScript and HTML. Very simple JS to-do list built for fun.",
+		description: "A To-Do list built using JavaScript and HTML. Very simple JS to-do list built for fun.",
 		githubLink: "https://github.com/max-marschhauser/ToDo-List",
 		codepenLink: "https://codepen.io/max-marschhauser/pen/ababNzX",
 	},
@@ -172,7 +172,7 @@ const projectsData = [
 		name: "Yu-Gi-Oh Card Search",
 		technology: "HTML, CSS, Sass, JavaScript, React",
 		description:
-			"Responsive Single-page App eCommerce page built using React and SCSS. Uses external API to fetch and display data about items. Uses LocalStorage to store items in the cart. Page can be used as a brochure page. Users can filter and sort through Yu-Gi-Oh cards that are available in Yu-Gi-Oh database API. Currently this page only displays cards released till 1. january 2008., plan is to add later cards in the future. Users can add their favorite cards in cart and purchase them. LocalStorage ensures that cards will remain in the cart when user returns to the page.",
+			"A responsive Single-page App eCommerce page built using React and SCSS. Uses external API to fetch and display data about items. Uses LocalStorage to store items in the cart. Page can be used as a brochure page. Users can filter and sort through Yu-Gi-Oh cards that are available in Yu-Gi-Oh database API. Currently, this page only displays cards released until 1 January 2008. My plan is to add newer cards in the future. Users can add their favorite cards in the cart and purchase them. LocalStorage ensures that cards will remain in the cart when user returns to the page.",
 		githubLink: "https://github.com/max-marschhauser/yugioh-card-search",
 		codepenLink: "",
 	},

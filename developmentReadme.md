@@ -1,5 +1,3 @@
--   provjeriti pravopis na data fileovima - još treba projects page list file
-
 -   CV na hrvatskom i na engleskom
 -   možda pored CV download buttona napisati veličinu datoteke (kB ili mB)
 
