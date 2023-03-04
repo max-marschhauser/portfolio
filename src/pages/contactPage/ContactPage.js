@@ -80,7 +80,6 @@ export default function ContactPage(props) {
 				Contact
 				<p>How to contact me?</p>
 			</h2>
-
 			<main className="contactPage">
 				<div
 					ref={ProfileImageRef}

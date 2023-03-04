@@ -5,6 +5,13 @@
 	color: var(--color-light);
 
 	h3 {
+		margin-top: clamp(0.1rem, 2vh, 1rem);
+		margin-bottom: clamp(0.1rem, 2vh, 1rem);
+
+		&:first-child {
+			margin-top: 0rem;
+		}
+
 		padding-block: clamp(1.25rem, 3vh, 3rem);
 
 		background-color: var(--color-primary-transparent);
@@ -17,9 +24,10 @@
 
 	&--articles {
 		overflow-x: hidden;
+		display: grid;
+		gap: clamp(0.1rem, 2vh, 1rem);
 
 		article {
-			margin-block: clamp(0.1rem, 2vh, 1rem);
 			padding-block: clamp(1rem, 7.5vh, 5rem);
 			padding-inline: clamp(1rem, 5vw, 5rem);
 

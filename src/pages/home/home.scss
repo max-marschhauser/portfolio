@@ -217,7 +217,7 @@
 		h1::before,
 		h2:after,
 		h2::before {
-			background-color: var(--color-primary);
+			background-color: var(--color-primary-transparent);
 		}
 	}
 
@@ -226,7 +226,7 @@
 		h1::before,
 		h2:after,
 		h2::before {
-			background-color: var(--color-dark);
+			background-color: var(--color-dark-transparent);
 		}
 	}
 
