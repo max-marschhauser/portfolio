@@ -5,3 +5,5 @@
 -   modal ne prikazuje dobre slike, nekada pokaže da ih nema, a nekada od drugih projekata
 
 -   vidjeti kako da se slike prije učitaju (možda staviti slike manje kvalitete, ili totalno izbaciti pozadinske slike, ili nekakav loading kad se stranica otvori dok se slike ne učitaju)
+
+-   uskladiti sređeni tekst s projects stranice s podacima na githubu i codepenu
