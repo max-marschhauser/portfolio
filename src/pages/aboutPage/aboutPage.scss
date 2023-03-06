@@ -27,6 +27,8 @@
 		display: grid;
 		gap: clamp(0.1rem, 2vh, 1rem);
 
+		isolation: isolate;
+
 		article {
 			padding-block: clamp(1rem, 7.5vh, 5rem);
 			padding-inline: clamp(1rem, 5vw, 5rem);
@@ -44,7 +46,29 @@
 				transform: translateX(-20vw);
 			}
 
+			&::before {
+				content: "";
+				position: absolute;
+
+				top: 0;
+				right: 0;
+				z-index: -1;
+
+				background-color: var(--color-primary-transparent);
+
+				height: 100%;
+				width: 10rem;
+
+				@include abs.mq(1400px, 0px) {
+					width: 50rem;
+				}
+
+				clip-path: polygon(100% 0, 100% 10%, 10% 100%, 0 100%);
+			}
+
 			header {
+				z-index: 1;
+
 				@include abs.mq(1400px, 0px) {
 					display: grid;
 					grid-template-columns: repeat(2, 1fr);
@@ -55,12 +79,16 @@
 			h4 {
 				padding-block: clamp(0.5rem, 1vh, 1rem);
 
+				z-index: 1;
+
 				text-align: center;
 				font-size: clamp(1.1rem, 7vw, 2.5rem);
 			}
 
 			ul {
 				padding-block: clamp(0.25rem, 1vh, 2rem);
+
+				z-index: 1;
 
 				list-style: none;
 
@@ -87,6 +115,8 @@
 				margin-inline: auto;
 				margin-top: 1rem;
 
+				z-index: 1;
+
 				width: fit-content;
 
 				outline: 0.2rem solid var(--color-primary);
@@ -100,6 +130,8 @@
 				}
 
 				img {
+					z-index: 1;
+
 					width: clamp(15rem, 30vw, 25rem);
 					aspect-ratio: 16/9;
 				}

@@ -2,6 +2,7 @@
 @use "../../assets/styles/abstracts" as abs;
 
 .contactPage {
+	position: relative;
 	padding-block: clamp(1.5rem, 5vh, 5rem);
 
 	display: grid;
@@ -16,6 +17,23 @@
 
 	background-color: var(--color-primary-transparent);
 	overflow-x: hidden;
+	isolation: isolate;
+
+	&::before {
+		content: "";
+		position: absolute;
+
+		top: 0;
+		right: 0;
+		z-index: 0;
+
+		background-color: var(--color-primary-transparent);
+
+		height: 100%;
+		width: 20rem;
+
+		clip-path: polygon(100% 0, 100% 10%, 10% 100%, 0 100%);
+	}
 
 	.contactsImageContainer {
 		position: relative;
