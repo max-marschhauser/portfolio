@@ -2,13 +2,13 @@
 
 const skillsData = {
 	HTML: [
-		"Started using it in 2010.",
+		"Started using it in 2009.",
 		"Feel very comfortable using it.",
 		"I usually write semantic HTML with regard to user accessibility.",
 		"Responsive mobile first design.",
 	],
 	CSS: [
-		"Started using it in 2010.",
+		"Started using it in 2009.",
 		"Familiar with newer features like has(), layers and container queries.",
 		"Creating responsive web pages with ease, prefer mobile first design.",
 		"Familiar with CSS frameworks like Bootstrap and Tailwind.",
@@ -22,7 +22,7 @@ const skillsData = {
 		"Prefer responsive mobile first design",
 	],
 	JavaScript: [
-		"First contact with it was in 2020, but I started actively using it in 2022.",
+		"First contact with it was in 2018, but I started actively using it in 2022.",
 		"Feel comfortable using both vanilla JavaScript and its frameworks / libraries.",
 		"I prefer using React for building Single Page Applications.",
 		"I have gained FCC cetrificate in using JavaScript in web design.",
