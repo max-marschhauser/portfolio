@@ -112,7 +112,7 @@
 					background-color: var(--color-dark-transparent);
 					opacity: 0.35;
 
-					animation: movingShapeSkills linear infinite;
+					animation: movingShape1 linear infinite;
 				}
 
 				&::before {
@@ -133,14 +133,6 @@
 					height: clamp(2.5rem, 5vw, 7.5rem);
 
 					animation-duration: 10s;
-				}
-
-				@keyframes movingShapeSkills {
-					50% {
-						opacity: 0.2;
-
-						transform: translate(1.5rem, 2.5rem);
-					}
 				}
 			}
 

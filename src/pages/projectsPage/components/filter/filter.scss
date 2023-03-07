@@ -19,11 +19,45 @@
 		top: 8rem;
 
 		h3 {
+			position: relative;
+
 			text-align: center;
 			font-weight: bold;
 			font-size: clamp(1.5rem, 4vw, 2rem);
 
 			user-select: none;
+
+			&::before,
+			&::after {
+				content: "";
+				position: absolute;
+
+				z-index: -1;
+
+				width: 7.5rem;
+				height: 7.5rem;
+				border-radius: 50%;
+
+				background-color: var(--color-primary-transparent);
+
+				animation: linear infinite;
+			}
+
+			&::before {
+				top: 10rem;
+				left: 6rem;
+
+				animation-name: movingShape1;
+				animation-duration: 6s;
+			}
+
+			&::after {
+				top: 25rem;
+				left: 16rem;
+
+				animation-name: movingShape2;
+				animation-duration: 8s;
+			}
 		}
 
 		form {

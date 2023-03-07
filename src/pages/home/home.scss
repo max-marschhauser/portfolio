@@ -235,16 +235,4 @@
 			transform: translate(1rem, -1rem) rotateY(180deg);
 		}
 	}
-
-	@keyframes movingShape1 {
-		50% {
-			transform: translate(1rem, 1rem);
-		}
-	}
-
-	@keyframes movingShape2 {
-		50% {
-			transform: translate(1rem, -1rem);
-		}
-	}
 }

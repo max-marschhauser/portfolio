@@ -38,3 +38,15 @@
 	background-image: url("../..//images/options/themeSpace.jpg");
 	color: var(--color-light) !important;
 }
+
+@keyframes movingShape1 {
+	50% {
+		transform: translate(1rem, 1rem);
+	}
+}
+
+@keyframes movingShape2 {
+	50% {
+		transform: translate(1rem, -1rem);
+	}
+}

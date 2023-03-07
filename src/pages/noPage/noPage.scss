@@ -7,7 +7,10 @@
 	background-color: var(--color-primary-transparent);
 
 	p {
+		position: relative;
+
 		padding-inline: 1rem;
+		z-index: 1;
 
 		text-align: center;
 		font-size: 2.25rem;
@@ -15,5 +18,31 @@
 		line-height: 3rem;
 
 		user-select: none;
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+
+			z-index: -1;
+			border-radius: 50%;
+
+			width: 7.5rem;
+			height: 7.5rem;
+
+			background-color: var(--color-primary-transparent);
+
+			animation: movingShape1 5s linear infinite;
+		}
+
+		&::before {
+			top: -16rem;
+			left: -16rem;
+		}
+
+		&::after {
+			top: 12rem;
+			right: 12rem;
+		}
 	}
 }
