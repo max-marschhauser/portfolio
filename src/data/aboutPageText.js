@@ -56,23 +56,23 @@ const aboutData = [
 	{
 		relatedToProgramming: false,
 		id: 4,
-		title: "Education",
-		imgSrc: undefined,
-		link: "",
-		content: [
-			`2009. - 2013. Education at Grammar school in Osijek with focus on mathematics and natural sciences (Matematičko prirodoslovna gimnazija).`,
-			`2013. - 2018. Major in Pedagogy and History. Graduated from the Faculty of Humanities and social sciences in Osijek.`,
-		],
-	},
-	{
-		relatedToProgramming: false,
-		id: 5,
 		title: "Work Experience",
 		imgSrc: undefined,
 		link: "",
 		content: [
 			`4 years as a school counselor (gained leadership and problem solving experience, managed a team of about 50 people).`,
 			`3 years as an Information Technology teacher (improved my computer science knowledge).`,
+		],
+	},
+	{
+		relatedToProgramming: false,
+		id: 5,
+		title: "Education",
+		imgSrc: undefined,
+		link: "",
+		content: [
+			`2009. - 2013. Education at Grammar school in Osijek with focus on mathematics and natural sciences (Matematičko prirodoslovna gimnazija).`,
+			`2013. - 2018. Major in Pedagogy and History. Graduated from the Faculty of Humanities and social sciences in Osijek.`,
 		],
 	},
 	{
