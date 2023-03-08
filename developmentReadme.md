@@ -1,4 +1,4 @@
--   CV na hrvatskom i na engleskom
+-   CV na engleskom
 -   možda pored CV download buttona napisati veličinu datoteke (kB ili mB)
 
 -   popraviti filter na projects page
