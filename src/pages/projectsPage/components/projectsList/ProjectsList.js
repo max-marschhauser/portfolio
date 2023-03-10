@@ -1,7 +1,7 @@
 // component for Projects page
 
 // importing general items
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 // importing data
 import List from "../../../../data/projectsPageList.js";
@@ -12,7 +12,7 @@ import "./projectsList.scss";
 export default function ProjectsListItems(props) {
 	const { searchWord, activeSkill, activeKeyword, handleToggleModal } = props;
 
-	let projectsItems = document.querySelectorAll("[data-projectsitemid]");
+	let articlesRef = useRef([]);
 
 	let [projectsItem0IsVissible, setProjectsItem0IsVissible] = useState(false);
 	let [projectsItem1IsVissible, setProjectsItem1IsVissible] = useState(false);
@@ -93,27 +93,38 @@ export default function ProjectsListItems(props) {
 				}
 			});
 		});
-		if (projectsItems) {
-			projectsItems.forEach((item) => {
+
+		if (articlesRef.current) {
+			articlesRef.current.forEach((item) => {
 				observer.observe(item);
 			});
 		}
-	}, [projectsItems]);
+	}, []);
 
 	return (
 		<section className="projectsList">
-			{List.map((item) => {
+			{List.map((item, index) => {
+				let upperCaseTechnology = item.technology.toUpperCase();
+				let upperCasedescription = item.description.toUpperCase();
+				let upperCasename = item.name.toUpperCase();
+				let upperCaseSkill = activeSkill.toUpperCase();
+				let upperCaseKeyword = activeKeyword.toUpperCase();
+				let upperCaseSearchWord = searchWord.toUpperCase();
+
 				if (
-					item.technology.toUpperCase().includes(activeSkill.toUpperCase()) &&
-					item.description.toUpperCase().includes(activeKeyword.toUpperCase()) &&
-					(item.name.toUpperCase().includes(searchWord.toUpperCase()) ||
-						item.technology.toUpperCase().includes(searchWord.toUpperCase()) ||
-						item.description.toUpperCase().includes(searchWord.toUpperCase()))
+					upperCaseTechnology.includes(upperCaseSkill) &&
+					upperCasedescription.includes(upperCaseKeyword) &&
+					(upperCasename.includes(upperCaseSearchWord) ||
+						upperCaseTechnology.includes(upperCaseSearchWord) ||
+						upperCasedescription.includes(upperCaseSearchWord))
 				) {
 					return (
 						<article
 							key={item.id}
 							data-projectsitemid={item.id}
+							ref={(element) => {
+								articlesRef.current[item.id] = element;
+							}}
 							className={
 								item.id === 0 && projectsItem0IsVissible
 									? "projectsItemVissible "
@@ -183,7 +194,7 @@ export default function ProjectsListItems(props) {
 						</article>
 					);
 				} else {
-					return null;
+					return <article className="invisibleArticle" key={item.id}></article>;
 				}
 			})}
 		</section>

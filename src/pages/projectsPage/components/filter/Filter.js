@@ -7,7 +7,7 @@ import React, { useId } from "react";
 import "./filter.scss";
 
 export default function Filter(props) {
-	const { searchChanger, skillChanger, keywordChanger, activeSkill, activeKeyword } = props;
+	const { handleSearchWordChange, handleSkillChange, handleKeywordChange, activeSkill, activeKeyword } = props;
 
 	const id = useId();
 
@@ -30,7 +30,7 @@ export default function Filter(props) {
 							name="search"
 							placeholder="search"
 							tabIndex="0"
-							onChange={(e) => searchChanger(e.target.value)}
+							onChange={(e) => handleSearchWordChange(e.target.value)}
 						/>
 					</fieldset>
 
@@ -44,7 +44,7 @@ export default function Filter(props) {
 									id={`${id}-HTML`}
 									name="skill"
 									value="HTML"
-									onClick={(e) => skillChanger(e.target.value)}
+									onClick={(e) => handleSkillChange(e.target.value)}
 								/>
 								<label
 									tabIndex="0"
@@ -52,7 +52,7 @@ export default function Filter(props) {
 									htmlFor={`${id}-HTML`}
 									onKeyDown={(e) => {
 										if (e.key === "Enter") {
-											skillChanger(e.target.innerHTML);
+											handleSkillChange(e.target.innerHTML);
 										}
 									}}>
 									HTML
@@ -65,7 +65,7 @@ export default function Filter(props) {
 									id={`${id}-CSS`}
 									name="skill"
 									value="CSS"
-									onClick={(e) => skillChanger(e.target.value)}
+									onClick={(e) => handleSkillChange(e.target.value)}
 								/>
 								<label
 									tabIndex="0"
@@ -73,7 +73,7 @@ export default function Filter(props) {
 									htmlFor={`${id}-CSS`}
 									onKeyDown={(e) => {
 										if (e.key === "Enter") {
-											skillChanger(e.target.innerHTML);
+											handleSkillChange(e.target.innerHTML);
 										}
 									}}>
 									CSS
@@ -86,7 +86,7 @@ export default function Filter(props) {
 									id={`${id}-JavaScript`}
 									name="skill"
 									value="JavaScript"
-									onClick={(e) => skillChanger(e.target.value)}
+									onClick={(e) => handleSkillChange(e.target.value)}
 								/>
 								<label
 									tabIndex="0"
@@ -94,7 +94,7 @@ export default function Filter(props) {
 									htmlFor={`${id}-JavaScript`}
 									onKeyDown={(e) => {
 										if (e.key === "Enter") {
-											skillChanger(e.target.innerHTML);
+											handleSkillChange(e.target.innerHTML);
 										}
 									}}>
 									JavaScript
@@ -107,7 +107,7 @@ export default function Filter(props) {
 									id={`${id}-Sass`}
 									name="skill"
 									value="Sass"
-									onClick={(e) => skillChanger(e.target.value)}
+									onClick={(e) => handleSkillChange(e.target.value)}
 								/>
 								<label
 									tabIndex="0"
@@ -115,7 +115,7 @@ export default function Filter(props) {
 									htmlFor={`${id}-Sass`}
 									onKeyDown={(e) => {
 										if (e.key === "Enter") {
-											skillChanger(e.target.innerHTML);
+											handleSkillChange(e.target.innerHTML);
 										}
 									}}>
 									Sass
@@ -128,7 +128,7 @@ export default function Filter(props) {
 									id={`${id}-TypeScript`}
 									name="skill"
 									value="TypeScript"
-									onClick={(e) => skillChanger(e.target.value)}
+									onClick={(e) => handleSkillChange(e.target.value)}
 								/>
 								<label
 									tabIndex="0"
@@ -136,7 +136,7 @@ export default function Filter(props) {
 									htmlFor={`${id}-TypeScript`}
 									onKeyDown={(e) => {
 										if (e.key === "Enter") {
-											skillChanger(e.target.innerHTML);
+											handleSkillChange(e.target.innerHTML);
 										}
 									}}>
 									TypeScript
@@ -149,8 +149,8 @@ export default function Filter(props) {
 									id={`${id}-React`}
 									name="skill"
 									value="React"
-									onClick={(e) => skillChanger(e.target.value)}
-									onKeyDown={(e) => skillChanger(e.target.value)}
+									onClick={(e) => handleSkillChange(e.target.value)}
+									onKeyDown={(e) => handleSkillChange(e.target.value)}
 								/>
 								<label
 									tabIndex="0"
@@ -158,7 +158,7 @@ export default function Filter(props) {
 									htmlFor={`${id}-React`}
 									onKeyDown={(e) => {
 										if (e.key === "Enter") {
-											skillChanger(e.target.innerHTML);
+											handleSkillChange(e.target.innerHTML);
 										}
 									}}>
 									React
@@ -177,7 +177,7 @@ export default function Filter(props) {
 									id={`${id}-Single-page App`}
 									name="keyword"
 									value="Single-page App"
-									onClick={(e) => keywordChanger(e.target.value)}
+									onClick={(e) => handleKeywordChange(e.target.value)}
 								/>
 								<label
 									tabIndex="0"
@@ -185,7 +185,7 @@ export default function Filter(props) {
 									htmlFor={`${id}-Single-page App`}
 									onKeyDown={(e) => {
 										if (e.key === "Enter") {
-											keywordChanger(e.target.innerHTML);
+											handleKeywordChange(e.target.innerHTML);
 										}
 									}}>
 									Single-page App
@@ -198,7 +198,7 @@ export default function Filter(props) {
 									id={`${id}-API`}
 									name="keyword"
 									value="API"
-									onClick={(e) => keywordChanger(e.target.value)}
+									onClick={(e) => handleKeywordChange(e.target.value)}
 								/>
 								<label
 									tabIndex="0"
@@ -206,7 +206,7 @@ export default function Filter(props) {
 									htmlFor={`${id}-API`}
 									onKeyDown={(e) => {
 										if (e.key === "Enter") {
-											keywordChanger(e.target.innerHTML);
+											handleKeywordChange(e.target.innerHTML);
 										}
 									}}>
 									API
@@ -219,7 +219,7 @@ export default function Filter(props) {
 									id={`${id}-Data`}
 									name="keyword"
 									value="Data"
-									onClick={(e) => keywordChanger(e.target.value)}
+									onClick={(e) => handleKeywordChange(e.target.value)}
 								/>
 								<label
 									tabIndex="0"
@@ -227,7 +227,7 @@ export default function Filter(props) {
 									htmlFor={`${id}-Data`}
 									onKeyDown={(e) => {
 										if (e.key === "Enter") {
-											keywordChanger(e.target.innerHTML);
+											handleKeywordChange(e.target.innerHTML);
 										}
 									}}>
 									Data
@@ -240,7 +240,7 @@ export default function Filter(props) {
 									id={`${id}-Brochure`}
 									name="keyword"
 									value="Brochure"
-									onClick={(e) => keywordChanger(e.target.value)}
+									onClick={(e) => handleKeywordChange(e.target.value)}
 								/>
 								<label
 									tabIndex="0"
@@ -248,7 +248,7 @@ export default function Filter(props) {
 									htmlFor={`${id}-Brochure`}
 									onKeyDown={(e) => {
 										if (e.key === "Enter") {
-											keywordChanger(e.target.innerHTML);
+											handleKeywordChange(e.target.innerHTML);
 										}
 									}}>
 									Brochure
@@ -261,7 +261,7 @@ export default function Filter(props) {
 									id={`${id}-eCommerce`}
 									name="keyword"
 									value="eCommerce"
-									onClick={(e) => keywordChanger(e.target.value)}
+									onClick={(e) => handleKeywordChange(e.target.value)}
 								/>
 								<label
 									tabIndex="0"
@@ -269,7 +269,7 @@ export default function Filter(props) {
 									htmlFor={`${id}-eCommerce`}
 									onKeyDown={(e) => {
 										if (e.key === "Enter") {
-											keywordChanger(e.target.innerHTML);
+											handleKeywordChange(e.target.innerHTML);
 										}
 									}}>
 									eCommerce
@@ -282,7 +282,7 @@ export default function Filter(props) {
 									id={`${id}-Game`}
 									name="keyword"
 									value="Game"
-									onClick={(e) => keywordChanger(e.target.value)}
+									onClick={(e) => handleKeywordChange(e.target.value)}
 								/>
 								<label
 									tabIndex="0"
@@ -290,7 +290,7 @@ export default function Filter(props) {
 									htmlFor={`${id}-Game`}
 									onKeyDown={(e) => {
 										if (e.key === "Enter") {
-											keywordChanger(e.target.innerHTML);
+											handleKeywordChange(e.target.innerHTML);
 										}
 									}}>
 									Game
@@ -303,7 +303,7 @@ export default function Filter(props) {
 									id={`${id}-Responsive`}
 									name="keyword"
 									value="Responsive"
-									onClick={(e) => keywordChanger(e.target.value)}
+									onClick={(e) => handleKeywordChange(e.target.value)}
 								/>
 								<label
 									tabIndex="0"
@@ -311,7 +311,7 @@ export default function Filter(props) {
 									htmlFor={`${id}-Responsive`}
 									onKeyDown={(e) => {
 										if (e.key === "Enter") {
-											keywordChanger(e.target.innerHTML);
+											handleKeywordChange(e.target.innerHTML);
 										}
 									}}>
 									Responsive
@@ -324,7 +324,7 @@ export default function Filter(props) {
 									id={`${id}-Component`}
 									name="keyword"
 									value="Component"
-									onClick={(e) => keywordChanger(e.target.value)}
+									onClick={(e) => handleKeywordChange(e.target.value)}
 								/>
 								<label
 									tabIndex="0"
@@ -332,7 +332,7 @@ export default function Filter(props) {
 									htmlFor={`${id}-Component`}
 									onKeyDown={(e) => {
 										if (e.key === "Enter") {
-											keywordChanger(e.target.innerHTML);
+											handleKeywordChange(e.target.innerHTML);
 										}
 									}}>
 									Component

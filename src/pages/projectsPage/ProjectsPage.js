@@ -21,13 +21,13 @@ export default function ProjectsPage(props) {
 	const [activeSkill, setActiveSkill] = useState("");
 	const [activeKeyword, setActiveKeyword] = useState("");
 
-	function HandleSearchWord(newWord) {
+	function handleSearchWordChange(newWord) {
 		setSearchWord(newWord);
 	}
 
-	function HandleSkillChange(newSkill) {
-		setActiveSkill(() => {
-			if (newSkill === activeSkill) {
+	function handleSkillChange(newSkill) {
+		setActiveSkill((prev) => {
+			if (prev === newSkill) {
 				return "";
 			} else {
 				return newSkill;
@@ -35,9 +35,9 @@ export default function ProjectsPage(props) {
 		});
 	}
 
-	function HandleKeywordChange(newKeyword) {
-		setActiveKeyword(() => {
-			if (newKeyword === activeKeyword) {
+	function handleKeywordChange(newKeyword) {
+		setActiveKeyword((prev) => {
+			if (prev === newKeyword) {
 				return "";
 			} else {
 				return newKeyword;
@@ -92,9 +92,9 @@ export default function ProjectsPage(props) {
 					handleToggleModal={handleToggleModal}
 				/>
 				<Filter
-					searchChanger={HandleSearchWord}
-					skillChanger={HandleSkillChange}
-					keywordChanger={HandleKeywordChange}
+					handleSearchWordChange={handleSearchWordChange}
+					handleSkillChange={handleSkillChange}
+					handleKeywordChange={handleKeywordChange}
 					activeSkill={activeSkill}
 					activeKeyword={activeKeyword}
 				/>

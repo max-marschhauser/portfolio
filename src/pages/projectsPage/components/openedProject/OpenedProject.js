@@ -1,7 +1,7 @@
 // component for Projects page
 
 // importing general items
-import React, { useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 
 // importing data
 import List from "../../../../data/projectsPageList.js";
@@ -12,8 +12,9 @@ import "./openedProject.scss";
 export default function OpenedProject(props) {
 	const { toggleModal, handleToggleModal, modalContent } = props;
 
-	let selectedItemObject = {};
 	let [imageNumber, setImageNumber] = useState(0);
+
+	let selectedItemObject = useMemo(() => {}, []);
 
 	let numberOfImages = 0;
 
@@ -26,6 +27,10 @@ export default function OpenedProject(props) {
 			}
 		});
 	}
+
+	useEffect(() => {
+		setImageNumber(0);
+	}, [selectedItemObject]);
 
 	function changeImage(e) {
 		let operation = e.target.dataset.operation;

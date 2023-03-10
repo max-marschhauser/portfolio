@@ -90,6 +90,16 @@ const projectsData = [
 		codepenLink: "",
 	},
 	{
+		id: 6,
+		img: [hamburgerExample1, hamburgerExample2],
+		name: "Hamburger Examples",
+		technology: "HTML, CSS, JavaScript, SVG",
+		description:
+			"Examples of Hamburger buttons used for opening navbars on small screen devices. Responsive component which can be used in future projects. Built using HTML, CSS, JavaScript and SVG.",
+		githubLink: "https://github.com/max-marschhauser/hamburger-examples",
+		codepenLink: "https://codepen.io/max-marschhauser/pen/MWqWybB",
+	},
+	{
 		id: 4,
 		img: [lightdarkTheme1, lightdarkTheme2, lightdarkTheme3],
 		name: "Light-dark Theme",
@@ -108,16 +118,6 @@ const projectsData = [
 			"A good looking Loading Spinner built with CSS. This component can be used on various sites that require loading.",
 		githubLink: "https://github.com/max-marschhauser/Loading-Spinner",
 		codepenLink: "https://codepen.io/max-marschhauser/pen/oNPNxbv",
-	},
-	{
-		id: 6,
-		img: [hamburgerExample1, hamburgerExample2],
-		name: "Hamburger Examples",
-		technology: "HTML, CSS, JavaScript, SVG",
-		description:
-			"Examples of Hamburger buttons used for opening navbars on small screen devices. Responsive component which can be used in future projects. Built using HTML, CSS, JavaScript and SVG.",
-		githubLink: "https://github.com/max-marschhauser/hamburger-examples",
-		codepenLink: "https://codepen.io/max-marschhauser/pen/MWqWybB",
 	},
 	{
 		id: 7,

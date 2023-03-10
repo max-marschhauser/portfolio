@@ -260,6 +260,8 @@
 					&:hover,
 					&:focus-visible {
 						border-block: 0.1rem solid var(--color-action);
+
+						color: var(--color-action);
 					}
 
 					&:active {

@@ -96,14 +96,14 @@
 					text-align: center;
 					font-size: clamp(1.25rem, 1.5vw, 1.75rem);
 					color: var(--color-primary);
-					caret-color: var(--color-primary);
+					caret-color: var(--color-dark);
 
 					transition: all 0.35s ease;
 
 					&:hover,
 					&:focus-visible,
 					&:active {
-						outline: 0.5rem solid var(--color-action);
+						outline: 0.25rem solid var(--color-action);
 					}
 				}
 
