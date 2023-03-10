@@ -67,7 +67,12 @@ export default function OpenedProject(props) {
 									-
 								</button>
 							</div>
-							<img id="image" src={selectedItemObject.img[imageNumber]} alt="Selected Project Images" />
+							<img
+								id="image"
+								src={selectedItemObject.img[imageNumber]}
+								alt="Selected Project Images"
+								loading="lazy"
+							/>
 							<div className="operationContainer" id="add">
 								<button onClick={changeImage} data-operation="add">
 									+

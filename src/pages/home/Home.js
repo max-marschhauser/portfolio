@@ -86,7 +86,7 @@ export default function Home(props) {
 					}
 					ref={ProfileImageRef}
 					data-name="profileImage">
-					<img className="profileImage" src={profileImage} alt="max-marschhauser-profile" />
+					<img className="profileImage" src={profileImage} alt="max-marschhauser-profile" loading="lazy" />
 				</div>
 				<div
 					className={

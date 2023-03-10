@@ -127,7 +127,7 @@ export default function Footer(props) {
 					</nav>
 				</section>
 				<section>
-					<img src={profile} alt="profile" />
+					<img src={profile} alt="profile" loading="lazy" />
 				</section>
 			</div>
 			<ul className="pageFooter__item--under">

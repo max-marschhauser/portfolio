@@ -92,6 +92,7 @@ export default function OptionsPage(props) {
 							<img
 								src={themeIce}
 								alt="Ice theme"
+								loading="lazy"
 								title="Ice theme"
 								onClick={() => {
 									handleThemeChange("iceTheme");
@@ -110,6 +111,7 @@ export default function OptionsPage(props) {
 							<img
 								src={themeTwilight}
 								alt="Twilight theme"
+								loading="lazy"
 								title="Twilight theme"
 								onClick={() => {
 									handleThemeChange("twilightTheme");
@@ -128,6 +130,7 @@ export default function OptionsPage(props) {
 							<img
 								src={themeNature}
 								alt="Nature theme"
+								loading="lazy"
 								title="Nature theme"
 								onClick={() => {
 									handleThemeChange("natureTheme");
@@ -146,6 +149,7 @@ export default function OptionsPage(props) {
 							<img
 								src={themeSpace}
 								alt="Space theme"
+								loading="lazy"
 								title="Space theme"
 								onClick={() => {
 									handleThemeChange("spaceTheme");

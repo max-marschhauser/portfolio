@@ -89,7 +89,7 @@ export default function ContactPage(props) {
 							? "imageVissible contactsImageContainer"
 							: "contactsImageContainer"
 					}>
-					<img src={profileImage} alt="max-marschhauser-profile" />
+					<img src={profileImage} alt="max-marschhauser-profile" loading="lazy" />
 				</div>
 				<ul>
 					<li ref={EmailRef} data-name="email" className={emailIsVissible === true ? "itemVissible" : ""}>

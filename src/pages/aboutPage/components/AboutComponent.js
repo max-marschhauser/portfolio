@@ -104,7 +104,7 @@ export default function AboutComponent(props) {
 						<h4>{item.title}</h4>
 						{item.imgSrc !== undefined ? (
 							<a href={item.link} target="_blank" rel="noreferrer">
-								<img src={item.imgSrc} alt={item.imgSrc} />
+								<img src={item.imgSrc} alt={item.imgSrc} loading="lazy" />
 							</a>
 						) : (
 							<ul>
