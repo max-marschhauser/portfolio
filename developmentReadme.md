@@ -12,3 +12,5 @@ About page smanjiti veličinu slova, zapravo sve veličine na stranici izjednač
 
 Bouncing animations
 U keyframes na npr 90% da bude translate 110% a na 100% bude 100%
+
+na portfolio stranice dodati dugme poput See page ili tako nešto, live example?
