@@ -16,6 +16,10 @@
 
 	background-color: var(--color-dark);
 
+	@include abs.mq(1400px, 0px) {
+		border-bottom: 0.1rem solid var(--color-light);
+	}
+
 	.logo {
 		display: flex;
 		flex-direction: column;
