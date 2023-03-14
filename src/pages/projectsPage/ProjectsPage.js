@@ -64,14 +64,10 @@ export default function ProjectsPage(props) {
 		<>
 			<h2
 				className={
-					theme === "iceTheme"
-						? "pageHeading iceThemeImage"
-						: theme === "twilightTheme"
-						? "pageHeading twilightThemeImage"
-						: theme === "natureTheme"
-						? "pageHeading natureThemeImage"
-						: theme === "spaceTheme"
-						? "pageHeading spaceThemeImage"
+					theme === "iceTheme" || theme === "spaceTheme"
+						? "pageHeading darkTheme"
+						: theme === "twilightTheme" || theme === "natureTheme"
+						? "pageHeading lightTheme"
 						: "pageHeading"
 				}>
 				Projects

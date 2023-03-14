@@ -30,8 +30,6 @@
 
 		a,
 		p {
-			padding: clamp(1rem, 4vh, 3rem) clamp(2rem, 4vw, 5rem);
-
 			background-color: var(--color-dark);
 
 			color: var(--color-light);
@@ -40,6 +38,8 @@
 		}
 
 		p {
+			padding: clamp(1rem, 4vh, 3rem) clamp(2rem, 4vw, 5rem);
+
 			border-left: 0.2rem solid var(--color-dark);
 			border-right: 0.2rem solid var(--color-dark);
 
@@ -64,6 +64,7 @@
 		}
 
 		a {
+			padding: clamp(0.75rem, 3vh, 2.25rem) clamp(1.5rem, 3vw, 3.75rem);
 			border-radius: 100vmax;
 
 			outline: 0.2rem solid transparent;

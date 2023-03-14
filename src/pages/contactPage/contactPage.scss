@@ -102,45 +102,6 @@
 			}
 		}
 
-		.CVs {
-			display: flex;
-			gap: 2rem;
-
-			opacity: 0;
-
-			transform: translateX(20vw);
-
-			a {
-				color: var(--color-light);
-
-				button {
-					padding: 1rem;
-
-					background-color: var(--color-primary);
-					outline: 0.05rem solid var(--color-light);
-
-					font-size: clamp(1rem, 1vw, 1.25rem);
-					color: var(--color-light);
-
-					transition: all 0.35s ease;
-
-					cursor: pointer;
-
-					&:hover,
-					&:focus-visible {
-						background-color: var(--color-dark);
-						outline: 0.05rem solid var(--color-action);
-
-						color: var(--color-action);
-					}
-
-					&:active {
-						opacity: 0.8;
-					}
-				}
-			}
-		}
-
 		.itemVissible {
 			opacity: 1;
 

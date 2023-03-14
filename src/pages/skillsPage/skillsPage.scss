@@ -14,7 +14,7 @@
 	.images {
 		border-right: 1px dashed var(--color-light);
 
-		padding-block: 2rem;
+		padding-block: clamp(1rem, 3vh, 2rem);
 
 		display: grid;
 		place-items: center;
@@ -22,7 +22,7 @@
 		@include abs.mq(1400px, 0px) {
 			grid-template-columns: repeat(2, 1fr);
 		}
-		row-gap: clamp(1rem, 8vh, 6rem);
+		row-gap: clamp(0.5rem, 6vh, 6rem);
 
 		button {
 			position: relative;
