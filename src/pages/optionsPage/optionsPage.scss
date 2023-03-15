@@ -3,10 +3,12 @@
 
 .optionsPage {
 	padding-block: clamp(1.5rem, 15vh, 4rem);
+	padding-block: clamp(1.5rem, 15svh, 4rem);
 
 	display: flex;
 	flex-direction: column;
 	gap: clamp(1.5rem, 15vh, 4rem);
+	gap: clamp(1.5rem, 15svh, 4rem);
 
 	background-color: var(--color-primary-transparent);
 
@@ -27,6 +29,7 @@
 
 		place-items: center;
 		gap: clamp(1.5rem, 15vh, 4rem);
+		gap: clamp(1.5rem, 15svh, 4rem);
 
 		list-style: none;
 
@@ -36,6 +39,7 @@
 			opacity: 0;
 
 			transform: translateY(20vh);
+			transform: translateY(20svh);
 			transition: all 0.35s ease;
 
 			button {
@@ -81,6 +85,7 @@
 				letter-spacing: 0.05rem;
 
 				transform: translateY(5vh);
+				transform: translateY(5svh);
 				animation: text-fade-in 0.35s ease 0.5s;
 				animation-fill-mode: both;
 			}
@@ -89,6 +94,7 @@
 		.themeVissible {
 			opacity: 1;
 			transform: translateY(0vh);
+			transform: translateY(0svh);
 		}
 	}
 }

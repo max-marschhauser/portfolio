@@ -2,6 +2,7 @@
 
 .pageHeading {
 	padding-block: clamp(1rem, 5vh, 6rem);
+	padding-block: clamp(1rem, 5svh, 6rem);
 
 	text-align: center;
 	font-size: clamp(2.5rem, 5vw, 3.5rem);
@@ -10,6 +11,7 @@
 
 	p {
 		padding-top: clamp(0.25rem, 1.25vh, 1.5rem);
+		padding-top: clamp(0.25rem, 1.25svh, 1.5rem);
 
 		font-size: clamp(1.1rem, 2vw, 1.75rem);
 		font-style: italic;

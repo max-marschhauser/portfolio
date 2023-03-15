@@ -72,11 +72,13 @@
 				&:nth-child(1),
 				&:nth-child(2) {
 					padding-bottom: clamp(1rem, 3vh, 2rem);
+					padding-bottom: clamp(1rem, 3svh, 2rem);
 					border-bottom: 1px solid var(--color-light);
 				}
 
 				legend {
 					padding-block: clamp(1rem, 3vh, 2rem);
+					padding-block: clamp(1rem, 3svh, 2rem);
 
 					text-align: center;
 					font-weight: bold;
@@ -131,8 +133,9 @@
 						label {
 							padding: clamp(0.25rem, 1vw, 0.5rem);
 							border-radius: 0.25rem;
+							border-bottom: 0.1rem solid transparent;
 
-							opacity: 0.7;
+							opacity: 0.5;
 							outline: 0.25rem solid transparent;
 
 							color: var(--color-light);
@@ -142,11 +145,14 @@
 							cursor: pointer;
 
 							&:hover,
-							&:focus-visible,
 							&:active {
 								outline: 0.25rem solid var(--color-action);
 
-								color: var(--color-light);
+								opacity: 1;
+							}
+
+							&:focus-visible {
+								opacity: 1;
 							}
 						}
 

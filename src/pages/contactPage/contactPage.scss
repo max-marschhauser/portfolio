@@ -4,6 +4,7 @@
 .contactPage {
 	position: relative;
 	padding-block: clamp(1.5rem, 5vh, 5rem);
+	padding-block: clamp(1.5rem, 5svh, 5rem);
 
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
@@ -14,6 +15,7 @@
 
 	place-items: center;
 	gap: clamp(1rem, 10vh, 1rem);
+	gap: clamp(1rem, 10svh, 1rem);
 
 	background-color: var(--color-primary-transparent);
 	overflow-x: hidden;
@@ -82,6 +84,7 @@
 
 		li {
 			padding-block: clamp(1.5rem, 4vh, 2rem);
+			padding-block: clamp(1.5rem, 4svh, 2rem);
 
 			opacity: 0;
 

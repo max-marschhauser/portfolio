@@ -27,9 +27,11 @@
 		@keyframes fade-in {
 			0% {
 				transform: translateY(10vh);
+				transform: translateY(10svh);
 			}
 			100% {
 				transform: translateY(0vh);
+				transform: translateY(0svh);
 			}
 		}
 
@@ -67,6 +69,7 @@
 
 		h3 {
 			padding-block: clamp(0.1rem, 2vh, 1rem);
+			padding-block: clamp(0.1rem, 2svh, 1rem);
 
 			background-color: var(--color-dark);
 
@@ -103,14 +106,14 @@
 
 					cursor: pointer;
 
-					&:is(:hover, :focus-visible) {
+					&:is(:hover, :active) {
 						background-color: var(--color-primary);
 
 						color: var(--color-action);
 					}
 
-					&:active {
-						opacity: 0.8;
+					&:focus-visible {
+						opacity: 0.5;
 					}
 				}
 			}

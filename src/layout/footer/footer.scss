@@ -23,10 +23,12 @@
 
 		z-index: 0;
 		height: 20vh;
+		height: 20svh;
 		width: 70vw;
 
 		@include abs.mq(1400px, 0px) {
 			height: 50vh;
+			height: 50svh;
 			width: 50vw;
 		}
 
@@ -93,6 +95,7 @@
 				.links--social {
 					border-radius: 0.75rem;
 					padding: clamp(1.5rem, 5vh, 3rem) clamp(1rem, 4vw, 3rem);
+					padding: clamp(1.5rem, 5svh, 3rem) clamp(1rem, 4vw, 3rem);
 					border-block: 0.1rem solid var(--color-action);
 
 					display: grid;

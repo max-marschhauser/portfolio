@@ -15,6 +15,7 @@
 		border-right: 1px dashed var(--color-light);
 
 		padding-block: clamp(1rem, 3vh, 2rem);
+		padding-block: clamp(1rem, 3svh, 2rem);
 
 		display: grid;
 		place-items: center;
@@ -23,6 +24,7 @@
 			grid-template-columns: repeat(2, 1fr);
 		}
 		row-gap: clamp(0.5rem, 6vh, 6rem);
+		row-gap: clamp(0.5rem, 6svh, 6rem);
 
 		button {
 			position: relative;
@@ -98,6 +100,7 @@
 				position: relative;
 
 				padding-top: clamp(0.5rem, 2vh, 2.5rem);
+				padding-top: clamp(0.5rem, 2svh, 2.5rem);
 
 				font-size: clamp(1.15rem, 3vw, 2.5rem);
 				text-align: center;
@@ -138,6 +141,7 @@
 
 			header {
 				padding-top: clamp(0.5rem, 3vh, 2.5rem);
+				padding-top: clamp(0.5rem, 3svh, 2.5rem);
 				font-size: clamp(1.15rem, 3vw, 2rem);
 				text-align: center;
 				font-weight: bold;
@@ -145,6 +149,7 @@
 
 			ul {
 				padding-block: clamp(0.5rem, 2vh, 1rem);
+				padding-block: clamp(0.5rem, 2svh, 1rem);
 				padding-left: clamp(1.5rem, 4vw, 3rem);
 				padding-right: clamp(0.5rem, 2vw, 1.5rem);
 
@@ -152,9 +157,11 @@
 
 				li {
 					padding-top: clamp(0.25rem, 2vh, 1.5rem);
+					padding-top: clamp(0.25rem, 2svh, 1.5rem);
 
 					font-size: clamp(1rem, 2vw, 1.75rem);
 					line-height: clamp(1rem, 3vh, 2rem);
+					line-height: clamp(1rem, 3svh, 2rem);
 				}
 			}
 		}

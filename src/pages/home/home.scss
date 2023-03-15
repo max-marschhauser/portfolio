@@ -6,6 +6,7 @@
 
 	padding-block: 2rem;
 	min-height: 95vh;
+	min-height: 95svh;
 
 	display: grid;
 	place-items: center;
@@ -54,6 +55,7 @@
 		place-items: center;
 
 		gap: clamp(1rem, 5vh, 3rem);
+		gap: clamp(1rem, 5svh, 3rem);
 
 		padding-block: 2rem;
 		padding-inline: clamp(0.5rem, 5vw, 5rem);

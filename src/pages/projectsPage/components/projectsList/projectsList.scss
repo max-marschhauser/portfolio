@@ -141,6 +141,7 @@
 						color: var(--color-light);
 
 						transform: translateY(3vh);
+						transform: translateY(3svh);
 
 						&:hover,
 						&:focus-visible {
@@ -187,6 +188,7 @@
 						opacity: 1;
 
 						transform: translateY(0vh);
+						transform: translateY(0svh);
 						transition: transform 0.35s ease 0.7s, opacity 0.35s ease 0.7s, outline 0.35s ease 0s;
 					}
 				}

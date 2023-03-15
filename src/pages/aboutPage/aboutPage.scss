@@ -6,13 +6,16 @@
 
 	h3 {
 		margin-top: clamp(0.1rem, 2vh, 1rem);
+		margin-top: clamp(0.1rem, 2svh, 1rem);
 		margin-bottom: clamp(0.1rem, 2vh, 1rem);
+		margin-bottom: clamp(0.1rem, 2svh, 1rem);
 
 		&:first-child {
 			margin-top: 0rem;
 		}
 
 		padding-block: clamp(1.25rem, 3vh, 3rem);
+		padding-block: clamp(1.25rem, 3svh, 3rem);
 
 		background-color: var(--color-primary-transparent);
 
@@ -26,11 +29,13 @@
 		overflow-x: hidden;
 		display: grid;
 		gap: clamp(0.1rem, 2vh, 1rem);
+		gap: clamp(0.1rem, 2svh, 1rem);
 
 		isolation: isolate;
 
 		article {
 			padding-block: clamp(1rem, 7.5vh, 5rem);
+			padding-block: clamp(1rem, 7.5svh, 5rem);
 			padding-inline: clamp(1rem, 5vw, 5rem);
 
 			background-color: var(--color-primary-transparent);
@@ -78,6 +83,7 @@
 
 			h4 {
 				padding-block: clamp(0.5rem, 1vh, 1rem);
+				padding-block: clamp(0.5rem, 1svh, 1rem);
 
 				z-index: 1;
 
@@ -87,6 +93,7 @@
 
 			ul {
 				padding-block: clamp(0.25rem, 1vh, 2rem);
+				padding-block: clamp(0.25rem, 1svh, 2rem);
 
 				z-index: 1;
 
@@ -95,16 +102,19 @@
 				li {
 					margin: 0 auto;
 					padding-block: clamp(0.5rem, 2.5vh, 1.25rem);
+					padding-block: clamp(0.5rem, 2.5svh, 1.25rem);
 					max-width: 50rem;
 
 					opacity: 0;
 
 					font-size: clamp(0.9rem, 5vw, 1.35rem);
 					line-height: clamp(1rem, 4vh, 2rem);
+					line-height: clamp(1rem, 4svh, 2rem);
 					text-align: center;
 					color: var(--color-light);
 
 					transform: translateY(5vh);
+					transform: translateY(5svh);
 				}
 			}
 
@@ -149,6 +159,7 @@
 				opacity: 1;
 
 				transform: translateY(0vh);
+				transform: translateY(0svh);
 
 				transition: all 0.35s ease;
 
