@@ -83,11 +83,12 @@
 
 				h2 {
 					text-align: center;
-					letter-spacing: 0.05rem;
+					letter-spacing: var(--letter-spacing);
 					color: var(--color-light);
+					font-size: var(--font-size-125);
 
 					span {
-						font-size: 1rem;
+						font-size: var(--font-size-075);
 						font-weight: normal;
 					}
 				}
@@ -109,7 +110,7 @@
 						a {
 							text-decoration: none;
 							color: var(--color-light);
-							font-size: clamp(2rem, 5vw, 2.2rem);
+							font-size: var(--font-size-200);
 
 							transition: all 0.35s ease;
 
@@ -143,7 +144,7 @@
 							background-color: var(--color-primary);
 							outline: 0.05rem solid var(--color-light);
 
-							font-size: clamp(0.85rem, 1vw, 1.15rem);
+							font-size: var(--font-size-075);
 							color: var(--color-light);
 							font-family: inherit;
 
@@ -183,10 +184,10 @@
 						}
 
 						a {
-							font-size: clamp(1rem, 6vw, 1.15rem);
+							font-size: var(--font-size-075);
 							text-decoration: none;
 							color: var(--color-light);
-							letter-spacing: 0.05rem;
+							letter-spacing: var(--letter-spacing);
 
 							transition: all 0.35s ease;
 
@@ -236,7 +237,7 @@
 				padding-bottom: 1rem;
 
 				color: var(--color-light);
-				font-size: clamp(1rem, 4vw, 1.25rem);
+				font-size: var(--font-size-075);
 
 				&:last-child {
 					padding-top: 1rem;
@@ -255,7 +256,7 @@
 					font-weight: bold;
 					text-decoration: none;
 
-					font-size: clamp(0.8rem, 3vw, 1rem);
+					font-size: var(--font-size-050);
 
 					cursor: pointer;
 

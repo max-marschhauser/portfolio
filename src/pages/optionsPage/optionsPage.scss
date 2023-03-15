@@ -82,7 +82,7 @@
 				color: var(--color-light);
 				font-size: clamp(1rem, 3vw, 1.2rem);
 				font-weight: bold;
-				letter-spacing: 0.05rem;
+				letter-spacing: var(--letter-spacing);
 
 				transform: translateY(5vh);
 				transform: translateY(5svh);

@@ -62,7 +62,7 @@ export default function ProjectsPage(props) {
 
 	return (
 		<>
-			<h2
+			<div
 				className={
 					theme === "iceTheme" || theme === "spaceTheme"
 						? "pageHeading darkTheme"
@@ -70,9 +70,9 @@ export default function ProjectsPage(props) {
 						? "pageHeading lightTheme"
 						: "pageHeading"
 				}>
-				Projects
+				<h2>Projects</h2>
 				<p>Interested in my projects?</p>
-			</h2>
+			</div>
 
 			<OpenedProject
 				handleToggleModal={handleToggleModal}

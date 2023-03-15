@@ -18,7 +18,7 @@ export default function AboutPage(props) {
 
 	return (
 		<>
-			<h2
+			<div
 				className={
 					theme === "iceTheme" || theme === "spaceTheme"
 						? "pageHeading darkTheme"
@@ -26,9 +26,9 @@ export default function AboutPage(props) {
 						? "pageHeading lightTheme"
 						: "pageHeading"
 				}>
-				About
+				<h2>About</h2>
 				<p>Want to know more about me?</p>
-			</h2>
+			</div>
 
 			<main className="aboutPage">
 				<h3>Related To Programming</h3>

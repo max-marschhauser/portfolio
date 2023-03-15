@@ -26,7 +26,7 @@ export default function SkillsPage(props) {
 
 	return (
 		<>
-			<h2
+			<div
 				className={
 					theme === "iceTheme" || theme === "spaceTheme"
 						? "pageHeading darkTheme"
@@ -34,9 +34,9 @@ export default function SkillsPage(props) {
 						? "pageHeading lightTheme"
 						: "pageHeading"
 				}>
-				Skills
+				<h2>Skills</h2>
 				<p>Want to know what I know?</p>
-			</h2>
+			</div>
 
 			<main className="skillsPage">
 				<section className="images">

@@ -64,7 +64,7 @@ export default function OptionsPage(props) {
 
 	return (
 		<>
-			<h2
+			<div
 				className={
 					theme === "iceTheme" || theme === "spaceTheme"
 						? "pageHeading darkTheme"
@@ -72,9 +72,9 @@ export default function OptionsPage(props) {
 						? "pageHeading lightTheme"
 						: "pageHeading"
 				}>
-				Options
+				<h2>Options</h2>
 				<p>Change theme of this page</p>
-			</h2>
+			</div>
 			<main className="optionsPage">
 				<h3>Select theme</h3>
 				<ul>

@@ -112,7 +112,7 @@
 					h3 {
 						text-align: center;
 						font-size: 1.5rem;
-						letter-spacing: 0.075rem;
+						letter-spacing: var(--letter-spacing);
 
 						@include abs.mq(1400px, 0px) {
 							margin-top: 1rem;

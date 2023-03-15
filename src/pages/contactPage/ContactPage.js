@@ -54,7 +54,7 @@ export default function ContactPage(props) {
 
 	return (
 		<>
-			<h2
+			<div
 				className={
 					theme === "iceTheme" || theme === "spaceTheme"
 						? "pageHeading darkTheme"
@@ -62,9 +62,9 @@ export default function ContactPage(props) {
 						? "pageHeading lightTheme"
 						: "pageHeading"
 				}>
-				Contact
+				<h2>Contact</h2>
 				<p>How to contact me?</p>
-			</h2>
+			</div>
 			<main className="contactPage">
 				<div
 					ref={ProfileImageRef}
