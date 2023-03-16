@@ -180,7 +180,6 @@
 		width: 100%;
 		padding-inline: 1rem;
 		padding-block: 0.25rem;
-		border-bottom: 1px solid transparent;
 
 		@include abs.mq(1400px, 0px) {
 			border-radius: 0.5rem;
@@ -194,6 +193,8 @@
 
 		@include abs.mq(1400px, 0px) {
 			font-size: var(--font-size-150);
+
+			background-color: transparent;
 		}
 
 		text-decoration: none;

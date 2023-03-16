@@ -64,7 +64,7 @@ export default function OpenedProject(props) {
 						<div className="imageContainer">
 							<div className="operationContainer" id="subtract">
 								<button onClick={changeImage} data-operation="subtract">
-									-
+									&lt;
 								</button>
 							</div>
 							<img
@@ -75,7 +75,7 @@ export default function OpenedProject(props) {
 							/>
 							<div className="operationContainer" id="add">
 								<button onClick={changeImage} data-operation="add">
-									+
+									&gt;
 								</button>
 							</div>
 						</div>

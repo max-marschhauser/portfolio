@@ -14,7 +14,7 @@ const aboutData = [
 		content: [
 			`2009 started learning programming ( age 14 ). First programming language was C, used it for 4 years.`,
 			`2010 started learning web design ( HTML and CSS ).`,
-			`2012 started using PHP and MySql.`,
+			`2012 started using PHP and MySQL.`,
 			`2017 and 2018 attended two courses related to modern web design at university.`,
 		],
 	},

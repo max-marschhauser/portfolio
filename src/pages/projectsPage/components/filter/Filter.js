@@ -21,9 +21,6 @@ export default function Filter(props) {
 				<h3>Filter projects</h3>
 				<form onSubmit={handleSubmit}>
 					<fieldset>
-						<legend>
-							<label htmlFor={`${id}-search`}>Search</label>
-						</legend>
 						<input
 							type="search"
 							id={`${id}-search`}

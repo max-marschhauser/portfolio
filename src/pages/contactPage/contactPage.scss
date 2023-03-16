@@ -88,7 +88,7 @@
 
 			opacity: 0;
 
-			font-size: clamp(1.1rem, 4vw, 1.5rem);
+			font-size: var(--font-size-150);
 			color: var(--color-light);
 
 			transform: translateX(20vw);
@@ -100,7 +100,6 @@
 			}
 
 			span {
-				font-size: clamp(1.3rem, 5vw, 1.75rem);
 				font-weight: bold;
 			}
 		}

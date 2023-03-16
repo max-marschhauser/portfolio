@@ -2,13 +2,13 @@
 @use "../../assets/styles/abstracts" as abs;
 
 .optionsPage {
-	padding-block: clamp(1.5rem, 15vh, 4rem);
-	padding-block: clamp(1.5rem, 15svh, 4rem);
+	padding-block: clamp(1.5rem, 5vh, 3rem);
+	padding-block: clamp(1.5rem, 5svh, 3rem);
 
 	display: flex;
 	flex-direction: column;
-	gap: clamp(1.5rem, 15vh, 4rem);
-	gap: clamp(1.5rem, 15svh, 4rem);
+	gap: clamp(1.5rem, 5vh, 3rem);
+	gap: clamp(1.5rem, 5svh, 3rem);
 
 	background-color: var(--color-primary-transparent);
 
@@ -16,7 +16,7 @@
 
 	h3 {
 		text-align: center;
-		font-size: clamp(1.6rem, 7vw, 2rem);
+		font-size: var(--font-size-200);
 	}
 
 	ul {
@@ -28,8 +28,8 @@
 		}
 
 		place-items: center;
-		gap: clamp(1.5rem, 15vh, 4rem);
-		gap: clamp(1.5rem, 15svh, 4rem);
+		gap: clamp(1.5rem, 4vh, 2rem);
+		gap: clamp(1.5rem, 4svh, 2rem);
 
 		list-style: none;
 
@@ -80,7 +80,7 @@
 
 				text-align: center;
 				color: var(--color-light);
-				font-size: clamp(1rem, 3vw, 1.2rem);
+				font-size: var(--font-size-125);
 				font-weight: bold;
 				letter-spacing: var(--letter-spacing);
 

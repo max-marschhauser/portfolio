@@ -19,10 +19,10 @@
 
 		background-color: var(--color-primary-transparent);
 
-		font-size: clamp(1rem, 7vw, 2.5rem);
+		font-size: var(--font-size-150);
 		text-align: center;
 		letter-spacing: var(--letter-spacing);
-		word-spacing: 0.5rem;
+		word-spacing: 0.25rem;
 	}
 
 	&--articles {
@@ -88,7 +88,7 @@
 				z-index: 1;
 
 				text-align: center;
-				font-size: clamp(1.1rem, 7vw, 2.5rem);
+				font-size: var(--font-size-200);
 			}
 
 			ul {
@@ -107,7 +107,9 @@
 
 					opacity: 0;
 
-					font-size: clamp(0.9rem, 5vw, 1.35rem);
+					font-size: var(--font-size-125);
+					letter-spacing: var(--letter-spacing);
+					word-spacing: 0.25rem;
 					line-height: clamp(1rem, 4vh, 2rem);
 					line-height: clamp(1rem, 4svh, 2rem);
 					text-align: center;

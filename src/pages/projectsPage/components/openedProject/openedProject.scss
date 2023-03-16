@@ -73,7 +73,7 @@
 
 			background-color: var(--color-dark);
 
-			font-size: clamp(1.35rem, 5vw, 2rem);
+			font-size: var(--font-size-175);
 			text-align: center;
 			color: var(--color-light);
 		}
@@ -106,14 +106,13 @@
 
 					cursor: pointer;
 
-					&:is(:hover, :active) {
-						background-color: var(--color-primary);
+					@include abs.mq(1400px, 0px) {
+						&:hover,
+						&:focus-visible {
+							background-color: var(--color-primary);
 
-						color: var(--color-action);
-					}
-
-					&:focus-visible {
-						opacity: 0.5;
+							color: var(--color-action);
+						}
 					}
 				}
 			}
@@ -123,6 +122,7 @@
 				width: 100%;
 
 				aspect-ratio: 16 / 8;
+				border: 0.2rem solid var(--color-light);
 			}
 
 			#subtract {

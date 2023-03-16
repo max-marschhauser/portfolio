@@ -111,16 +111,24 @@
 
 					h3 {
 						text-align: center;
-						font-size: 1.5rem;
+						font-size: var(--font-size-175);
 						letter-spacing: var(--letter-spacing);
+						font-style: italic;
 
 						@include abs.mq(1400px, 0px) {
 							margin-top: 1rem;
 						}
 					}
 
+					h4 {
+						font-size: var(--font-size-125);
+					}
+
 					p {
+						font-size: var(--font-size-100);
 						line-height: 1.65rem;
+						letter-spacing: var(--letter-spacing);
+						word-spacing: 0.25rem;
 					}
 				}
 
@@ -136,7 +144,7 @@
 						opacity: 0;
 						outline: 0.1rem solid var(--color-light);
 
-						font-size: 1.5rem;
+						font-size: var(--font-size-150);
 						text-decoration: none;
 						color: var(--color-light);
 
@@ -165,7 +173,7 @@
 						}
 
 						span {
-							font-size: 1.2rem;
+							font-size: var(--font-size-125);
 
 							transition: all 0.35s ease;
 						}
