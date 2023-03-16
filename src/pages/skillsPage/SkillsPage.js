@@ -44,8 +44,7 @@ export default function SkillsPage(props) {
 				</section>
 				<section className="description">
 					<div className="sticky">
-						<h3>My Experience with</h3>
-						<header>{currentSkill}</header>
+						<h3>{currentSkill}</h3>
 						<ul>
 							{dataObject[currentSkill].map((listItem) => (
 								<li key={listItem}>{listItem}</li>

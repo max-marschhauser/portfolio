@@ -22,7 +22,7 @@
 		flex-direction: column;
 		place-items: center;
 
-		padding-block: 0.25rem;
+		padding-top: 0.25rem;
 
 		opacity: 1;
 
@@ -30,7 +30,7 @@
 		color: var(--color-light);
 		text-decoration: none;
 		letter-spacing: var(--letter-spacing);
-		line-height: 1.75rem;
+		line-height: 1.5rem;
 
 		transition: all 0.35s ease;
 
@@ -49,14 +49,14 @@
 			transition: all 0.35s ease;
 
 			&:first-child {
-				font-size: var(--font-size-125);
+				font-size: var(--font-size-150);
 				font-weight: bold;
 			}
 			&:nth-child(2) {
-				font-size: var(--font-size-100);
+				font-size: var(--font-size-150);
 			}
 			&:last-child {
-				font-size: var(--font-size-050);
+				font-size: var(--font-size-100);
 				font-style: italic;
 			}
 		}
@@ -191,6 +191,11 @@
 		border-block: 0.1rem solid transparent;
 
 		font-size: var(--font-size-125);
+
+		@include abs.mq(1400px, 0px) {
+			font-size: var(--font-size-150);
+		}
+
 		text-decoration: none;
 		font-weight: bold;
 		letter-spacing: var(--letter-spacing);

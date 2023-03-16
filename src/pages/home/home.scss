@@ -72,7 +72,7 @@
 
 			opacity: 0;
 
-			font-size: clamp(1.5rem, 9vw, 2.5rem);
+			font-size: var(--font-size-200);
 
 			transform: translateX(20vw);
 		}
@@ -84,24 +84,32 @@
 			flex-direction: row;
 			justify-content: center;
 			align-items: center;
-			gap: clamp(1rem, 2vw, 2rem);
+
+			@include abs.mq(1400px, 0px) {
+				gap: clamp(1rem, 2vw, 2rem);
+			}
 
 			opacity: 0;
 
-			font-size: clamp(1.25rem, 8vw, 2.25rem);
+			font-size: var(--font-size-150);
+			font-style: italic;
 
 			transform: translateX(20vw);
 
 			span {
 				&:first-child,
 				&:last-child {
-					font-size: clamp(2rem, 7vw, 3rem);
+					font-size: var(--font-size-250);
 				}
 			}
 		}
 
 		.CVs {
 			display: flex;
+			flex-direction: column;
+			@include abs.mq(1400px, 0px) {
+				flex-direction: row;
+			}
 			gap: 2rem;
 
 			z-index: 1;
@@ -115,12 +123,12 @@
 				color: var(--color-light);
 
 				button {
-					padding: 1rem;
+					padding: 0.75rem;
 
 					background-color: var(--color-primary);
 					outline: 0.05rem solid var(--color-light);
 
-					font-size: clamp(1rem, 1vw, 1.25rem);
+					font-size: var(--font-size-100);
 					color: var(--color-light);
 
 					transition: all 0.35s ease;

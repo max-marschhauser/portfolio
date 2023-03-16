@@ -134,7 +134,7 @@ export default function Footer(props) {
 				<li>Copyright &copy;{+new Date().getFullYear()}.</li>
 				<li>maxdev.com.hr</li>
 				<li>
-					<button onClick={goToTop}>Back to Top</button>
+					<button onClick={goToTop}>Beam me up</button>
 				</li>
 			</ul>
 		</footer>

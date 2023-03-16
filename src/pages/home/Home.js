@@ -93,13 +93,17 @@ export default function Home(props) {
 							: "text"
 					}>
 					<h1 ref={TitleRef} data-name="title" className={titleIsVissible === true ? "itemVissible " : ""}>
-						MAX MARSCHHAUSER
+						MAX
+						<br />
+						Marschhauser
 					</h1>
 					<h2
 						ref={SubtitleRef}
 						data-name="subtitle"
 						className={subtitleIsVissible === true ? "itemVissible " : ""}>
-						<span>&lt;</span> <span>React Frontend Developer</span> <span>&gt;</span>
+						<span>&lt;</span>
+						<span>React Frontend Developer</span>
+						<span>&gt;</span>
 					</h2>
 					<div ref={CVRef} data-name="CV" className={CVIsVissible === true ? "itemVissible CVs" : "CVs"}>
 						<a

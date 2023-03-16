@@ -99,11 +99,13 @@
 			h3 {
 				position: relative;
 
-				padding-top: clamp(0.5rem, 2vh, 2.5rem);
-				padding-top: clamp(0.5rem, 2svh, 2.5rem);
+				padding-top: clamp(0.5rem, 2vh, 1.5rem);
+				padding-top: clamp(0.5rem, 2svh, 1.5rem);
 
-				font-size: clamp(1.15rem, 3vw, 2.5rem);
+				font-size: var(--font-size-200);
+				letter-spacing: var(--letter-spacing);
 				text-align: center;
+				font-weight: bold;
 
 				&::before,
 				&::after {
@@ -139,29 +141,22 @@
 				}
 			}
 
-			header {
-				padding-top: clamp(0.5rem, 3vh, 2.5rem);
-				padding-top: clamp(0.5rem, 3svh, 2.5rem);
-				font-size: clamp(1.15rem, 3vw, 2rem);
-				text-align: center;
-				font-weight: bold;
-			}
-
 			ul {
-				padding-block: clamp(0.5rem, 2vh, 1rem);
-				padding-block: clamp(0.5rem, 2svh, 1rem);
-				padding-left: clamp(1.5rem, 4vw, 3rem);
-				padding-right: clamp(0.5rem, 2vw, 1.5rem);
+				padding-top: 1.5vh;
+				padding-top: 1.5svh;
+				padding-inline: 3vw;
 
-				list-style: disc;
+				list-style: none;
 
 				li {
-					padding-top: clamp(0.25rem, 2vh, 1.5rem);
-					padding-top: clamp(0.25rem, 2svh, 1.5rem);
+					padding-block: clamp(0.25rem, 2vh, 1.5rem);
+					padding-block: clamp(0.25rem, 2svh, 1.5rem);
+					border-bottom: 0.1rem var(--color-light-transparent);
+					border-style: solid;
 
-					font-size: clamp(1rem, 2vw, 1.75rem);
-					line-height: clamp(1rem, 3vh, 2rem);
-					line-height: clamp(1rem, 3svh, 2rem);
+					font-size: var(--font-size-150);
+					line-height: clamp(2rem, 4vh, 2.5rem);
+					line-height: clamp(2rem, 4svh, 2.5rem);
 				}
 			}
 		}
