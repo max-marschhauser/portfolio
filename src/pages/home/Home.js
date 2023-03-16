@@ -10,7 +10,9 @@ import "./home.scss";
 import NavigationGrid from "./components/NavigationGrid.js";
 
 // importing images
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import profileImage from "../../assets/images/profile.png";
+import placeholderProfileImage from "../../assets/images/placeholderProfile.png";
 
 // importing documents
 import MyCVEng from "../../assets/documents/MaxMarschhauserCVeng.pdf";
@@ -82,7 +84,14 @@ export default function Home(props) {
 					}
 					ref={ProfileImageRef}
 					data-name="profileImage">
-					<img className="profileImage" src={profileImage} alt="max-marschhauser-profile" loading="lazy" />
+					<LazyLoadImage
+						PlaceholderSrc={placeholderProfileImage}
+						effect="blur"
+						className="profileImage"
+						src={profileImage}
+						alt="max-marschhauser-profile"
+						loading="lazy"
+					/>
 				</div>
 				<div
 					className={
