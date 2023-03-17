@@ -87,7 +87,7 @@ export default function ProjectsPage(props) {
 					toggleModal={toggleModal}
 				/>
 
-				<main>
+				<main className="projectsPage">
 					<ProjectsList
 						searchWord={searchWord}
 						activeSkill={activeSkill}
