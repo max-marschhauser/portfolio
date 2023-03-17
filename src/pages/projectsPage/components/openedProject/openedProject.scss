@@ -123,6 +123,13 @@
 
 				aspect-ratio: 16 / 8;
 				border: 0.2rem solid var(--color-light);
+
+				transition: all 0.35s ease;
+
+				&:hover,
+				&:focus-visible {
+					opacity: 0.95;
+				}
 			}
 
 			#subtract {
@@ -152,6 +159,18 @@
 					grid-column: auto;
 				}
 			}
+		}
+
+		p {
+			padding-block: clamp(0.1rem, 2vh, 1rem);
+			padding-block: clamp(0.1rem, 2svh, 1rem);
+			padding-inline: 2vw;
+
+			background-color: var(--color-dark);
+
+			font-size: var(--font-size-125);
+			text-align: left;
+			color: var(--color-light);
 		}
 	}
 }

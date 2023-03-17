@@ -63,38 +63,46 @@ export default function ProjectsPage(props) {
 	return (
 		<>
 			<div
-				className={
-					theme === "iceTheme" || theme === "spaceTheme"
-						? "pageHeading darkTheme"
-						: theme === "twilightTheme" || theme === "natureTheme"
-						? "pageHeading lightTheme"
-						: "pageHeading"
-				}>
-				<h2>Projects</h2>
-				<p>Interested in my projects?</p>
-			</div>
+				onKeyDown={(e) => {
+					if (e.key === "Escape") {
+						setToggleModal(false);
+						setModalContent("");
+					}
+				}}>
+				<div
+					className={
+						theme === "iceTheme" || theme === "spaceTheme"
+							? "pageHeading darkTheme"
+							: theme === "twilightTheme" || theme === "natureTheme"
+							? "pageHeading lightTheme"
+							: "pageHeading"
+					}>
+					<h2>Projects</h2>
+					<p>Interested in my projects?</p>
+				</div>
 
-			<OpenedProject
-				handleToggleModal={handleToggleModal}
-				modalContent={modalContent}
-				toggleModal={toggleModal}
-			/>
-
-			<main className="projectsPage">
-				<ProjectsList
-					searchWord={searchWord}
-					activeSkill={activeSkill}
-					activeKeyword={activeKeyword}
+				<OpenedProject
 					handleToggleModal={handleToggleModal}
+					modalContent={modalContent}
+					toggleModal={toggleModal}
 				/>
-				<Filter
-					handleSearchWordChange={handleSearchWordChange}
-					handleSkillChange={handleSkillChange}
-					handleKeywordChange={handleKeywordChange}
-					activeSkill={activeSkill}
-					activeKeyword={activeKeyword}
-				/>
-			</main>
+
+				<main>
+					<ProjectsList
+						searchWord={searchWord}
+						activeSkill={activeSkill}
+						activeKeyword={activeKeyword}
+						handleToggleModal={handleToggleModal}
+					/>
+					<Filter
+						handleSearchWordChange={handleSearchWordChange}
+						handleSkillChange={handleSkillChange}
+						handleKeywordChange={handleKeywordChange}
+						activeSkill={activeSkill}
+						activeKeyword={activeKeyword}
+					/>
+				</main>
+			</div>
 		</>
 	);
 }

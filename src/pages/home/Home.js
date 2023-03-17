@@ -11,6 +11,7 @@ import NavigationGrid from "./components/NavigationGrid.js";
 
 // importing images
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import profileImage from "../../assets/images/profile.png";
 import placeholderProfileImage from "../../assets/images/placeholderProfile.png";
 
@@ -85,10 +86,10 @@ export default function Home(props) {
 					ref={ProfileImageRef}
 					data-name="profileImage">
 					<LazyLoadImage
-						PlaceholderSrc={placeholderProfileImage}
+						src={profileImage}
+						placeholderSrc={placeholderProfileImage}
 						effect="blur"
 						className="profileImage"
-						src={profileImage}
 						alt="max-marschhauser-profile"
 						loading="lazy"
 					/>

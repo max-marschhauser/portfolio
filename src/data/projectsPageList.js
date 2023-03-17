@@ -52,6 +52,7 @@ const projectsData = [
 	{
 		id: 0,
 		img: [caviaTattooStudio1, caviaTattooStudio2, caviaTattooStudio3],
+		imgDesc: ["caviaTattooStudio1 desc 1", "caviaTattooStudio2 desc 2", "caviaTattooStudio3 desc 3"],
 		name: "CAVIA Tattoo Studio",
 		technology: "HTML, CSS, JavaScript",
 		description:
@@ -62,6 +63,7 @@ const projectsData = [
 	{
 		id: 1,
 		img: [digitalStore1, digitalStore2, digitalStore3],
+		imgDesc: ["caviaTattooStudio1 desc 1", "caviaTattooStudio2 desc 2", "caviaTattooStudio3 desc 3"],
 		name: "Digital Store",
 		technology: "HTML, CSS, Sass, JavaScript",
 		description:
@@ -72,6 +74,7 @@ const projectsData = [
 	{
 		id: 2,
 		img: [gradientHoverCard1, gradientHoverCard2],
+		imgDesc: ["caviaTattooStudio1 desc 1", "caviaTattooStudio2 desc 2"],
 		name: "Gradient Hover Card",
 		technology: "HTML, CSS, JavaScript",
 		description:
@@ -82,6 +85,7 @@ const projectsData = [
 	{
 		id: 3,
 		img: [guineaPigDoctor1, guineaPigDoctor2],
+		imgDesc: ["caviaTattooStudio1 desc 1", "caviaTattooStudio2 desc 2"],
 		name: "Guinea Pig Doctor",
 		technology: "HTML, CSS, JavaScript",
 		description:
@@ -92,6 +96,7 @@ const projectsData = [
 	{
 		id: 6,
 		img: [hamburgerExample1, hamburgerExample2],
+		imgDesc: ["caviaTattooStudio1 desc 1", "caviaTattooStudio2 desc 2"],
 		name: "Hamburger Examples",
 		technology: "HTML, CSS, JavaScript, SVG",
 		description:
@@ -102,6 +107,7 @@ const projectsData = [
 	{
 		id: 4,
 		img: [lightdarkTheme1, lightdarkTheme2, lightdarkTheme3],
+		imgDesc: ["caviaTattooStudio1 desc 1", "caviaTattooStudio2 desc 2", "caviaTattooStudio3 desc 3"],
 		name: "Light-dark Theme",
 		technology: "HTML, CSS, React",
 		description:
@@ -112,6 +118,7 @@ const projectsData = [
 	{
 		id: 5,
 		img: [loadingSpinner1, loadingSpinner2],
+		imgDesc: ["caviaTattooStudio1 desc 1", "caviaTattooStudio2 desc 2"],
 		name: "Loading Spinner",
 		technology: "HTML, CSS",
 		description:
@@ -122,6 +129,7 @@ const projectsData = [
 	{
 		id: 7,
 		img: [multistepForm1, multistepForm2, multistepForm3],
+		imgDesc: ["caviaTattooStudio1 desc 1", "caviaTattooStudio2 desc 2", "caviaTattooStudio3 desc 3"],
 		name: "Multistep Form",
 		technology: "HTML, CSS, JavaScript",
 		description: "Sample code for multistep form. Component intended to be used in other projects.",
@@ -131,6 +139,7 @@ const projectsData = [
 	{
 		id: 8,
 		img: [pokemonApp1, pokemonApp2],
+		imgDesc: ["caviaTattooStudio1 desc 1", "caviaTattooStudio2 desc 2"],
 		name: "Pokemon App",
 		technology: "HTML, CSS, Sass, JavaScript, React",
 		description:
@@ -141,6 +150,7 @@ const projectsData = [
 	{
 		id: 9,
 		img: [portfolioPage1, portfolioPage2, portfolioPage3],
+		imgDesc: ["caviaTattooStudio1 desc 1", "caviaTattooStudio2 desc 2", "caviaTattooStudio3 desc 3"],
 		name: "Portfolio",
 		technology: "HTML, CSS, Sass, JavaScript, React",
 		description:
@@ -151,6 +161,7 @@ const projectsData = [
 	{
 		id: 10,
 		img: [rockPaperScissors1, rockPaperScissors2],
+		imgDesc: ["caviaTattooStudio1 desc 1", "caviaTattooStudio2 desc 2"],
 		name: "Rock-Paper-Scissors",
 		technology: "HTML, CSS, JavaScript",
 		description: "A Rock-Paper-Scissors responsive game built using JavaScript. Fairly simple game built for fun.",
@@ -160,6 +171,7 @@ const projectsData = [
 	{
 		id: 11,
 		img: [toDo1, toDo2],
+		imgDesc: ["caviaTattooStudio1 desc 1", "caviaTattooStudio2 desc 2"],
 		name: "To-Do List",
 		technology: "HTML, JavaScript",
 		description: "A To-Do list built using JavaScript and HTML. Very simple JS to-do list built for fun.",
@@ -169,6 +181,12 @@ const projectsData = [
 	{
 		id: 12,
 		img: [yuGiOhCardSearch1, yuGiOhCardSearch2, yuGiOhCardSearch3, yuGiOhCardSearch4],
+		imgDesc: [
+			"caviaTattooStudio1 desc 1",
+			"caviaTattooStudio2 desc 2",
+			"caviaTattooStudio3 desc 3",
+			"caviaTattooStudio4 desc 4",
+		],
 		name: "Yu-Gi-Oh Card Search",
 		technology: "HTML, CSS, Sass, JavaScript, React",
 		description:

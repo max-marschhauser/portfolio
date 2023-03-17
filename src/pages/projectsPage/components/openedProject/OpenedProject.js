@@ -79,6 +79,7 @@ export default function OpenedProject(props) {
 								</button>
 							</div>
 						</div>
+						<p>{selectedItemObject.imgDesc[imageNumber]}</p>
 					</dialog>
 				</section>
 			) : (
