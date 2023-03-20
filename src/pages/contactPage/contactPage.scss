@@ -38,30 +38,16 @@
 	}
 
 	.contactsImageContainer {
-		position: relative;
-		display: grid;
-		place-items: center;
-
-		max-width: 100vw;
-		border-radius: 50%;
-		width: clamp(20rem, 25vw, 25rem);
-		aspect-ratio: 1 / 1;
-
-		overflow: hidden;
 		opacity: 0;
-
 		transform: translateX(-20vw);
 
-		img {
-			position: absolute;
+		.contacts-profileImage {
 			display: block;
-
+			max-width: 100vw;
 			width: clamp(15rem, 20vw, 20rem);
 			aspect-ratio: 9 / 12;
 
 			user-select: none;
-
-			transform: rotateY(180deg);
 		}
 	}
 

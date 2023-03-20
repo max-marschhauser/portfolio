@@ -141,7 +141,12 @@ export default function SkillItems(props) {
 				data-image="HTML"
 				ref={HTMLRef}
 				onMouseEnter={focusItem}>
-				<img className={currentSkill === "HTML" ? "activeImage" : ""} loading="lazy" src={HTML} alt="HTML" />
+				<img
+					className={currentSkill === "HTML" ? "activeImage skillsImage" : "skillsImage"}
+					loading="lazy"
+					src={HTML}
+					alt="HTML"
+				/>
 			</button>
 
 			<button
@@ -150,7 +155,12 @@ export default function SkillItems(props) {
 				data-image="CSS"
 				ref={CSSRef}
 				onMouseEnter={focusItem}>
-				<img className={currentSkill === "CSS" ? "activeImage" : ""} loading="lazy" src={CSS} alt="CSS" />
+				<img
+					className={currentSkill === "CSS" ? "activeImage skillsImage" : "skillsImage"}
+					loading="lazy"
+					src={CSS}
+					alt="CSS"
+				/>
 			</button>
 
 			<button
@@ -159,7 +169,12 @@ export default function SkillItems(props) {
 				data-image="Sass"
 				ref={SassRef}
 				onMouseEnter={focusItem}>
-				<img className={currentSkill === "Sass" ? "activeImage" : ""} loading="lazy" src={Sass} alt="Sass" />
+				<img
+					className={currentSkill === "Sass" ? "activeImage skillsImage" : "skillsImage"}
+					loading="lazy"
+					src={Sass}
+					alt="Sass"
+				/>
 			</button>
 
 			<button
@@ -169,7 +184,7 @@ export default function SkillItems(props) {
 				ref={JavaScriptRef}
 				onMouseEnter={focusItem}>
 				<img
-					className={currentSkill === "JavaScript" ? "activeImage" : ""}
+					className={currentSkill === "JavaScript" ? "activeImage skillsImage" : "skillsImage"}
 					loading="lazy"
 					src={JavaScript}
 					alt="JavaScript"
@@ -183,7 +198,7 @@ export default function SkillItems(props) {
 				ref={TypeScriptRef}
 				onMouseEnter={focusItem}>
 				<img
-					className={currentSkill === "TypeScript" ? "activeImage" : ""}
+					className={currentSkill === "TypeScript" ? "activeImage skillsImage" : "skillsImage"}
 					loading="lazy"
 					src={TypeScript}
 					alt="TypeScript"
@@ -191,13 +206,13 @@ export default function SkillItems(props) {
 			</button>
 
 			<button
-				className={ReactIsVissible === true ? "vissibleButton" : ""}
+				className={ReactIsVissible === true ? "vissibleButton " : ""}
 				onFocus={handleFocus}
 				data-image="React"
 				ref={ReactRef}
 				onMouseEnter={focusItem}>
 				<img
-					className={currentSkill === "React" ? "activeImage" : ""}
+					className={currentSkill === "React" ? "activeImage skillsImage" : "skillsImage"}
 					loading="lazy"
 					src={ReactImage}
 					alt="React"
@@ -210,7 +225,12 @@ export default function SkillItems(props) {
 				data-image="PHP"
 				ref={PHPRef}
 				onMouseEnter={focusItem}>
-				<img className={currentSkill === "PHP" ? "activeImage" : ""} loading="lazy" src={PHP} alt="PHP" />
+				<img
+					className={currentSkill === "PHP" ? "activeImage skillsImage" : "skillsImage"}
+					loading="lazy"
+					src={PHP}
+					alt="PHP"
+				/>
 			</button>
 
 			<button
@@ -219,7 +239,12 @@ export default function SkillItems(props) {
 				data-image="MySQL"
 				ref={MySQLRef}
 				onMouseEnter={focusItem}>
-				<img className={currentSkill === "MySQL" ? "activeImage" : ""} loading="lazy" src={MySQL} alt="MySQL" />
+				<img
+					className={currentSkill === "MySQL" ? "activeImage skillsImage" : "skillsImage"}
+					loading="lazy"
+					src={MySQL}
+					alt="MySQL"
+				/>
 			</button>
 
 			<button
@@ -228,7 +253,12 @@ export default function SkillItems(props) {
 				data-image="C"
 				ref={CRef}
 				onMouseEnter={focusItem}>
-				<img className={currentSkill === "C" ? "activeImage" : ""} loading="lazy" src={C} alt="C" />
+				<img
+					className={currentSkill === "C" ? "activeImage skillsImage" : "skillsImage"}
+					loading="lazy"
+					src={C}
+					alt="C"
+				/>
 			</button>
 		</>
 	);

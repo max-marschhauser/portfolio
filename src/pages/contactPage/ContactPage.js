@@ -7,7 +7,10 @@ import React, { useState, useEffect, useRef } from "react";
 import "./contactPage.scss";
 
 // importing images
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import profileImage from "../../assets/images/profile.png";
+import placeholderProfileImage from "../../assets/images/placeholderProfile.png";
 
 export default function ContactPage(props) {
 	let { handlePageChange, theme } = props;
@@ -74,7 +77,14 @@ export default function ContactPage(props) {
 							? "imageVissible contactsImageContainer"
 							: "contactsImageContainer"
 					}>
-					<img src={profileImage} alt="max-marschhauser-profile" loading="lazy" />
+					<LazyLoadImage
+						src={profileImage}
+						placeholderSrc={placeholderProfileImage}
+						effect="blur"
+						className="contacts-profileImage"
+						alt="max-marschhauser-profile"
+						loading="lazy"
+					/>
 				</div>
 				<ul>
 					<li ref={EmailRef} data-name="email" className={emailIsVissible === true ? "itemVissible" : ""}>

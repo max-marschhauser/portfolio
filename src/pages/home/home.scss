@@ -47,10 +47,9 @@
 	}
 
 	.profileImage {
-		width: clamp(15rem, 20vw, 20rem);
+		width: 20rem;
+		max-width: 80vw;
 		aspect-ratio: 9 / 12;
-
-		transform: rotateY(180deg);
 
 		@include abs.mq(1400px, 0px) {
 			animation: movingImage 4s linear infinite;
@@ -259,7 +258,7 @@
 
 	@keyframes movingImage {
 		50% {
-			transform: translate(1rem, -1rem) rotateY(180deg);
+			transform: translate(1rem, -1rem);
 		}
 	}
 }

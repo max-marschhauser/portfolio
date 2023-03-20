@@ -8,7 +8,10 @@ import { NavLink } from "react-router-dom";
 import "./footer.scss";
 
 // importing images
-import profile from "../../assets/images/profile.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+import profileImage from "../../assets/images/profile.png";
+import placeholderProfileImage from "../../assets/images/placeholderProfile.png";
 
 // importing documents
 import MyCVEng from "../../assets/documents/MaxMarschhauserCVeng.pdf";
@@ -127,7 +130,14 @@ export default function Footer(props) {
 					</nav>
 				</section>
 				<section>
-					<img src={profile} alt="profile" loading="lazy" />
+					<LazyLoadImage
+						src={profileImage}
+						placeholderSrc={placeholderProfileImage}
+						effect="blur"
+						className="profileImage"
+						alt="max-marschhauser-profile"
+						loading="lazy"
+					/>
 				</section>
 			</div>
 			<ul className="pageFooter__item--under">
