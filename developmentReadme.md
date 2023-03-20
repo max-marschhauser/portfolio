@@ -1,5 +1,7 @@
-dodati lazy loading componentu i na ostale slike (profil, skills, projects, about...)
+dodati nove slike na prijects stranicu i napisati im opise
 
-zamijeniti ion-icons s nečim bržim
+fontAwesome
+email
+šifra je --> password
 
-napisati opise slika projekata u data file
+provjeriti jel sve radi kako bi trebalo

@@ -199,16 +199,6 @@
 
 		transition: all 0.35s ease;
 
-		ion-icon {
-			transform: translateY(0.2rem);
-
-			color: var(--color-light);
-
-			transition: all 0.35s ease;
-
-			pointer-events: none;
-		}
-
 		span {
 			margin-left: 0.5rem;
 		}
@@ -219,10 +209,6 @@
 
 			@include abs.mq(1400px, 0px) {
 				background-color: transparent;
-			}
-
-			ion-icon {
-				color: var(--color-action);
 			}
 		}
 
@@ -246,10 +232,6 @@
 			background-color: transparent;
 
 			transition: all 0.35s ease;
-		}
-
-		ion-icon {
-			color: var(--color-action);
 		}
 	}
 }

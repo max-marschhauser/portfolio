@@ -78,13 +78,9 @@
 
 			transform: translateX(20vw);
 
-			ion-icon {
-				pointer-events: none;
-
-				transform: translate(-0.5rem, 0.15rem);
-			}
-
 			span {
+				margin-left: 0.5rem;
+
 				font-weight: bold;
 			}
 		}

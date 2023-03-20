@@ -7,6 +7,9 @@ import { NavLink } from "react-router-dom";
 // importing styles
 import "./navigationGrid.scss";
 
+// importing icons
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export default function NavigationGrid() {
 	const [selectedItem, setSelectedItem] = useState("");
 
@@ -94,7 +97,7 @@ export default function NavigationGrid() {
 					onFocus={handleFocus}
 					data-link="skills"
 					ref={SkillsRef}>
-					<ion-icon name="trophy-sharp" />
+					<FontAwesomeIcon icon="fa-solid fa-screwdriver-wrench" />
 					<span>Skills</span>
 				</NavLink>
 				<NavLink
@@ -108,7 +111,7 @@ export default function NavigationGrid() {
 					onFocus={handleFocus}
 					data-link="projects"
 					ref={ProjectsRef}>
-					<ion-icon name="hammer-sharp" />
+					<FontAwesomeIcon icon="fa-solid fa-list-check" />
 					<span>Projects</span>
 				</NavLink>
 			</div>
@@ -146,7 +149,7 @@ export default function NavigationGrid() {
 					onFocus={handleFocus}
 					data-link="about"
 					ref={AboutRef}>
-					<ion-icon name="person-sharp" />
+					<FontAwesomeIcon icon="fa-solid fa-address-card" />
 					<span>About</span>
 				</NavLink>
 				<NavLink
@@ -160,7 +163,7 @@ export default function NavigationGrid() {
 					onFocus={handleFocus}
 					data-link="contact"
 					ref={ContactRef}>
-					<ion-icon name="mail-unread-sharp" />
+					<FontAwesomeIcon icon="fa-solid fa-phone" />
 					<span>Contact</span>
 				</NavLink>
 			</div>

@@ -122,10 +122,6 @@
 							&:active {
 								opacity: 0.8;
 							}
-
-							ion-icon {
-								pointer-events: none;
-							}
 						}
 					}
 				}
@@ -191,23 +187,21 @@
 
 							transition: all 0.35s ease;
 
+							span {
+								margin-right: 0.5rem;
+
+								transition: all 0.35s ease;
+							}
+
 							&:hover,
 							&:focus-visible {
-								& > ion-icon {
+								span {
 									color: var(--color-action);
 								}
 							}
 
 							&:active {
 								color: var(--color-action);
-							}
-
-							ion-icon {
-								pointer-events: none;
-
-								transform: translate(-0.15rem, 0.15rem);
-
-								transition: all 0.35s ease;
 							}
 						}
 

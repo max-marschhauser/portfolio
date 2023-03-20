@@ -9,6 +9,9 @@ import List from "../../../../data/projectsPageList.js";
 // importing styles
 import "./openedProject.scss";
 
+// importing icons
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export default function OpenedProject(props) {
 	const { toggleModal, handleToggleModal, modalContent } = props;
 
@@ -56,7 +59,11 @@ export default function OpenedProject(props) {
 				<section className="openedProject">
 					<dialog open>
 						<button className="closeButton" onClick={handleToggleModal} data-name="closeModal">
-							<ion-icon name="close-circle-sharp" onClick={handleToggleModal} data-name="closeModal" />
+							<FontAwesomeIcon
+								icon="fa-solid fa-circle-xmark"
+								onClick={handleToggleModal}
+								data-name="closeModal"
+							/>
 						</button>
 
 						<h3>{selectedItemObject.name}</h3>

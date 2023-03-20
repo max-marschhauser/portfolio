@@ -83,22 +83,10 @@
 			&:hover,
 			&:focus-visible {
 				outline: 0.2rem solid var(--color-action);
-
-				& > ion-icon {
-					color: var(--color-action);
-				}
 			}
 
 			&:active {
 				color: var(--color-action);
-			}
-
-			ion-icon {
-				transform: translateY(0.25rem);
-
-				transition: all 0.35s ease;
-
-				pointer-events: none;
 			}
 
 			span {

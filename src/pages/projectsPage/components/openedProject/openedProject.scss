@@ -61,10 +61,6 @@
 			&:is(:hover, :focus-visible) {
 				color: var(--color-action);
 			}
-
-			ion-icon {
-				pointer-events: none;
-			}
 		}
 
 		h3 {

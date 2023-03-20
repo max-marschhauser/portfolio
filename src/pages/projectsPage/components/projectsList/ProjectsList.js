@@ -9,6 +9,9 @@ import List from "../../../../data/projectsPageList.js";
 // importing styles
 import "./projectsList.scss";
 
+// importing icons
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export default function ProjectsListItems(props) {
 	const { searchWord, activeSkill, activeKeyword, handleToggleModal } = props;
 
@@ -177,12 +180,12 @@ export default function ProjectsListItems(props) {
 									</li>
 									<li className="links">
 										<a href={item.githubLink} target="_blank" rel="noreferrer">
-											<ion-icon name="logo-github"></ion-icon>
+											<FontAwesomeIcon icon="fa-brands fa-github" />
 											<span> GitHub</span>
 										</a>
 										{item.codepenLink !== "" ? (
 											<a href={item.codepenLink} target="_blank" rel="noreferrer">
-												<ion-icon name="logo-codepen"></ion-icon>
+												<FontAwesomeIcon icon="fa-brands fa-codepen" />
 												<span> CodePen</span>
 											</a>
 										) : (

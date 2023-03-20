@@ -7,6 +7,9 @@ import { NavLink } from "react-router-dom";
 // importing styles
 import "./footer.scss";
 
+// importing icons
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 // importing images
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -43,12 +46,12 @@ export default function Footer(props) {
 					<ul className="links--social">
 						<li>
 							<a href="https://github.com/max-marschhauser" target="_blank" rel="noreferrer">
-								<ion-icon name="logo-github" />
+								<FontAwesomeIcon icon="fa-brands fa-github" />
 							</a>
 						</li>
 						<li>
 							<a href="https://codepen.io/max-marschhauser" target="_blank" rel="noreferrer">
-								<ion-icon name="logo-codepen" />
+								<FontAwesomeIcon icon="fa-brands fa-codepen" />
 							</a>
 						</li>
 						<li>
@@ -56,7 +59,7 @@ export default function Footer(props) {
 								href="https://www.linkedin.com/in/max-marschhauser-a8b9791a6/"
 								target="_blank"
 								rel="noreferrer">
-								<ion-icon name="logo-linkedin" />
+								<FontAwesomeIcon icon="fa-brands fa-linkedin" />
 							</a>
 						</li>
 					</ul>
@@ -89,7 +92,10 @@ export default function Footer(props) {
 									className={activePage === "skills" ? "activeLink" : ""}
 									to="/skills"
 									onClick={closeMobileNavbar}>
-									<ion-icon name="trophy-sharp" /> Skills
+									<span>
+										<FontAwesomeIcon icon="fa-solid fa-screwdriver-wrench" />
+									</span>
+									Skills
 								</NavLink>
 							</li>
 							<li>
@@ -97,7 +103,10 @@ export default function Footer(props) {
 									className={activePage === "projects" ? "activeLink" : ""}
 									to="/projects"
 									onClick={closeMobileNavbar}>
-									<ion-icon name="hammer-sharp" /> Projects
+									<span>
+										<FontAwesomeIcon icon="fa-solid fa-list-check" />
+									</span>
+									Projects
 								</NavLink>
 							</li>
 							<li>
@@ -105,7 +114,10 @@ export default function Footer(props) {
 									className={activePage === "about" ? "activeLink" : ""}
 									to="/about"
 									onClick={closeMobileNavbar}>
-									<ion-icon name="person-sharp" /> About
+									<span>
+										<FontAwesomeIcon icon="fa-solid fa-address-card" />
+									</span>
+									About
 								</NavLink>
 							</li>
 							<li>
@@ -113,7 +125,10 @@ export default function Footer(props) {
 									className={activePage === "contact" ? "activeLink" : ""}
 									to="/contact"
 									onClick={closeMobileNavbar}>
-									<ion-icon name="mail-unread-sharp" /> Contact
+									<span>
+										<FontAwesomeIcon icon="fa-solid fa-phone" />
+									</span>
+									Contact
 								</NavLink>
 							</li>
 						</ul>
@@ -123,7 +138,10 @@ export default function Footer(props) {
 									className={activePage === "options" ? "activeLink" : ""}
 									to="/options"
 									onClick={closeMobileNavbar}>
-									<ion-icon name="options-sharp" /> Options
+									<span>
+										<FontAwesomeIcon icon="fa-solid fa-sliders" />
+									</span>
+									Options
 								</NavLink>
 							</li>
 						</ul>

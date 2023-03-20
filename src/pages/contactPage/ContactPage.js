@@ -6,6 +6,9 @@ import React, { useState, useEffect, useRef } from "react";
 // importing styles
 import "./contactPage.scss";
 
+// importing icons
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 // importing images
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -88,7 +91,7 @@ export default function ContactPage(props) {
 				</div>
 				<ul>
 					<li ref={EmailRef} data-name="email" className={emailIsVissible === true ? "itemVissible" : ""}>
-						<ion-icon name="mail-sharp"></ion-icon>
+						<FontAwesomeIcon icon="fa-solid fa-envelope" />
 						<span>E-mail: </span>
 						<br />
 						max.marschhauser
@@ -99,7 +102,7 @@ export default function ContactPage(props) {
 						ref={PhoneNumberRef}
 						data-name="phoneNumber"
 						className={phoneNumberIsVissible === true ? "itemVissible" : ""}>
-						<ion-icon name="call-sharp"></ion-icon>
+						<FontAwesomeIcon icon="fa-solid fa-phone" />
 						<span>Phone: </span>
 						<br />
 						+385 (98) 921 0125
