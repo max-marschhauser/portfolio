@@ -11,10 +11,7 @@ import "./footer.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // importing images
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
-import profileImage from "../../assets/images/profile.png";
-import placeholderProfileImage from "../../assets/images/placeholderProfile.png";
+import profile from "../../assets/images/profile.png";
 
 // importing documents
 import MyCVEng from "../../assets/documents/MaxMarschhauserCVeng.pdf";
@@ -148,14 +145,7 @@ export default function Footer(props) {
 					</nav>
 				</section>
 				<section>
-					<LazyLoadImage
-						src={profileImage}
-						placeholderSrc={placeholderProfileImage}
-						effect="blur"
-						className="profileImage"
-						alt="max-marschhauser-profile"
-						loading="lazy"
-					/>
+					<img src={profile} alt="profile" loading="lazy" />
 				</section>
 			</div>
 			<ul className="pageFooter__item--under">
