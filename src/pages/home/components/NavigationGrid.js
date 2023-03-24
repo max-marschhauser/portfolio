@@ -7,9 +7,6 @@ import { NavLink } from "react-router-dom";
 // importing styles
 import "./navigationGrid.scss";
 
-// importing icons
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 export default function NavigationGrid() {
 	const [selectedItem, setSelectedItem] = useState("");
 
@@ -97,7 +94,7 @@ export default function NavigationGrid() {
 					onFocus={handleFocus}
 					data-link="skills"
 					ref={SkillsRef}>
-					<FontAwesomeIcon icon="fa-solid fa-screwdriver-wrench" />
+					<></>
 					<span>Skills</span>
 				</NavLink>
 				<NavLink
@@ -111,7 +108,7 @@ export default function NavigationGrid() {
 					onFocus={handleFocus}
 					data-link="projects"
 					ref={ProjectsRef}>
-					<FontAwesomeIcon icon="fa-solid fa-list-check" />
+					<></>
 					<span>Projects</span>
 				</NavLink>
 			</div>
@@ -149,7 +146,7 @@ export default function NavigationGrid() {
 					onFocus={handleFocus}
 					data-link="about"
 					ref={AboutRef}>
-					<FontAwesomeIcon icon="fa-solid fa-address-card" />
+					<></>
 					<span>About</span>
 				</NavLink>
 				<NavLink
@@ -163,7 +160,7 @@ export default function NavigationGrid() {
 					onFocus={handleFocus}
 					data-link="contact"
 					ref={ContactRef}>
-					<FontAwesomeIcon icon="fa-solid fa-phone" />
+					<></>
 					<span>Contact</span>
 				</NavLink>
 			</div>

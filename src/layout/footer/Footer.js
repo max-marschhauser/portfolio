@@ -7,9 +7,6 @@ import { NavLink } from "react-router-dom";
 // importing styles
 import "./footer.scss";
 
-// importing icons
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 // importing images
 import profile from "../../assets/images/profile.png";
 
@@ -43,12 +40,12 @@ export default function Footer(props) {
 					<ul className="links--social">
 						<li>
 							<a href="https://github.com/max-marschhauser" target="_blank" rel="noreferrer">
-								<FontAwesomeIcon icon="fa-brands fa-github" />
+								<></>
 							</a>
 						</li>
 						<li>
 							<a href="https://codepen.io/max-marschhauser" target="_blank" rel="noreferrer">
-								<FontAwesomeIcon icon="fa-brands fa-codepen" />
+								<></>
 							</a>
 						</li>
 						<li>
@@ -56,7 +53,7 @@ export default function Footer(props) {
 								href="https://www.linkedin.com/in/max-marschhauser-a8b9791a6/"
 								target="_blank"
 								rel="noreferrer">
-								<FontAwesomeIcon icon="fa-brands fa-linkedin" />
+								<></>
 							</a>
 						</li>
 					</ul>
@@ -90,7 +87,7 @@ export default function Footer(props) {
 									to="/skills"
 									onClick={closeMobileNavbar}>
 									<span>
-										<FontAwesomeIcon icon="fa-solid fa-screwdriver-wrench" />
+										<></>
 									</span>
 									Skills
 								</NavLink>
@@ -101,7 +98,7 @@ export default function Footer(props) {
 									to="/projects"
 									onClick={closeMobileNavbar}>
 									<span>
-										<FontAwesomeIcon icon="fa-solid fa-list-check" />
+										<></>
 									</span>
 									Projects
 								</NavLink>
@@ -112,7 +109,7 @@ export default function Footer(props) {
 									to="/about"
 									onClick={closeMobileNavbar}>
 									<span>
-										<FontAwesomeIcon icon="fa-solid fa-address-card" />
+										<></>
 									</span>
 									About
 								</NavLink>
@@ -123,7 +120,7 @@ export default function Footer(props) {
 									to="/contact"
 									onClick={closeMobileNavbar}>
 									<span>
-										<FontAwesomeIcon icon="fa-solid fa-phone" />
+										<></>
 									</span>
 									Contact
 								</NavLink>
@@ -136,7 +133,7 @@ export default function Footer(props) {
 									to="/options"
 									onClick={closeMobileNavbar}>
 									<span>
-										<FontAwesomeIcon icon="fa-solid fa-sliders" />
+										<></>
 									</span>
 									Options
 								</NavLink>
