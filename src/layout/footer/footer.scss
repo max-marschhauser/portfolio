@@ -109,18 +109,20 @@
 					li {
 						a {
 							text-decoration: none;
-							color: var(--color-light);
-							font-size: var(--font-size-225);
 
 							transition: all 0.35s ease;
 
 							&:hover,
-							&:focus-visible {
-								color: var(--color-action);
+							&:focus-visible,
+							&:active {
+								svg {
+									fill: var(--color-action);
+									stroke: var(--color-action);
+								}
 							}
 
-							&:active {
-								opacity: 0.8;
+							svg {
+								width: 2.25rem;
 							}
 						}
 					}
@@ -188,25 +190,40 @@
 							transition: all 0.35s ease;
 
 							span {
-								margin-right: 0.5rem;
+								margin-left: 0.5rem;
 
 								transition: all 0.35s ease;
 							}
 
-							&:hover,
+							&:hover {
+								svg {
+									fill: var(--color-action);
+									stroke: var(--color-action);
+								}
+							}
+
+							&:active,
 							&:focus-visible {
+								svg {
+									fill: var(--color-action);
+									stroke: var(--color-action);
+								}
+
 								span {
 									color: var(--color-action);
 								}
 							}
-
-							&:active {
-								color: var(--color-action);
-							}
 						}
 
 						.activeLink {
-							color: var(--color-action);
+							svg {
+								fill: var(--color-action);
+								stroke: var(--color-action);
+							}
+
+							span {
+								color: var(--color-action);
+							}
 						}
 					}
 				}

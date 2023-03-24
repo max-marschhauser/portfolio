@@ -45,34 +45,34 @@ export default function Navbar(props) {
 						to="/projects">
 						<svg viewBox="0 0 512 512">
 							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="32"
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth="32"
 								d="M160 144h288M160 256h288M160 368h288"
 							/>
 							<circle
 								cx="80"
 								cy="144"
 								r="16"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="32"
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth="32"
 							/>
 							<circle
 								cx="80"
 								cy="256"
 								r="16"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="32"
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth="32"
 							/>
 							<circle
 								cx="80"
 								cy="368"
 								r="16"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="32"
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth="32"
 							/>
 						</svg>
 						<span>Projects</span>
@@ -125,35 +125,14 @@ export default function Navbar(props) {
 					onClick={closeMobileNavbar}>
 					<svg viewBox="0 0 512 512">
 						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="32"
+							strokeLinecap="round"
+							strokeLinejoin="round"
+							strokeWidth="32"
 							d="M160 144h288M160 256h288M160 368h288"
 						/>
-						<circle
-							cx="80"
-							cy="144"
-							r="16"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="32"
-						/>
-						<circle
-							cx="80"
-							cy="256"
-							r="16"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="32"
-						/>
-						<circle
-							cx="80"
-							cy="368"
-							r="16"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="32"
-						/>
+						<circle cx="80" cy="144" r="16" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32" />
+						<circle cx="80" cy="256" r="16" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32" />
+						<circle cx="80" cy="368" r="16" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32" />
 					</svg>
 					<span>Projects</span>
 				</NavLink>

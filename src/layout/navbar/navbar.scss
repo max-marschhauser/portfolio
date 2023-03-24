@@ -169,6 +169,8 @@
 	list-style: none;
 	text-align: center;
 
+	color: var(--color-light);
+
 	.navbar__link {
 		width: 100%;
 		padding-inline: 1rem;
@@ -199,8 +201,17 @@
 
 		transition: all 0.35s ease;
 
+		svg {
+			fill: var(--color-light);
+			stroke: var(--color-light);
+
+			transition: none;
+		}
+
 		span {
 			margin-left: 0.5rem;
+
+			color: var(--color-light);
 		}
 
 		&:hover,
@@ -218,12 +229,14 @@
 		}
 
 		&:active {
-			color: var(--color-action);
-
-			@include abs.mq(1400px, 0px) {
-				background-color: transparent;
-
+			span {
 				color: var(--color-action);
+
+				@include abs.mq(1400px, 0px) {
+					background-color: transparent;
+
+					color: var(--color-action);
+				}
 			}
 
 			svg {
@@ -233,30 +246,15 @@
 		}
 	}
 
-	svg {
-		width: 1.25rem;
-
-		@include abs.mq(1400px, 0px) {
-			width: 1.5rem;
-		}
-
-		fill: var(--color-light);
-		stroke: var(--color-light);
-
-		transform: translateY(0.15rem);
-
-		transition: fill 0.35s ease;
-	}
-
 	.activeLink {
 		border-block: 1px solid var(--color-action);
 
-		color: var(--color-action);
+		span {
+			color: var(--color-action);
 
-		@include abs.mq(1400px, 0px) {
-			background-color: transparent;
-
-			transition: all 0.35s ease;
+			@include abs.mq(1400px, 0px) {
+				background-color: transparent;
+			}
 		}
 
 		svg {

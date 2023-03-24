@@ -137,6 +137,7 @@
 						padding-block: 0.25rem;
 						padding-inline: clamp(0.5rem, 2vw, 1rem);
 						margin-left: clamp(1rem, 2vw, 2rem);
+						margin-top: 0.5rem;
 
 						border-radius: 100vmax;
 
@@ -154,24 +155,28 @@
 						&:focus-visible {
 							outline: 0.1rem solid var(--color-action);
 
-							& > ion-icon {
-								color: var(--color-action);
+							svg {
+								fill: var(--color-action);
+								stroke: var(--color-action);
 							}
 						}
 
 						&:active {
-							color: var(--color-action);
+							svg,
+							span {
+								color: var(--color-action);
+								fill: var(--color-action);
+								stroke: var(--color-action);
+							}
 						}
 
-						ion-icon {
-							color: var(--color-light);
-
-							transform: translateY(0.2rem);
-
-							transition: all 0.35s ease;
+						svg {
+							width: 1.5rem;
 						}
 
 						span {
+							margin-left: 0.25rem;
+
 							font-size: var(--font-size-125);
 
 							transition: all 0.35s ease;

@@ -37,11 +37,11 @@
 
 		.closeButton {
 			position: absolute;
-			top: 0rem;
-			right: 0.5rem;
+			top: -0.5rem;
+			right: 0rem;
 
 			@include abs.mq(1400px, 0px) {
-				right: 0rem;
+				right: -0.5rem;
 			}
 
 			display: grid;
@@ -49,17 +49,37 @@
 
 			background-color: transparent;
 
-			font-size: 3rem;
-			color: var(--color-light);
-
 			transform: translate(1rem, -1rem);
-
-			transition: all 0.35s ease;
 
 			cursor: pointer;
 
-			&:is(:hover, :focus-visible) {
-				color: var(--color-action);
+			&:hover,
+			&:focus-visible,
+			&:active {
+				svg {
+					fill: var(--color-action);
+					stroke: var(--color-action);
+				}
+			}
+
+			svg {
+				width: 3rem;
+
+				@include abs.mq(1400px, 0px) {
+					width: 4rem;
+				}
+
+				fill: var(--color-light);
+				stroke: var(--color-light);
+
+				transition: all 0.35s ease;
+
+				&:hover,
+				&:focus-visible,
+				&:active {
+					fill: var(--color-action);
+					stroke: var(--color-action);
+				}
 			}
 		}
 
