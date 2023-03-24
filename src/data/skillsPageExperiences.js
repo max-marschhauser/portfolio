@@ -12,11 +12,11 @@ const skillsData = {
 		"Familiar with newer features like has(), layers and container queries.",
 		"Creating responsive web pages with ease, prefer mobile first design.",
 		"Familiar with CSS frameworks like Bootstrap and Tailwind.",
-		"Love using Sass ( CSS preprocessor ).",
+		"Love using Sass (CSS preprocessor).",
 		"I prefer BEM methodology.",
 	],
 	Sass: [
-		"Love using Sass ( CSS preprocessor ).",
+		"Love using Sass (CSS preprocessor).",
 		"My favorite features are Nesting, Mixins and Modular CSS.",
 		"I prefer BEM methodology.",
 		"Prefer responsive mobile first design",

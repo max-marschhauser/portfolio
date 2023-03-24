@@ -12,8 +12,8 @@ const aboutData = [
 		imgSrc: undefined,
 		link: "",
 		content: [
-			`2009 started learning programming ( age 14 ). First programming language was C, used it for 4 years.`,
-			`2010 started learning web design ( HTML and CSS ).`,
+			`2009 started learning programming (age 14). First programming language was C, used it for 4 years.`,
+			`2010 started learning web design (HTML and CSS).`,
 			`2012 started using PHP and MySQL.`,
 			`2017 and 2018 attended two courses related to modern web design at university.`,
 		],
@@ -60,8 +60,8 @@ const aboutData = [
 		imgSrc: undefined,
 		link: "",
 		content: [
-			`4 years as a school counselor ( gained leadership and problem solving experience, managed a team of about 50 people ).`,
-			`3 years as an Information Technology teacher ( improved my computer science knowledge ).`,
+			`4 years as a school counselor (gained leadership and problem solving experience, managed a team of about 50 people).`,
+			`3 years as an Information Technology teacher (improved my computer science knowledge).`,
 		],
 	},
 	{
@@ -71,7 +71,7 @@ const aboutData = [
 		imgSrc: undefined,
 		link: "",
 		content: [
-			`2009. - 2013. Education at Grammar school in Osijek with focus on mathematics and natural sciences ( Matematičko prirodoslovna gimnazija ).`,
+			`2009. - 2013. Education at Grammar school in Osijek with focus on mathematics and natural sciences (Matematičko prirodoslovna gimnazija).`,
 			`2013. - 2018. Major in Pedagogy and History. Graduated from the Faculty of Humanities and social sciences in Osijek.`,
 		],
 	},
@@ -97,10 +97,10 @@ const aboutData = [
 		link: "",
 		content: [
 			`Croatian - mother tongue`,
-			`English - Feel very comfortable using it both in speaking, and writing ( C1 ).`,
-			`German - Know the basics but haven't used it for a few years ( B1 ).`,
-			`Hungarian - can use it in a simpler conversation ( B1 ).`,
-			`Driving licence ( B category ).`,
+			`English - Feel very comfortable using it both in speaking, and writing (C1).`,
+			`German - Know the basics but haven't used it for a few years (B1).`,
+			`Hungarian - can use it in a simpler conversation (B1).`,
+			`Driving licence (B category).`,
 		],
 	},
 ];

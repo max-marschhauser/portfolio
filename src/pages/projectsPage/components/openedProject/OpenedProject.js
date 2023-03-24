@@ -58,7 +58,7 @@ export default function OpenedProject(props) {
 			{toggleModal === true ? (
 				<section className="openedProject">
 					<dialog open>
-						<button className="closeButton" onClick={handleToggleModal} data-name="closeModal">
+						<button className="closeButton" data-name="closeModal">
 							<FontAwesomeIcon
 								icon="fa-solid fa-circle-xmark"
 								onClick={handleToggleModal}
