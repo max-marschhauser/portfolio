@@ -31,35 +31,35 @@ export default function Navbar(props) {
 					<NavLink
 						className={activePage === "skills" ? "navbar__link activeLink" : "navbar__link"}
 						to="/skills">
-						<></>
+						<i></i>
 						<span>Skills</span>
 					</NavLink>
 
 					<NavLink
 						className={activePage === "projects" ? "navbar__link activeLink" : "navbar__link"}
 						to="/projects">
-						<></>
+						<i></i>
 						<span>Projects</span>
 					</NavLink>
 
 					<NavLink
 						className={activePage === "about" ? "navbar__link activeLink" : "navbar__link"}
 						to="/about">
-						<></>
+						<i></i>
 						<span>About</span>
 					</NavLink>
 
 					<NavLink
 						className={activePage === "contact" ? "navbar__link activeLink" : "navbar__link"}
 						to="/contact">
-						<></>
+						<i></i>
 						<span>Contact</span>
 					</NavLink>
 
 					<NavLink
 						className={activePage === "options" ? "navbar__link activeLink" : "navbar__link"}
 						to="/options">
-						<></>
+						<i></i>
 					</NavLink>
 				</nav>
 			</div>
@@ -72,35 +72,35 @@ export default function Navbar(props) {
 					className={activePage === "skills" ? "navbar__link activeLink" : "navbar__link"}
 					to="/skills"
 					onClick={closeMobileNavbar}>
-					<></>
+					<i></i>
 					<span>Skills</span>
 				</NavLink>
 				<NavLink
 					className={activePage === "projects" ? "navbar__link activeLink" : "navbar__link"}
 					to="/projects"
 					onClick={closeMobileNavbar}>
-					<></>
+					<i></i>
 					<span>Projects</span>
 				</NavLink>
 				<NavLink
 					className={activePage === "about" ? "navbar__link activeLink" : "navbar__link"}
 					to="/about"
 					onClick={closeMobileNavbar}>
-					<></>
+					<i></i>
 					<span>About</span>
 				</NavLink>
 				<NavLink
 					className={activePage === "contact" ? "navbar__link activeLink" : "navbar__link"}
 					to="/contact"
 					onClick={closeMobileNavbar}>
-					<></>
+					<i></i>
 					<span>Contact</span>
 				</NavLink>
 				<NavLink
 					className={activePage === "options" ? "navbar__link activeLink" : "navbar__link"}
 					to="/options"
 					onClick={closeMobileNavbar}>
-					<></>
+					<i></i>
 					<span>Options</span>
 				</NavLink>
 			</nav>

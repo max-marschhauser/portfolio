@@ -56,7 +56,7 @@ export default function OpenedProject(props) {
 				<section className="openedProject">
 					<dialog open>
 						<button className="closeButton" onClick={handleToggleModal} data-name="closeModal">
-							<></>
+							<i></i>
 						</button>
 
 						<h3>{selectedItemObject.name}</h3>

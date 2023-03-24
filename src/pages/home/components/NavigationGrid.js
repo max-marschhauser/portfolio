@@ -94,7 +94,7 @@ export default function NavigationGrid() {
 					onFocus={handleFocus}
 					data-link="skills"
 					ref={SkillsRef}>
-					<></>
+					<i></i>
 					<span>Skills</span>
 				</NavLink>
 				<NavLink
@@ -108,7 +108,7 @@ export default function NavigationGrid() {
 					onFocus={handleFocus}
 					data-link="projects"
 					ref={ProjectsRef}>
-					<></>
+					<i></i>
 					<span>Projects</span>
 				</NavLink>
 			</div>
@@ -146,7 +146,7 @@ export default function NavigationGrid() {
 					onFocus={handleFocus}
 					data-link="about"
 					ref={AboutRef}>
-					<></>
+					<i></i>
 					<span>About</span>
 				</NavLink>
 				<NavLink
@@ -160,7 +160,7 @@ export default function NavigationGrid() {
 					onFocus={handleFocus}
 					data-link="contact"
 					ref={ContactRef}>
-					<></>
+					<i></i>
 					<span>Contact</span>
 				</NavLink>
 			</div>

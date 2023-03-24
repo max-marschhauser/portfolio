@@ -176,13 +176,17 @@ export default function ProjectsListItems(props) {
 										<p>{item.description}</p>
 									</li>
 									<li className="links">
-										<a href={item.githubLink} target="_blank" rel="noreferrer">
+										{item.githubLink !== "" ? (
+											<a href={item.githubLink} target="_blank" rel="noreferrer">
+												<i></i>
+												<span> GitHub</span>
+											</a>
+										) : (
 											<></>
-											<span> GitHub</span>
-										</a>
+										)}
 										{item.codepenLink !== "" ? (
 											<a href={item.codepenLink} target="_blank" rel="noreferrer">
-												<></>
+												<i></i>
 												<span> CodePen</span>
 											</a>
 										) : (

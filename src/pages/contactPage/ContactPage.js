@@ -78,7 +78,7 @@ export default function ContactPage(props) {
 				</div>
 				<ul>
 					<li ref={EmailRef} data-name="email" className={emailIsVissible === true ? "itemVissible" : ""}>
-						<></>
+						<i></i>
 						<span>E-mail: </span>
 						<br />
 						max.marschhauser
@@ -89,7 +89,7 @@ export default function ContactPage(props) {
 						ref={PhoneNumberRef}
 						data-name="phoneNumber"
 						className={phoneNumberIsVissible === true ? "itemVissible" : ""}>
-						<></>
+						<i></i>
 						<span>Phone: </span>
 						<br />
 						+385 (98) 921 0125

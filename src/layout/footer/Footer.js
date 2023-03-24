@@ -40,12 +40,12 @@ export default function Footer(props) {
 					<ul className="links--social">
 						<li>
 							<a href="https://github.com/max-marschhauser" target="_blank" rel="noreferrer">
-								<></>
+								<i></i>
 							</a>
 						</li>
 						<li>
 							<a href="https://codepen.io/max-marschhauser" target="_blank" rel="noreferrer">
-								<></>
+								<i></i>
 							</a>
 						</li>
 						<li>
@@ -53,7 +53,7 @@ export default function Footer(props) {
 								href="https://www.linkedin.com/in/max-marschhauser-a8b9791a6/"
 								target="_blank"
 								rel="noreferrer">
-								<></>
+								<i></i>
 							</a>
 						</li>
 					</ul>
@@ -87,7 +87,7 @@ export default function Footer(props) {
 									to="/skills"
 									onClick={closeMobileNavbar}>
 									<span>
-										<></>
+										<i></i>
 									</span>
 									Skills
 								</NavLink>
@@ -98,7 +98,7 @@ export default function Footer(props) {
 									to="/projects"
 									onClick={closeMobileNavbar}>
 									<span>
-										<></>
+										<i></i>
 									</span>
 									Projects
 								</NavLink>
@@ -109,7 +109,7 @@ export default function Footer(props) {
 									to="/about"
 									onClick={closeMobileNavbar}>
 									<span>
-										<></>
+										<i></i>
 									</span>
 									About
 								</NavLink>
@@ -120,7 +120,7 @@ export default function Footer(props) {
 									to="/contact"
 									onClick={closeMobileNavbar}>
 									<span>
-										<></>
+										<i></i>
 									</span>
 									Contact
 								</NavLink>
@@ -133,7 +133,7 @@ export default function Footer(props) {
 									to="/options"
 									onClick={closeMobileNavbar}>
 									<span>
-										<></>
+										<i></i>
 									</span>
 									Options
 								</NavLink>
