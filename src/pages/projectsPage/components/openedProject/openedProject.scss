@@ -89,7 +89,11 @@
 
 			background-color: var(--color-dark);
 
-			font-size: var(--font-size-175);
+			font-size: var(--font-size-125);
+			@include abs.mq(1400px, 0px) {
+				font-size: var(--font-size-175);
+			}
+
 			text-align: center;
 			color: var(--color-light);
 		}
@@ -110,8 +114,13 @@
 				background-color: var(--color-dark);
 
 				button {
+					margin-block: 0.1rem;
 					margin-inline: 0.1rem;
-					padding: 0.5rem 1.5rem;
+					padding: 0.15rem 1.5rem;
+
+					@include abs.mq(1400px, 0px) {
+						padding: 0.5rem 1.5rem;
+					}
 
 					background-color: var(--color-light);
 
@@ -184,9 +193,14 @@
 
 			background-color: var(--color-dark);
 
-			font-size: var(--font-size-125);
+			font-size: var(--font-size-100);
+			@include abs.mq(1400px, 0px) {
+				font-size: var(--font-size-125);
+			}
+
 			text-align: left;
 			color: var(--color-light);
+			letter-spacing: var(--letter-spacing);
 		}
 	}
 }

@@ -5,6 +5,8 @@
 import caviaTattooStudio1 from "../assets/images/projects/CAVIA-Tattoo-Studio/cavia-tattoo-studio1.png";
 import caviaTattooStudio2 from "../assets/images/projects/CAVIA-Tattoo-Studio/cavia-tattoo-studio2.png";
 import caviaTattooStudio3 from "../assets/images/projects/CAVIA-Tattoo-Studio/cavia-tattoo-studio3.png";
+import caviaTattooStudio4 from "../assets/images/projects/CAVIA-Tattoo-Studio/cavia-tattoo-studio4.png";
+import caviaTattooStudio5 from "../assets/images/projects/CAVIA-Tattoo-Studio/cavia-tattoo-studio5.png";
 
 import digitalStore1 from "../assets/images/projects/Digital-Store/digital-store1.png";
 import digitalStore2 from "../assets/images/projects/Digital-Store/digital-store2.png";
@@ -51,8 +53,14 @@ import yuGiOhCardSearch4 from "../assets/images/projects/Yu-Gi-Oh-Card-Search/yu
 const projectsData = [
 	{
 		id: 0,
-		img: [caviaTattooStudio1, caviaTattooStudio2, caviaTattooStudio3],
-		imgDesc: ["caviaTattooStudio1 desc 1", "caviaTattooStudio2 desc 2", "caviaTattooStudio3 desc 3"],
+		img: [caviaTattooStudio1, caviaTattooStudio2, caviaTattooStudio3, caviaTattooStudio4, caviaTattooStudio5],
+		imgDesc: [
+			"Desktop home page, serves as landing page and displays links to other pages.",
+			"Page is component based and the sections are added to the page as the user scrolls in.",
+			"Page footer with social links and other useful information.",
+			"Portfolio page which displays previous work, images can be opened as modals so the users can see them more clearly.",
+			"Page is responsive for smaller and bigger screens.",
+		],
 		name: "CAVIA Tattoo Studio",
 		technology: "HTML, CSS, JavaScript",
 		description:
