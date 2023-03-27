@@ -11,12 +11,19 @@ import caviaTattooStudio5 from "../assets/images/projects/CAVIA-Tattoo-Studio/ca
 import digitalStore1 from "../assets/images/projects/Digital-Store/digital-store1.png";
 import digitalStore2 from "../assets/images/projects/Digital-Store/digital-store2.png";
 import digitalStore3 from "../assets/images/projects/Digital-Store/digital-store3.png";
+import digitalStore4 from "../assets/images/projects/Digital-Store/digital-store4.png";
+import digitalStore5 from "../assets/images/projects/Digital-Store/digital-store5.png";
+import digitalStore6 from "../assets/images/projects/Digital-Store/digital-store6.png";
+import digitalStore7 from "../assets/images/projects/Digital-Store/digital-store7.png";
 
 import gradientHoverCard1 from "../assets/images/projects/Gradient-Hover-Card/gradient-hover-card1.png";
 import gradientHoverCard2 from "../assets/images/projects/Gradient-Hover-Card/gradient-hover-card2.png";
 
 import guineaPigDoctor1 from "../assets/images/projects/Guinea-Pig-Doctor/guinea-pig-doctor1.png";
 import guineaPigDoctor2 from "../assets/images/projects/Guinea-Pig-Doctor/guinea-pig-doctor2.png";
+import guineaPigDoctor3 from "../assets/images/projects/Guinea-Pig-Doctor/guinea-pig-doctor3.png";
+import guineaPigDoctor4 from "../assets/images/projects/Guinea-Pig-Doctor/guinea-pig-doctor4.png";
+import guineaPigDoctor5 from "../assets/images/projects/Guinea-Pig-Doctor/guinea-pig-doctor5.png";
 
 import lightdarkTheme1 from "../assets/images/projects/Light-Dark-Theme/light-dark-theme1.png";
 import lightdarkTheme2 from "../assets/images/projects/Light-Dark-Theme/light-dark-theme2.png";
@@ -24,6 +31,7 @@ import lightdarkTheme3 from "../assets/images/projects/Light-Dark-Theme/light-da
 
 import loadingSpinner1 from "../assets/images/projects/Loading-Spinner/loading-spinner1.png";
 import loadingSpinner2 from "../assets/images/projects/Loading-Spinner/loading-spinner2.png";
+import loadingSpinner3 from "../assets/images/projects/Loading-Spinner/loading-spinner3.png";
 
 import hamburgerExample1 from "../assets/images/projects/Hamburger-Example/hamburger-example1.png";
 import hamburgerExample2 from "../assets/images/projects/Hamburger-Example/hamburger-example2.png";
@@ -70,8 +78,16 @@ const projectsData = [
 	},
 	{
 		id: 1,
-		img: [digitalStore1, digitalStore2, digitalStore3],
-		imgDesc: ["caviaTattooStudio1 desc 1", "caviaTattooStudio2 desc 2", "caviaTattooStudio3 desc 3"],
+		img: [digitalStore1, digitalStore2, digitalStore3, digitalStore4, digitalStore5, digitalStore6, digitalStore7],
+		imgDesc: [
+			"caviaTattooStudio1 desc 1",
+			"caviaTattooStudio2 desc 2",
+			"caviaTattooStudio3 desc 3",
+			"caviaTattooStudio1 desc 4",
+			"slikati povećano mobilne x125",
+			"slikati povećano mobilne x125",
+			"slikati povećano mobilne x125",
+		],
 		name: "Digital Store",
 		technology: "HTML, CSS, Sass, JavaScript",
 		description:
@@ -92,8 +108,14 @@ const projectsData = [
 	},
 	{
 		id: 3,
-		img: [guineaPigDoctor1, guineaPigDoctor2],
-		imgDesc: ["caviaTattooStudio1 desc 1", "caviaTattooStudio2 desc 2"],
+		img: [guineaPigDoctor1, guineaPigDoctor2, guineaPigDoctor3, guineaPigDoctor4, guineaPigDoctor5],
+		imgDesc: [
+			"caviaTattooStudio1 desc 1",
+			"caviaTattooStudio2 desc 2",
+			"slikati povećano mobilne x125",
+			"slikati povećano mobilne x125",
+			"slikati povećano mobilne x125",
+		],
 		name: "Guinea Pig Doctor",
 		technology: "HTML, CSS, JavaScript",
 		description:
@@ -104,7 +126,7 @@ const projectsData = [
 	{
 		id: 6,
 		img: [hamburgerExample1, hamburgerExample2],
-		imgDesc: ["caviaTattooStudio1 desc 1", "caviaTattooStudio2 desc 2"],
+		imgDesc: ["slikati ponovno", "slikati ponovno"],
 		name: "Hamburger Examples",
 		technology: "HTML, CSS, JavaScript, SVG",
 		description:
@@ -125,8 +147,8 @@ const projectsData = [
 	},
 	{
 		id: 5,
-		img: [loadingSpinner1, loadingSpinner2],
-		imgDesc: ["caviaTattooStudio1 desc 1", "caviaTattooStudio2 desc 2"],
+		img: [loadingSpinner1, loadingSpinner2, loadingSpinner3],
+		imgDesc: ["caviaTattooStudio1 desc 1", "caviaTattooStudio2 desc 2", "caviaTattooStudio2 desc 3"],
 		name: "Loading Spinner",
 		technology: "HTML, CSS",
 		description:
