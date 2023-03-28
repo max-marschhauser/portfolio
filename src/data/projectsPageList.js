@@ -82,7 +82,7 @@ const projectsData = [
 			"Page is component based and the sections are added to the page as the user scrolls in.",
 			"Page footer with social links and other useful information.",
 			"Portfolio page which displays previous work, images can be opened as modals so the users can see them more clearly.",
-			"Page is responsive for smaller and bigger screens.",
+			"Page is responsive for different screen sizes.",
 		],
 		name: "CAVIA Tattoo Studio",
 		technology: "HTML, CSS, JavaScript",
@@ -103,7 +103,16 @@ const projectsData = [
 			digitalStore7,
 			digitalStore8,
 		],
-		imgDesc: ["1", "2", "3", "4", "5", "6", "7", "8"],
+		imgDesc: [
+			"Landing page for digital music store. Contains links to other pages. Singe-page application",
+			"Store page, contains items which user can place into the cart. Also contains filter, search and sort options.",
+			"Filter, search and sort options.",
+			"Cart page, user can add more of the same items and can remove items. Page displays price and purchase button. Also, page saves users selected items in local storage.",
+			"Page is responsive for different screen sizes.",
+			"Page is responsive for different screen sizes.",
+			"Page is responsive for different screen sizes.",
+			"Page is responsive for different screen sizes.",
+		],
 		name: "Digital Store",
 		technology: "HTML, CSS, Sass, JavaScript",
 		description:
@@ -114,7 +123,7 @@ const projectsData = [
 	{
 		id: 2,
 		img: [gradientHoverCard1, gradientHoverCard2],
-		imgDesc: ["1", "2"],
+		imgDesc: ["Default look of the card.", "Look of the card changes as the user scrolls in."],
 		name: "Gradient Hover Card",
 		technology: "HTML, CSS, JavaScript",
 		description:
@@ -125,7 +134,13 @@ const projectsData = [
 	{
 		id: 3,
 		img: [guineaPigDoctor1, guineaPigDoctor2, guineaPigDoctor3, guineaPigDoctor4, guineaPigDoctor5],
-		imgDesc: ["1", "2", "3", "4", "5"],
+		imgDesc: [
+			"Landing page.",
+			"Components appear as the user scrolls, build using intersection observer.",
+			"Page is responsive for different screen sizes.",
+			"Page is responsive for different screen sizes.",
+			"Page is responsive for different screen sizes.",
+		],
 		name: "Guinea Pig Doctor",
 		technology: "HTML, CSS, JavaScript",
 		description:
@@ -136,7 +151,7 @@ const projectsData = [
 	{
 		id: 6,
 		img: [hamburgerExample1, hamburgerExample2],
-		imgDesc: ["1", "2"],
+		imgDesc: ["Beginning state of hamburger buttons.", "End state of hamburger buttons."],
 		name: "Hamburger Examples",
 		technology: "HTML, CSS, JavaScript, SVG",
 		description:
@@ -147,7 +162,11 @@ const projectsData = [
 	{
 		id: 4,
 		img: [lightdarkTheme1, lightdarkTheme2, lightdarkTheme3],
-		imgDesc: ["1", "2", "3"],
+		imgDesc: [
+			"Componet which alows user to change the theme of the page.",
+			"Componet which alows user to change the theme of the page.",
+			"Componet which alows user to change the theme of the page.",
+		],
 		name: "Light-dark Theme",
 		technology: "HTML, CSS, React",
 		description:
@@ -158,7 +177,10 @@ const projectsData = [
 	{
 		id: 5,
 		img: [loadingSpinner1, loadingSpinner2],
-		imgDesc: ["1", "2"],
+		imgDesc: [
+			"Loading spinner rotates and the text flashes in and out.",
+			"Loading spinner rotates and the text flashes in and out.",
+		],
 		name: "Loading Spinner",
 		technology: "HTML, CSS",
 		description:
@@ -169,7 +191,11 @@ const projectsData = [
 	{
 		id: 7,
 		img: [multistepForm1, multistepForm2, multistepForm3],
-		imgDesc: ["1", "2", "3"],
+		imgDesc: [
+			"Multistep form for inserting user's data.",
+			"Multistep form for inserting user's data.",
+			"Multistep form for inserting user's data.",
+		],
 		name: "Multistep Form",
 		technology: "HTML, CSS, JavaScript",
 		description: "Sample code for multistep form. Component intended to be used in other projects.",
@@ -179,7 +205,11 @@ const projectsData = [
 	{
 		id: 8,
 		img: [pokemonApp1, pokemonApp2, pokemonApp3],
-		imgDesc: ["1", "2", "3"],
+		imgDesc: [
+			"Landing page for Pokemon App. User can select if they want to play Pokemon theme song or not.",
+			"Game page, user gets one randomly selected pokemon and has to click on it. Game keeps track of combo (current score) and high-score (highest of all combos).",
+			"Game page, user gets one randomly selected pokemon and has to click on it. Game keeps track of combo (current score) and high-score (highest of all combos).",
+		],
 		name: "Pokemon App",
 		technology: "HTML, CSS, Sass, JavaScript, React",
 		description:
@@ -200,7 +230,17 @@ const projectsData = [
 			portfolio8,
 			portfolio9,
 		],
-		imgDesc: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+		imgDesc: [
+			"Landing page for my personal portfolio page, contains links for downloading CV.",
+			"Skills page which displays my skills with different web development tools and languages.",
+			"Projects page which shows my finished projects. User can filter them or open specific project in which they are interested.",
+			"Modal for showing selected project's images. Image also shows different page theme.",
+			"About page which serves as my CV. Image also shows different page theme",
+			"Contact page with additional contact information.",
+			"Theme selector page.",
+			"Page is responsive for different screen sizes.",
+			"Page is responsive for different screen sizes.",
+		],
 		name: "Portfolio",
 		technology: "HTML, CSS, Sass, JavaScript, React",
 		description:
@@ -211,7 +251,13 @@ const projectsData = [
 	{
 		id: 10,
 		img: [rockPaperScissors1, rockPaperScissors2, rockPaperScissors3, rockPaperScissors4, rockPaperScissors5],
-		imgDesc: ["1", "2", "3", "4", "5"],
+		imgDesc: [
+			"Landing page for Rock-Paper-Scissors game.",
+			"User clicks on one of the options and the computer randomly generates response.",
+			"Game tells who won and tracks score.",
+			"Game is responsive for different screen sizes.",
+			"Game is responsive for different screen sizes.",
+		],
 		name: "Rock-Paper-Scissors",
 		technology: "HTML, CSS, JavaScript",
 		description: "A Rock-Paper-Scissors responsive game built using JavaScript. Fairly simple game built for fun.",
@@ -221,7 +267,7 @@ const projectsData = [
 	{
 		id: 11,
 		img: [toDo1, toDo2],
-		imgDesc: ["1", "2"],
+		imgDesc: ["User can add new todos.", "User can mark and unmark individual list items and finished."],
 		name: "To-Do List",
 		technology: "HTML, JavaScript",
 		description: "A To-Do list built using JavaScript and HTML. Very simple JS to-do list built for fun.",
@@ -241,7 +287,17 @@ const projectsData = [
 			yuGiOhCardSearch8,
 			yuGiOhCardSearch9,
 		],
-		imgDesc: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+		imgDesc: [
+			"Landing page for Yu-Gi-Oh card search page. Contains links to other pages.",
+			"Search page, contains list of all Yu-Gi-Oh cards and Search form. User can add cards to the cart.",
+			"User can filter cards.",
+			"Cards are color coded to represent their real life type (Monsters, Spells, Traps...). ",
+			"Cart page, displays selected cards. User can add more of the same cards or remove them. Also displays total price.",
+			"Page is responsive for different screen sizes.",
+			"Page is responsive for different screen sizes.",
+			"Page is responsive for different screen sizes.",
+			"Page is responsive for different screen sizes.",
+		],
 		name: "Yu-Gi-Oh Card Search",
 		technology: "HTML, CSS, Sass, JavaScript, React",
 		description:
