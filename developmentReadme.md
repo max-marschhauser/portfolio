@@ -2,4 +2,8 @@ Create React App
 npm install
 npm start
 
-dodati nove slike na projects stranicu i napisati im opise
+ponovno slikati:
+digital store mobile + F11
+guinea pig mobile + F11
+light dark theme smanjiti veličinu da bude bez scrollbara
+portfolio page

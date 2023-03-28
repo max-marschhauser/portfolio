@@ -23,7 +23,9 @@ import guineaPigDoctor1 from "../assets/images/projects/Guinea-Pig-Doctor/guinea
 import guineaPigDoctor2 from "../assets/images/projects/Guinea-Pig-Doctor/guinea-pig-doctor2.png";
 import guineaPigDoctor3 from "../assets/images/projects/Guinea-Pig-Doctor/guinea-pig-doctor3.png";
 import guineaPigDoctor4 from "../assets/images/projects/Guinea-Pig-Doctor/guinea-pig-doctor4.png";
-import guineaPigDoctor5 from "../assets/images/projects/Guinea-Pig-Doctor/guinea-pig-doctor5.png";
+
+import hamburgerExample1 from "../assets/images/projects/Hamburger-Example/hamburger-example1.png";
+import hamburgerExample2 from "../assets/images/projects/Hamburger-Example/hamburger-example2.png";
 
 import lightdarkTheme1 from "../assets/images/projects/Light-Dark-Theme/light-dark-theme1.png";
 import lightdarkTheme2 from "../assets/images/projects/Light-Dark-Theme/light-dark-theme2.png";
@@ -31,10 +33,6 @@ import lightdarkTheme3 from "../assets/images/projects/Light-Dark-Theme/light-da
 
 import loadingSpinner1 from "../assets/images/projects/Loading-Spinner/loading-spinner1.png";
 import loadingSpinner2 from "../assets/images/projects/Loading-Spinner/loading-spinner2.png";
-import loadingSpinner3 from "../assets/images/projects/Loading-Spinner/loading-spinner3.png";
-
-import hamburgerExample1 from "../assets/images/projects/Hamburger-Example/hamburger-example1.png";
-import hamburgerExample2 from "../assets/images/projects/Hamburger-Example/hamburger-example2.png";
 
 import multistepForm1 from "../assets/images/projects/Multistep-Form/multistep-form1.png";
 import multistepForm2 from "../assets/images/projects/Multistep-Form/multistep-form2.png";
@@ -42,13 +40,17 @@ import multistepForm3 from "../assets/images/projects/Multistep-Form/multistep-f
 
 import pokemonApp1 from "../assets/images/projects/Pokemon-App/pokemon-app1.png";
 import pokemonApp2 from "../assets/images/projects/Pokemon-App/pokemon-app2.png";
+import pokemonApp3 from "../assets/images/projects/Pokemon-App/pokemon-app3.png";
 
-import portfolioPage1 from "../assets/images/projects/Portfolio-Page/portfolio-page1.png";
+/*import portfolioPage1 from "../assets/images/projects/Portfolio-Page/portfolio-page1.png";
 import portfolioPage2 from "../assets/images/projects/Portfolio-Page/portfolio-page2.png";
-import portfolioPage3 from "../assets/images/projects/Portfolio-Page/portfolio-page3.png";
+import portfolioPage3 from "../assets/images/projects/Portfolio-Page/portfolio-page3.png";*/
 
 import rockPaperScissors1 from "../assets/images/projects/Rock-Paper-Scissors/rock-paper-scissors1.png";
 import rockPaperScissors2 from "../assets/images/projects/Rock-Paper-Scissors/rock-paper-scissors2.png";
+import rockPaperScissors3 from "../assets/images/projects/Rock-Paper-Scissors/rock-paper-scissors3.png";
+import rockPaperScissors4 from "../assets/images/projects/Rock-Paper-Scissors/rock-paper-scissors4.png";
+import rockPaperScissors5 from "../assets/images/projects/Rock-Paper-Scissors/rock-paper-scissors5.png";
 
 import toDo1 from "../assets/images/projects/To-Do/to-do1.png";
 import toDo2 from "../assets/images/projects/To-Do/to-do2.png";
@@ -57,6 +59,11 @@ import yuGiOhCardSearch1 from "../assets/images/projects/Yu-Gi-Oh-Card-Search/yu
 import yuGiOhCardSearch2 from "../assets/images/projects/Yu-Gi-Oh-Card-Search/yu-gi-oh-card-search2.png";
 import yuGiOhCardSearch3 from "../assets/images/projects/Yu-Gi-Oh-Card-Search/yu-gi-oh-card-search3.png";
 import yuGiOhCardSearch4 from "../assets/images/projects/Yu-Gi-Oh-Card-Search/yu-gi-oh-card-search4.png";
+import yuGiOhCardSearch5 from "../assets/images/projects/Yu-Gi-Oh-Card-Search/yu-gi-oh-card-search5.png";
+import yuGiOhCardSearch6 from "../assets/images/projects/Yu-Gi-Oh-Card-Search/yu-gi-oh-card-search6.png";
+import yuGiOhCardSearch7 from "../assets/images/projects/Yu-Gi-Oh-Card-Search/yu-gi-oh-card-search7.png";
+import yuGiOhCardSearch8 from "../assets/images/projects/Yu-Gi-Oh-Card-Search/yu-gi-oh-card-search8.png";
+import yuGiOhCardSearch9 from "../assets/images/projects/Yu-Gi-Oh-Card-Search/yu-gi-oh-card-search9.png";
 
 const projectsData = [
 	{
@@ -79,15 +86,7 @@ const projectsData = [
 	{
 		id: 1,
 		img: [digitalStore1, digitalStore2, digitalStore3, digitalStore4, digitalStore5, digitalStore6, digitalStore7],
-		imgDesc: [
-			"caviaTattooStudio1 desc 1",
-			"caviaTattooStudio2 desc 2",
-			"caviaTattooStudio3 desc 3",
-			"caviaTattooStudio1 desc 4",
-			"slikati povećano mobilne x125",
-			"slikati povećano mobilne x125",
-			"slikati povećano mobilne x125",
-		],
+		imgDesc: ["1", "2", "3", "4", "5", "6", "7"],
 		name: "Digital Store",
 		technology: "HTML, CSS, Sass, JavaScript",
 		description:
@@ -98,7 +97,7 @@ const projectsData = [
 	{
 		id: 2,
 		img: [gradientHoverCard1, gradientHoverCard2],
-		imgDesc: ["caviaTattooStudio1 desc 1", "caviaTattooStudio2 desc 2"],
+		imgDesc: ["1", "2"],
 		name: "Gradient Hover Card",
 		technology: "HTML, CSS, JavaScript",
 		description:
@@ -108,14 +107,8 @@ const projectsData = [
 	},
 	{
 		id: 3,
-		img: [guineaPigDoctor1, guineaPigDoctor2, guineaPigDoctor3, guineaPigDoctor4, guineaPigDoctor5],
-		imgDesc: [
-			"caviaTattooStudio1 desc 1",
-			"caviaTattooStudio2 desc 2",
-			"slikati povećano mobilne x125",
-			"slikati povećano mobilne x125",
-			"slikati povećano mobilne x125",
-		],
+		img: [guineaPigDoctor1, guineaPigDoctor2, guineaPigDoctor3, guineaPigDoctor4],
+		imgDesc: ["1", "2", "3", "4"],
 		name: "Guinea Pig Doctor",
 		technology: "HTML, CSS, JavaScript",
 		description:
@@ -126,7 +119,7 @@ const projectsData = [
 	{
 		id: 6,
 		img: [hamburgerExample1, hamburgerExample2],
-		imgDesc: ["slikati ponovno", "slikati ponovno"],
+		imgDesc: ["1", "2"],
 		name: "Hamburger Examples",
 		technology: "HTML, CSS, JavaScript, SVG",
 		description:
@@ -137,7 +130,7 @@ const projectsData = [
 	{
 		id: 4,
 		img: [lightdarkTheme1, lightdarkTheme2, lightdarkTheme3],
-		imgDesc: ["caviaTattooStudio1 desc 1", "caviaTattooStudio2 desc 2", "caviaTattooStudio3 desc 3"],
+		imgDesc: ["1", "2", "3"],
 		name: "Light-dark Theme",
 		technology: "HTML, CSS, React",
 		description:
@@ -147,8 +140,8 @@ const projectsData = [
 	},
 	{
 		id: 5,
-		img: [loadingSpinner1, loadingSpinner2, loadingSpinner3],
-		imgDesc: ["caviaTattooStudio1 desc 1", "caviaTattooStudio2 desc 2", "caviaTattooStudio2 desc 3"],
+		img: [loadingSpinner1, loadingSpinner2],
+		imgDesc: ["1", "2"],
 		name: "Loading Spinner",
 		technology: "HTML, CSS",
 		description:
@@ -159,7 +152,7 @@ const projectsData = [
 	{
 		id: 7,
 		img: [multistepForm1, multistepForm2, multistepForm3],
-		imgDesc: ["caviaTattooStudio1 desc 1", "caviaTattooStudio2 desc 2", "caviaTattooStudio3 desc 3"],
+		imgDesc: ["1", "2", "3"],
 		name: "Multistep Form",
 		technology: "HTML, CSS, JavaScript",
 		description: "Sample code for multistep form. Component intended to be used in other projects.",
@@ -168,8 +161,8 @@ const projectsData = [
 	},
 	{
 		id: 8,
-		img: [pokemonApp1, pokemonApp2],
-		imgDesc: ["caviaTattooStudio1 desc 1", "caviaTattooStudio2 desc 2"],
+		img: [pokemonApp1, pokemonApp2, pokemonApp3],
+		imgDesc: ["1", "2", "3"],
 		name: "Pokemon App",
 		technology: "HTML, CSS, Sass, JavaScript, React",
 		description:
@@ -179,8 +172,10 @@ const projectsData = [
 	},
 	{
 		id: 9,
-		img: [portfolioPage1, portfolioPage2, portfolioPage3],
-		imgDesc: ["caviaTattooStudio1 desc 1", "caviaTattooStudio2 desc 2", "caviaTattooStudio3 desc 3"],
+		img: [
+			/*portfolioPage1, portfolioPage2, portfolioPage3*/
+		],
+		imgDesc: ["1", "2", "3"],
 		name: "Portfolio",
 		technology: "HTML, CSS, Sass, JavaScript, React",
 		description:
@@ -190,8 +185,8 @@ const projectsData = [
 	},
 	{
 		id: 10,
-		img: [rockPaperScissors1, rockPaperScissors2],
-		imgDesc: ["caviaTattooStudio1 desc 1", "caviaTattooStudio2 desc 2"],
+		img: [rockPaperScissors1, rockPaperScissors2, rockPaperScissors3, rockPaperScissors4, rockPaperScissors5],
+		imgDesc: ["1", "2", "3", "4", "5"],
 		name: "Rock-Paper-Scissors",
 		technology: "HTML, CSS, JavaScript",
 		description: "A Rock-Paper-Scissors responsive game built using JavaScript. Fairly simple game built for fun.",
@@ -201,7 +196,7 @@ const projectsData = [
 	{
 		id: 11,
 		img: [toDo1, toDo2],
-		imgDesc: ["caviaTattooStudio1 desc 1", "caviaTattooStudio2 desc 2"],
+		imgDesc: ["1", "2"],
 		name: "To-Do List",
 		technology: "HTML, JavaScript",
 		description: "A To-Do list built using JavaScript and HTML. Very simple JS to-do list built for fun.",
@@ -210,13 +205,18 @@ const projectsData = [
 	},
 	{
 		id: 12,
-		img: [yuGiOhCardSearch1, yuGiOhCardSearch2, yuGiOhCardSearch3, yuGiOhCardSearch4],
-		imgDesc: [
-			"caviaTattooStudio1 desc 1",
-			"caviaTattooStudio2 desc 2",
-			"caviaTattooStudio3 desc 3",
-			"caviaTattooStudio4 desc 4",
+		img: [
+			yuGiOhCardSearch1,
+			yuGiOhCardSearch2,
+			yuGiOhCardSearch3,
+			yuGiOhCardSearch4,
+			yuGiOhCardSearch5,
+			yuGiOhCardSearch6,
+			yuGiOhCardSearch7,
+			yuGiOhCardSearch8,
+			yuGiOhCardSearch9,
 		],
+		imgDesc: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
 		name: "Yu-Gi-Oh Card Search",
 		technology: "HTML, CSS, Sass, JavaScript, React",
 		description:
