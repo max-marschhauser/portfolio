@@ -15,6 +15,7 @@ import digitalStore4 from "../assets/images/projects/Digital-Store/digital-store
 import digitalStore5 from "../assets/images/projects/Digital-Store/digital-store5.png";
 import digitalStore6 from "../assets/images/projects/Digital-Store/digital-store6.png";
 import digitalStore7 from "../assets/images/projects/Digital-Store/digital-store7.png";
+import digitalStore8 from "../assets/images/projects/Digital-Store/digital-store8.png";
 
 import gradientHoverCard1 from "../assets/images/projects/Gradient-Hover-Card/gradient-hover-card1.png";
 import gradientHoverCard2 from "../assets/images/projects/Gradient-Hover-Card/gradient-hover-card2.png";
@@ -23,6 +24,7 @@ import guineaPigDoctor1 from "../assets/images/projects/Guinea-Pig-Doctor/guinea
 import guineaPigDoctor2 from "../assets/images/projects/Guinea-Pig-Doctor/guinea-pig-doctor2.png";
 import guineaPigDoctor3 from "../assets/images/projects/Guinea-Pig-Doctor/guinea-pig-doctor3.png";
 import guineaPigDoctor4 from "../assets/images/projects/Guinea-Pig-Doctor/guinea-pig-doctor4.png";
+import guineaPigDoctor5 from "../assets/images/projects/Guinea-Pig-Doctor/guinea-pig-doctor5.png";
 
 import hamburgerExample1 from "../assets/images/projects/Hamburger-Example/hamburger-example1.png";
 import hamburgerExample2 from "../assets/images/projects/Hamburger-Example/hamburger-example2.png";
@@ -42,9 +44,15 @@ import pokemonApp1 from "../assets/images/projects/Pokemon-App/pokemon-app1.png"
 import pokemonApp2 from "../assets/images/projects/Pokemon-App/pokemon-app2.png";
 import pokemonApp3 from "../assets/images/projects/Pokemon-App/pokemon-app3.png";
 
-/*import portfolioPage1 from "../assets/images/projects/Portfolio-Page/portfolio-page1.png";
-import portfolioPage2 from "../assets/images/projects/Portfolio-Page/portfolio-page2.png";
-import portfolioPage3 from "../assets/images/projects/Portfolio-Page/portfolio-page3.png";*/
+import portfolio1 from "../assets/images/projects/Portfolio/portfolio1.png";
+import portfolio2 from "../assets/images/projects/Portfolio/portfolio2.png";
+import portfolio3 from "../assets/images/projects/Portfolio/portfolio3.png";
+import portfolio4 from "../assets/images/projects/Portfolio/portfolio4.png";
+import portfolio5 from "../assets/images/projects/Portfolio/portfolio5.png";
+import portfolio6 from "../assets/images/projects/Portfolio/portfolio6.png";
+import portfolio7 from "../assets/images/projects/Portfolio/portfolio7.png";
+import portfolio8 from "../assets/images/projects/Portfolio/portfolio8.png";
+import portfolio9 from "../assets/images/projects/Portfolio/portfolio9.png";
 
 import rockPaperScissors1 from "../assets/images/projects/Rock-Paper-Scissors/rock-paper-scissors1.png";
 import rockPaperScissors2 from "../assets/images/projects/Rock-Paper-Scissors/rock-paper-scissors2.png";
@@ -85,8 +93,17 @@ const projectsData = [
 	},
 	{
 		id: 1,
-		img: [digitalStore1, digitalStore2, digitalStore3, digitalStore4, digitalStore5, digitalStore6, digitalStore7],
-		imgDesc: ["1", "2", "3", "4", "5", "6", "7"],
+		img: [
+			digitalStore1,
+			digitalStore2,
+			digitalStore3,
+			digitalStore4,
+			digitalStore5,
+			digitalStore6,
+			digitalStore7,
+			digitalStore8,
+		],
+		imgDesc: ["1", "2", "3", "4", "5", "6", "7", "8"],
 		name: "Digital Store",
 		technology: "HTML, CSS, Sass, JavaScript",
 		description:
@@ -107,8 +124,8 @@ const projectsData = [
 	},
 	{
 		id: 3,
-		img: [guineaPigDoctor1, guineaPigDoctor2, guineaPigDoctor3, guineaPigDoctor4],
-		imgDesc: ["1", "2", "3", "4"],
+		img: [guineaPigDoctor1, guineaPigDoctor2, guineaPigDoctor3, guineaPigDoctor4, guineaPigDoctor5],
+		imgDesc: ["1", "2", "3", "4", "5"],
 		name: "Guinea Pig Doctor",
 		technology: "HTML, CSS, JavaScript",
 		description:
@@ -173,9 +190,17 @@ const projectsData = [
 	{
 		id: 9,
 		img: [
-			/*portfolioPage1, portfolioPage2, portfolioPage3*/
+			portfolio1,
+			portfolio2,
+			portfolio3,
+			portfolio4,
+			portfolio5,
+			portfolio6,
+			portfolio7,
+			portfolio8,
+			portfolio9,
 		],
-		imgDesc: ["1", "2", "3"],
+		imgDesc: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
 		name: "Portfolio",
 		technology: "HTML, CSS, Sass, JavaScript, React",
 		description:
