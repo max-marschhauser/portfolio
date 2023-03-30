@@ -89,7 +89,7 @@ const projectsData = [
 		description:
 			"A responsive brochure page for a local Tattoo Studio. Built using HTML, CSS and JavaScript. First bigger project in a long time, used as warm up for future projects. Page shows information about local Tattoo business, shows artist's previous works and other things related to tattooing.",
 		githubLink: "https://github.com/max-marschhauser/CAVIA-Tattoo-Studio",
-		codepenLink: "",
+		codepenLink: "https://codepen.io/max-marschhauser/pen/zYJQvZO",
 	},
 	{
 		id: 1,
@@ -146,7 +146,7 @@ const projectsData = [
 		description:
 			"A responsive brochure page for a local veterinarian specialized in guinea pig treatment. Built with HTML, CSS and JS. Fairly simple page built for fun.",
 		githubLink: "https://github.com/max-marschhauser/Guinea-Pig-Doctor",
-		codepenLink: "",
+		codepenLink: "https://codepen.io/max-marschhauser/pen/OJoYyMx",
 	},
 	{
 		id: 6,
@@ -172,7 +172,7 @@ const projectsData = [
 		description:
 			"Sample component for light-dark theme button which can be used on a variety of pages. Built using React and CSS. Component intended to be used in other projects.",
 		githubLink: "https://github.com/max-marschhauser/light-dark-theme",
-		codepenLink: "",
+		codepenLink: "https://codepen.io/max-marschhauser/pen/dyqEYGM",
 	},
 	{
 		id: 5,
@@ -215,7 +215,7 @@ const projectsData = [
 		description:
 			"A Pokemon game built using React and SCSS. Uses API data stored in objects to display information about items. Single-page app. Game generates random Pokemon name using two data files (one is an array of objects which contains names and informations about pokemons, and the other is an object which contains links to pokemon images). User gets one randomly generated pokemon name and four randomly generated pokemon images. User has to click on the correct pokemon image. Game tracks users' score and combo. Added Pokemon theme song as background music. Game currently supports Pokemon from the first generation (the first 151 Pokemon).",
 		githubLink: "https://github.com/max-marschhauser/pokemon-app",
-		codepenLink: "",
+		codepenLink: "https://codepen.io/max-marschhauser/pen/poOmJZa",
 	},
 	{
 		id: 9,
@@ -246,7 +246,7 @@ const projectsData = [
 		description:
 			"A portfolio page which displays my web development skills, my completed projects, and functions as my CV page. Responsive Single-page app. Uses data stored in the objects to display information on the page. Built using React and SCSS.",
 		githubLink: "https://github.com/max-marschhauser/portfolio",
-		codepenLink: "",
+		codepenLink: "https://codepen.io/max-marschhauser/pen/dyqEozB",
 	},
 	{
 		id: 10,
@@ -303,7 +303,7 @@ const projectsData = [
 		description:
 			"A responsive Single-page App eCommerce page built using React and SCSS. Uses external API to fetch and display data about items. Uses LocalStorage to store items in the cart. Page can be used as a brochure page. Users can filter and sort through Yu-Gi-Oh cards that are available in Yu-Gi-Oh database API. Currently, this page only displays cards released until 1 January 2008. My plan is to add newer cards in the future. Users can add their favorite cards in the cart and purchase them. LocalStorage ensures that cards will remain in the cart when the user returns to the page.",
 		githubLink: "https://github.com/max-marschhauser/yugioh-card-search",
-		codepenLink: "",
+		codepenLink: "https://codepen.io/max-marschhauser/pen/bGxydMW",
 	},
 ];
 
