@@ -317,7 +317,8 @@ const projectsData = [
 		],
 		name: "TypeScript Simple Calculator",
 		technology: "HTML, CSS, Sass, JavaScript, TypeScript, React",
-		description: "A simple calculator built using React and Typescript.",
+		description:
+			"A simple responsive calculator built using React and Typescript. Can be used as a component for another page.",
 		githubLink: "https://github.com/max-marschhauser/typescript-simple-calculator",
 		codepenLink: "https://codepen.io/max-marschhauser/pen/jOvoEQq",
 	},
