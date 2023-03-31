@@ -73,6 +73,9 @@ import yuGiOhCardSearch7 from "../assets/images/projects/Yu-Gi-Oh-Card-Search/yu
 import yuGiOhCardSearch8 from "../assets/images/projects/Yu-Gi-Oh-Card-Search/yu-gi-oh-card-search8.png";
 import yuGiOhCardSearch9 from "../assets/images/projects/Yu-Gi-Oh-Card-Search/yu-gi-oh-card-search9.png";
 
+import typeScriptSimpleCalculator1 from "../assets/images/projects/TypeScript-Simple-Calculator/typescript-simple-calculator1.png";
+import typeScriptSimpleCalculator2 from "../assets/images/projects/TypeScript-Simple-Calculator/typescript-simple-calculator2.png";
+
 const projectsData = [
 	{
 		id: 0,
@@ -304,6 +307,19 @@ const projectsData = [
 			"A responsive Single-page App eCommerce page built using React and SCSS. Uses external API to fetch and display data about items. Uses LocalStorage to store items in the cart. Page can be used as a brochure page. Users can filter and sort through Yu-Gi-Oh cards that are available in Yu-Gi-Oh database API. Currently, this page only displays cards released until 1 January 2008. My plan is to add newer cards in the future. Users can add their favorite cards in the cart and purchase them. LocalStorage ensures that cards will remain in the cart when the user returns to the page.",
 		githubLink: "https://github.com/max-marschhauser/yugioh-card-search",
 		codepenLink: "https://codepen.io/max-marschhauser/pen/bGxydMW",
+	},
+	{
+		id: 13,
+		img: [typeScriptSimpleCalculator1, typeScriptSimpleCalculator2],
+		imgDesc: [
+			"A simple calculator built using React and TypeScript. Calculator can be used both by mouse and by keyboard.",
+			"Page is responsive for different screen sizes.",
+		],
+		name: "TypeScript Simple Calculator",
+		technology: "HTML, CSS, Sass, JavaScript, TypeScript, React",
+		description: "A simple calculator built using React and Typescript.",
+		githubLink: "https://github.com/max-marschhauser/typescript-simple-calculator",
+		codepenLink: "https://codepen.io/max-marschhauser/pen/jOvoEQq",
 	},
 ];
 

@@ -27,6 +27,7 @@ export default function ProjectsListItems(props) {
 	let [projectsItem10IsVissible, setProjectsItem10IsVissible] = useState(false);
 	let [projectsItem11IsVissible, setProjectsItem11IsVissible] = useState(false);
 	let [projectsItem12IsVissible, setProjectsItem12IsVissible] = useState(false);
+	let [projectsItem13IsVissible, setProjectsItem13IsVissible] = useState(false);
 
 	useEffect(() => {
 		const observer = new IntersectionObserver((entries) => {
@@ -84,6 +85,10 @@ export default function ProjectsListItems(props) {
 					}
 					case 12: {
 						setProjectsItem12IsVissible(item.isIntersecting);
+						break;
+					}
+					case 13: {
+						setProjectsItem13IsVissible(item.isIntersecting);
 						break;
 					}
 
@@ -151,6 +156,8 @@ export default function ProjectsListItems(props) {
 									: item.id === 11 && projectsItem11IsVissible
 									? "projectsItemVissible"
 									: item.id === 12 && projectsItem12IsVissible
+									? "projectsItemVissible"
+									: item.id === 13 && projectsItem13IsVissible
 									? "projectsItemVissible"
 									: ""
 							}>
