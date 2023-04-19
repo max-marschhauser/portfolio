@@ -76,6 +76,10 @@ import yuGiOhCardSearch9 from "../assets/images/projects/Yu-Gi-Oh-Card-Search/yu
 import typeScriptSimpleCalculator1 from "../assets/images/projects/TypeScript-Simple-Calculator/typescript-simple-calculator1.png";
 import typeScriptSimpleCalculator2 from "../assets/images/projects/TypeScript-Simple-Calculator/typescript-simple-calculator2.png";
 
+import weatherApp1 from "../assets/images/projects/Weather-App/weather-app1.png";
+import weatherApp2 from "../assets/images/projects/Weather-App/weather-app2.png";
+import weatherApp3 from "../assets/images/projects/Weather-App/weather-app3.png";
+
 const projectsData = [
 	{
 		id: 0,
@@ -321,6 +325,21 @@ const projectsData = [
 			"A simple responsive calculator built using React and Typescript. Can be used as a component for another page.",
 		githubLink: "https://github.com/max-marschhauser/typescript-simple-calculator",
 		codepenLink: "https://codepen.io/max-marschhauser/pen/jOvoEQq",
+	},
+	{
+		id: 14,
+		img: [weatherApp1, weatherApp2, weatherApp3],
+		imgDesc: [
+			"A landing page for the weather app. User can see current time and weather.",
+			"User can select different town or city based on their location. Currently there are only 4 locations, could easily add more if needed.",
+			"User can see both hourly and daily weather forecast.",
+		],
+		name: "Weather App",
+		technology: "HTML, CSS, Sass, JavaScript, TypeScript, React",
+		description:
+			"A weather App built using TypeScript, React and SCSS. Responsive Single-page app. Fetched API data from external source. User can select a city of their liking and see weather forecast for next 2 weeks. User can see hourly or daily forecast. Can be used as a component for another web page.",
+		githubLink: "https://github.com/max-marschhauser/weather-app/tree/main",
+		codepenLink: "https://codepen.io/max-marschhauser/pen/BaqzepB",
 	},
 ];
 
