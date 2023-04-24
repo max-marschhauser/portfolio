@@ -13,6 +13,9 @@ import PHP from "../../../assets/images/skills/PHP.png";
 import ReactImage from "../../../assets/images/skills/React.png";
 import Sass from "../../../assets/images/skills/Sass.png";
 import TypeScript from "../../../assets/images/skills/TypeScript.png";
+import Figma from "../../../assets/images/skills/Figma.png";
+import ChatGPT from "../../../assets/images/skills/ChatGPT.png";
+import WordPress from "../../../assets/images/skills/WordPress.png";
 
 export default function SkillItems(props) {
 	const { currentSkill, handleFocus } = props;
@@ -38,6 +41,15 @@ export default function SkillItems(props) {
 			case "React":
 				ReactRef.current.focus();
 				break;
+			case "Figma":
+				FigmaRef.current.focus();
+				break;
+			case "WordPress":
+				WordPressRef.current.focus();
+				break;
+			case "ChatGPT":
+				ChatGPTRef.current.focus();
+				break;
 			case "PHP":
 				PHPRef.current.focus();
 				break;
@@ -48,7 +60,6 @@ export default function SkillItems(props) {
 				CRef.current.focus();
 				break;
 			default:
-				ReactRef.current.focus();
 				break;
 		}
 	}
@@ -59,6 +70,9 @@ export default function SkillItems(props) {
 	const JavaScriptRef = useRef();
 	const TypeScriptRef = useRef();
 	const ReactRef = useRef();
+	const FigmaRef = useRef();
+	const WordPressRef = useRef();
+	const ChatGPTRef = useRef();
 	const PHPRef = useRef();
 	const MySQLRef = useRef();
 	const CRef = useRef();
@@ -69,6 +83,9 @@ export default function SkillItems(props) {
 	const [JavaScriptIsVissible, setJavaScriptIsVissible] = useState(false);
 	const [TypeScriptIsVissible, setTypeScriptIsVissible] = useState(false);
 	const [ReactIsVissible, setReactIsVissible] = useState(false);
+	const [FigmaIsVissible, setFigmaIsVissible] = useState(false);
+	const [WordPressIsVissible, setWordPressIsVissible] = useState(false);
+	const [ChatGPTIsVissible, setChatGPTIsVissible] = useState(false);
 	const [PHPIsVissible, setPHPIsVissible] = useState(false);
 	const [MySQLIsVissible, setMySQLIsVissible] = useState(false);
 	const [CIsVissible, setCIsVissible] = useState(false);
@@ -103,6 +120,18 @@ export default function SkillItems(props) {
 						setReactIsVissible(item.isIntersecting);
 						break;
 					}
+					case "Figma": {
+						setFigmaIsVissible(item.isIntersecting);
+						break;
+					}
+					case "WordPress": {
+						setWordPressIsVissible(item.isIntersecting);
+						break;
+					}
+					case "ChatGPT": {
+						setChatGPTIsVissible(item.isIntersecting);
+						break;
+					}
 					case "PHP": {
 						setPHPIsVissible(item.isIntersecting);
 						break;
@@ -128,6 +157,9 @@ export default function SkillItems(props) {
 		observer.observe(JavaScriptRef.current);
 		observer.observe(TypeScriptRef.current);
 		observer.observe(ReactRef.current);
+		observer.observe(FigmaRef.current);
+		observer.observe(WordPressRef.current);
+		observer.observe(ChatGPTRef.current);
 		observer.observe(PHPRef.current);
 		observer.observe(MySQLRef.current);
 		observer.observe(CRef.current);
@@ -201,6 +233,43 @@ export default function SkillItems(props) {
 					loading="lazy"
 					src={ReactImage}
 					alt="React"
+				/>
+			</button>
+
+			<button
+				className={FigmaIsVissible === true ? "vissibleButton" : ""}
+				onFocus={handleFocus}
+				data-image="Figma"
+				ref={FigmaRef}
+				onMouseEnter={focusItem}>
+				<img className={currentSkill === "Figma" ? "activeImage" : ""} loading="lazy" src={Figma} alt="Figma" />
+			</button>
+
+			<button
+				className={WordPressIsVissible === true ? "vissibleButton" : ""}
+				onFocus={handleFocus}
+				data-image="WordPress"
+				ref={WordPressRef}
+				onMouseEnter={focusItem}>
+				<img
+					className={currentSkill === "WordPress" ? "activeImage" : ""}
+					loading="lazy"
+					src={WordPress}
+					alt="WordPress"
+				/>
+			</button>
+
+			<button
+				className={ChatGPTIsVissible === true ? "vissibleButton" : ""}
+				onFocus={handleFocus}
+				data-image="ChatGPT"
+				ref={ChatGPTRef}
+				onMouseEnter={focusItem}>
+				<img
+					className={currentSkill === "ChatGPT" ? "activeImage" : ""}
+					loading="lazy"
+					src={ChatGPT}
+					alt="ChatGPT"
 				/>
 			</button>
 

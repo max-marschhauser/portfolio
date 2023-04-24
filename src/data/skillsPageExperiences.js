@@ -38,6 +38,19 @@ const skillsData = {
 		"I use it to create Single Page Applications with ease.",
 		"Love using components to simplify the code.",
 	],
+	Figma: [
+		"My favorite way of designing pages and components before actually building them.",
+		"I feel very comfortable using it.",
+	],
+	WordPress: [
+		"Used it to create a couple of web pages and components.",
+		"I prefer to build pages using actual code, but could use WordPress if needed.",
+	],
+	ChatGPT: [
+		"Been using it lately mostly for improving my web development skills.",
+		"With it I can build cleaner and more efficient code.",
+		"Also, used it for learning theory needed to become a better web developer.",
+	],
 	PHP: [
 		"Learned it in 2012.",
 		"Used it mainly to connect web pages with SQL Databases.",
