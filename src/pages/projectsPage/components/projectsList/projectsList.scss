@@ -4,13 +4,13 @@
 .projectsList {
 	padding: 0rem 0rem;
 
-	@include abs.mq(1350px, 0px) {
+	@include abs.mq(1300px, 0px) {
 		padding-right: 0.5rem;
 	}
 
 	margin-top: 0.5rem;
 
-	@include abs.mq(1350px, 0px) {
+	@include abs.mq(1300px, 0px) {
 		margin-top: 0;
 	}
 
@@ -25,7 +25,7 @@
 
 		display: grid;
 
-		@include abs.mq(1350px, 0px) {
+		@include abs.mq(1300px, 0px) {
 			grid-template-columns: 1fr 70%;
 		}
 
@@ -52,7 +52,7 @@
 
 			clip-path: polygon(100% 0, 100% 25%, 25% 100%, 0 100%);
 
-			@include abs.mq(1350px, 0px) {
+			@include abs.mq(1300px, 0px) {
 				top: 0;
 
 				clip-path: polygon(0 0, 10% 0, 100% 90%, 100% 100%);
@@ -104,7 +104,7 @@
 					color: var(--color-light);
 
 					&.technology {
-						@include abs.mq(1350px, 0px) {
+						@include abs.mq(1300px, 0px) {
 							text-align: center;
 						}
 					}
@@ -115,7 +115,7 @@
 						letter-spacing: var(--letter-spacing);
 						font-style: italic;
 
-						@include abs.mq(1350px, 0px) {
+						@include abs.mq(1300px, 0px) {
 							margin-top: 1rem;
 						}
 					}

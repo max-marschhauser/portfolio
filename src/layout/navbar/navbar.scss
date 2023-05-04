@@ -58,7 +58,7 @@
 	}
 
 	.hamburgerButton {
-		@include abs.mq(1350px, 0px) {
+		@include abs.mq(1300px, 0px) {
 			display: none;
 		}
 
@@ -137,7 +137,7 @@
 }
 
 .mobileNavbar {
-	@include abs.mq(1350px, 0px) {
+	@include abs.mq(1300px, 0px) {
 		display: none;
 	}
 
@@ -156,7 +156,7 @@
 .desktopNavbar {
 	display: none;
 
-	@include abs.mq(1350px, 0px) {
+	@include abs.mq(1300px, 0px) {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -176,7 +176,7 @@
 		padding-inline: 1rem;
 		padding-block: 0.25rem;
 
-		@include abs.mq(1350px, 0px) {
+		@include abs.mq(1300px, 0px) {
 			border-radius: 0.5rem;
 			width: auto;
 		}
@@ -186,7 +186,7 @@
 
 		font-size: var(--font-size-125);
 
-		@include abs.mq(1350px, 0px) {
+		@include abs.mq(1300px, 0px) {
 			font-size: var(--font-size-150);
 
 			background-color: transparent;
@@ -218,7 +218,7 @@
 		&:focus-visible {
 			border-block: 0.1rem solid var(--color-action);
 
-			@include abs.mq(1350px, 0px) {
+			@include abs.mq(1300px, 0px) {
 				background-color: transparent;
 			}
 
@@ -232,7 +232,7 @@
 			span {
 				color: var(--color-action);
 
-				@include abs.mq(1350px, 0px) {
+				@include abs.mq(1300px, 0px) {
 					background-color: transparent;
 
 					color: var(--color-action);
@@ -252,7 +252,7 @@
 		span {
 			color: var(--color-action);
 
-			@include abs.mq(1350px, 0px) {
+			@include abs.mq(1300px, 0px) {
 				background-color: transparent;
 			}
 		}

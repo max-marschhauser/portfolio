@@ -26,7 +26,7 @@
 		height: 20svh;
 		width: 70vw;
 
-		@include abs.mq(1350px, 0px) {
+		@include abs.mq(1300px, 0px) {
 			height: 50vh;
 			height: 50svh;
 			width: 50vw;
@@ -39,7 +39,7 @@
 		top: 0;
 		left: 30vw;
 
-		@include abs.mq(1350px, 0px) {
+		@include abs.mq(1300px, 0px) {
 			left: 50vw;
 		}
 
@@ -50,7 +50,7 @@
 		bottom: 0;
 		right: 30vw;
 
-		@include abs.mq(1350px, 0px) {
+		@include abs.mq(1300px, 0px) {
 			right: 50vw;
 		}
 
@@ -68,7 +68,7 @@
 			place-items: center;
 			gap: 3rem;
 
-			@include abs.mq(1350px, 0px) {
+			@include abs.mq(1300px, 0px) {
 				grid-template-columns: repeat(2, 1fr);
 				gap: 0rem;
 			}
