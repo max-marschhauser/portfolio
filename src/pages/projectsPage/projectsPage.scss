@@ -5,7 +5,7 @@
 	display: grid;
 	grid-template-columns: 1fr;
 
-	@include abs.mq(1400px, 0px) {
+	@include abs.mq(1350px, 0px) {
 		grid-template-columns: 2fr 1fr;
 	}
 }

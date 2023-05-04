@@ -4,7 +4,7 @@
 .filter {
 	order: -1;
 
-	@include abs.mq(1400px, 0px) {
+	@include abs.mq(1350px, 0px) {
 		order: 0;
 	}
 
@@ -27,7 +27,7 @@
 
 			user-select: none;
 
-			@include abs.mq(1400px, 0px) {
+			@include abs.mq(1350px, 0px) {
 				&::before,
 				&::after {
 					content: "";
@@ -147,7 +147,7 @@
 
 							cursor: pointer;
 
-							@include abs.mq(1400px, 0px) {
+							@include abs.mq(1350px, 0px) {
 								&:hover,
 								&:focus-visible {
 									opacity: 1;
