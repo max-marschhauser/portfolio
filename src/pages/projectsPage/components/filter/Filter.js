@@ -161,6 +161,28 @@ export default function Filter(props) {
 									React
 								</label>
 							</li>
+
+							<li>
+								<input
+									type="radio"
+									id={`${id}-WordPress`}
+									name="skill"
+									value="WordPress"
+									onClick={(e) => handleSkillChange(e.target.value)}
+									onKeyDown={(e) => handleSkillChange(e.target.value)}
+								/>
+								<label
+									tabIndex="0"
+									className={activeSkill === "WordPress" ? "activeFilterInput" : ""}
+									htmlFor={`${id}-WordPress`}
+									onKeyDown={(e) => {
+										if (e.key === "Enter") {
+											handleSkillChange(e.target.innerHTML);
+										}
+									}}>
+									WordPress
+								</label>
+							</li>
 						</ul>
 					</fieldset>
 
@@ -333,6 +355,27 @@ export default function Filter(props) {
 										}
 									}}>
 									Component
+								</label>
+							</li>
+
+							<li>
+								<input
+									type="radio"
+									id={`${id}-Published`}
+									name="keyword"
+									value="Published"
+									onClick={(e) => handleKeywordChange(e.target.value)}
+								/>
+								<label
+									tabIndex="0"
+									className={activeKeyword === "Published" ? "activeFilterInput" : ""}
+									htmlFor={`${id}-Published`}
+									onKeyDown={(e) => {
+										if (e.key === "Enter") {
+											handleKeywordChange(e.target.innerHTML);
+										}
+									}}>
+									Published
 								</label>
 							</li>
 						</ul>

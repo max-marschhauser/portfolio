@@ -29,6 +29,7 @@ export default function ProjectsListItems(props) {
 	let [projectsItem12IsVissible, setProjectsItem12IsVissible] = useState(false);
 	let [projectsItem13IsVissible, setProjectsItem13IsVissible] = useState(false);
 	let [projectsItem14IsVissible, setProjectsItem14IsVissible] = useState(false);
+	let [projectsItem15IsVissible, setProjectsItem15IsVissible] = useState(false);
 
 	useEffect(() => {
 		const observer = new IntersectionObserver((entries) => {
@@ -94,6 +95,10 @@ export default function ProjectsListItems(props) {
 					}
 					case 14: {
 						setProjectsItem14IsVissible(item.isIntersecting);
+						break;
+					}
+					case 15: {
+						setProjectsItem15IsVissible(item.isIntersecting);
 						break;
 					}
 
@@ -166,6 +171,8 @@ export default function ProjectsListItems(props) {
 									? "projectsItemVissible"
 									: item.id === 14 && projectsItem14IsVissible
 									? "projectsItemVissible"
+									: item.id === 15 && projectsItem15IsVissible
+									? "projectsItemVissible"
 									: ""
 							}>
 							<button
@@ -190,6 +197,13 @@ export default function ProjectsListItems(props) {
 										<p>{item.description}</p>
 									</li>
 									<li className="links">
+										{item.pageLink !== "" ? (
+											<a href={item.pageLink} target="_blank" rel="noreferrer">
+												<span>www</span>
+											</a>
+										) : (
+											<></>
+										)}
 										{item.githubLink !== "" ? (
 											<a href={item.githubLink} target="_blank" rel="noreferrer">
 												<svg viewBox="0 0 512 512">

@@ -80,6 +80,14 @@ import weatherApp1 from "../assets/images/projects/Weather-App/weather-app1.png"
 import weatherApp2 from "../assets/images/projects/Weather-App/weather-app2.png";
 import weatherApp3 from "../assets/images/projects/Weather-App/weather-app3.png";
 
+import strunaDoo1 from "../assets/images/projects/Struna-doo/struna-doo1.png";
+import strunaDoo2 from "../assets/images/projects/Struna-doo/struna-doo2.png";
+import strunaDoo3 from "../assets/images/projects/Struna-doo/struna-doo3.png";
+import strunaDoo4 from "../assets/images/projects/Struna-doo/struna-doo4.png";
+import strunaDoo5 from "../assets/images/projects/Struna-doo/struna-doo5.png";
+import strunaDoo6 from "../assets/images/projects/Struna-doo/struna-doo6.png";
+import strunaDoo7 from "../assets/images/projects/Struna-doo/struna-doo7.png";
+
 const projectsData = [
 	{
 		id: 0,
@@ -97,6 +105,7 @@ const projectsData = [
 			"A responsive brochure page for a local Tattoo Studio. Built using HTML, CSS and JavaScript. First bigger project in a long time, used as warm up for future projects. Page shows information about local Tattoo business, shows artist's previous works and other things related to tattooing.",
 		githubLink: "https://github.com/max-marschhauser/CAVIA-Tattoo-Studio",
 		codepenLink: "https://codepen.io/max-marschhauser/pen/zYJQvZO",
+		pageLink: "",
 	},
 	{
 		id: 1,
@@ -126,6 +135,7 @@ const projectsData = [
 			"A digital store built using JavaScript, HTML and SCSS. Responsive eCommerce Single-page app. It can also be used as a brochure page for business. Data is stored in an object file and imported when needed. User can filter or sort displayed items and add items to the cart.",
 		githubLink: "https://github.com/max-marschhauser/Digital-Store",
 		codepenLink: "",
+		pageLink: "",
 	},
 	{
 		id: 2,
@@ -137,6 +147,7 @@ const projectsData = [
 			"A cool looking gradient hover card built using plain JS, CSS and HTML. Component intended to be used in other projects.",
 		githubLink: "https://github.com/max-marschhauser/gradient-hover-card",
 		codepenLink: "https://codepen.io/max-marschhauser/pen/WNgNrVO",
+		pageLink: "",
 	},
 	{
 		id: 3,
@@ -154,6 +165,7 @@ const projectsData = [
 			"A responsive brochure page for a local veterinarian specialized in guinea pig treatment. Built with HTML, CSS and JS. Fairly simple page built for fun.",
 		githubLink: "https://github.com/max-marschhauser/Guinea-Pig-Doctor",
 		codepenLink: "https://codepen.io/max-marschhauser/pen/OJoYyMx",
+		pageLink: "",
 	},
 	{
 		id: 6,
@@ -165,6 +177,7 @@ const projectsData = [
 			"Examples of Hamburger buttons used for opening navbars on small screen devices. Responsive component which can be used in future projects. Built using HTML, CSS, JavaScript and SVG.",
 		githubLink: "https://github.com/max-marschhauser/hamburger-examples",
 		codepenLink: "https://codepen.io/max-marschhauser/pen/MWqWybB",
+		pageLink: "",
 	},
 	{
 		id: 4,
@@ -180,6 +193,7 @@ const projectsData = [
 			"Sample component for light-dark theme button which can be used on a variety of pages. Built using React and CSS. Component intended to be used in other projects.",
 		githubLink: "https://github.com/max-marschhauser/light-dark-theme",
 		codepenLink: "https://codepen.io/max-marschhauser/pen/dyqEYGM",
+		pageLink: "",
 	},
 	{
 		id: 5,
@@ -194,6 +208,7 @@ const projectsData = [
 			"A good looking Loading Spinner built with CSS. This component can be used on various sites that require loading.",
 		githubLink: "https://github.com/max-marschhauser/Loading-Spinner",
 		codepenLink: "https://codepen.io/max-marschhauser/pen/oNPNxbv",
+		pageLink: "",
 	},
 	{
 		id: 7,
@@ -208,6 +223,7 @@ const projectsData = [
 		description: "Sample code for multistep form. Component intended to be used in other projects.",
 		githubLink: "https://github.com/max-marschhauser/Multistep-Form",
 		codepenLink: "https://codepen.io/max-marschhauser/pen/LYJYNVK",
+		pageLink: "",
 	},
 	{
 		id: 8,
@@ -223,6 +239,7 @@ const projectsData = [
 			"A Pokemon game built using React and SCSS. Uses API data stored in objects to display information about items. Single-page app. Game generates random Pokemon name using two data files (one is an array of objects which contains names and informations about pokemons, and the other is an object which contains links to pokemon images). User gets one randomly generated pokemon name and four randomly generated pokemon images. User has to click on the correct pokemon image. Game tracks users' score and combo. Added Pokemon theme song as background music. Game currently supports Pokemon from the first generation (the first 151 Pokemon).",
 		githubLink: "https://github.com/max-marschhauser/pokemon-app",
 		codepenLink: "https://codepen.io/max-marschhauser/pen/poOmJZa",
+		pageLink: "",
 	},
 	{
 		id: 9,
@@ -251,9 +268,10 @@ const projectsData = [
 		name: "Portfolio",
 		technology: "HTML, CSS, Sass, JavaScript, React",
 		description:
-			"A portfolio page which displays my web development skills, my completed projects, and functions as my CV page. Responsive Single-page app. Uses data stored in the objects to display information on the page. Built using React and SCSS.",
+			"A portfolio page which displays my web development skills, my completed projects, and functions as my CV page. Responsive Single-page app. Uses data stored in the objects to display information on the page. Built using React and SCSS. Published online.",
 		githubLink: "https://github.com/max-marschhauser/portfolio",
 		codepenLink: "https://codepen.io/max-marschhauser/pen/dyqEozB",
+		pageLink: "https://maxdev.com.hr/",
 	},
 	{
 		id: 10,
@@ -270,6 +288,7 @@ const projectsData = [
 		description: "A Rock-Paper-Scissors responsive game built using JavaScript. Fairly simple game built for fun.",
 		githubLink: "https://github.com/max-marschhauser/Rock-Paper-Scissors",
 		codepenLink: "https://codepen.io/max-marschhauser/pen/rNrEbjZ",
+		pageLink: "",
 	},
 	{
 		id: 11,
@@ -280,6 +299,7 @@ const projectsData = [
 		description: "A To-Do list built using JavaScript and HTML. Very simple JS to-do list built for fun.",
 		githubLink: "https://github.com/max-marschhauser/ToDo-List",
 		codepenLink: "https://codepen.io/max-marschhauser/pen/ababNzX",
+		pageLink: "",
 	},
 	{
 		id: 12,
@@ -311,6 +331,7 @@ const projectsData = [
 			"A responsive Single-page App eCommerce page built using React and SCSS. Uses external API to fetch and display data about items. Uses LocalStorage to store items in the cart. Page can be used as a brochure page. Users can filter and sort through Yu-Gi-Oh cards that are available in Yu-Gi-Oh database API. Currently, this page only displays cards released until 1 January 2008. My plan is to add newer cards in the future. Users can add their favorite cards in the cart and purchase them. LocalStorage ensures that cards will remain in the cart when the user returns to the page.",
 		githubLink: "https://github.com/max-marschhauser/yugioh-card-search",
 		codepenLink: "https://codepen.io/max-marschhauser/pen/bGxydMW",
+		pageLink: "",
 	},
 	{
 		id: 13,
@@ -325,6 +346,7 @@ const projectsData = [
 			"A simple responsive calculator built using React and Typescript. Can be used as a component for another page.",
 		githubLink: "https://github.com/max-marschhauser/typescript-simple-calculator",
 		codepenLink: "https://codepen.io/max-marschhauser/pen/jOvoEQq",
+		pageLink: "",
 	},
 	{
 		id: 14,
@@ -340,6 +362,27 @@ const projectsData = [
 			"A weather App built using TypeScript, React and SCSS. Responsive Single-page app. Fetched API data from external source. User can select a city of their liking and see weather forecast for next 2 weeks. User can see hourly or daily forecast. Can be used as a component for another web page.",
 		githubLink: "https://github.com/max-marschhauser/weather-app/tree/main",
 		codepenLink: "https://codepen.io/max-marschhauser/pen/BaqzepB",
+		pageLink: "",
+	},
+	{
+		id: 15,
+		img: [strunaDoo1, strunaDoo2, strunaDoo3, strunaDoo4, strunaDoo5, strunaDoo6, strunaDoo7],
+		imgDesc: [
+			"A landing page for the local copy machine renting and fixing company.",
+			"A landing page for the local copy machine renting and fixing company.",
+			"User can see what type of copy machines can be rented from the company.",
+			"User can see what type of copy machines does the company fix.",
+			"Contact information page.",
+			"Page is responsive for different screen sizes.",
+			"Page is responsive for different screen sizes.",
+		],
+		name: "Struna d.o.o.",
+		technology: "WordPress, CSS",
+		description:
+			"First real-life project built and published for client. Server as a brochure page for local business. User can see what company does and how to contact the owner. Client asked for a page to be responsive for smaller screen sizes and as simple as possible.",
+		githubLink: "",
+		codepenLink: "",
+		pageLink: "https://struna.hr/",
 	},
 ];
 
