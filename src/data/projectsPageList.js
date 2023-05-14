@@ -107,21 +107,6 @@ const projectsData = [
 	},
 	{
 		id: 1,
-		img: [typeScriptSimpleCalculator1, typeScriptSimpleCalculator2],
-		imgDesc: [
-			"A simple calculator built using React and TypeScript. Calculator can be used both by mouse and by keyboard.",
-			"Page is responsive for different screen sizes.",
-		],
-		name: "TypeScript Simple Calculator",
-		technology: "HTML, CSS, Sass, JavaScript, TypeScript, React",
-		description:
-			"A simple responsive calculator built using React and Typescript. Can be used as a component for another page.",
-		githubLink: "https://github.com/max-marschhauser/typescript-simple-calculator",
-		codepenLink: "https://codepen.io/max-marschhauser/pen/jOvoEQq",
-		pageLink: "",
-	},
-	{
-		id: 2,
 		img: [pokemonApp1, pokemonApp2, pokemonApp3],
 		imgDesc: [
 			"Landing page for Pokemon App. Users can select if they want to play Pokemon theme song or not.",
@@ -137,7 +122,7 @@ const projectsData = [
 		pageLink: "",
 	},
 	{
-		id: 3,
+		id: 2,
 		img: [
 			digitalStore1,
 			digitalStore2,
@@ -167,7 +152,7 @@ const projectsData = [
 		pageLink: "",
 	},
 	{
-		id: 4,
+		id: 3,
 		img: [caviaTattooStudio1, caviaTattooStudio2, caviaTattooStudio3, caviaTattooStudio4, caviaTattooStudio5],
 		imgDesc: [
 			"Desktop home page, serves as a landing page and displays links to other pages.",
@@ -185,7 +170,7 @@ const projectsData = [
 		pageLink: "",
 	},
 	{
-		id: 5,
+		id: 4,
 		img: [strunaDoo1, strunaDoo2, strunaDoo3, strunaDoo4, strunaDoo5, strunaDoo6, strunaDoo7],
 		imgDesc: [
 			"A landing page for the local copy machine renting and fixing company.",
@@ -205,7 +190,7 @@ const projectsData = [
 		pageLink: "https://struna.hr/",
 	},
 	{
-		id: 6,
+		id: 5,
 		img: [
 			yuGiOhCardSearch1,
 			yuGiOhCardSearch2,
@@ -237,7 +222,7 @@ const projectsData = [
 		pageLink: "",
 	},
 	{
-		id: 7,
+		id: 6,
 		img: [
 			portfolio1,
 			portfolio2,
@@ -267,6 +252,21 @@ const projectsData = [
 		githubLink: "https://github.com/max-marschhauser/portfolio",
 		codepenLink: "https://codepen.io/max-marschhauser/pen/dyqEozB",
 		pageLink: "https://maxdev.com.hr/",
+	},
+	{
+		id: 7,
+		img: [typeScriptSimpleCalculator1, typeScriptSimpleCalculator2],
+		imgDesc: [
+			"A simple calculator built using React and TypeScript. Calculator can be used both by mouse and by keyboard.",
+			"Page is responsive for different screen sizes.",
+		],
+		name: "TypeScript Simple Calculator",
+		technology: "HTML, CSS, Sass, JavaScript, TypeScript, React",
+		description:
+			"A simple responsive calculator built using React and Typescript. Can be used as a component for another page.",
+		githubLink: "https://github.com/max-marschhauser/typescript-simple-calculator",
+		codepenLink: "https://codepen.io/max-marschhauser/pen/jOvoEQq",
+		pageLink: "",
 	},
 	{
 		id: 8,
